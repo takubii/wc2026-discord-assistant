@@ -76,6 +76,23 @@ async function createFollowupMessage(interaction, payload) {
   }
 }
 
+function textOnlyPayload(payload) {
+  const { files, ...textPayload } = payload;
+  return textPayload;
+}
+
+function fileOnlyPayload(file) {
+  return {
+    content: "",
+    allowed_mentions: { parse: [] },
+    files: [file],
+  };
+}
+
+function hasVisiblePayloadBody(payload) {
+  return Boolean(payload.content || payload.embeds?.length || payload.components?.length);
+}
+
 function discordRequestBody(payload) {
   if (!payload.files?.length) {
     return {
@@ -96,23 +113,28 @@ function discordRequestBody(payload) {
   return { headers: {}, body: form };
 }
 
-async function sendPayloads(interaction, payloads) {
-  const [first, ...rest] = Array.isArray(payloads) ? payloads : [payloads];
-  if (first.files?.length) {
-    const { files, ...textPayload } = first;
-    await editOriginalInteractionResponse(interaction, textPayload);
-    for (const file of files) {
-      await createFollowupMessage(interaction, {
-        content: "",
-        allowed_mentions: { parse: [] },
-        files: [file],
-      });
+async function sendPayload(interaction, payload, isFirst) {
+  const files = payload.files ?? [];
+  let textPayload = textOnlyPayload(payload);
+
+  if (isFirst) {
+    if (!hasVisiblePayloadBody(textPayload)) {
+      textPayload = { content: files.length ? "画像を送信します。" : "処理しました。", allowed_mentions: { parse: [] } };
     }
-  } else {
-    await editOriginalInteractionResponse(interaction, first);
+    await editOriginalInteractionResponse(interaction, textPayload);
+  } else if (hasVisiblePayloadBody(textPayload)) {
+    await createFollowupMessage(interaction, textPayload);
   }
-  for (const payload of rest) {
-    await createFollowupMessage(interaction, payload);
+
+  for (const file of files) {
+    await createFollowupMessage(interaction, fileOnlyPayload(file));
+  }
+}
+
+async function sendPayloads(interaction, payloads) {
+  const normalizedPayloads = Array.isArray(payloads) ? payloads : [payloads];
+  for (const [index, payload] of normalizedPayloads.entries()) {
+    await sendPayload(interaction, payload, index === 0);
   }
 }
 
