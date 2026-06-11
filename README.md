@@ -2,6 +2,8 @@
 
 ワールドカップ2026の翌日分の試合予定を、毎日22:00 JSTにDiscordへ投稿するGitHub Actions用の小さなスクリプトです。
 
+試合予定はESPNの公開JSONから取得します。ESPNが取得できない場合はTheSportsDBを予備として使います。
+
 ## あなたがやること
 
 1. Discordで投稿先チャンネルのWebhook URLを作る
@@ -11,21 +13,16 @@
    - 投稿先チャンネルを選択
    - Webhook URLをコピー
 
-2. API-FootballのAPIキーを用意する
-   - API-Sports / API-Footballでキーを取得してください。
-   - 2026シーズンにアクセスできるプランが必要です。
-
-3. GitHubで新しいリポジトリを作る
+2. GitHubで新しいリポジトリを作る
    - 例: `world-cup-2026-scheduler`
    - Public / Private はどちらでも構いません。
 
-4. GitHub Secretsを登録する
+3. GitHub Secretsを登録する
    - GitHubリポジトリの `Settings` → `Secrets and variables` → `Actions`
    - `New repository secret` で以下を追加:
      - `DISCORD_WEBHOOK_URL`
-     - `API_FOOTBALL_KEY`
 
-5. このローカルフォルダをGitHubへpushする
+4. このローカルフォルダをGitHubへpushする
 
 ```powershell
 git init
@@ -38,10 +35,12 @@ git push -u origin main
 
 `YOUR_NAME` とリポジトリ名は自分のGitHubに合わせて変えてください。
 
-6. 動作テストする
+5. 動作テストする
    - GitHubリポジトリの `Actions`
    - `Post World Cup Matches`
    - `Run workflow`
+   - `target_date` に `2026-06-12` のような日付を入れると、その日の投稿内容をテストできます。
+   - `dry_run` を `true` にするとDiscordへ投稿せず、Actionsログに内容だけ出します。
 
 ## 実行タイミング
 
@@ -58,21 +57,21 @@ GitHub ActionsのcronはUTC基準なので、これは毎日22:00 JSTです。
 Discordには投稿せず、出力だけ確認できます。
 
 ```powershell
-$env:API_FOOTBALL_KEY="your_api_football_key"
 $env:DRY_RUN="1"
+$env:TARGET_DATE="2026-06-12"
 node post-worldcup.js
 ```
 
-実際にDiscordへ投稿する場合は、`DISCORD_WEBHOOK_URL` も設定して `DRY_RUN` を外してください。
+実際にDiscordへ投稿する場合は、`DISCORD_WEBHOOK_URL` を設定して `DRY_RUN` を外してください。
 
 ## Troubleshooting
 
-### Free planで2026 seasonにアクセスできない
+### API-FootballのFree planで2026 seasonにアクセスできない
 
-API-FootballのFree planでは、以下のようなエラーが返る場合があります。
+初期実装ではAPI-Footballを使っていましたが、Free planでは以下のようなエラーが返る場合があります。
 
 ```text
 Free plans do not have access to this season, try from 2022 to 2024.
 ```
 
-この場合、Discord WebhookやGitHub Actionsの設定ではなく、API-Football側のプラン制限です。ワールドカップ2026の `fixtures?league=1&season=2026` を使うには、2026シーズンにアクセスできるAPI-Footballプランが必要です。
+この場合、Discord WebhookやGitHub Actionsの設定ではなく、API-Football側のプラン制限です。そのため現在の実装ではAPI-Footballを使わず、ESPNの公開JSONを主データソースにしています。

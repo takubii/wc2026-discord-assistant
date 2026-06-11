@@ -1,5 +1,8 @@
 const TZ = "Asia/Tokyo";
-const API_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
+const ESPN_URL =
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
+const THESPORTSDB_URL =
+  "https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id=4429&s=2026";
 
 function ymdInTokyo(date) {
   return new Intl.DateTimeFormat("sv-SE", {
@@ -27,56 +30,100 @@ function getRequiredEnv(name) {
   return value;
 }
 
-function hasApiErrors(errors) {
-  if (!errors) return false;
-  if (Array.isArray(errors)) return errors.length > 0;
-  return Object.keys(errors).length > 0;
+function targetDateInTokyo() {
+  if (process.env.TARGET_DATE) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(process.env.TARGET_DATE)) {
+      throw new Error("TARGET_DATE must be YYYY-MM-DD");
+    }
+    return process.env.TARGET_DATE;
+  }
+
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  return ymdInTokyo(tomorrow);
+}
+
+function teamNameFromEspnCompetition(competition, homeAway) {
+  const competitor = competition?.competitors?.find((c) => c.homeAway === homeAway);
+  return competitor?.team?.displayName ?? competitor?.team?.name ?? "TBD";
+}
+
+async function fetchEspnMatches() {
+  const res = await fetch(ESPN_URL);
+  if (!res.ok) {
+    throw new Error(`ESPN error: ${res.status} ${res.statusText}`);
+  }
+
+  const data = await res.json();
+  if (!Array.isArray(data.events) || data.events.length === 0) {
+    throw new Error("ESPN returned no events");
+  }
+
+  return data.events.map((event) => {
+    const competition = event.competitions?.[0];
+    return {
+      date: event.date,
+      home: teamNameFromEspnCompetition(competition, "home"),
+      away: teamNameFromEspnCompetition(competition, "away"),
+      venue: competition?.venue?.fullName ?? event.venue?.displayName ?? "",
+      source: "ESPN",
+    };
+  });
+}
+
+async function fetchTheSportsDbMatches() {
+  const res = await fetch(THESPORTSDB_URL);
+  if (!res.ok) {
+    throw new Error(`TheSportsDB error: ${res.status} ${res.statusText}`);
+  }
+
+  const data = await res.json();
+  if (!Array.isArray(data.events) || data.events.length === 0) {
+    throw new Error("TheSportsDB returned no events");
+  }
+
+  return data.events.map((event) => ({
+    date: `${event.strTimestamp ?? `${event.dateEvent}T${event.strTime}`}Z`,
+    home: event.strHomeTeam ?? "TBD",
+    away: event.strAwayTeam ?? "TBD",
+    venue: event.strVenue ?? "",
+    source: "TheSportsDB",
+  }));
+}
+
+async function fetchMatches() {
+  try {
+    return await fetchEspnMatches();
+  } catch (espnError) {
+    console.warn(`ESPN fetch failed, falling back to TheSportsDB: ${espnError.message}`);
+    return fetchTheSportsDbMatches();
+  }
 }
 
 function buildDiscordContent(matches, targetDate) {
   if (matches.length === 0) {
-    return `🏆 ${targetDate} のワールドカップ試合はないよ。`;
+    return `🏆 ${targetDate} のワールドカップ試合はありません。`;
   }
 
   return [
     `🏆 **${targetDate} のワールドカップ試合予定**`,
     "",
     ...matches.map((m) => {
-      const time = hmInTokyo(m.fixture.date);
-      const home = m.teams.home?.name ?? "TBD";
-      const away = m.teams.away?.name ?? "TBD";
-      return `・${time}　${home} vs ${away}`;
+      const time = hmInTokyo(m.date);
+      const venue = m.venue ? `（${m.venue}）` : "";
+      return `・${time}　${m.home} vs ${m.away}${venue}`;
     }),
   ].join("\n");
 }
 
 async function main() {
-  const apiKey = getRequiredEnv("API_FOOTBALL_KEY");
   const dryRun = process.env.DRY_RUN === "1";
   const discordWebhookUrl = dryRun ? null : getRequiredEnv("DISCORD_WEBHOOK_URL");
+  const targetDate = targetDateInTokyo();
 
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const targetDate = ymdInTokyo(tomorrow);
-
-  const res = await fetch(API_URL, {
-    headers: {
-      "x-apisports-key": apiKey,
-    },
-  });
-
-  if (!res.ok) {
-    throw new Error(`API-Football error: ${res.status} ${res.statusText}`);
-  }
-
-  const data = await res.json();
-  if (hasApiErrors(data.errors)) {
-    throw new Error(`API-Football response errors: ${JSON.stringify(data.errors)}`);
-  }
-
-  const matches = data.response
-    .filter((m) => ymdInTokyo(new Date(m.fixture.date)) === targetDate)
-    .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date));
+  const matches = (await fetchMatches())
+    .filter((m) => ymdInTokyo(new Date(m.date)) === targetDate)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
   const content = buildDiscordContent(matches, targetDate);
 
