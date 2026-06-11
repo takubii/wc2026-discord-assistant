@@ -183,7 +183,7 @@ function teamFromEspnCompetition(competition, homeAway) {
 function formatTeam(team) {
   const code = team.code || TEAM_NAME_TO_CODE[team.name] || "";
   const flag = TEAM_FLAGS[code] ?? "🏁";
-  return `${flag} **${team.name}**`;
+  return `${flag}  **${team.name}**`;
 }
 
 function venueLocation(venue) {
@@ -266,7 +266,7 @@ function buildDiscordPayload(matches, targetDate) {
     .map((m) => {
       const time = hmInTokyo(m.date);
       const location = m.location ? ` / ${m.location}` : "";
-      const venue = m.venue ? `\n> 🏟️ ${m.venue}${location}` : "";
+      const venue = m.venue ? `\n> 🏟️  ${m.venue}${location}` : "";
       return `### ${time}　${formatTeam(m.home)} vs ${formatTeam(m.away)}${venue}`;
     })
     .join("\n\n");

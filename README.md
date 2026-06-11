@@ -72,11 +72,11 @@ Discordには見出し付きMarkdownで投稿します。embedより文字が大
 🏆 FIFA World Cup 2026｜明日の試合予定
 
 6月14日(日)（JST）
-04:00  🇶🇦 Qatar vs 🇨🇭 Switzerland
-🏟️ Levi's Stadium / Santa Clara, California, USA
+04:00  🇶🇦  Qatar vs 🇨🇭  Switzerland
+🏟️  Levi's Stadium / Santa Clara, California, USA
 
-07:00  🇧🇷 Brazil vs 🇲🇦 Morocco
-🏟️ MetLife Stadium / East Rutherford, New Jersey, USA
+07:00  🇧🇷  Brazil vs 🇲🇦  Morocco
+🏟️  MetLife Stadium / East Rutherford, New Jersey, USA
 ```
 
 ## Troubleshooting
