@@ -13,6 +13,7 @@
 
 2. API-FootballのAPIキーを用意する
    - API-Sports / API-Footballでキーを取得してください。
+   - 2026シーズンにアクセスできるプランが必要です。
 
 3. GitHubで新しいリポジトリを作る
    - 例: `world-cup-2026-scheduler`
@@ -63,3 +64,15 @@ node post-worldcup.js
 ```
 
 実際にDiscordへ投稿する場合は、`DISCORD_WEBHOOK_URL` も設定して `DRY_RUN` を外してください。
+
+## Troubleshooting
+
+### Free planで2026 seasonにアクセスできない
+
+API-FootballのFree planでは、以下のようなエラーが返る場合があります。
+
+```text
+Free plans do not have access to this season, try from 2022 to 2024.
+```
+
+この場合、Discord WebhookやGitHub Actionsの設定ではなく、API-Football側のプラン制限です。ワールドカップ2026の `fixtures?league=1&season=2026` を使うには、2026シーズンにアクセスできるAPI-Footballプランが必要です。
