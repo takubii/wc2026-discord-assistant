@@ -1,3 +1,5 @@
+import { fifaRankSuffix } from "./fifa-rankings.js";
+
 const TZ = "Asia/Tokyo";
 const ESPN_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -174,7 +176,7 @@ function teamFromEspnCompetition(competition, homeAway) {
 function formatTeam(team) {
   const code = team.code || TEAM_NAME_TO_CODE[team.name] || "";
   const flag = TEAM_FLAGS[code] ?? "🏁";
-  return `${flag}  **${team.name}**`;
+  return `${flag}  **${team.name}**${fifaRankSuffix(team.name)}`;
 }
 
 function venueLocation(venue) {

@@ -1,4 +1,5 @@
 import { GROUPS, canonicalTeamName, teamLabel } from "./team-data.js";
+import { fifaRankSuffix } from "./fifa-rankings.js";
 import { todayInTokyo, ymdInTokyo } from "./schedule.js";
 
 const ESPN_URL =
@@ -119,17 +120,21 @@ function statusLabel(status) {
   return map[status] ?? status;
 }
 
+function teamWithRank(teamName) {
+  return `${teamLabel(teamName)}${fifaRankSuffix(teamName)}`;
+}
+
 function formatResultLine(match) {
   const time = hmInTokyo(match.date);
   if (match.completed) {
-    return `• **${time}** ${teamLabel(match.home.name)} ${match.home.score}-${match.away.score} ${teamLabel(match.away.name)}`;
+    return `• **${time}** ${teamWithRank(match.home.name)} ${match.home.score}-${match.away.score} ${teamWithRank(match.away.name)}`;
   }
-  return `• **${time}** ${teamLabel(match.home.name)} vs ${teamLabel(match.away.name)}（${statusLabel(match.status) || "未開催"}）`;
+  return `• **${time}** ${teamWithRank(match.home.name)} vs ${teamWithRank(match.away.name)}（${statusLabel(match.status) || "未開催"}）`;
 }
 
 function formatTeamMatchLine(match) {
   const date = displayDateInTokyo(ymdInTokyo(new Date(match.date)));
-  return `• **${date} ${hmInTokyo(match.date)}** ${teamLabel(match.home.name)} ${match.completed ? `${match.home.score}-${match.away.score}` : "vs"} ${teamLabel(match.away.name)}${match.completed ? "" : `（${statusLabel(match.status) || "未開催"}）`}`;
+  return `• **${date} ${hmInTokyo(match.date)}** ${teamWithRank(match.home.name)} ${match.completed ? `${match.home.score}-${match.away.score}` : "vs"} ${teamWithRank(match.away.name)}${match.completed ? "" : `（${statusLabel(match.status) || "未開催"}）`}`;
 }
 
 export async function buildResultsPayloads(targetDate = todayInTokyo()) {

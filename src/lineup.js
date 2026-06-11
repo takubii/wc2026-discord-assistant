@@ -1,4 +1,5 @@
 import { canonicalTeamName, teamLabel } from "./team-data.js";
+import { formatFifaRankLine } from "./fifa-rankings.js";
 
 const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -97,6 +98,11 @@ function eventMeta(event) {
   return `${displayDateInTokyo(event.date)} ${hmInTokyo(event.date)} JST`;
 }
 
+function eventRankLine(event) {
+  const [homeName, awayName] = teamNames(event);
+  return formatFifaRankLine(homeName, awayName);
+}
+
 function positionLabel(player) {
   return player.positionAbbreviation ? `[${player.positionAbbreviation}] ` : "";
 }
@@ -130,13 +136,14 @@ export async function buildLineupPayload(teamQuery = "") {
 
   const summary = await fetchSummary(event.id);
   const lineups = parseOfficialLineups(summary);
-  const contentHeader = [`# ${eventTitle(event)}`, `${eventMeta(event)} / 公式スタメン`];
+  const contentHeader = [`# ${eventTitle(event)}`, `${eventMeta(event)} / 公式スタメン`, eventRankLine(event)];
 
   if (lineups.length < 2) {
     return {
       content: [
         `# ${eventTitle(event)}`,
         `${eventMeta(event)}`,
+        eventRankLine(event),
         "",
         "公式スタメンはまだ発表されていません。",
         "通常は試合開始の約1時間前に公開されます。",
