@@ -3,6 +3,24 @@ const ESPN_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
 const THESPORTSDB_URL =
   "https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id=4429&s=2026";
+const VENUE_LOCATIONS = {
+  "AT&T Stadium": "Arlington, Texas, USA",
+  "BC Place": "Vancouver, British Columbia, Canada",
+  "BMO Field": "Toronto, Ontario, Canada",
+  "Estadio Akron": "Guadalajara, Jalisco, Mexico",
+  "Estadio Banorte": "Mexico City, Mexico",
+  "Estadio BBVA": "Guadalupe, Nuevo Leon, Mexico",
+  "GEHA Field at Arrowhead Stadium": "Kansas City, Missouri, USA",
+  "Gillette Stadium": "Foxborough, Massachusetts, USA",
+  "Hard Rock Stadium": "Miami Gardens, Florida, USA",
+  "Levi's Stadium": "Santa Clara, California, USA",
+  "Lincoln Financial Field": "Philadelphia, Pennsylvania, USA",
+  "Lumen Field": "Seattle, Washington, USA",
+  "Mercedes-Benz Stadium": "Atlanta, Georgia, USA",
+  "MetLife Stadium": "East Rutherford, New Jersey, USA",
+  "NRG Stadium": "Houston, Texas, USA",
+  "SoFi Stadium": "Inglewood, California, USA",
+};
 const TEAM_FLAGS = {
   ALG: "🇩🇿",
   ARG: "🇦🇷",
@@ -168,6 +186,17 @@ function formatTeam(team) {
   return `${flag} **${team.name}**`;
 }
 
+function venueLocation(venue) {
+  const name = venue?.fullName ?? venue?.displayName ?? "";
+  const mapped = VENUE_LOCATIONS[name];
+  if (mapped) return mapped;
+
+  const city = venue?.address?.city;
+  const country = venue?.address?.country;
+  if (city && country) return `${city}, ${country}`;
+  return city ?? country ?? "";
+}
+
 async function fetchEspnMatches() {
   const res = await fetch(ESPN_URL);
   if (!res.ok) {
@@ -181,11 +210,13 @@ async function fetchEspnMatches() {
 
   return data.events.map((event) => {
     const competition = event.competitions?.[0];
+    const venue = competition?.venue ?? event.venue ?? {};
     return {
       date: event.date,
       home: teamFromEspnCompetition(competition, "home"),
       away: teamFromEspnCompetition(competition, "away"),
-      venue: competition?.venue?.fullName ?? event.venue?.displayName ?? "",
+      venue: venue.fullName ?? venue.displayName ?? "",
+      location: venueLocation(venue),
       source: "ESPN",
     };
   });
@@ -207,6 +238,7 @@ async function fetchTheSportsDbMatches() {
     home: { name: event.strHomeTeam ?? "TBD", code: TEAM_NAME_TO_CODE[event.strHomeTeam] ?? "" },
     away: { name: event.strAwayTeam ?? "TBD", code: TEAM_NAME_TO_CODE[event.strAwayTeam] ?? "" },
     venue: event.strVenue ?? "",
+    location: VENUE_LOCATIONS[event.strVenue] ?? "",
     source: "TheSportsDB",
   }));
 }
@@ -233,12 +265,11 @@ function buildDiscordPayload(matches, targetDate) {
   const lines = matches
     .map((m) => {
       const time = hmInTokyo(m.date);
-      const venue = m.venue ? `\n> 🏟️ ${m.venue}` : "";
+      const location = m.location ? ` / ${m.location}` : "";
+      const venue = m.venue ? `\n> 🏟️ ${m.venue}${location}` : "";
       return `### ${time}　${formatTeam(m.home)} vs ${formatTeam(m.away)}${venue}`;
     })
     .join("\n\n");
-
-  const sources = [...new Set(matches.map((m) => m.source))].join(", ");
 
   return {
     content: [
@@ -247,8 +278,6 @@ function buildDiscordPayload(matches, targetDate) {
       `全${matches.length}試合`,
       "",
       lines,
-      "",
-      `-# Source: ${sources} / Times shown in JST`,
     ].join("\n"),
     allowed_mentions: { parse: [] },
   };
