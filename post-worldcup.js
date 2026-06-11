@@ -22,6 +22,16 @@ function hmInTokyo(dateString) {
   }).format(new Date(dateString));
 }
 
+function displayDateInTokyo(ymd) {
+  const date = new Date(`${ymd}T00:00:00+09:00`);
+  return new Intl.DateTimeFormat("ja-JP", {
+    timeZone: TZ,
+    month: "long",
+    day: "numeric",
+    weekday: "short",
+  }).format(date);
+}
+
 function getRequiredEnv(name) {
   const value = process.env[name];
   if (!value) {
@@ -100,20 +110,46 @@ async function fetchMatches() {
   }
 }
 
-function buildDiscordContent(matches, targetDate) {
+function buildDiscordPayload(matches, targetDate) {
+  const displayDate = displayDateInTokyo(targetDate);
+
   if (matches.length === 0) {
-    return `🏆 ${targetDate} のワールドカップ試合はありません。`;
+    return {
+      content: "",
+      embeds: [
+        {
+          title: "FIFA World Cup 2026",
+          description: `**${displayDate}（JST）** の試合予定はありません。`,
+          color: 0x1f8b4c,
+          footer: { text: "Times shown in Japan Standard Time" },
+        },
+      ],
+      allowed_mentions: { parse: [] },
+    };
   }
 
-  return [
-    `🏆 **${targetDate} のワールドカップ試合予定**`,
-    "",
-    ...matches.map((m) => {
+  const lines = matches
+    .map((m) => {
       const time = hmInTokyo(m.date);
-      const venue = m.venue ? `（${m.venue}）` : "";
-      return `・${time}　${m.home} vs ${m.away}${venue}`;
-    }),
-  ].join("\n");
+      const venue = m.venue ? `\n　🏟️ ${m.venue}` : "";
+      return `**${time}**  ${m.home} vs ${m.away}${venue}`;
+    })
+    .join("\n\n");
+
+  const sources = [...new Set(matches.map((m) => m.source))].join(", ");
+
+  return {
+    content: "🏆 **FIFA World Cup 2026｜明日の試合予定**",
+    embeds: [
+      {
+        title: `${displayDate}（JST）`,
+        description: lines,
+        color: 0xc1121f,
+        footer: { text: `${matches.length} match${matches.length === 1 ? "" : "es"} | Source: ${sources}` },
+      },
+    ],
+    allowed_mentions: { parse: [] },
+  };
 }
 
 async function main() {
@@ -125,10 +161,17 @@ async function main() {
     .filter((m) => ymdInTokyo(new Date(m.date)) === targetDate)
     .sort((a, b) => new Date(a.date) - new Date(b.date));
 
-  const content = buildDiscordContent(matches, targetDate);
+  const payload = buildDiscordPayload(matches, targetDate);
 
   if (dryRun) {
-    console.log(content);
+    console.log(payload.content);
+    for (const embed of payload.embeds) {
+      console.log(`\n${embed.title}`);
+      console.log(embed.description);
+      if (embed.footer?.text) {
+        console.log(`\n${embed.footer.text}`);
+      }
+    }
     return;
   }
 
@@ -137,10 +180,7 @@ async function main() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      content,
-      allowed_mentions: { parse: [] },
-    }),
+    body: JSON.stringify(payload),
   });
 
   if (!discordRes.ok) {

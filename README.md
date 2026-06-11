@@ -64,6 +64,21 @@ node post-worldcup.js
 
 実際にDiscordへ投稿する場合は、`DISCORD_WEBHOOK_URL` を設定して `DRY_RUN` を外してください。
 
+## 投稿イメージ
+
+Discordにはembed形式で投稿します。
+
+```text
+🏆 FIFA World Cup 2026｜明日の試合予定
+
+6月14日(日)（JST）
+04:00  Qatar vs Switzerland
+　🏟️ Levi's Stadium
+
+07:00  Brazil vs Morocco
+　🏟️ MetLife Stadium
+```
+
 ## Troubleshooting
 
 ### API-FootballのFree planで2026 seasonにアクセスできない
