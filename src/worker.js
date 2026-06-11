@@ -21,6 +21,33 @@ function interactionMessageResponse(payload) {
   });
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function splitEmbedsForDiscord(payload) {
+  const embeds = payload.embeds ?? [];
+  if (embeds.length <= 1) {
+    return { initialPayload: payload, followupPayloads: [] };
+  }
+
+  return {
+    initialPayload: { ...payload, embeds: [embeds[0]] },
+    followupPayloads: embeds.slice(1).map((embed) => ({
+      content: "",
+      allowed_mentions: { parse: [] },
+      embeds: [embed],
+    })),
+  };
+}
+
+async function sendDelayedFollowups(interaction, payloads) {
+  for (const payload of payloads) {
+    await sleep(2500);
+    await createFollowupMessage(interaction, payload);
+  }
+}
+
 async function verifyDiscordRequest(request, publicKey, body) {
   const signature = request.headers.get("x-signature-ed25519");
   const timestamp = request.headers.get("x-signature-timestamp");
@@ -268,8 +295,12 @@ async function handleInteraction(request, env, ctx) {
         imageBaseUrl: new URL(request.url).origin,
       });
       if (!payload.files?.length) {
+        const { initialPayload, followupPayloads } = splitEmbedsForDiscord(payload);
+        if (followupPayloads.length) {
+          ctx.waitUntil(sendDelayedFollowups(interaction, followupPayloads));
+        }
         console.log("Responding to /wc lineup immediately", { id: interaction.id });
-        return interactionMessageResponse(payload);
+        return interactionMessageResponse(initialPayload);
       }
       ctx.waitUntil(sendPayloads(interaction, payload));
     } catch (err) {
