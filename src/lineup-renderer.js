@@ -1,6 +1,3 @@
-let wasmReady;
-let ResvgClass;
-
 function escapeXml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -132,23 +129,6 @@ export function buildLineupSvg({ teamName, opponentName, formation, kickoffLabel
 }
 
 export async function renderLineupPng(svg) {
-  if (!wasmReady) {
-    wasmReady = Promise.all([
-      import("@resvg/resvg-wasm"),
-      import("@resvg/resvg-wasm/index_bg.wasm"),
-    ]).then(async ([resvg, wasm]) => {
-      ResvgClass = resvg.Resvg;
-      await resvg.initWasm(wasm.default ?? wasm);
-    });
-  }
-  await wasmReady;
-  const renderer = new ResvgClass(svg, {
-    fitTo: { mode: "width", value: 900 },
-    font: { loadSystemFonts: false, defaultFontFamily: "Arial" },
-  });
-  const image = renderer.render();
-  const png = image.asPng();
-  renderer.free();
-  image.free();
-  return png;
+  const { renderLineupPngInWorker } = await import("./lineup-renderer-worker.js");
+  return renderLineupPngInWorker(svg);
 }
