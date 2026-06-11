@@ -2,8 +2,8 @@ name: Post World Cup Results Summary
 
 on:
   schedule:
-    # 13:10 UTC = 22:10 JST
-    - cron: "10 13 * * *"
+    # 07:00 UTC = 16:00 JST
+    - cron: "0 7 * * *"
   workflow_dispatch:
     inputs:
       target_date:

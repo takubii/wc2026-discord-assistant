@@ -36,7 +36,7 @@ GitHub Actionsの自動投稿に使います。
 GitHub Actionsは以下を実行します。
 
 - `Post World Cup Matches`: 毎日22:00 JSTに翌日の試合予定を投稿
-- `Post World Cup Results Summary`: 毎日22:10 JSTに今日の結果と順位を投稿
+- `Post World Cup Results Summary`: 毎日16:00 JSTに今日の結果と順位を投稿
 
 手動テストはActions画面の `Run workflow` から実行できます。`dry_run` を `true` にするとDiscordへ投稿せず、Actionsログに本文だけ出します。
 
