@@ -64,6 +64,65 @@ node post-worldcup.js
 
 実際にDiscordへ投稿する場合は、`DISCORD_WEBHOOK_URL` を設定して `DRY_RUN` を外してください。
 
+## Slash Command
+
+Cloudflare WorkerでDiscordのSlash Commandも動かせます。GitHub Actionsの定期投稿と同じ本文を返します。
+
+使えるコマンド:
+
+```text
+/wc today
+/wc tomorrow
+/wc date value:2026-06-14
+```
+
+### 1. Discord Applicationを作る
+
+1. Discord Developer PortalでNew Applicationを作成
+2. `General Information` から以下を控える
+   - `APPLICATION ID`
+   - `PUBLIC KEY`
+3. `Bot` からBot Tokenを作成して控える
+4. `OAuth2` のURL Generatorで `applications.commands` を選び、対象サーバーへインストールする
+
+Bot TokenはSlash Command登録にだけ使います。Botを常駐させる必要はありません。
+
+### 2. Cloudflare Workerをdeployする
+
+```powershell
+npm install
+npx wrangler login
+npm run deploy
+npx wrangler secret put DISCORD_PUBLIC_KEY
+```
+
+`DISCORD_PUBLIC_KEY` にはDiscord ApplicationのPublic Keyを入れてください。
+
+`npm run deploy` の出力に出る `https://...workers.dev` を控えます。
+
+### 3. DiscordにInteraction Endpointを設定する
+
+Discord Developer Portalの `General Information` で、`Interactions Endpoint URL` にWorker URLを設定します。
+
+例:
+
+```text
+https://world-cup-2026-scheduler.<your-subdomain>.workers.dev
+```
+
+### 4. Slash Commandを登録する
+
+PowerShellで以下を実行します。
+
+```powershell
+$env:DISCORD_APPLICATION_ID="Discord Application ID"
+$env:DISCORD_BOT_TOKEN="Discord Bot Token"
+$env:DISCORD_GUILD_ID="Discord Server ID"
+npm run register:commands
+```
+
+`DISCORD_GUILD_ID` を指定すると、そのサーバーだけに即時反映されます。指定しない場合はグローバルコマンドになり、反映に時間がかかることがあります。
+
 ## 投稿イメージ
 
 Discordには見出し付きMarkdownで投稿します。embedより文字が大きく見える形式です。
