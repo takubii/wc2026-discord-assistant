@@ -14,6 +14,13 @@ function jsonResponse(body, status = 200) {
   });
 }
 
+function interactionMessageResponse(payload) {
+  return jsonResponse({
+    type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+    data: textOnlyPayload(payload),
+  });
+}
+
 async function verifyDiscordRequest(request, publicKey, body) {
   const signature = request.headers.get("x-signature-ed25519");
   const timestamp = request.headers.get("x-signature-timestamp");
@@ -251,6 +258,31 @@ async function handleInteraction(request, env, ctx) {
         content: "Unsupported command.",
         flags: 64,
       },
+    });
+  }
+
+  const subcommand = interaction.data?.options?.[0];
+  if (subcommand?.name === "lineup") {
+    try {
+      const payload = await buildLineupPayload(optionValue(subcommand.options, "team"));
+      if (!payload.files?.length) {
+        console.log("Responding to /wc lineup immediately", { id: interaction.id });
+        return interactionMessageResponse(payload);
+      }
+      ctx.waitUntil(sendPayloads(interaction, payload));
+    } catch (err) {
+      console.error("Failed immediate /wc lineup response", {
+        id: interaction.id,
+        message: err.message,
+        stack: err.stack,
+      });
+      return interactionMessageResponse({
+        content: `スタメンを取得できませんでした: ${err.message}`,
+        allowed_mentions: { parse: [] },
+      });
+    }
+    return jsonResponse({
+      type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE,
     });
   }
 
