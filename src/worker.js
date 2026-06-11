@@ -1,4 +1,5 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
+import { buildPlayerPayload, buildPositionsPayload, buildSquadPayload } from "./player-data.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
 
 const DISCORD_API_BASE = "https://discord.com/api/v10";
@@ -50,7 +51,21 @@ async function editOriginalInteractionResponse(interaction, payload) {
 
 async function respondToWorldCupCommand(interaction) {
   try {
-    const payload = await buildDiscordPayloadForDate(targetDateFromCommand(interaction));
+    const subcommand = interaction.data?.options?.[0];
+    let payload;
+
+    if (!subcommand || ["today", "tomorrow", "date"].includes(subcommand.name)) {
+      payload = await buildDiscordPayloadForDate(targetDateFromCommand(interaction));
+    } else if (subcommand.name === "squad") {
+      payload = buildSquadPayload(optionValue(subcommand.options, "team"), optionValue(subcommand.options, "position"));
+    } else if (subcommand.name === "player") {
+      payload = buildPlayerPayload(optionValue(subcommand.options, "name"));
+    } else if (subcommand.name === "positions") {
+      payload = buildPositionsPayload(optionValue(subcommand.options, "team"));
+    } else {
+      throw new Error(`Unsupported subcommand: ${subcommand.name}`);
+    }
+
     await editOriginalInteractionResponse(interaction, payload);
   } catch (err) {
     await editOriginalInteractionResponse(interaction, {

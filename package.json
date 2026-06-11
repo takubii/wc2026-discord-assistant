@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "post": "node post-worldcup.js",
+    "update:players": "node scripts/update-players.js",
     "register:commands": "node scripts/register-commands.js",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy"
   },
   "dependencies": {
+    "cheerio": "^1.2.0",
     "discord-interactions": "^4.3.0"
   },
   "devDependencies": {

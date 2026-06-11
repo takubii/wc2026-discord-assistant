@@ -34,6 +34,51 @@ const commands = [
           },
         ],
       },
+      {
+        name: "squad",
+        description: "代表メンバーを表示します",
+        type: 1,
+        options: [
+          {
+            name: "team",
+            description: "国名。例: Japan",
+            type: 3,
+            required: true,
+          },
+          {
+            name: "position",
+            description: "任意のポジション絞り込み。例: Left Winger, DF, FW",
+            type: 3,
+            required: false,
+          },
+        ],
+      },
+      {
+        name: "player",
+        description: "選手名で詳細ポジションを検索します",
+        type: 1,
+        options: [
+          {
+            name: "name",
+            description: "選手名。例: Mitoma",
+            type: 3,
+            required: true,
+          },
+        ],
+      },
+      {
+        name: "positions",
+        description: "国ごとのポジション別リストを表示します",
+        type: 1,
+        options: [
+          {
+            name: "team",
+            description: "国名。例: Japan",
+            type: 3,
+            required: true,
+          },
+        ],
+      },
     ],
   },
 ];
