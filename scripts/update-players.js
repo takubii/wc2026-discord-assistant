@@ -38,6 +38,19 @@ function cleanDetailedPosition(position) {
   return position.replace(/^(Goalkeeper|Defence|Defender|Midfield|Midfielder|Attack|Attacker)\s+-\s+/i, "").trim();
 }
 
+function parseMarketValueEur(value) {
+  const normalized = value.replace(/\s+/g, "").trim();
+  const match = normalized.match(/^€([\d.]+)(bn|m|k)?$/i);
+  if (!match) return null;
+  const amount = Number(match[1]);
+  if (!Number.isFinite(amount)) return null;
+  const suffix = match[2]?.toLowerCase();
+  if (suffix === "bn") return Math.round(amount * 1_000_000_000);
+  if (suffix === "m") return Math.round(amount * 1_000_000);
+  if (suffix === "k") return Math.round(amount * 1_000);
+  return Math.round(amount);
+}
+
 function nameTokenKey(name) {
   return normalize(name).split(" ").filter(Boolean).sort().join(" ");
 }
@@ -128,6 +141,8 @@ async function fetchEspnSquads() {
       broadPositionLabel,
       mainPosition: null,
       otherPositions: [],
+      marketValue: null,
+      marketValueEur: null,
       transfermarktUrl: null,
       positionSource: null,
       positionUpdatedAt: null,
@@ -227,6 +242,7 @@ async function fetchTransfermarktSquad(teamId) {
     const clubLink = $(row).find('td.zentriert a[title][href*="/startseite/verein/"]').first();
     const club = clubLink.find("img[title]").first().attr("title") ?? clubLink.attr("title") ?? "";
     const clubHref = clubLink.attr("href") ?? "";
+    const marketValue = $(row).find("td.rechts.hauptlink a").first().text().replace(/\s+/g, " ").trim();
     if (!name || !href || !position) return;
     if (!players.has(normalize(name))) {
       players.set(normalize(name), {
@@ -234,6 +250,8 @@ async function fetchTransfermarktSquad(teamId) {
         mainPosition: cleanDetailedPosition(position),
         club,
         clubUrl: clubHref ? new URL(clubHref, TRANSFERMARKT_BASE).toString() : null,
+        marketValue: marketValue || null,
+        marketValueEur: marketValue ? parseMarketValueEur(marketValue) : null,
         transfermarktUrl: new URL(href, TRANSFERMARKT_BASE).toString(),
       });
     }
@@ -261,6 +279,8 @@ async function enrichTeamFromTransfermarktSquad(team, teamIds) {
       otherPositions: player.otherPositions ?? [],
       club: tmPlayer.club || player.club,
       clubUrl: tmPlayer.clubUrl ?? player.clubUrl ?? null,
+      marketValue: tmPlayer.marketValue ?? player.marketValue ?? null,
+      marketValueEur: tmPlayer.marketValueEur ?? player.marketValueEur ?? null,
       transfermarktUrl: tmPlayer.transfermarktUrl,
       positionSource: "transfermarkt-team-squad",
       positionUpdatedAt: new Date().toISOString(),

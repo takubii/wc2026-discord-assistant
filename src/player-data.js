@@ -46,14 +46,17 @@ const CLUB_COUNTRY_BY_CLUB = {
   "Al-Shorta": "イラク",
   América: "メキシコ",
   Arsenal: "イングランド",
+  "Arsenal FC": "イングランド",
   "AS Monaco": "モナコ",
   "AS Roma": "イタリア",
   Atalanta: "イタリア",
   "Athletic Club": "スペイン",
   "Atlético Madrid": "スペイン",
+  "Atlético de Madrid": "スペイン",
   "Auckland FC": "ニュージーランド",
   "Aston Villa": "イングランド",
   Augsburg: "ドイツ",
+  "AFC Bournemouth": "イングランド",
   Barcelona: "スペイン",
   "Bayer Leverkusen": "ドイツ",
   "Bayern Munich": "ドイツ",
@@ -62,14 +65,18 @@ const CLUB_COUNTRY_BY_CLUB = {
   Bournemouth: "イングランド",
   Braga: "ポルトガル",
   Brentford: "イングランド",
+  "Brentford FC": "イングランド",
   Brighton: "イングランド",
   Burnley: "イングランド",
   Celtic: "スコットランド",
+  "Celtic FC": "スコットランド",
   Chelsea: "イングランド",
+  "Chelsea FC": "イングランド",
   Chivas: "メキシコ",
   "Chicago Fire": "アメリカ",
   "Club Brugge": "ベルギー",
   Como: "イタリア",
+  "Como 1907": "イタリア",
   Copenhagen: "デンマーク",
   "Crystal Palace": "イングランド",
   "Borussia Dortmund": "ドイツ",
@@ -77,15 +84,19 @@ const CLUB_COUNTRY_BY_CLUB = {
   "Eintracht Frankfurt": "ドイツ",
   Esteghlal: "イラン",
   Everton: "イングランド",
+  "Everton FC": "イングランド",
   Fenerbahce: "トルコ",
   Feyenoord: "オランダ",
+  "Feyenoord Rotterdam": "オランダ",
   "FC Tokyo": "日本",
+  "FC Barcelona": "スペイン",
   Flamengo: "ブラジル",
   Freiburg: "ドイツ",
   Fulham: "イングランド",
   Galatasaray: "トルコ",
   Genk: "ベルギー",
   "Hannover 96": "ドイツ",
+  "Hamburger SV": "ドイツ",
   "Hull City": "イングランド",
   "Inter Miami": "アメリカ",
   "Inter Milan": "イタリア",
@@ -99,10 +110,13 @@ const CLUB_COUNTRY_BY_CLUB = {
   Lens: "フランス",
   "Le Havre": "フランス",
   Lille: "フランス",
+  "LOSC Lille": "フランス",
   Liverpool: "イングランド",
+  "Liverpool FC": "イングランド",
   Lorient: "フランス",
   Lyon: "フランス",
   Mainz: "ドイツ",
+  "1.FSV Mainz 05": "ドイツ",
   "Manchester City": "イングランド",
   "Manchester United": "イングランド",
   Marseille: "フランス",
@@ -120,6 +134,7 @@ const CLUB_COUNTRY_BY_CLUB = {
   Pakhtakor: "ウズベキスタン",
   Palmeiras: "ブラジル",
   Parma: "イタリア",
+  "Parma Calcio 1913": "イタリア",
   "Paris Saint-Germain": "フランス",
   Persepolis: "イラン",
   PSG: "フランス",
@@ -136,6 +151,7 @@ const CLUB_COUNTRY_BY_CLUB = {
   Rijeka: "クロアチア",
   "Sanfrecce Hiroshima": "日本",
   Sassuolo: "イタリア",
+  "SC Freiburg": "ドイツ",
   Sevilla: "スペイン",
   "Slavia Prague": "チェコ",
   "Sporting CP": "ポルトガル",
@@ -220,6 +236,10 @@ function formatClub(player) {
   return country ? `${player.club} / ${country}` : player.club;
 }
 
+function formatMarketValue(player) {
+  return player.marketValue ?? "不明";
+}
+
 function formatPlayerLine(player) {
   const main = jaPosition(player.mainPosition ?? player.broadPosition);
   const positions = [
@@ -227,7 +247,8 @@ function formatPlayerLine(player) {
     ...((player.otherPositions ?? []).length ? [`サブ: ${player.otherPositions.map(jaPosition).join(", ")}`] : []),
   ].join(" / ");
   const club = player.club ? `\n> 所属: ${formatClub(player)}` : "";
-  return `### ${player.name}\n> 得意位置: ${positions}${club}`;
+  const marketValue = `\n> 市場価値: ${formatMarketValue(player)}`;
+  return `### ${player.name}\n> 得意位置: ${positions}${club}${marketValue}`;
 }
 
 function formatCompactPlayerLine(player) {
@@ -236,7 +257,8 @@ function formatCompactPlayerLine(player) {
     ? ` / サブ: ${player.otherPositions.map(jaPosition).join(", ")}`
     : "";
   const club = player.club ? `（${formatClub(player)}）` : "";
-  return `• **${player.name}** - ${main}${other}${club}`;
+  const marketValue = player.marketValue ? ` / ${player.marketValue}` : "";
+  return `• **${player.name}** - ${main}${other}${club}${marketValue}`;
 }
 
 function splitIntoMessages(header, lines, maxLength = 1850) {
@@ -339,8 +361,47 @@ export function buildPositionsPayloads(teamQuery) {
   return splitIntoMessages(`# ${teamLabel(team.team)} ポジション別`, lines);
 }
 
+export function buildNotablePayloads({ teamQuery = "", positionQuery = "", limit = 20 } = {}) {
+  const team = teamQuery ? findTeam(teamQuery) : null;
+  if (teamQuery && !team) {
+    return [{
+      content: `チームが見つかりませんでした: ${teamQuery}`,
+      allowed_mentions: { parse: [] },
+    }];
+  }
+
+  const position = normalizePositionQuery(positionQuery);
+  const normalizedPosition = normalize(position);
+  const parsedLimit = Math.min(Math.max(Number(limit) || 20, 5), 50);
+  const players = (team ? team.players : allPlayers())
+    .filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0)
+    .filter((player) => {
+      if (!normalizedPosition) return true;
+      return [player.mainPosition, player.broadPosition, player.broadPositionLabel, ...(player.otherPositions ?? [])]
+        .filter(Boolean)
+        .some((candidate) => normalize(candidate).includes(normalizedPosition));
+    })
+    .sort((a, b) => b.marketValueEur - a.marketValueEur)
+    .slice(0, parsedLimit);
+
+  const scope = team ? teamLabel(team.team) : "全出場国";
+  const suffix = normalizedPosition ? ` / ${jaPosition(position)}` : "";
+  const header = `# 注目選手ランキング\n市場価値ベース / ${scope}${suffix}\n上位${players.length}名`;
+  const lines = players.length
+    ? players.map((player, index) => {
+        const rank = index + 1;
+        const position = jaPosition(player.mainPosition ?? player.broadPosition);
+        const club = player.club ? ` / ${formatClub(player)}` : "";
+        return `**${rank}. ${player.name}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)} / ${position}${club}`;
+      })
+    : ["市場価値が入っている選手が見つかりませんでした。"];
+
+  return splitIntoMessages(header, lines);
+}
+
 export function playersMetadata() {
   const playerCount = allPlayers().length;
   const enrichedCount = allPlayers().filter((player) => player.mainPosition).length;
-  return { generatedAt: PLAYER_DATA.generatedAt, teamCount: PLAYER_DATA.teams.length, playerCount, enrichedCount };
+  const valuedCount = allPlayers().filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0).length;
+  return { generatedAt: PLAYER_DATA.generatedAt, teamCount: PLAYER_DATA.teams.length, playerCount, enrichedCount, valuedCount };
 }

@@ -82,6 +82,34 @@ const commands = [
         ],
       },
       {
+        name: "notable",
+        description: "市場価値ベースの注目選手ランキングを表示します",
+        type: 1,
+        options: [
+          {
+            name: "team",
+            description: "任意の国名。例: 日本, France, イングランド",
+            type: 3,
+            required: false,
+            autocomplete: true,
+          },
+          {
+            name: "position",
+            description: "任意のポジション絞り込み。例: 左ウイング, CF, 攻撃的MF",
+            type: 3,
+            required: false,
+          },
+          {
+            name: "limit",
+            description: "表示人数。5〜50、省略時20",
+            type: 4,
+            required: false,
+            min_value: 5,
+            max_value: 50,
+          },
+        ],
+      },
+      {
         name: "results",
         description: "指定日の結果を表示します",
         type: 1,
