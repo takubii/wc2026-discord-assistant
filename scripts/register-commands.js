@@ -160,7 +160,7 @@ const commands = [
       },
       {
         name: "lineup",
-        description: "直近試合の公式スタメンを画像で表示します",
+        description: "直近試合の公式スタメンを表示します",
         type: 1,
         options: [
           {

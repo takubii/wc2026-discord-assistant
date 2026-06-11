@@ -1,6 +1,4 @@
-import { buildLineupSvg, renderLineupPng } from "./lineup-renderer.js";
 import { canonicalTeamName, teamLabel } from "./team-data.js";
-import { ymdInTokyo } from "./schedule.js";
 
 const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -99,42 +97,25 @@ function eventMeta(event) {
   return `${displayDateInTokyo(event.date)} ${hmInTokyo(event.date)} JST`;
 }
 
-function slug(value) {
-  return String(value ?? "team").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "team";
+function positionLabel(player) {
+  return player.positionAbbreviation ? `[${player.positionAbbreviation}] ` : "";
 }
 
-async function lineupImageFile({ lineup, opponentName, event }) {
-  const kickoffLabel = `${hmInTokyo(event.date)} JST`;
-  const svg = buildLineupSvg({
-    teamName: teamLabel(lineup.teamName),
-    opponentName: teamLabel(opponentName),
-    formation: lineup.formation,
-    kickoffLabel,
-    starters: lineup.starters,
-    substitutes: lineup.substitutes,
-  });
-  try {
-    const data = await withTimeout(renderLineupPng(svg), 3000, "PNG render timeout");
-    return {
-      name: `${slug(lineup.teamName)}-lineup.png`,
-      type: "image/png",
-      data,
-    };
-  } catch (err) {
-    console.warn(`PNG render failed, falling back to SVG: ${err.message}`);
-    return {
-      name: `${slug(lineup.teamName)}-lineup.svg`,
-      type: "image/svg+xml",
-      data: new TextEncoder().encode(svg),
-    };
-  }
+function formatPlayerList(players) {
+  return players.map((player) => `• ${positionLabel(player)}${player.name}`).join("\n");
 }
 
-function withTimeout(promise, ms, message) {
-  return Promise.race([
-    promise,
-    new Promise((_, reject) => setTimeout(() => reject(new Error(message)), ms)),
-  ]);
+function formatLineup(lineup) {
+  const substitutes = lineup.substitutes.slice(0, 15);
+  return [
+    `## ${teamLabel(lineup.teamName)} ${lineup.formation ? `(${lineup.formation})` : ""}`.trim(),
+    "",
+    "**先発**",
+    formatPlayerList(lineup.starters),
+    "",
+    "**控え**",
+    substitutes.length ? formatPlayerList(substitutes) : "不明",
+  ].join("\n");
 }
 
 export async function buildLineupPayload(teamQuery = "") {
@@ -164,19 +145,12 @@ export async function buildLineupPayload(teamQuery = "") {
     };
   }
 
-  const files = [];
-  for (const lineup of lineups.slice(0, 2)) {
-    const opponentName = lineups.find((candidate) => candidate.teamName !== lineup.teamName)?.teamName ?? "";
-    files.push(await lineupImageFile({ lineup, opponentName, event }));
-  }
-
   return {
     content: [
       ...contentHeader,
       "",
-      ...lineups.slice(0, 2).map((lineup) => `${teamLabel(lineup.teamName)}: ${lineup.formation || "formation TBD"}`),
-    ].join("\n"),
+      ...lineups.slice(0, 2).map(formatLineup),
+    ].join("\n\n"),
     allowed_mentions: { parse: [] },
-    files,
   };
 }
