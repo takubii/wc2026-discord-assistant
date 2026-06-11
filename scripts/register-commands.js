@@ -158,6 +158,20 @@ const commands = [
           },
         ],
       },
+      {
+        name: "lineup",
+        description: "直近試合の公式スタメンを画像で表示します",
+        type: 1,
+        options: [
+          {
+            name: "team",
+            description: "任意の国名。省略すると直近の試合。例: 日本, Netherlands",
+            type: 3,
+            required: false,
+            autocomplete: true,
+          },
+        ],
+      },
     ],
   },
 ];

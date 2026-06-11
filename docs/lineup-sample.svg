@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-label="Sample lineup half pitch">
+  <defs>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b7a43"/>
+      <stop offset="1" stop-color="#075f34"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#062818" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .title { font: 800 34px Arial, sans-serif; fill: #f7fff8; }
+      .meta { font: 600 20px Arial, sans-serif; fill: #d8f6df; }
+      .line { stroke: rgba(255,255,255,.76); stroke-width: 4; fill: none; }
+      .thin { stroke: rgba(255,255,255,.48); stroke-width: 2; fill: none; }
+      .card { fill: #f4fff7; stroke: rgba(4,57,34,.55); stroke-width: 2; }
+      .pos { font: 800 15px Arial, sans-serif; fill: #075331; }
+      .name { font: 800 20px Arial, sans-serif; fill: #073c27; }
+      .bench-title { font: 800 20px Arial, sans-serif; fill: #f7fff8; }
+      .bench { font: 600 17px Arial, sans-serif; fill: #d8f6df; }
+    </style>
+  </defs>
+
+  <rect width="900" height="1200" fill="#052f20"/>
+  <rect x="48" y="44" width="804" height="1112" rx="30" fill="url(#grass)" filter="url(#shadow)"/>
+
+  <text x="450" y="102" text-anchor="middle" class="title">Japan vs Netherlands</text>
+  <text x="450" y="136" text-anchor="middle" class="meta">Sample lineup / 4-2-3-1 / JST 05:00</text>
+
+  <rect x="94" y="178" width="712" height="782" rx="10" class="line"/>
+  <line x1="94" y1="178" x2="806" y2="178" class="thin"/>
+  <line x1="94" y1="960" x2="806" y2="960" class="line"/>
+  <path d="M332 178 A118 118 0 0 0 568 178" class="thin"/>
+  <circle cx="450" cy="178" r="6" fill="rgba(255,255,255,.8)"/>
+
+  <rect x="242" y="826" width="416" height="134" class="line"/>
+  <rect x="348" y="908" width="204" height="52" class="thin"/>
+  <path d="M346 826 A104 104 0 0 1 554 826" class="thin"/>
+
+  <g transform="translate(450 270)">
+    <rect x="-94" y="-34" width="188" height="68" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">CF</text>
+    <text x="0" y="21" text-anchor="middle" class="name">Ayase Ueda</text>
+  </g>
+
+  <g transform="translate(176 414)">
+    <rect x="-82" y="-33" width="164" height="66" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">LW</text>
+    <text x="0" y="20" text-anchor="middle" class="name">Mitoma</text>
+  </g>
+  <g transform="translate(450 420)">
+    <rect x="-92" y="-34" width="184" height="68" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">AM</text>
+    <text x="0" y="21" text-anchor="middle" class="name">Kamada</text>
+  </g>
+  <g transform="translate(724 414)">
+    <rect x="-82" y="-33" width="164" height="66" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">RW</text>
+    <text x="0" y="20" text-anchor="middle" class="name">Kubo</text>
+  </g>
+
+  <g transform="translate(350 585)">
+    <rect x="-92" y="-34" width="184" height="68" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">CM</text>
+    <text x="0" y="21" text-anchor="middle" class="name">Ao Tanaka</text>
+  </g>
+  <g transform="translate(550 585)">
+    <rect x="-92" y="-34" width="184" height="68" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">DM</text>
+    <text x="0" y="21" text-anchor="middle" class="name">Endo</text>
+  </g>
+
+  <g transform="translate(146 750)">
+    <rect x="-84" y="-33" width="168" height="66" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">LB</text>
+    <text x="0" y="20" text-anchor="middle" class="name">H. Ito</text>
+  </g>
+  <g transform="translate(350 762)">
+    <rect x="-88" y="-33" width="176" height="66" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">CB</text>
+    <text x="0" y="20" text-anchor="middle" class="name">Itakura</text>
+  </g>
+  <g transform="translate(550 762)">
+    <rect x="-92" y="-33" width="184" height="66" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">CB</text>
+    <text x="0" y="20" text-anchor="middle" class="name">Tomiyasu</text>
+  </g>
+  <g transform="translate(754 750)">
+    <rect x="-88" y="-33" width="176" height="66" rx="18" class="card"/>
+    <text x="0" y="-8" text-anchor="middle" class="pos">RB</text>
+    <text x="0" y="20" text-anchor="middle" class="name">Sugawara</text>
+  </g>
+
+  <g transform="translate(450 900)">
+    <rect x="-104" y="-35" width="208" height="70" rx="19" class="card"/>
+    <text x="0" y="-9" text-anchor="middle" class="pos">GK</text>
+    <text x="0" y="21" text-anchor="middle" class="name">Zion Suzuki</text>
+  </g>
+
+  <rect x="84" y="1002" width="732" height="104" rx="18" fill="rgba(6,42,27,.74)" stroke="rgba(216,246,223,.3)"/>
+  <text x="112" y="1040" class="bench-title">Bench</text>
+  <text x="112" y="1074" class="bench">Osako, Nagatomo, Watanabe, Doan, Maeda, Nakamura, Sano, Ogawa</text>
+
+  <text x="450" y="1140" text-anchor="middle" class="meta">Official lineup not available yet - layout sample</text>
+</svg>

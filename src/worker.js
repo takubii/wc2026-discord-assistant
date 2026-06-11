@@ -1,4 +1,5 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
+import { buildLineupPayload } from "./lineup.js";
 import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildSquadPayloads } from "./player-data.js";
 import { buildDailySummaryPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
@@ -49,10 +50,11 @@ function targetDateFromCommand(interaction) {
 
 async function editOriginalInteractionResponse(interaction, payload) {
   const url = `${DISCORD_API_BASE}/webhooks/${interaction.application_id}/${interaction.token}/messages/@original`;
+  const { body, headers } = discordRequestBody(payload);
   const res = await fetch(url, {
     method: "PATCH",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
+    headers,
+    body,
   });
 
   if (!res.ok) {
@@ -62,15 +64,36 @@ async function editOriginalInteractionResponse(interaction, payload) {
 
 async function createFollowupMessage(interaction, payload) {
   const url = `${DISCORD_API_BASE}/webhooks/${interaction.application_id}/${interaction.token}`;
+  const { body, headers } = discordRequestBody(payload);
   const res = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
+    headers,
+    body,
   });
 
   if (!res.ok) {
     throw new Error(`Discord follow-up error: ${res.status} ${await res.text()}`);
   }
+}
+
+function discordRequestBody(payload) {
+  if (!payload.files?.length) {
+    return {
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    };
+  }
+
+  const { files, ...jsonPayload } = payload;
+  const form = new FormData();
+  form.append("payload_json", JSON.stringify({
+    ...jsonPayload,
+    attachments: files.map((file, id) => ({ id, filename: file.name })),
+  }));
+  files.forEach((file, index) => {
+    form.append(`files[${index}]`, new Blob([file.data], { type: file.type }), file.name);
+  });
+  return { headers: {}, body: form };
 }
 
 async function sendPayloads(interaction, payloads) {
@@ -108,6 +131,8 @@ async function respondToWorldCupCommand(interaction) {
       payloads = await buildDailySummaryPayloads(dateOptionOrToday(subcommand.options));
     } else if (subcommand.name === "japan") {
       payloads = await buildTeamSchedulePayloads("Japan", optionValue(subcommand.options, "scope") ?? "future");
+    } else if (subcommand.name === "lineup") {
+      payloads = await buildLineupPayload(optionValue(subcommand.options, "team"));
     } else {
       throw new Error(`Unsupported subcommand: ${subcommand.name}`);
     }

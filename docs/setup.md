@@ -52,6 +52,8 @@ Slash Command用です。
 
 Bot Tokenはコマンド登録にだけ使います。Botを常駐させる必要はありません。
 
+`/wc lineup` は公式スタメンが取得できた場合だけ画像を生成して添付します。画像はDiscord返信時に一時的に添付するだけで、Cloudflare R2や外部ストレージには保存しません。
+
 ## Cloudflare Worker
 
 Slash Commandの受け口です。
