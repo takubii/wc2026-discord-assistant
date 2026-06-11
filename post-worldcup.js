@@ -3,6 +3,8 @@ const ESPN_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
 const THESPORTSDB_URL =
   "https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id=4429&s=2026";
+const ENGLAND_FLAG = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}";
+const SCOTLAND_FLAG = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}";
 const VENUE_LOCATIONS = {
   "AT&T Stadium": "Arlington, Texas, USA",
   "BC Place": "Vancouver, British Columbia, Canada",
@@ -39,7 +41,7 @@ const TEAM_FLAGS = {
   CZE: "🇨🇿",
   ECU: "🇪🇨",
   EGY: "🇪🇬",
-  ENG: "🏴",
+  ENG: ENGLAND_FLAG,
   ESP: "🇪🇸",
   FRA: "🇫🇷",
   GER: "🇩🇪",
@@ -61,7 +63,7 @@ const TEAM_FLAGS = {
   POR: "🇵🇹",
   QAT: "🇶🇦",
   RSA: "🇿🇦",
-  SCO: "🏴",
+  SCO: SCOTLAND_FLAG,
   SEN: "🇸🇳",
   SUI: "🇨🇭",
   SWE: "🇸🇪",
