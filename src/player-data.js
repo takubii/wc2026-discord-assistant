@@ -1,28 +1,5 @@
 import { PLAYER_DATA } from "./players.generated.js";
-
-const TEAM_LABELS = {
-  Argentina: "アルゼンチン",
-  Australia: "オーストラリア",
-  Belgium: "ベルギー",
-  Brazil: "ブラジル",
-  Canada: "カナダ",
-  Colombia: "コロンビア",
-  Croatia: "クロアチア",
-  England: "イングランド",
-  France: "フランス",
-  Germany: "ドイツ",
-  Japan: "日本",
-  Mexico: "メキシコ",
-  Morocco: "モロッコ",
-  Netherlands: "オランダ",
-  Portugal: "ポルトガル",
-  Scotland: "スコットランド",
-  "South Korea": "韓国",
-  Spain: "スペイン",
-  Switzerland: "スイス",
-  "United States": "アメリカ",
-  Uruguay: "ウルグアイ",
-};
+import { canonicalTeamName, normalizeText, teamLabel } from "./team-data.js";
 const BROAD_POSITION_LABELS = {
   GK: "GK",
   DF: "DF",
@@ -50,18 +27,143 @@ const POSITION_ALIASES = {
   CF: "Centre-Forward",
 };
 const BROAD_ORDER = ["GK", "DF", "MF", "FW"];
+const CLUB_COUNTRY_BY_CLUB = {
+  "AC Milan": "イタリア",
+  Ajax: "オランダ",
+  "Al Ahly": "エジプト",
+  "Al Ain": "UAE",
+  "Al Arabi": "カタール",
+  "Al Duhail": "カタール",
+  "Al Gharafa": "カタール",
+  "Al Hilal": "サウジアラビア",
+  "Al Ittihad": "サウジアラビア",
+  "Al Nassr": "サウジアラビア",
+  "Al Qadsiah": "サウジアラビア",
+  "Al Rayyan": "カタール",
+  "Al Sadd": "カタール",
+  "Al Wakrah": "カタール",
+  "Al-Zawraa": "イラク",
+  "Al-Shorta": "イラク",
+  América: "メキシコ",
+  Arsenal: "イングランド",
+  "AS Monaco": "モナコ",
+  "AS Roma": "イタリア",
+  Atalanta: "イタリア",
+  "Athletic Club": "スペイン",
+  "Atlético Madrid": "スペイン",
+  "Auckland FC": "ニュージーランド",
+  "Aston Villa": "イングランド",
+  Augsburg: "ドイツ",
+  Barcelona: "スペイン",
+  "Bayer Leverkusen": "ドイツ",
+  "Bayern Munich": "ドイツ",
+  Benfica: "ポルトガル",
+  Bologna: "イタリア",
+  Bournemouth: "イングランド",
+  Braga: "ポルトガル",
+  Brentford: "イングランド",
+  Brighton: "イングランド",
+  Burnley: "イングランド",
+  Celtic: "スコットランド",
+  Chelsea: "イングランド",
+  Chivas: "メキシコ",
+  "Chicago Fire": "アメリカ",
+  "Club Brugge": "ベルギー",
+  Como: "イタリア",
+  Copenhagen: "デンマーク",
+  "Crystal Palace": "イングランド",
+  "Borussia Dortmund": "ドイツ",
+  "Borussia Mönchengladbach": "ドイツ",
+  "Eintracht Frankfurt": "ドイツ",
+  Esteghlal: "イラン",
+  Everton: "イングランド",
+  Fenerbahce: "トルコ",
+  Feyenoord: "オランダ",
+  "FC Tokyo": "日本",
+  Flamengo: "ブラジル",
+  Freiburg: "ドイツ",
+  Fulham: "イングランド",
+  Galatasaray: "トルコ",
+  Genk: "ベルギー",
+  "Hannover 96": "ドイツ",
+  "Hull City": "イングランド",
+  "Inter Miami": "アメリカ",
+  "Inter Milan": "イタリア",
+  "Istanbul Basaksehir": "トルコ",
+  Juventus: "イタリア",
+  Kashima: "日本",
+  "Kashima Antlers": "日本",
+  LAFC: "アメリカ",
+  Leeds: "イングランド",
+  "Leeds United": "イングランド",
+  Lens: "フランス",
+  "Le Havre": "フランス",
+  Lille: "フランス",
+  Liverpool: "イングランド",
+  Lorient: "フランス",
+  Lyon: "フランス",
+  Mainz: "ドイツ",
+  "Manchester City": "イングランド",
+  "Manchester United": "イングランド",
+  Marseille: "フランス",
+  Midtjylland: "デンマーク",
+  Napoli: "イタリア",
+  "NEC Nijmegen": "オランダ",
+  Newcastle: "イングランド",
+  "Newcastle United": "イングランド",
+  Nice: "フランス",
+  "New York City FC": "アメリカ",
+  "Nottingham Forest": "イングランド",
+  "Orlando City": "アメリカ",
+  "Orlando Pirates": "南アフリカ",
+  Pafos: "キプロス",
+  Pakhtakor: "ウズベキスタン",
+  Palmeiras: "ブラジル",
+  Parma: "イタリア",
+  "Paris Saint-Germain": "フランス",
+  Persepolis: "イラン",
+  PSG: "フランス",
+  "PSV Eindhoven": "オランダ",
+  Pyramids: "エジプト",
+  Rangers: "スコットランド",
+  "RB Leipzig": "ドイツ",
+  "Real Betis": "スペイン",
+  "Real Madrid": "スペイン",
+  "Real Sociedad": "スペイン",
+  Rennes: "フランス",
+  Reims: "フランス",
+  "River Plate": "アルゼンチン",
+  Rijeka: "クロアチア",
+  "Sanfrecce Hiroshima": "日本",
+  Sassuolo: "イタリア",
+  Sevilla: "スペイン",
+  "Slavia Prague": "チェコ",
+  "Sporting CP": "ポルトガル",
+  "Sparta Prague": "チェコ",
+  Strasbourg: "フランス",
+  Stuttgart: "ドイツ",
+  "Sint-Truiden": "ベルギー",
+  Sunderland: "イングランド",
+  Swansea: "ウェールズ",
+  "Swansea City": "ウェールズ",
+  Torino: "イタリア",
+  Toronto: "カナダ",
+  "Toronto FC": "カナダ",
+  "Tottenham Hotspur": "イングランド",
+  Tractor: "イラン",
+  "TSG Hoffenheim": "ドイツ",
+  "Vancouver Whitecaps": "カナダ",
+  "Viktoria Plzen": "チェコ",
+  Villarreal: "スペイン",
+  "VfL Wolfsburg": "ドイツ",
+  "Werder Bremen": "ドイツ",
+  "Wolverhampton Wanderers": "イングランド",
+  "Young Boys": "スイス",
+  Zamalek: "エジプト",
+};
 
 function normalize(value) {
-  return value
-    .normalize("NFKD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
-
-function teamLabel(teamName) {
-  return TEAM_LABELS[teamName] ?? teamName;
+  return normalizeText(value);
 }
 
 function normalizePositionQuery(value) {
@@ -70,9 +172,11 @@ function normalizePositionQuery(value) {
 }
 
 function findTeam(teamQuery) {
-  const normalized = normalize(teamQuery ?? "");
+  const canonical = canonicalTeamName(teamQuery ?? "");
+  const normalized = normalize(canonical || teamQuery || "");
   if (!normalized) return null;
   return (
+    PLAYER_DATA.teams.find((team) => normalize(team.team) === normalize(canonical)) ??
     PLAYER_DATA.teams.find((team) => normalize(team.team) === normalized) ??
     PLAYER_DATA.teams.find((team) => normalize(team.team).includes(normalized))
   );
@@ -110,13 +214,19 @@ function jaPosition(position) {
   return map[position] ?? position;
 }
 
+function formatClub(player) {
+  if (!player.club) return "";
+  const country = CLUB_COUNTRY_BY_CLUB[player.club];
+  return country ? `${player.club} / ${country}` : player.club;
+}
+
 function formatPlayerLine(player) {
   const main = jaPosition(player.mainPosition ?? player.broadPosition);
   const positions = [
     main,
     ...((player.otherPositions ?? []).length ? [`サブ: ${player.otherPositions.map(jaPosition).join(", ")}`] : []),
   ].join(" / ");
-  const club = player.club ? `\n> 所属: ${player.club}` : "";
+  const club = player.club ? `\n> 所属: ${formatClub(player)}` : "";
   return `### ${player.name}\n> 得意位置: ${positions}${club}`;
 }
 
@@ -125,7 +235,7 @@ function formatCompactPlayerLine(player) {
   const other = (player.otherPositions ?? []).length
     ? ` / サブ: ${player.otherPositions.map(jaPosition).join(", ")}`
     : "";
-  const club = player.club ? `（${player.club}）` : "";
+  const club = player.club ? `（${formatClub(player)}）` : "";
   return `• **${player.name}** - ${main}${other}${club}`;
 }
 

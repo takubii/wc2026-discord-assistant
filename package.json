@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "post": "node post-worldcup.js",
+    "post:summary": "node post-worldcup-summary.js",
     "update:players": "node scripts/update-players.js",
     "register:commands": "node scripts/register-commands.js",
     "dev": "wrangler dev",

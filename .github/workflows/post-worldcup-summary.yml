@@ -1,0 +1,33 @@
+name: Post World Cup Results Summary
+
+on:
+  schedule:
+    # 13:10 UTC = 22:10 JST
+    - cron: "10 13 * * *"
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: "Optional Tokyo date to post, YYYY-MM-DD"
+        required: false
+      dry_run:
+        description: "Print content without posting to Discord"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node post-worldcup-summary.js
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TARGET_DATE: ${{ github.event.inputs.target_date }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}

@@ -41,9 +41,10 @@ const commands = [
         options: [
           {
             name: "team",
-            description: "国名。例: Japan",
+            description: "国名。例: 日本, Japan, イングランド",
             type: 3,
             required: true,
+            autocomplete: true,
           },
           {
             name: "position",
@@ -73,9 +74,59 @@ const commands = [
         options: [
           {
             name: "team",
-            description: "国名。例: Japan",
+            description: "国名。例: 日本, Japan, イングランド",
             type: 3,
             required: true,
+            autocomplete: true,
+          },
+        ],
+      },
+      {
+        name: "results",
+        description: "指定日の結果を表示します",
+        type: 1,
+        options: [
+          {
+            name: "date",
+            description: "JSTの日付。省略すると今日。例: 2026-06-14",
+            type: 3,
+            required: false,
+          },
+        ],
+      },
+      {
+        name: "standings",
+        description: "全グループの順位を表示します",
+        type: 1,
+      },
+      {
+        name: "summary",
+        description: "指定日の結果と全グループ順位をまとめて表示します",
+        type: 1,
+        options: [
+          {
+            name: "date",
+            description: "JSTの日付。省略すると今日。例: 2026-06-14",
+            type: 3,
+            required: false,
+          },
+        ],
+      },
+      {
+        name: "japan",
+        description: "日本戦だけを表示します",
+        type: 1,
+        options: [
+          {
+            name: "scope",
+            description: "表示範囲",
+            type: 3,
+            required: false,
+            choices: [
+              { name: "今後の試合", value: "future" },
+              { name: "今日の試合", value: "today" },
+              { name: "全試合", value: "all" },
+            ],
           },
         ],
       },

@@ -1,6 +1,8 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 import { buildPlayerPayloads, buildPositionsPayloads, buildSquadPayloads } from "./player-data.js";
+import { buildDailySummaryPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
+import { teamChoices } from "./team-data.js";
 
 const DISCORD_API_BASE = "https://discord.com/api/v10";
 
@@ -20,6 +22,15 @@ async function verifyDiscordRequest(request, publicKey, body) {
 
 function optionValue(options, name) {
   return options?.find((option) => option.name === name)?.value;
+}
+
+function dateOptionOrToday(options) {
+  const value = optionValue(options, "date");
+  if (!value) return todayInTokyo();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    throw new Error("日付は YYYY-MM-DD 形式で指定してください。例: 2026-06-14");
+  }
+  return value;
 }
 
 function targetDateFromCommand(interaction) {
@@ -83,6 +94,14 @@ async function respondToWorldCupCommand(interaction) {
       payloads = buildPlayerPayloads(optionValue(subcommand.options, "name"));
     } else if (subcommand.name === "positions") {
       payloads = buildPositionsPayloads(optionValue(subcommand.options, "team"));
+    } else if (subcommand.name === "results") {
+      payloads = await buildResultsPayloads(dateOptionOrToday(subcommand.options));
+    } else if (subcommand.name === "standings") {
+      payloads = await buildStandingsPayloads();
+    } else if (subcommand.name === "summary") {
+      payloads = await buildDailySummaryPayloads(dateOptionOrToday(subcommand.options));
+    } else if (subcommand.name === "japan") {
+      payloads = await buildTeamSchedulePayloads("Japan", optionValue(subcommand.options, "scope") ?? "future");
     } else {
       throw new Error(`Unsupported subcommand: ${subcommand.name}`);
     }
@@ -96,6 +115,30 @@ async function respondToWorldCupCommand(interaction) {
   }
 }
 
+function focusedOption(options = []) {
+  for (const option of options) {
+    if (option.focused) return option;
+    const child = focusedOption(option.options);
+    if (child) return child;
+  }
+  return null;
+}
+
+function autocompleteResponse(interaction) {
+  const focused = focusedOption(interaction.data?.options);
+  if (focused?.name === "team") {
+    return jsonResponse({
+      type: InteractionResponseType.APPLICATION_COMMAND_AUTOCOMPLETE_RESULT,
+      data: { choices: teamChoices(focused.value) },
+    });
+  }
+
+  return jsonResponse({
+    type: InteractionResponseType.APPLICATION_COMMAND_AUTOCOMPLETE_RESULT,
+    data: { choices: [] },
+  });
+}
+
 async function handleInteraction(request, env, ctx) {
   const body = await request.arrayBuffer();
   const isValid = await verifyDiscordRequest(request, env.DISCORD_PUBLIC_KEY, body);
@@ -106,6 +149,10 @@ async function handleInteraction(request, env, ctx) {
   const interaction = JSON.parse(new TextDecoder().decode(body));
   if (interaction.type === InteractionType.PING) {
     return jsonResponse({ type: InteractionResponseType.PONG });
+  }
+
+  if (interaction.type === InteractionType.APPLICATION_COMMAND_AUTOCOMPLETE && interaction.data?.name === "wc") {
+    return autocompleteResponse(interaction);
   }
 
   if (interaction.type !== InteractionType.APPLICATION_COMMAND || interaction.data?.name !== "wc") {

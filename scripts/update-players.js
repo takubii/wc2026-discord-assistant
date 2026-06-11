@@ -123,6 +123,7 @@ async function fetchEspnSquads() {
       team: currentTeam.team,
       name: player.name,
       club: player.club,
+      clubUrl: null,
       broadPosition,
       broadPositionLabel,
       mainPosition: null,
@@ -223,13 +224,16 @@ async function fetchTransfermarktSquad(teamId) {
     const href = link.attr("href");
     const cells = $(row).find("table.inline-table td").toArray();
     const position = $(cells[2]).text().replace(/\s+/g, " ").trim();
-    const club = $(row).find('td.zentriert a[title] img[title], td.zentriert a[title]').first().attr("title") ?? "";
+    const clubLink = $(row).find('td.zentriert a[title][href*="/startseite/verein/"]').first();
+    const club = clubLink.find("img[title]").first().attr("title") ?? clubLink.attr("title") ?? "";
+    const clubHref = clubLink.attr("href") ?? "";
     if (!name || !href || !position) return;
     if (!players.has(normalize(name))) {
       players.set(normalize(name), {
         name,
         mainPosition: cleanDetailedPosition(position),
         club,
+        clubUrl: clubHref ? new URL(clubHref, TRANSFERMARKT_BASE).toString() : null,
         transfermarktUrl: new URL(href, TRANSFERMARKT_BASE).toString(),
       });
     }
@@ -255,6 +259,8 @@ async function enrichTeamFromTransfermarktSquad(team, teamIds) {
     Object.assign(player, {
       mainPosition: tmPlayer.mainPosition,
       otherPositions: player.otherPositions ?? [],
+      club: tmPlayer.club || player.club,
+      clubUrl: tmPlayer.clubUrl ?? player.clubUrl ?? null,
       transfermarktUrl: tmPlayer.transfermarktUrl,
       positionSource: "transfermarkt-team-squad",
       positionUpdatedAt: new Date().toISOString(),
