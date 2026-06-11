@@ -12,6 +12,8 @@
     "deploy": "wrangler deploy"
   },
   "dependencies": {
+    "@expo-google-fonts/roboto": "^0.4.3",
+    "@resvg/resvg-wasm": "^2.6.2",
     "cheerio": "^1.2.0",
     "discord-interactions": "^4.3.0"
   },

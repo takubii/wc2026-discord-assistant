@@ -1,5 +1,5 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
-import { buildLineupPayload } from "./lineup.js";
+import { buildLineupImage, buildLineupPayload } from "./lineup.js";
 import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildSquadPayloads } from "./player-data.js";
 import { buildDailySummaryPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
@@ -264,7 +264,9 @@ async function handleInteraction(request, env, ctx) {
   const subcommand = interaction.data?.options?.[0];
   if (subcommand?.name === "lineup") {
     try {
-      const payload = await buildLineupPayload(optionValue(subcommand.options, "team"));
+      const payload = await buildLineupPayload(optionValue(subcommand.options, "team"), {
+        imageBaseUrl: new URL(request.url).origin,
+      });
       if (!payload.files?.length) {
         console.log("Responding to /wc lineup immediately", { id: interaction.id });
         return interactionMessageResponse(payload);
@@ -295,6 +297,25 @@ async function handleInteraction(request, env, ctx) {
 export default {
   async fetch(request, env, ctx) {
     if (request.method === "GET") {
+      const url = new URL(request.url);
+      if (url.pathname === "/lineup-image") {
+        try {
+          const image = await buildLineupImage(url.searchParams.get("event"), url.searchParams.get("team"));
+          return new Response(image.data, {
+            headers: {
+              "Content-Type": "image/png",
+              "Content-Disposition": `inline; filename="${image.filename}"`,
+              "Cache-Control": "public, max-age=300",
+            },
+          });
+        } catch (err) {
+          console.error("Lineup image render failed", {
+            message: err?.message ?? String(err),
+            stack: err.stack,
+          });
+          return new Response(`Lineup image render failed: ${err?.message ?? String(err)}`, { status: 500 });
+        }
+      }
       return new Response("World Cup 2026 scheduler worker is running.");
     }
 

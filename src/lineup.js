@@ -1,3 +1,4 @@
+import { buildLineupSvg, renderLineupPng } from "./lineup-renderer.js";
 import { canonicalTeamName, teamLabel } from "./team-data.js";
 import { formatFifaRankLine } from "./fifa-rankings.js";
 
@@ -124,8 +125,49 @@ function formatLineup(lineup) {
   ].join("\n");
 }
 
-export async function buildLineupPayload(teamQuery = "") {
-  const event = findTargetEvent(await fetchScoreboardEvents(), teamQuery);
+function slug(value) {
+  return String(value ?? "team").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "team";
+}
+
+function withTimeout(promise, ms, message) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => setTimeout(() => reject(new Error(message)), ms)),
+  ]);
+}
+
+function imageUrl(baseUrl, event, lineup) {
+  const url = new URL("/lineup-image", baseUrl);
+  url.searchParams.set("event", event.id);
+  url.searchParams.set("team", lineup.teamName);
+  url.searchParams.set("v", "2");
+  return url.toString();
+}
+
+function lineupImageEmbed(baseUrl, event, lineup) {
+  return {
+    title: `${teamLabel(lineup.teamName)} ${lineup.formation ? `(${lineup.formation})` : ""}`.trim(),
+    color: 0x0b7a43,
+    image: { url: imageUrl(baseUrl, event, lineup) },
+  };
+}
+
+function lineupSummary(lineup) {
+  return `• **${teamLabel(lineup.teamName)}** ${lineup.formation || "formation TBD"}`;
+}
+
+async function eventWithLineups(eventId, teamQuery = "") {
+  const events = await fetchScoreboardEvents();
+  const event = eventId ? events.find((candidate) => candidate.id === eventId) : findTargetEvent(events, teamQuery);
+  if (!event) {
+    return { event: null, lineups: [] };
+  }
+  const summary = await fetchSummary(event.id);
+  return { event, lineups: parseOfficialLineups(summary) };
+}
+
+export async function buildLineupPayload(teamQuery = "", options = {}) {
+  const { event, lineups } = await eventWithLineups("", teamQuery);
   if (!event) {
     const suffix = teamQuery ? `（${teamQuery}）` : "";
     return {
@@ -134,8 +176,6 @@ export async function buildLineupPayload(teamQuery = "") {
     };
   }
 
-  const summary = await fetchSummary(event.id);
-  const lineups = parseOfficialLineups(summary);
   const contentHeader = [`# ${eventTitle(event)}`, `${eventMeta(event)} / 公式スタメン`, eventRankLine(event)];
 
   if (lineups.length < 2) {
@@ -152,6 +192,20 @@ export async function buildLineupPayload(teamQuery = "") {
     };
   }
 
+  if (options.imageBaseUrl) {
+    return {
+      content: [
+        ...contentHeader,
+        "",
+        ...lineups.slice(0, 2).map(lineupSummary),
+        "",
+        "画像を読み込めない場合は、少し待ってからもう一度実行してください。",
+      ].join("\n"),
+      allowed_mentions: { parse: [] },
+      embeds: lineups.slice(0, 2).map((lineup) => lineupImageEmbed(options.imageBaseUrl, event, lineup)),
+    };
+  }
+
   return {
     content: [
       ...contentHeader,
@@ -159,5 +213,36 @@ export async function buildLineupPayload(teamQuery = "") {
       ...lineups.slice(0, 2).map(formatLineup),
     ].join("\n\n"),
     allowed_mentions: { parse: [] },
+  };
+}
+
+export async function buildLineupImage(eventId, teamName) {
+  if (!eventId || !teamName) {
+    throw new Error("event and team query parameters are required");
+  }
+
+  const { event, lineups } = await eventWithLineups(eventId);
+  if (!event || lineups.length < 2) {
+    throw new Error("official lineups are not available");
+  }
+
+  const lineup = lineups.find((candidate) => candidate.teamName === teamName || canonicalTeamName(candidate.teamName) === canonicalTeamName(teamName));
+  if (!lineup) {
+    throw new Error(`lineup not found for ${teamName}`);
+  }
+
+  const opponentName = lineups.find((candidate) => candidate.teamName !== lineup.teamName)?.teamName ?? "";
+  const svg = buildLineupSvg({
+    teamName: lineup.teamName,
+    opponentName,
+    formation: lineup.formation,
+    kickoffLabel: `${hmInTokyo(event.date)} JST`,
+    starters: lineup.starters,
+    substitutes: lineup.substitutes,
+  });
+  const data = await withTimeout(renderLineupPng(svg), 8000, "PNG render timeout");
+  return {
+    filename: `${slug(lineup.teamName)}-lineup.png`,
+    data,
   };
 }
