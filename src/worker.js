@@ -98,7 +98,19 @@ function discordRequestBody(payload) {
 
 async function sendPayloads(interaction, payloads) {
   const [first, ...rest] = Array.isArray(payloads) ? payloads : [payloads];
-  await editOriginalInteractionResponse(interaction, first);
+  if (first.files?.length) {
+    const { files, ...textPayload } = first;
+    await editOriginalInteractionResponse(interaction, textPayload);
+    for (const file of files) {
+      await createFollowupMessage(interaction, {
+        content: "",
+        allowed_mentions: { parse: [] },
+        files: [file],
+      });
+    }
+  } else {
+    await editOriginalInteractionResponse(interaction, first);
+  }
   for (const payload of rest) {
     await createFollowupMessage(interaction, payload);
   }
