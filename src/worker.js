@@ -61,13 +61,13 @@ async function respondToWorldCupCommand(interaction) {
 }
 
 async function handleInteraction(request, env, ctx) {
-  const body = await request.text();
+  const body = await request.arrayBuffer();
   const isValid = await verifyDiscordRequest(request, env.DISCORD_PUBLIC_KEY, body);
   if (!isValid) {
     return new Response("Bad request signature.", { status: 401 });
   }
 
-  const interaction = JSON.parse(body);
+  const interaction = JSON.parse(new TextDecoder().decode(body));
   if (interaction.type === InteractionType.PING) {
     return jsonResponse({ type: InteractionResponseType.PONG });
   }
