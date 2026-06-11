@@ -11,18 +11,29 @@ function fonts() {
   return fontBuffers;
 }
 
-export async function renderLineupPngInWorker(svg) {
+async function resolveExternalImages(renderer) {
+  for (const item of renderer.imagesToResolve()) {
+    const href = item.href;
+    if (!/^https:\/\//.test(href)) continue;
+    const res = await fetch(href);
+    if (!res.ok) continue;
+    renderer.resolveImage(href, new Uint8Array(await res.arrayBuffer()));
+  }
+}
+
+export async function renderLineupPngInWorker(svg, width = 900) {
   wasmReady ??= initWasm(resvgWasm);
   await wasmReady;
 
   const renderer = new Resvg(svg, {
-    fitTo: { mode: "width", value: 900 },
+    fitTo: { mode: "width", value: width },
     font: {
       loadSystemFonts: false,
       defaultFontFamily: "Roboto",
       fontBuffers: fonts(),
     },
   });
+  await resolveExternalImages(renderer);
   const image = renderer.render();
   const png = image.asPng();
   renderer.free();

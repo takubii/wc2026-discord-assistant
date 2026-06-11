@@ -1,4 +1,4 @@
-import { buildLineupSvg, renderLineupPng } from "./lineup-renderer.js";
+import { buildLineupSvg, buildMatchLineupSvg, renderLineupPng } from "./lineup-renderer.js";
 import { canonicalTeamName, teamLabel } from "./team-data.js";
 import { formatFifaRankLine } from "./fifa-rankings.js";
 
@@ -6,6 +6,57 @@ const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
 const ESPN_SUMMARY_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=";
+
+const FLAG_CODES = {
+  Algeria: "dz",
+  Argentina: "ar",
+  Australia: "au",
+  Austria: "at",
+  Belgium: "be",
+  "Bosnia-Herzegovina": "ba",
+  Brazil: "br",
+  Canada: "ca",
+  "Cape Verde": "cv",
+  Colombia: "co",
+  "Congo DR": "cd",
+  Croatia: "hr",
+  "Curaçao": "cw",
+  Czechia: "cz",
+  Ecuador: "ec",
+  Egypt: "eg",
+  England: "gb-eng",
+  France: "fr",
+  Germany: "de",
+  Ghana: "gh",
+  Haiti: "ht",
+  Iran: "ir",
+  Iraq: "iq",
+  "Ivory Coast": "ci",
+  Japan: "jp",
+  Jordan: "jo",
+  Mexico: "mx",
+  Morocco: "ma",
+  Netherlands: "nl",
+  "New Zealand": "nz",
+  Norway: "no",
+  Panama: "pa",
+  Paraguay: "py",
+  Portugal: "pt",
+  Qatar: "qa",
+  "Saudi Arabia": "sa",
+  Scotland: "gb-sct",
+  Senegal: "sn",
+  "South Africa": "za",
+  "South Korea": "kr",
+  Spain: "es",
+  Sweden: "se",
+  Switzerland: "ch",
+  Tunisia: "tn",
+  Türkiye: "tr",
+  "United States": "us",
+  Uruguay: "uy",
+  Uzbekistan: "uz",
+};
 
 function hmInTokyo(dateString) {
   return new Intl.DateTimeFormat("ja-JP", {
@@ -24,6 +75,15 @@ function displayDateInTokyo(dateString) {
     day: "numeric",
     weekday: "short",
   }).format(date);
+}
+
+function imageDateInTokyo(dateString) {
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(dateString));
 }
 
 async function fetchScoreboardEvents() {
@@ -95,8 +155,17 @@ function eventTitle(event) {
   return `${names[0] ?? "TBD"} vs ${names[1] ?? "TBD"}`;
 }
 
+function eventTitleEn(event) {
+  const names = teamNames(event);
+  return `${names[0] ?? "TBD"} vs ${names[1] ?? "TBD"}`;
+}
+
 function eventMeta(event) {
   return `${displayDateInTokyo(event.date)} ${hmInTokyo(event.date)} JST`;
+}
+
+function imageEventMeta(event) {
+  return `${imageDateInTokyo(event.date)} ${hmInTokyo(event.date)} JST`;
 }
 
 function eventRankLine(event) {
@@ -139,16 +208,16 @@ function withTimeout(promise, ms, message) {
 function imageUrl(baseUrl, event, lineup) {
   const url = new URL("/lineup-image", baseUrl);
   url.searchParams.set("event", event.id);
-  url.searchParams.set("team", lineup.teamName);
-  url.searchParams.set("v", "2");
+  if (lineup?.teamName) url.searchParams.set("team", lineup.teamName);
+  url.searchParams.set("v", "3");
   return url.toString();
 }
 
-function lineupImageEmbed(baseUrl, event, lineup) {
+function lineupImageEmbed(baseUrl, event) {
   return {
-    title: `${teamLabel(lineup.teamName)} ${lineup.formation ? `(${lineup.formation})` : ""}`.trim(),
+    title: eventTitle(event),
     color: 0x0b7a43,
-    image: { url: imageUrl(baseUrl, event, lineup) },
+    image: { url: imageUrl(baseUrl, event) },
   };
 }
 
@@ -202,7 +271,7 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
         "画像を読み込めない場合は、少し待ってからもう一度実行してください。",
       ].join("\n"),
       allowed_mentions: { parse: [] },
-      embeds: lineups.slice(0, 2).map((lineup) => lineupImageEmbed(options.imageBaseUrl, event, lineup)),
+      embeds: [lineupImageEmbed(options.imageBaseUrl, event)],
     };
   }
 
@@ -217,13 +286,37 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
 }
 
 export async function buildLineupImage(eventId, teamName) {
-  if (!eventId || !teamName) {
-    throw new Error("event and team query parameters are required");
+  if (!eventId) {
+    throw new Error("event query parameter is required");
   }
 
   const { event, lineups } = await eventWithLineups(eventId);
   if (!event || lineups.length < 2) {
     throw new Error("official lineups are not available");
+  }
+
+  if (!teamName) {
+    const data = await withTimeout(renderLineupPng(buildMatchLineupSvg({
+      title: eventTitleEn(event),
+      kickoffLabel: imageEventMeta(event),
+      lineups: lineups.slice(0, 2).map((lineup) => {
+        const opponentName = lineups.find((candidate) => candidate.teamName !== lineup.teamName)?.teamName ?? "";
+        return {
+          teamName: lineup.teamName,
+          opponentName,
+          formation: lineup.formation,
+          kickoffLabel: `${hmInTokyo(event.date)} JST`,
+          starters: lineup.starters,
+          substitutes: lineup.substitutes,
+          flagUrl: teamFlagUrl(lineup.teamName),
+          flagCode: flagCode(lineup.teamName),
+        };
+      }),
+    }), 1800), 8000, "PNG render timeout");
+    return {
+      filename: `${event.id}-lineups.png`,
+      data,
+    };
   }
 
   const lineup = lineups.find((candidate) => candidate.teamName === teamName || canonicalTeamName(candidate.teamName) === canonicalTeamName(teamName));
@@ -239,10 +332,21 @@ export async function buildLineupImage(eventId, teamName) {
     kickoffLabel: `${hmInTokyo(event.date)} JST`,
     starters: lineup.starters,
     substitutes: lineup.substitutes,
+    flagUrl: teamFlagUrl(lineup.teamName),
+    flagCode: flagCode(lineup.teamName),
   });
   const data = await withTimeout(renderLineupPng(svg), 8000, "PNG render timeout");
   return {
     filename: `${slug(lineup.teamName)}-lineup.png`,
     data,
   };
+}
+
+function flagCode(teamName) {
+  return FLAG_CODES[canonicalTeamName(teamName)] ?? "";
+}
+
+function teamFlagUrl(teamName) {
+  const code = flagCode(teamName);
+  return code ? `https://flagcdn.com/w80/${code}.png` : "";
 }
