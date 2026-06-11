@@ -8,7 +8,7 @@ if (!applicationId) throw new Error("DISCORD_APPLICATION_ID is required");
 const commands = [
   {
     name: "wc",
-    description: "FIFA World Cup 2026 schedule",
+    description: "FIFA World Cup 2026",
     type: 1,
     options: [
       {
@@ -47,7 +47,7 @@ const commands = [
           },
           {
             name: "position",
-            description: "任意のポジション絞り込み。例: Left Winger, DF, FW",
+            description: "任意のポジション絞り込み。例: 左ウイング, DF, FW",
             type: 3,
             required: false,
           },
@@ -55,7 +55,7 @@ const commands = [
       },
       {
         name: "player",
-        description: "選手名で詳細ポジションを検索します",
+        description: "選手名で得意位置を検索します",
         type: 1,
         options: [
           {

@@ -1,5 +1,5 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
-import { buildPlayerPayload, buildPositionsPayload, buildSquadPayload } from "./player-data.js";
+import { buildPlayerPayloads, buildPositionsPayloads, buildSquadPayloads } from "./player-data.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
 
 const DISCORD_API_BASE = "https://discord.com/api/v10";
@@ -49,24 +49,45 @@ async function editOriginalInteractionResponse(interaction, payload) {
   }
 }
 
+async function createFollowupMessage(interaction, payload) {
+  const url = `${DISCORD_API_BASE}/webhooks/${interaction.application_id}/${interaction.token}`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Discord follow-up error: ${res.status} ${await res.text()}`);
+  }
+}
+
+async function sendPayloads(interaction, payloads) {
+  const [first, ...rest] = Array.isArray(payloads) ? payloads : [payloads];
+  await editOriginalInteractionResponse(interaction, first);
+  for (const payload of rest) {
+    await createFollowupMessage(interaction, payload);
+  }
+}
+
 async function respondToWorldCupCommand(interaction) {
   try {
     const subcommand = interaction.data?.options?.[0];
-    let payload;
+    let payloads;
 
     if (!subcommand || ["today", "tomorrow", "date"].includes(subcommand.name)) {
-      payload = await buildDiscordPayloadForDate(targetDateFromCommand(interaction));
+      payloads = await buildDiscordPayloadForDate(targetDateFromCommand(interaction));
     } else if (subcommand.name === "squad") {
-      payload = buildSquadPayload(optionValue(subcommand.options, "team"), optionValue(subcommand.options, "position"));
+      payloads = buildSquadPayloads(optionValue(subcommand.options, "team"), optionValue(subcommand.options, "position"));
     } else if (subcommand.name === "player") {
-      payload = buildPlayerPayload(optionValue(subcommand.options, "name"));
+      payloads = buildPlayerPayloads(optionValue(subcommand.options, "name"));
     } else if (subcommand.name === "positions") {
-      payload = buildPositionsPayload(optionValue(subcommand.options, "team"));
+      payloads = buildPositionsPayloads(optionValue(subcommand.options, "team"));
     } else {
       throw new Error(`Unsupported subcommand: ${subcommand.name}`);
     }
 
-    await editOriginalInteractionResponse(interaction, payload);
+    await sendPayloads(interaction, payloads);
   } catch (err) {
     await editOriginalInteractionResponse(interaction, {
       content: `試合予定を取得できませんでした: ${err.message}`,
