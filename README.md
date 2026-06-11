@@ -66,17 +66,17 @@ node post-worldcup.js
 
 ## 投稿イメージ
 
-Discordにはembed形式で投稿します。
+Discordには見出し付きMarkdownで投稿します。embedより文字が大きく見える形式です。
 
 ```text
 🏆 FIFA World Cup 2026｜明日の試合予定
 
 6月14日(日)（JST）
-04:00  Qatar vs Switzerland
-　🏟️ Levi's Stadium
+04:00  🇶🇦 Qatar vs 🇨🇭 Switzerland
+🏟️ Levi's Stadium
 
-07:00  Brazil vs Morocco
-　🏟️ MetLife Stadium
+07:00  🇧🇷 Brazil vs 🇲🇦 Morocco
+🏟️ MetLife Stadium
 ```
 
 ## Troubleshooting

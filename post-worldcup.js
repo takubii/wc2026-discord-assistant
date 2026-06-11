@@ -3,6 +3,107 @@ const ESPN_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
 const THESPORTSDB_URL =
   "https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id=4429&s=2026";
+const TEAM_FLAGS = {
+  ALG: "🇩🇿",
+  ARG: "🇦🇷",
+  AUS: "🇦🇺",
+  AUT: "🇦🇹",
+  BEL: "🇧🇪",
+  BIH: "🇧🇦",
+  BRA: "🇧🇷",
+  CAN: "🇨🇦",
+  CIV: "🇨🇮",
+  COL: "🇨🇴",
+  COD: "🇨🇩",
+  CPV: "🇨🇻",
+  CRO: "🇭🇷",
+  CUW: "🇨🇼",
+  CZE: "🇨🇿",
+  ECU: "🇪🇨",
+  EGY: "🇪🇬",
+  ENG: "🏴",
+  ESP: "🇪🇸",
+  FRA: "🇫🇷",
+  GER: "🇩🇪",
+  GHA: "🇬🇭",
+  HAI: "🇭🇹",
+  IRN: "🇮🇷",
+  IRQ: "🇮🇶",
+  JPN: "🇯🇵",
+  JOR: "🇯🇴",
+  KOR: "🇰🇷",
+  KSA: "🇸🇦",
+  MAR: "🇲🇦",
+  MEX: "🇲🇽",
+  NED: "🇳🇱",
+  NOR: "🇳🇴",
+  NZL: "🇳🇿",
+  PAN: "🇵🇦",
+  PAR: "🇵🇾",
+  POR: "🇵🇹",
+  QAT: "🇶🇦",
+  RSA: "🇿🇦",
+  SCO: "🏴",
+  SEN: "🇸🇳",
+  SUI: "🇨🇭",
+  SWE: "🇸🇪",
+  TUN: "🇹🇳",
+  TUR: "🇹🇷",
+  URU: "🇺🇾",
+  USA: "🇺🇸",
+  UZB: "🇺🇿",
+};
+const TEAM_NAME_TO_CODE = {
+  Algeria: "ALG",
+  Argentina: "ARG",
+  Australia: "AUS",
+  Austria: "AUT",
+  Belgium: "BEL",
+  "Bosnia-Herzegovina": "BIH",
+  Brazil: "BRA",
+  Canada: "CAN",
+  "Cape Verde": "CPV",
+  Colombia: "COL",
+  "Congo DR": "COD",
+  Croatia: "CRO",
+  "Curaçao": "CUW",
+  Czechia: "CZE",
+  Ecuador: "ECU",
+  Egypt: "EGY",
+  England: "ENG",
+  France: "FRA",
+  Germany: "GER",
+  Ghana: "GHA",
+  Haiti: "HAI",
+  Iran: "IRN",
+  Iraq: "IRQ",
+  "Ivory Coast": "CIV",
+  Japan: "JPN",
+  Jordan: "JOR",
+  Mexico: "MEX",
+  Morocco: "MAR",
+  Netherlands: "NED",
+  "New Zealand": "NZL",
+  Norway: "NOR",
+  Panama: "PAN",
+  Paraguay: "PAR",
+  Portugal: "POR",
+  Qatar: "QAT",
+  "Saudi Arabia": "KSA",
+  Scotland: "SCO",
+  Senegal: "SEN",
+  "South Africa": "RSA",
+  "South Korea": "KOR",
+  Spain: "ESP",
+  Sweden: "SWE",
+  Switzerland: "SUI",
+  Tunisia: "TUN",
+  Türkiye: "TUR",
+  Uruguay: "URU",
+  USA: "USA",
+  "United States": "USA",
+  Uzbekistan: "UZB",
+};
 
 function ymdInTokyo(date) {
   return new Intl.DateTimeFormat("sv-SE", {
@@ -53,9 +154,18 @@ function targetDateInTokyo() {
   return ymdInTokyo(tomorrow);
 }
 
-function teamNameFromEspnCompetition(competition, homeAway) {
+function teamFromEspnCompetition(competition, homeAway) {
   const competitor = competition?.competitors?.find((c) => c.homeAway === homeAway);
-  return competitor?.team?.displayName ?? competitor?.team?.name ?? "TBD";
+  return {
+    name: competitor?.team?.displayName ?? competitor?.team?.name ?? "TBD",
+    code: competitor?.team?.abbreviation ?? "",
+  };
+}
+
+function formatTeam(team) {
+  const code = team.code || TEAM_NAME_TO_CODE[team.name] || "";
+  const flag = TEAM_FLAGS[code] ?? "🏁";
+  return `${flag} **${team.name}**`;
 }
 
 async function fetchEspnMatches() {
@@ -73,8 +183,8 @@ async function fetchEspnMatches() {
     const competition = event.competitions?.[0];
     return {
       date: event.date,
-      home: teamNameFromEspnCompetition(competition, "home"),
-      away: teamNameFromEspnCompetition(competition, "away"),
+      home: teamFromEspnCompetition(competition, "home"),
+      away: teamFromEspnCompetition(competition, "away"),
       venue: competition?.venue?.fullName ?? event.venue?.displayName ?? "",
       source: "ESPN",
     };
@@ -94,8 +204,8 @@ async function fetchTheSportsDbMatches() {
 
   return data.events.map((event) => ({
     date: `${event.strTimestamp ?? `${event.dateEvent}T${event.strTime}`}Z`,
-    home: event.strHomeTeam ?? "TBD",
-    away: event.strAwayTeam ?? "TBD",
+    home: { name: event.strHomeTeam ?? "TBD", code: TEAM_NAME_TO_CODE[event.strHomeTeam] ?? "" },
+    away: { name: event.strAwayTeam ?? "TBD", code: TEAM_NAME_TO_CODE[event.strAwayTeam] ?? "" },
     venue: event.strVenue ?? "",
     source: "TheSportsDB",
   }));
@@ -115,15 +225,7 @@ function buildDiscordPayload(matches, targetDate) {
 
   if (matches.length === 0) {
     return {
-      content: "",
-      embeds: [
-        {
-          title: "FIFA World Cup 2026",
-          description: `**${displayDate}（JST）** の試合予定はありません。`,
-          color: 0x1f8b4c,
-          footer: { text: "Times shown in Japan Standard Time" },
-        },
-      ],
+      content: ["# 🏆 FIFA World Cup 2026", `## ${displayDate}（JST）`, "", "この日の試合予定はありません。"].join("\n"),
       allowed_mentions: { parse: [] },
     };
   }
@@ -131,23 +233,23 @@ function buildDiscordPayload(matches, targetDate) {
   const lines = matches
     .map((m) => {
       const time = hmInTokyo(m.date);
-      const venue = m.venue ? `\n　🏟️ ${m.venue}` : "";
-      return `**${time}**  ${m.home} vs ${m.away}${venue}`;
+      const venue = m.venue ? `\n> 🏟️ ${m.venue}` : "";
+      return `### ${time}　${formatTeam(m.home)} vs ${formatTeam(m.away)}${venue}`;
     })
     .join("\n\n");
 
   const sources = [...new Set(matches.map((m) => m.source))].join(", ");
 
   return {
-    content: "🏆 **FIFA World Cup 2026｜明日の試合予定**",
-    embeds: [
-      {
-        title: `${displayDate}（JST）`,
-        description: lines,
-        color: 0xc1121f,
-        footer: { text: `${matches.length} match${matches.length === 1 ? "" : "es"} | Source: ${sources}` },
-      },
-    ],
+    content: [
+      "# 🏆 FIFA World Cup 2026",
+      `## ${displayDate}（JST）`,
+      `全${matches.length}試合`,
+      "",
+      lines,
+      "",
+      `-# Source: ${sources} / Times shown in JST`,
+    ].join("\n"),
     allowed_mentions: { parse: [] },
   };
 }
@@ -165,13 +267,6 @@ async function main() {
 
   if (dryRun) {
     console.log(payload.content);
-    for (const embed of payload.embeds) {
-      console.log(`\n${embed.title}`);
-      console.log(embed.description);
-      if (embed.footer?.text) {
-        console.log(`\n${embed.footer.text}`);
-      }
-    }
     return;
   }
 
