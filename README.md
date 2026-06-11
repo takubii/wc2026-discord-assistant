@@ -1,4 +1,4 @@
-# World Cup 2026 Discord Scheduler
+# WC2026 Discord Assistant
 
 World Cup 2026の試合予定、結果、順位、代表メンバー、注目選手をDiscordへ投稿するための小さな通知ツールです。
 
