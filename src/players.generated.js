@@ -1,5 +1,5 @@
 export const PLAYER_DATA = {
-  "generatedAt": "2026-06-11T08:54:13.060Z",
+  "generatedAt": "2026-06-11T09:36:57.419Z",
   "squadSource": "https://www.espn.com/soccer/story/_/id/48757621/2026-world-cup-squad-lists-players-announced-all-48-teams",
   "positionSource": "transfermarkt",
   "teams": [
@@ -12,11 +12,11 @@ export const PLAYER_DATA = {
           "club": "Santos Laguna",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/carlos-acevedo/profil/spieler/356042",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.638Z"
         },
         {
           "team": "Mexico",
@@ -24,11 +24,11 @@ export const PLAYER_DATA = {
           "club": "AEL Limassol",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/guillermo-ochoa/profil/spieler/29559",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -36,11 +36,11 @@ export const PLAYER_DATA = {
           "club": "Chivas",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/raul-rangel/profil/spieler/802855",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -48,11 +48,11 @@ export const PLAYER_DATA = {
           "club": "Toluca",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jesus-gallardo/profil/spieler/344854",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -60,11 +60,11 @@ export const PLAYER_DATA = {
           "club": "América",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/israel-reyes/profil/spieler/687558",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -72,11 +72,11 @@ export const PLAYER_DATA = {
           "club": "Lokomotiv Moscow",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cesar-montes/profil/spieler/387687",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -84,11 +84,11 @@ export const PLAYER_DATA = {
           "club": "PAOK",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jorge-sanchez/profil/spieler/356044",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -96,11 +96,11 @@ export const PLAYER_DATA = {
           "club": "Genoa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/johan-vasquez/profil/spieler/532937",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -108,11 +108,11 @@ export const PLAYER_DATA = {
           "club": "AZ Alkmaar",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mateo-chavez/profil/spieler/1066953",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -120,11 +120,11 @@ export const PLAYER_DATA = {
           "club": "Tijuana",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gilberto-mora/profil/spieler/1155723",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -132,11 +132,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahçe",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/edson-alvarez/profil/spieler/401356",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -144,11 +144,11 @@ export const PLAYER_DATA = {
           "club": "AEK Athens",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/orbelin-pineda/profil/spieler/334042",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -156,11 +156,11 @@ export const PLAYER_DATA = {
           "club": "Chivas",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luis-romo/profil/spieler/532938",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -168,11 +168,11 @@ export const PLAYER_DATA = {
           "club": "Chivas",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brian-gutierrez/profil/spieler/724443",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -180,11 +180,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/obed-vargas/profil/spieler/889435",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -192,11 +192,11 @@ export const PLAYER_DATA = {
           "club": "Anderlecht",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cesar-huerta/profil/spieler/540315",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -204,11 +204,11 @@ export const PLAYER_DATA = {
           "club": "Dinamo Moscow",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luis-chavez/profil/spieler/331059",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -216,11 +216,11 @@ export const PLAYER_DATA = {
           "club": "Cruz Azul",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/erik-lira/profil/spieler/602324",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -228,11 +228,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alvaro-fidalgo/profil/spieler/261503",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -240,11 +240,11 @@ export const PLAYER_DATA = {
           "club": "Chivas",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/roberto-alvarado/profil/spieler/353583",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -252,11 +252,11 @@ export const PLAYER_DATA = {
           "club": "Chivas",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/armando-gonzalez/profil/spieler/837619",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -264,11 +264,11 @@ export const PLAYER_DATA = {
           "club": "Fulham",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/raul-jimenez/profil/spieler/206040",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -276,11 +276,11 @@ export const PLAYER_DATA = {
           "club": "Al Qadsiah",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/julian-quinones/profil/spieler/416090",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -288,11 +288,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/santiago-gimenez/profil/spieler/552955",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -300,11 +300,11 @@ export const PLAYER_DATA = {
           "club": "Pumas",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/guillermo-martinez/profil/spieler/347932",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         },
         {
           "team": "Mexico",
@@ -312,11 +312,11 @@ export const PLAYER_DATA = {
           "club": "Toluca",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexis-vega/profil/spieler/424689",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:45.639Z"
         }
       ]
     },
@@ -329,11 +329,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ronwen-williams/profil/spieler/175577",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -341,11 +341,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ricardo-goss/profil/spieler/258304",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -353,11 +353,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sipho-chaine/profil/spieler/453370",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -365,11 +365,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/khuliso-mudau/profil/spieler/450806",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -377,11 +377,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nkosinathi-sibisi/profil/spieler/399068",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -389,11 +389,11 @@ export const PLAYER_DATA = {
           "club": "Hannover 96",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ime-okon/profil/spieler/1107265",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -401,11 +401,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/khulumani-ndamane/profil/spieler/1283140",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -413,11 +413,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aubrey-modiba/profil/spieler/353432",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -437,11 +437,11 @@ export const PLAYER_DATA = {
           "club": "Polokwane City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thabang-matuludi/profil/spieler/1109254",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -449,11 +449,11 @@ export const PLAYER_DATA = {
           "club": "Philadelphia Union",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/olwethu-makhanya/profil/spieler/1069801",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -473,11 +473,11 @@ export const PLAYER_DATA = {
           "club": "Kaizer Chiefs",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bradley-cross/profil/spieler/555209",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -485,11 +485,11 @@ export const PLAYER_DATA = {
           "club": "Chicago Fire",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mbekezeli-mbokazi/profil/spieler/1378320",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -497,11 +497,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/teboho-mokoena/profil/spieler/436372",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -509,11 +509,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thalente-mbatha/profil/spieler/735697",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -521,11 +521,11 @@ export const PLAYER_DATA = {
           "club": "Tondela",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yaya-sithole/profil/spieler/401736",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -533,11 +533,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jayden-adams/profil/spieler/804472",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -545,11 +545,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/oswin-appollis/profil/spieler/673381",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -557,11 +557,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/iqraam-rayners/profil/spieler/337884",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -569,11 +569,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tshepang-moremi/profil/spieler/844485",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -581,11 +581,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/relebohile-mofokeng/profil/spieler/1125037",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -593,11 +593,11 @@ export const PLAYER_DATA = {
           "club": "Orlando Pirates",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/evidence-makgopa/profil/spieler/746781",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -605,11 +605,11 @@ export const PLAYER_DATA = {
           "club": "Mamelodi Sundowns",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/themba-zwane/profil/spieler/176578",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -617,11 +617,11 @@ export const PLAYER_DATA = {
           "club": "Burnley",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lyle-foster/profil/spieler/467623",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         },
         {
           "team": "South Africa",
@@ -629,11 +629,11 @@ export const PLAYER_DATA = {
           "club": "AEL Limassol",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thapelo-maseko/profil/spieler/983330",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:47.132Z"
         }
       ]
     },
@@ -658,11 +658,11 @@ export const PLAYER_DATA = {
           "club": "FC Tokyo",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/seung-gyu-kim/profil/spieler/92076",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -670,11 +670,11 @@ export const PLAYER_DATA = {
           "club": "Jeonbuk Hyundai",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bum-keun-song/profil/spieler/508237",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -682,11 +682,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/min-jae-kim/profil/spieler/503482",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -706,11 +706,11 @@ export const PLAYER_DATA = {
           "club": "Midtjylland",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/han-beom-lee/profil/spieler/706963",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -754,11 +754,11 @@ export const PLAYER_DATA = {
           "club": "Austria Vienna",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tae-seok-lee/profil/spieler/639027",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -766,11 +766,11 @@ export const PLAYER_DATA = {
           "club": "Red Star Belgrade",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/young-woo-seol/profil/spieler/639414",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -778,11 +778,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Mönchengladbach",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jens-castrop/profil/spieler/613192",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -790,11 +790,11 @@ export const PLAYER_DATA = {
           "club": "Daejeon Hana",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moon-hwan-kim/profil/spieler/524592",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -802,11 +802,11 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hyun-jun-yang/profil/spieler/853110",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -814,11 +814,11 @@ export const PLAYER_DATA = {
           "club": "Birmingham City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/seung-ho-paik/profil/spieler/282689",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -826,11 +826,11 @@ export const PLAYER_DATA = {
           "club": "Feyenoord",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/in-beom-hwang/profil/spieler/365394",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -850,11 +850,11 @@ export const PLAYER_DATA = {
           "club": "Stoke City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jun-ho-bae/profil/spieler/912081",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -874,11 +874,11 @@ export const PLAYER_DATA = {
           "club": "Wolverhampton",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hee-chan-hwang/profil/spieler/292246",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -886,11 +886,11 @@ export const PLAYER_DATA = {
           "club": "Ulsan HD",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dong-gyeong-lee/profil/spieler/558086",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -898,11 +898,11 @@ export const PLAYER_DATA = {
           "club": "Mainz",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jae-sung-lee/profil/spieler/314398",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -910,11 +910,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kang-in-lee/profil/spieler/557149",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -934,11 +934,11 @@ export const PLAYER_DATA = {
           "club": "LAFC",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/heung-min-son/profil/spieler/91845",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:48.500Z"
         },
         {
           "team": "South Korea",
@@ -963,11 +963,11 @@ export const PLAYER_DATA = {
           "club": "Braga",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lukas-hornicek/profil/spieler/629773",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -987,11 +987,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jindrich-stanek/profil/spieler/242089",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -999,11 +999,11 @@ export const PLAYER_DATA = {
           "club": "TSG Hoffenheim",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/vladimir-coufal/profil/spieler/157672",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1011,11 +1011,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-doudera/profil/spieler/493758",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1023,11 +1023,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tomas-holes/profil/spieler/216278",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1035,11 +1035,11 @@ export const PLAYER_DATA = {
           "club": "TSG Hoffenheim",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/robin-hranac/profil/spieler/620217",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1047,11 +1047,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/stepan-chaloupek/profil/spieler/944827",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1059,11 +1059,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-jurasek/profil/spieler/500054",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1071,11 +1071,11 @@ export const PLAYER_DATA = {
           "club": "Wolverhampton Wanderers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ladislav-krejci/profil/spieler/345911",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1083,11 +1083,11 @@ export const PLAYER_DATA = {
           "club": "Sparta Prague",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jaroslav-zeleny/profil/spieler/142219",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1095,11 +1095,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-zima/profil/spieler/544149",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1107,11 +1107,11 @@ export const PLAYER_DATA = {
           "club": "Viktoria Plzen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lukas-cerv/profil/spieler/611049",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1119,11 +1119,11 @@ export const PLAYER_DATA = {
           "club": "Hradec Kralove",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/vladimir-darida/profil/spieler/179643",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1131,11 +1131,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lukas-provod/profil/spieler/292779",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1143,11 +1143,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michal-sadilek/profil/spieler/321204",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1155,11 +1155,11 @@ export const PLAYER_DATA = {
           "club": "Sparta Prague",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hugo-sochurek/profil/spieler/1206877",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1167,11 +1167,11 @@ export const PLAYER_DATA = {
           "club": "Viktoria Plzen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexandr-sojka/profil/spieler/826103",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1179,11 +1179,11 @@ export const PLAYER_DATA = {
           "club": "West Ham",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tomas-soucek/profil/spieler/283628",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1191,11 +1191,11 @@ export const PLAYER_DATA = {
           "club": "TSG Hoffenheim",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/adam-hlozek/profil/spieler/552057",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1203,11 +1203,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tomas-chory/profil/spieler/198614",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1215,11 +1215,11 @@ export const PLAYER_DATA = {
           "club": "Slavia Prague",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mojmir-chytil/profil/spieler/405855",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1227,11 +1227,11 @@ export const PLAYER_DATA = {
           "club": "Sparta Prague",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jan-kuchta/profil/spieler/334802",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1239,11 +1239,11 @@ export const PLAYER_DATA = {
           "club": "Bayer Leverkusen",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/patrik-schick/profil/spieler/242086",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         },
         {
           "team": "Czechia",
@@ -1263,11 +1263,11 @@ export const PLAYER_DATA = {
           "club": "Viktoria Plzen",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/denis-visinsky/profil/spieler/652060",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:50.219Z"
         }
       ]
     },
@@ -1280,11 +1280,11 @@ export const PLAYER_DATA = {
           "club": "Inter Miami",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dayne-st-clair/profil/spieler/439750",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1292,11 +1292,11 @@ export const PLAYER_DATA = {
           "club": "Orlando City",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/maxime-crepeau/profil/spieler/189014",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1304,11 +1304,11 @@ export const PLAYER_DATA = {
           "club": "Barnsley",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/owen-goodman/profil/spieler/814848",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1316,11 +1316,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moise-bombito/profil/spieler/1089202",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1328,11 +1328,11 @@ export const PLAYER_DATA = {
           "club": "Rangers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/derek-cornelius/profil/spieler/328609",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1340,11 +1340,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alphonso-davies/profil/spieler/424204",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1352,11 +1352,11 @@ export const PLAYER_DATA = {
           "club": "FCV Dender",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luc-de-fougerolles/profil/spieler/921995",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1364,11 +1364,11 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alistair-johnston/profil/spieler/637446",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1376,11 +1376,11 @@ export const PLAYER_DATA = {
           "club": "Middlesbrough",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alfie-jones/profil/spieler/340990",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1388,11 +1388,11 @@ export const PLAYER_DATA = {
           "club": "Toronto FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/richie-laryea/profil/spieler/417348",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1400,11 +1400,11 @@ export const PLAYER_DATA = {
           "club": "Hajduk Split",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/niko-sigur/profil/spieler/1045375",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1412,11 +1412,11 @@ export const PLAYER_DATA = {
           "club": "Chicago Fire",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joel-waterman/profil/spieler/441738",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1424,11 +1424,11 @@ export const PLAYER_DATA = {
           "club": "Norwich City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-ahmed/profil/spieler/995642",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1436,11 +1436,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tajon-buchanan/profil/spieler/638793",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1448,11 +1448,11 @@ export const PLAYER_DATA = {
           "club": "LAFC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mathieu-choiniere/profil/spieler/589006",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1460,11 +1460,11 @@ export const PLAYER_DATA = {
           "club": "LAFC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/stephen-eustaquio/profil/spieler/512913",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1484,11 +1484,11 @@ export const PLAYER_DATA = {
           "club": "Sassuolo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismael-kone/profil/spieler/921655",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1496,11 +1496,11 @@ export const PLAYER_DATA = {
           "club": "Hull City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/liam-millar/profil/spieler/487417",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1508,11 +1508,11 @@ export const PLAYER_DATA = {
           "club": "Toronto FC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jonathan-osorio/profil/spieler/260807",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1532,11 +1532,11 @@ export const PLAYER_DATA = {
           "club": "LAFC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jacob-shaffelburg/profil/spieler/637632",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1544,11 +1544,11 @@ export const PLAYER_DATA = {
           "club": "Juventus",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jonathan-david/profil/spieler/533738",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1556,11 +1556,11 @@ export const PLAYER_DATA = {
           "club": "Royale-Union Saint Gilloise",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/promise-david/profil/spieler/888785",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1568,11 +1568,11 @@ export const PLAYER_DATA = {
           "club": "Southampton",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cyle-larin/profil/spieler/343463",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         },
         {
           "team": "Canada",
@@ -1580,11 +1580,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tani-oluwaseyi/profil/spieler/972465",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:51.673Z"
         }
       ]
     },
@@ -1597,11 +1597,11 @@ export const PLAYER_DATA = {
           "club": "St Pauli",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nikola-vasilj/profil/spieler/248454",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1609,11 +1609,11 @@ export const PLAYER_DATA = {
           "club": "Rijeka",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/martin-zlomislic/profil/spieler/495320",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1633,11 +1633,11 @@ export const PLAYER_DATA = {
           "club": "Atalanta",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sead-kolasinac/profil/spieler/94005",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1645,11 +1645,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amar-dedic/profil/spieler/519184",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1657,11 +1657,11 @@ export const PLAYER_DATA = {
           "club": "Gaziantep",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nihad-mujakic/profil/spieler/380919",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1669,11 +1669,11 @@ export const PLAYER_DATA = {
           "club": "Schalke 04",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nikola-katic/profil/spieler/422051",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1681,11 +1681,11 @@ export const PLAYER_DATA = {
           "club": "Sassuolo",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tarik-muharemovic/profil/spieler/679423",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1693,11 +1693,11 @@ export const PLAYER_DATA = {
           "club": "Rijeka",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/stjepan-radeljic/profil/spieler/384568",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1705,11 +1705,11 @@ export const PLAYER_DATA = {
           "club": "Sampdoria",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dennis-hadzikadunic/profil/spieler/322065",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1717,11 +1717,11 @@ export const PLAYER_DATA = {
           "club": "Lens",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nidal-celik/profil/spieler/819566",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1729,11 +1729,11 @@ export const PLAYER_DATA = {
           "club": "Hull City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amir-hadziahmetovic/profil/spieler/293213",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1741,11 +1741,11 @@ export const PLAYER_DATA = {
           "club": "Pafos",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ivan-sunjic/profil/spieler/226097",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1753,11 +1753,11 @@ export const PLAYER_DATA = {
           "club": "Astana",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ivan-basic/profil/spieler/620560",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1765,11 +1765,11 @@ export const PLAYER_DATA = {
           "club": "Karlsruher SC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dzenis-burnic/profil/spieler/251295",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1777,11 +1777,11 @@ export const PLAYER_DATA = {
           "club": "Slovan Liberec",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ermin-mahmic/profil/spieler/803049",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1789,11 +1789,11 @@ export const PLAYER_DATA = {
           "club": "Brondby",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/benjamin-tahirovic/profil/spieler/787907",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1801,11 +1801,11 @@ export const PLAYER_DATA = {
           "club": "Viktoria Plzen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amar-memic/profil/spieler/638990",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1813,11 +1813,11 @@ export const PLAYER_DATA = {
           "club": "Young Boys",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/armin-gigovic/profil/spieler/651269",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1825,11 +1825,11 @@ export const PLAYER_DATA = {
           "club": "RB Salzburg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kerim-alajbegovic/profil/spieler/929994",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1837,11 +1837,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/esmir-bajraktarevic/profil/spieler/925862",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1849,11 +1849,11 @@ export const PLAYER_DATA = {
           "club": "VfB Stuttgart",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ermedin-demirovic/profil/spieler/335457",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1861,11 +1861,11 @@ export const PLAYER_DATA = {
           "club": "Universitatea Cluj",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jovo-lukic/profil/spieler/457738",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1873,11 +1873,11 @@ export const PLAYER_DATA = {
           "club": "Jagiellonia Bialystok",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/samed-bazdar/profil/spieler/710969",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1885,11 +1885,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Moenchengladbach",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/haris-tabakovic/profil/spieler/203123",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         },
         {
           "team": "Bosnia-Herzegovina",
@@ -1897,11 +1897,11 @@ export const PLAYER_DATA = {
           "club": "Schalke 04",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/edin-dzeko/profil/spieler/28396",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:53.107Z"
         }
       ]
     },
@@ -1914,11 +1914,11 @@ export const PLAYER_DATA = {
           "club": "Al Duhail",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/salah-zakaria/profil/spieler/632912",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -1926,11 +1926,11 @@ export const PLAYER_DATA = {
           "club": "Al Sadd",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/meshaal-barsham/profil/spieler/560423",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -1938,11 +1938,11 @@ export const PLAYER_DATA = {
           "club": "Al Rayyan",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mahmoud-abunada/profil/spieler/669629",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -1950,11 +1950,11 @@ export const PLAYER_DATA = {
           "club": "Al Sadd",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/boualem-khoukhi/profil/spieler/222669",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -1962,11 +1962,11 @@ export const PLAYER_DATA = {
           "club": "Al Sadd",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pedro-miguel/profil/spieler/228727",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -1974,11 +1974,11 @@ export const PLAYER_DATA = {
           "club": "Al Duhail",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sultan-al-brake/profil/spieler/336665",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -1986,11 +1986,11 @@ export const PLAYER_DATA = {
           "club": "Al Arabi",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/al-hashmi-al-hussain/profil/spieler/943150",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2010,11 +2010,11 @@ export const PLAYER_DATA = {
           "club": "Al Arabi",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/issa-laye/profil/spieler/1264176",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2022,11 +2022,11 @@ export const PLAYER_DATA = {
           "club": "Al Wakrah",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lucas-mendes/profil/spieler/83983",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2034,11 +2034,11 @@ export const PLAYER_DATA = {
           "club": "Cultural Leonesa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/homam-al-amin/profil/spieler/556713",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2046,11 +2046,11 @@ export const PLAYER_DATA = {
           "club": "Al Arabi",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ahmed-fathi/profil/spieler/251183",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2070,11 +2070,11 @@ export const PLAYER_DATA = {
           "club": "Al Wakrah",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/assim-madibo/profil/spieler/336667",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2094,11 +2094,11 @@ export const PLAYER_DATA = {
           "club": "Al Duhail",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/karim-boudiaf/profil/spieler/222385",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2118,11 +2118,11 @@ export const PLAYER_DATA = {
           "club": "Al Duhail",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/almoez-ali/profil/spieler/345095",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2130,11 +2130,11 @@ export const PLAYER_DATA = {
           "club": "Al Sadd",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/akram-afif/profil/spieler/336646",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2154,11 +2154,11 @@ export const PLAYER_DATA = {
           "club": "Al Duhail",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/edmilson-junior/profil/spieler/237846",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2166,11 +2166,11 @@ export const PLAYER_DATA = {
           "club": "Al Gharafa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ahmed-al-ganehi/profil/spieler/670659",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2202,11 +2202,11 @@ export const PLAYER_DATA = {
           "club": "Al Gharafa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohammed-muntari/profil/spieler/266935",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         },
         {
           "team": "Qatar",
@@ -2214,11 +2214,11 @@ export const PLAYER_DATA = {
           "club": "Al Wakrah",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yusuf-abdurisag/profil/spieler/589099",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:54.531Z"
         }
       ]
     },
@@ -2231,11 +2231,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gregor-kobel/profil/spieler/257814",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2243,11 +2243,11 @@ export const PLAYER_DATA = {
           "club": "Lorient",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yvon-mvogo/profil/spieler/147051",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2255,11 +2255,11 @@ export const PLAYER_DATA = {
           "club": "Young Boys",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marvin-keller/profil/spieler/500763",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2267,11 +2267,11 @@ export const PLAYER_DATA = {
           "club": "Inter Milan",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/manuel-akanji/profil/spieler/284730",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2279,11 +2279,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Mönchengladbach",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nico-elvedi/profil/spieler/192635",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2291,11 +2291,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ricardo-rodriguez/profil/spieler/86784",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2303,11 +2303,11 @@ export const PLAYER_DATA = {
           "club": "Mainz",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/silvan-widmer/profil/spieler/168989",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2315,11 +2315,11 @@ export const PLAYER_DATA = {
           "club": "Hamburger SV",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/miro-muheim/profil/spieler/298603",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2327,11 +2327,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Frankfurt",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aurele-amenda/profil/spieler/635645",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2339,11 +2339,11 @@ export const PLAYER_DATA = {
           "club": "Valencia",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/eray-comert/profil/spieler/298583",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2351,11 +2351,11 @@ export const PLAYER_DATA = {
           "club": "Stuttgart",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luca-jaquez/profil/spieler/539798",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2363,11 +2363,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/granit-xhaka/profil/spieler/111455",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2375,11 +2375,11 @@ export const PLAYER_DATA = {
           "club": "Freiburg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/johan-manzambi/profil/spieler/927353",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2387,11 +2387,11 @@ export const PLAYER_DATA = {
           "club": "Bologna",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/remo-freuler/profil/spieler/148252",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2399,11 +2399,11 @@ export const PLAYER_DATA = {
           "club": "Monaco",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/denis-zakaria/profil/spieler/334526",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2411,11 +2411,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ardon-jashari/profil/spieler/608172",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2423,11 +2423,11 @@ export const PLAYER_DATA = {
           "club": "Sevilla",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/djibril-sow/profil/spieler/212723",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2435,11 +2435,11 @@ export const PLAYER_DATA = {
           "club": "Young Boys",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/christian-fassnacht/profil/spieler/250490",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2447,11 +2447,11 @@ export const PLAYER_DATA = {
           "club": "Pisa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michel-aebischer/profil/spieler/237658",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2459,11 +2459,11 @@ export const PLAYER_DATA = {
           "club": "Augsburg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fabian-rieder/profil/spieler/507341",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2471,11 +2471,11 @@ export const PLAYER_DATA = {
           "club": "Sevilla",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ruben-vargas/profil/spieler/345886",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2483,11 +2483,11 @@ export const PLAYER_DATA = {
           "club": "Rennes",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/breel-embolo/profil/spieler/237662",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2495,11 +2495,11 @@ export const PLAYER_DATA = {
           "club": "Leeds",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/noah-okafor/profil/spieler/346890",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2507,11 +2507,11 @@ export const PLAYER_DATA = {
           "club": "Nottingham Forest",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dan-ndoye/profil/spieler/365108",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2519,11 +2519,11 @@ export const PLAYER_DATA = {
           "club": "Burnley",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zeki-amdouni/profil/spieler/548729",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         },
         {
           "team": "Switzerland",
@@ -2531,11 +2531,11 @@ export const PLAYER_DATA = {
           "club": "Fortuna Dusseldorf",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cedric-itten/profil/spieler/243856",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:55.877Z"
         }
       ]
     },
@@ -2548,11 +2548,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alisson/profil/spieler/105470",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2560,11 +2560,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ederson/profil/spieler/238223",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2572,11 +2572,11 @@ export const PLAYER_DATA = {
           "club": "Grêmio",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/weverton/profil/spieler/69400",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2584,11 +2584,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alex-sandro/profil/spieler/79960",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2596,11 +2596,11 @@ export const PLAYER_DATA = {
           "club": "Juventus",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bremer/profil/spieler/516716",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2608,11 +2608,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/danilo/profil/spieler/145707",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2620,11 +2620,11 @@ export const PLAYER_DATA = {
           "club": "Zenit St. Petersburg",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/douglas-santos/profil/spieler/220793",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2644,11 +2644,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leo-pereira/profil/spieler/288431",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2656,11 +2656,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marquinhos/profil/spieler/181767",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2668,11 +2668,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/roger-ibanez/profil/spieler/524481",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2692,11 +2692,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bruno-guimaraes/profil/spieler/520624",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2704,11 +2704,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/casemiro/profil/spieler/16306",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2728,11 +2728,11 @@ export const PLAYER_DATA = {
           "club": "Al Ittihad",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fabinho/profil/spieler/225693",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2740,11 +2740,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lucas-paqueta/profil/spieler/444523",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2752,11 +2752,11 @@ export const PLAYER_DATA = {
           "club": "Lyon",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/endrick/profil/spieler/971570",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2764,11 +2764,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gabriel-martinelli/profil/spieler/655488",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2776,11 +2776,11 @@ export const PLAYER_DATA = {
           "club": "Brentford",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/igor-thiago/profil/spieler/739443",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2788,11 +2788,11 @@ export const PLAYER_DATA = {
           "club": "Zenit St. Petersburg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luiz-henrique/profil/spieler/800175",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2800,11 +2800,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matheus-cunha/profil/spieler/517894",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2812,11 +2812,11 @@ export const PLAYER_DATA = {
           "club": "Santos",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/neymar/profil/spieler/68290",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2824,11 +2824,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/raphinha/profil/spieler/411295",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2836,11 +2836,11 @@ export const PLAYER_DATA = {
           "club": "Bournemouth",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rayan/profil/spieler/1012564",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         },
         {
           "team": "Brazil",
@@ -2848,11 +2848,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/vinicius-junior/profil/spieler/371998",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:57.216Z"
         }
       ]
     },
@@ -2865,11 +2865,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yassine-bounou/profil/spieler/207834",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2877,11 +2877,11 @@ export const PLAYER_DATA = {
           "club": "RS Berkane",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/munir-el-kajoui/profil/spieler/97925",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2901,11 +2901,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/noussair-mazraoui/profil/spieler/340456",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2913,11 +2913,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anass-salah-eddine/profil/spieler/485584",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2925,11 +2925,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahly",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/youssef-belammari/profil/spieler/518804",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2937,11 +2937,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/achraf-hakimi/profil/spieler/398073",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2949,11 +2949,11 @@ export const PLAYER_DATA = {
           "club": "Racing Genk",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zakaria-el-ouahdi/profil/spieler/820474",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2961,11 +2961,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/chadi-riad/profil/spieler/689637",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2973,11 +2973,11 @@ export const PLAYER_DATA = {
           "club": "Marseille",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nayef-aguerd/profil/spieler/361914",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2985,11 +2985,11 @@ export const PLAYER_DATA = {
           "club": "KV Mechelen",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/redouane-halhal/profil/spieler/913660",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -2997,11 +2997,11 @@ export const PLAYER_DATA = {
           "club": "Fulham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/issa-diop/profil/spieler/272622",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3009,11 +3009,11 @@ export const PLAYER_DATA = {
           "club": "Strasbourg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/samir-el-mourabet/profil/spieler/1130514",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3021,11 +3021,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ayyoub-bouaddi/profil/spieler/1097139",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3033,11 +3033,11 @@ export const PLAYER_DATA = {
           "club": "AS Roma",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/neil-el-aynaoui/profil/spieler/901019",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3045,11 +3045,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sofyan-amrabat/profil/spieler/287579",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3057,11 +3057,11 @@ export const PLAYER_DATA = {
           "club": "Girona",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/azzedine-ounahi/profil/spieler/593482",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3069,11 +3069,11 @@ export const PLAYER_DATA = {
           "club": "Stuttgart",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bilal-el-khannouss/profil/spieler/654982",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3081,11 +3081,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismael-saibari/profil/spieler/702869",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3093,11 +3093,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abde-ezzalzouli/profil/spieler/724520",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3105,11 +3105,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/chemsdine-talbi/profil/spieler/743384",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3117,11 +3117,11 @@ export const PLAYER_DATA = {
           "club": "Al Ain",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/soufiane-rahimi/profil/spieler/598506",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3129,11 +3129,11 @@ export const PLAYER_DATA = {
           "club": "Olympiacos",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ayoub-el-kaabi/profil/spieler/521127",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3141,11 +3141,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brahim-diaz/profil/spieler/314678",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3153,11 +3153,11 @@ export const PLAYER_DATA = {
           "club": "Strasbourg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gessime-yassine/profil/spieler/1151929",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:35:58.502Z"
         },
         {
           "team": "Morocco",
@@ -3182,11 +3182,11 @@ export const PLAYER_DATA = {
           "club": "Bastia",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/johny-placide/profil/spieler/51035",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3194,11 +3194,11 @@ export const PLAYER_DATA = {
           "club": "Sochaux",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexandre-pierre/profil/spieler/838947",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3206,11 +3206,11 @@ export const PLAYER_DATA = {
           "club": "Cosmos Koblenz",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/josue-duverger/profil/spieler/490369",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3218,11 +3218,11 @@ export const PLAYER_DATA = {
           "club": "Angers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/carlens-arcus/profil/spieler/371686",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3230,11 +3230,11 @@ export const PLAYER_DATA = {
           "club": "Zulte Waregem",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/wilguens-paugain/profil/spieler/609691",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3242,11 +3242,11 @@ export const PLAYER_DATA = {
           "club": "Colorado Springs Switchbacks",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/duke-lacroix/profil/spieler/375472",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3254,11 +3254,11 @@ export const PLAYER_DATA = {
           "club": "Nancy",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/martin-experience/profil/spieler/804885",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3266,11 +3266,11 @@ export const PLAYER_DATA = {
           "club": "Gent",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jean-kevin-duverne/profil/spieler/344864",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3278,11 +3278,11 @@ export const PLAYER_DATA = {
           "club": "LDU Quito",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ricardo-ade/profil/spieler/278145",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3290,11 +3290,11 @@ export const PLAYER_DATA = {
           "club": "Lugano",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hannes-delcroix/profil/spieler/338635",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3302,11 +3302,11 @@ export const PLAYER_DATA = {
           "club": "Young Boys",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/keeto-thermoncy/profil/spieler/1061046",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3326,11 +3326,11 @@ export const PLAYER_DATA = {
           "club": "Vizela",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leverton-pierre/profil/spieler/552467",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3338,11 +3338,11 @@ export const PLAYER_DATA = {
           "club": "Philadelphia Union",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/danley-jean-jacques/profil/spieler/628834",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3350,11 +3350,11 @@ export const PLAYER_DATA = {
           "club": "Wolverhampton Wanderers",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jean-ricner-bellegarde/profil/spieler/450050",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3362,11 +3362,11 @@ export const PLAYER_DATA = {
           "club": "Violette",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/woodensky-pierre/profil/spieler/1017735",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3374,11 +3374,11 @@ export const PLAYER_DATA = {
           "club": "FC Tatran Prešov",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dominique-simon/profil/spieler/988188",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3398,11 +3398,11 @@ export const PLAYER_DATA = {
           "club": "Auxerre",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/josue-casimir/profil/spieler/763182",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3422,11 +3422,11 @@ export const PLAYER_DATA = {
           "club": "Almere",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ruben-providence/profil/spieler/536520",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3434,11 +3434,11 @@ export const PLAYER_DATA = {
           "club": "Esteghlal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/duckens-nazon/profil/spieler/345763",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3446,11 +3446,11 @@ export const PLAYER_DATA = {
           "club": "Çaykur Rizespor",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/frantzdy-pierrot/profil/spieler/492955",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3458,11 +3458,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/wilson-isidor/profil/spieler/494237",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3470,11 +3470,11 @@ export const PLAYER_DATA = {
           "club": "Vizela",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yassin-fortune/profil/spieler/342878",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         },
         {
           "team": "Haiti",
@@ -3482,11 +3482,11 @@ export const PLAYER_DATA = {
           "club": "Ferencváros",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lenny-joseph/profil/spieler/815359",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:00.002Z"
         }
       ]
     },
@@ -3499,11 +3499,11 @@ export const PLAYER_DATA = {
           "club": "Hearts",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/craig-gordon/profil/spieler/12589",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3511,11 +3511,11 @@ export const PLAYER_DATA = {
           "club": "Nottingham Forest",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/angus-gunn/profil/spieler/201574",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3523,11 +3523,11 @@ export const PLAYER_DATA = {
           "club": "Rangers",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/liam-kelly/profil/spieler/208772",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3535,11 +3535,11 @@ export const PLAYER_DATA = {
           "club": "Hibernian",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/grant-hanley/profil/spieler/121385",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3547,11 +3547,11 @@ export const PLAYER_DATA = {
           "club": "Al Etiffaq",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jack-hendry/profil/spieler/363223",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3559,11 +3559,11 @@ export const PLAYER_DATA = {
           "club": "Brentford",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aaron-hickey/profil/spieler/591949",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3583,11 +3583,11 @@ export const PLAYER_DATA = {
           "club": "Dinamo Zagreb",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/scott-mckenna/profil/spieler/255906",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3595,11 +3595,11 @@ export const PLAYER_DATA = {
           "club": "Everton",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nathan-patterson/profil/spieler/424015",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3607,11 +3607,11 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anthony-ralston/profil/spieler/388171",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3631,11 +3631,11 @@ export const PLAYER_DATA = {
           "club": "Rangers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/john-souttar/profil/spieler/235767",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3643,11 +3643,11 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kieran-tierney/profil/spieler/300716",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3655,11 +3655,11 @@ export const PLAYER_DATA = {
           "club": "Bournemouth",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ryan-christie/profil/spieler/188077",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3679,11 +3679,11 @@ export const PLAYER_DATA = {
           "club": "Bologna",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lewis-ferguson/profil/spieler/428563",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3691,11 +3691,11 @@ export const PLAYER_DATA = {
           "club": "Bournemouth",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ben-gannon-doak/profil/spieler/719673",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3715,11 +3715,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/john-mcginn/profil/spieler/193116",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3727,11 +3727,11 @@ export const PLAYER_DATA = {
           "club": "Norwich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kenny-mclean/profil/spieler/126600",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3739,11 +3739,11 @@ export const PLAYER_DATA = {
           "club": "Napoli",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/scott-mctominay/profil/spieler/315969",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3751,11 +3751,11 @@ export const PLAYER_DATA = {
           "club": "Torino",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/che-adams/profil/spieler/346779",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3763,11 +3763,11 @@ export const PLAYER_DATA = {
           "club": "Charlton Athletic",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lyndon-dykes/profil/spieler/347138",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3775,11 +3775,11 @@ export const PLAYER_DATA = {
           "club": "Ipswich",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/george-hirst/profil/spieler/420808",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3787,11 +3787,11 @@ export const PLAYER_DATA = {
           "club": "Hearts",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lawrence-shankland/profil/spieler/225744",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         },
         {
           "team": "Scotland",
@@ -3799,11 +3799,11 @@ export const PLAYER_DATA = {
           "club": "Southampton",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ross-stewart/profil/spieler/447995",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:01.513Z"
         }
       ]
     },
@@ -3816,11 +3816,11 @@ export const PLAYER_DATA = {
           "club": "Chicago Fire",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/chris-brady/profil/spieler/765504",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3828,11 +3828,11 @@ export const PLAYER_DATA = {
           "club": "New York City FC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matt-freese/profil/spieler/500309",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3840,11 +3840,11 @@ export const PLAYER_DATA = {
           "club": "New England Revolution",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matt-turner/profil/spieler/425306",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3852,11 +3852,11 @@ export const PLAYER_DATA = {
           "club": "Columbus Crew",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/max-arfsten/profil/spieler/993063",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3864,11 +3864,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sergino-dest/profil/spieler/361104",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3876,11 +3876,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alex-freeman/profil/spieler/985806",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3888,11 +3888,11 @@ export const PLAYER_DATA = {
           "club": "Toulouse",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mark-mckenzie/profil/spieler/429259",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3900,11 +3900,11 @@ export const PLAYER_DATA = {
           "club": "Charlotte FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tim-ream/profil/spieler/145466",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3912,11 +3912,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/chris-richards/profil/spieler/578539",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3924,11 +3924,11 @@ export const PLAYER_DATA = {
           "club": "Fulham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/antonee-robinson/profil/spieler/349701",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3936,11 +3936,11 @@ export const PLAYER_DATA = {
           "club": "FC Cincinnati",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/miles-robinson/profil/spieler/468022",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3948,11 +3948,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Mönchengladbach",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joe-scally/profil/spieler/504153",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3960,23 +3960,23 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/auston-trusty/profil/spieler/389253",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
-          "name": "Tyler Adams (AFC Bournemouth",
-          "club": "",
+          "name": "Tyler Adams",
+          "club": "AFC Bournemouth",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tyler-adams/profil/spieler/332705",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3984,11 +3984,11 @@ export const PLAYER_DATA = {
           "club": "Vancouver Whitecaps",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sebastian-berhalter/profil/spieler/734761",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -3996,11 +3996,11 @@ export const PLAYER_DATA = {
           "club": "Juventus",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/weston-mckennie/profil/spieler/332697",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4008,11 +4008,11 @@ export const PLAYER_DATA = {
           "club": "Seattle Sounders",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cristian-roldan/profil/spieler/354792",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4020,11 +4020,11 @@ export const PLAYER_DATA = {
           "club": "Leeds United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brenden-aaronson/profil/spieler/393323",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4032,11 +4032,11 @@ export const PLAYER_DATA = {
           "club": "Bayer Leverkusen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/malik-tillman/profil/spieler/467437",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4068,11 +4068,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/christian-pulisic/profil/spieler/315779",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4092,11 +4092,11 @@ export const PLAYER_DATA = {
           "club": "AS Monaco",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/folarin-balogun/profil/spieler/503770",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4104,11 +4104,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ricardo-pepi/profil/spieler/627207",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         },
         {
           "team": "United States",
@@ -4116,11 +4116,11 @@ export const PLAYER_DATA = {
           "club": "Coventry City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/haji-wright/profil/spieler/315291",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:03.012Z"
         }
       ]
     },
@@ -4133,11 +4133,11 @@ export const PLAYER_DATA = {
           "club": "Levante",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mathew-ryan/profil/spieler/128969",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4145,11 +4145,11 @@ export const PLAYER_DATA = {
           "club": "Randers FC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/paul-izzo/profil/spieler/181921",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4157,11 +4157,11 @@ export const PLAYER_DATA = {
           "club": "Melbourne City",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/patrick-beach/profil/spieler/983578",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4169,11 +4169,11 @@ export const PLAYER_DATA = {
           "club": "Feyenoord Rotterdam",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jordan-bos/profil/spieler/855731",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4181,11 +4181,11 @@ export const PLAYER_DATA = {
           "club": "Melbourne City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aziz-behich/profil/spieler/136834",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4193,11 +4193,11 @@ export const PLAYER_DATA = {
           "club": "Leicester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/harry-souttar/profil/spieler/298091",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4205,11 +4205,11 @@ export const PLAYER_DATA = {
           "club": "Parma",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alessandro-circati/profil/spieler/867137",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4217,11 +4217,11 @@ export const PLAYER_DATA = {
           "club": "Colorado Rapids",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lucas-herrington/profil/spieler/1279984",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4229,11 +4229,11 @@ export const PLAYER_DATA = {
           "club": "Swansea City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cameron-burgess/profil/spieler/255788",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4241,11 +4241,11 @@ export const PLAYER_DATA = {
           "club": "New York City FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kai-trewin/profil/spieler/691326",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4253,11 +4253,11 @@ export const PLAYER_DATA = {
           "club": "Apoel Nicosia",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/milos-degenek/profil/spieler/187353",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4265,11 +4265,11 @@ export const PLAYER_DATA = {
           "club": "Albirex Niigata",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jason-geria/profil/spieler/185175",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4277,11 +4277,11 @@ export const PLAYER_DATA = {
           "club": "Grazer AK",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jacob-italiano/profil/spieler/545810",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4289,11 +4289,11 @@ export const PLAYER_DATA = {
           "club": "St. Pauli",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jackson-irvine/profil/spieler/192557",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4301,11 +4301,11 @@ export const PLAYER_DATA = {
           "club": "New York City FC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aiden-oneill/profil/spieler/385918",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4337,11 +4337,11 @@ export const PLAYER_DATA = {
           "club": "St. Pauli",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/connor-metcalfe/profil/spieler/522223",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4349,11 +4349,11 @@ export const PLAYER_DATA = {
           "club": "Melbourne City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mathew-leckie/profil/spieler/126214",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4361,11 +4361,11 @@ export const PLAYER_DATA = {
           "club": "Melbourne Victory",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nishan-velupillay/profil/spieler/888140",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4373,11 +4373,11 @@ export const PLAYER_DATA = {
           "club": "Sassuolo",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cristian-volpato/profil/spieler/746891",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4385,11 +4385,11 @@ export const PLAYER_DATA = {
           "club": "Watford",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nestory-irankunda/profil/spieler/956920",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4397,11 +4397,11 @@ export const PLAYER_DATA = {
           "club": "Castellón",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/awer-mabil/profil/spieler/255729",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4409,11 +4409,11 @@ export const PLAYER_DATA = {
           "club": "Heracles Almelo",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ajdin-hrustic/profil/spieler/265625",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4421,11 +4421,11 @@ export const PLAYER_DATA = {
           "club": "Norwich City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-toure/profil/spieler/742770",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         },
         {
           "team": "Australia",
@@ -4433,11 +4433,11 @@ export const PLAYER_DATA = {
           "club": "Machida Zelvia",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tete-yengi/profil/spieler/849429",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:04.328Z"
         }
       ]
     },
@@ -4450,11 +4450,11 @@ export const PLAYER_DATA = {
           "club": "Cerro Porteño",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/roberto-fernandez/profil/spieler/107318",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4462,11 +4462,11 @@ export const PLAYER_DATA = {
           "club": "San Lorenzo",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/orlando-gill/profil/spieler/643259",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4474,11 +4474,11 @@ export const PLAYER_DATA = {
           "club": "Olimpia",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gaston-olveira/profil/spieler/301722",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4486,11 +4486,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gustavo-gomez/profil/spieler/215390",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4498,11 +4498,11 @@ export const PLAYER_DATA = {
           "club": "Atletico Mineiro",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/junior-alonso/profil/spieler/273000",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4510,11 +4510,11 @@ export const PLAYER_DATA = {
           "club": "Gremio",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fabian-balbuena/profil/spieler/285548",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4522,11 +4522,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/omar-alderete/profil/spieler/353032",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4546,11 +4546,11 @@ export const PLAYER_DATA = {
           "club": "Lanus",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-canale/profil/spieler/402627",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4558,11 +4558,11 @@ export const PLAYER_DATA = {
           "club": "Talleres",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexandro-maidana/profil/spieler/1371519",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4570,11 +4570,11 @@ export const PLAYER_DATA = {
           "club": "Cerro Porteño",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gustavo-velazquez/profil/spieler/389399",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4582,11 +4582,11 @@ export const PLAYER_DATA = {
           "club": "Atlanta United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/miguel-almiron/profil/spieler/272999",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4594,11 +4594,11 @@ export const PLAYER_DATA = {
           "club": "Al Ain",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kaku/profil/spieler/355817",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4606,11 +4606,11 @@ export const PLAYER_DATA = {
           "club": "Vancouver Whitecaps",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/andres-cubas/profil/spieler/323872",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4618,11 +4618,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Second Striker",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ramon-sosa/profil/spieler/745191",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4630,11 +4630,11 @@ export const PLAYER_DATA = {
           "club": "Brighton & Hove Albion",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/diego-gomez/profil/spieler/996897",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4642,11 +4642,11 @@ export const PLAYER_DATA = {
           "club": "São Paulo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/damian-bobadilla/profil/spieler/861852",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4654,11 +4654,11 @@ export const PLAYER_DATA = {
           "club": "Orlando City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/braian-ojeda/profil/spieler/491596",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4666,11 +4666,11 @@ export const PLAYER_DATA = {
           "club": "Atlanta United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matias-galarza/profil/spieler/661269",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4678,11 +4678,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mauricio/profil/spieler/678439",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4690,11 +4690,11 @@ export const PLAYER_DATA = {
           "club": "Cremonese",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/antonio-sanabria/profil/spieler/234523",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4702,11 +4702,11 @@ export const PLAYER_DATA = {
           "club": "Strasbourg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/julio-enciso/profil/spieler/660867",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4714,11 +4714,11 @@ export const PLAYER_DATA = {
           "club": "Independiente",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gabriel-avalos/profil/spieler/358418",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4726,11 +4726,11 @@ export const PLAYER_DATA = {
           "club": "Independiente Rivadavia",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alex-arce/profil/spieler/970518",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4738,11 +4738,11 @@ export const PLAYER_DATA = {
           "club": "Red Bull Bragantino",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/isidro-pitta/profil/spieler/675178",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         },
         {
           "team": "Paraguay",
@@ -4750,11 +4750,11 @@ export const PLAYER_DATA = {
           "club": "Portsmouth",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gustavo-caballero/profil/spieler/891672",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:05.841Z"
         }
       ]
     },
@@ -4779,11 +4779,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mert-gunok/profil/spieler/51894",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4803,11 +4803,11 @@ export const PLAYER_DATA = {
           "club": "Al-Ahli",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/merih-demiral/profil/spieler/340879",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4815,11 +4815,11 @@ export const PLAYER_DATA = {
           "club": "AS Roma",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zeki-celik/profil/spieler/251075",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4827,11 +4827,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/caglar-soyuncu/profil/spieler/320141",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4839,11 +4839,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mert-muldur/profil/spieler/353922",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4863,11 +4863,11 @@ export const PLAYER_DATA = {
           "club": "TSG Hoffenheim",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ozan-kabak/profil/spieler/361260",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4899,16 +4899,16 @@ export const PLAYER_DATA = {
           "club": "Caykur Rizesport",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/samet-akaydin/profil/spieler/295024",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
-          "name": "Hakan Calhanoglou (Inter Milan",
-          "club": "",
+          "name": "Hakan Calhanoglou",
+          "club": "Inter Milan",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": null,
@@ -4923,11 +4923,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kaan-ayhan/profil/spieler/119031",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4935,11 +4935,11 @@ export const PLAYER_DATA = {
           "club": "Besiktas",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/orkun-kokcu/profil/spieler/454567",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4947,11 +4947,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismail-yuksek/profil/spieler/613725",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4959,11 +4959,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/salih-ozcan/profil/spieler/244940",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4971,11 +4971,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kerem-akturkoglu/profil/spieler/382528",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -4983,11 +4983,11 @@ export const PLAYER_DATA = {
           "club": "Kasimpasa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/irfan-can-kahveci/profil/spieler/216603",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -5007,11 +5007,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/arda-guler/profil/spieler/861410",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -5031,11 +5031,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yunus-akgun/profil/spieler/396908",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.370Z"
         },
         {
           "team": "Türkiye",
@@ -5055,11 +5055,11 @@ export const PLAYER_DATA = {
           "club": "Porto",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/deniz-gul/profil/spieler/1063292",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.371Z"
         },
         {
           "team": "Türkiye",
@@ -5067,11 +5067,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Frankfurt",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/can-uzun/profil/spieler/816585",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:07.371Z"
         }
       ]
     },
@@ -5084,11 +5084,11 @@ export const PLAYER_DATA = {
           "club": "Hoffenheim",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/oliver-baumann/profil/spieler/55089",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5096,11 +5096,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/manuel-neuer/profil/spieler/17259",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5108,11 +5108,11 @@ export const PLAYER_DATA = {
           "club": "Stuttgart",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexander-nubel/profil/spieler/195778",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5120,11 +5120,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/waldemar-anton/profil/spieler/193004",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5132,11 +5132,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Frankfurt",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nathaniel-brown/profil/spieler/691892",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5144,11 +5144,11 @@ export const PLAYER_DATA = {
           "club": "RB Leipzig",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-raum/profil/spieler/318204",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5156,11 +5156,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/antonio-rudiger/profil/spieler/86202",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5168,11 +5168,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nico-schlotterbeck/profil/spieler/388198",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5180,11 +5180,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jonathan-tah/profil/spieler/196357",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5192,11 +5192,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/malick-thiaw/profil/spieler/521964",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5216,11 +5216,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joshua-kimmich/profil/spieler/161056",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5228,11 +5228,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/felix-nmecha/profil/spieler/406640",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5240,11 +5240,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aleksandar-pavlovic/profil/spieler/792380",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5252,11 +5252,11 @@ export const PLAYER_DATA = {
           "club": "Stuttgart",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/angelo-stiller/profil/spieler/443710",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5264,11 +5264,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leon-goretzka/profil/spieler/153084",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.685Z"
         },
         {
           "team": "Germany",
@@ -5276,11 +5276,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/florian-wirtz/profil/spieler/598577",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5288,11 +5288,11 @@ export const PLAYER_DATA = {
           "club": "Stuttgart",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jamie-leweling/profil/spieler/518505",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5300,11 +5300,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/maximilian-beier/profil/spieler/578392",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5312,11 +5312,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kai-havertz/profil/spieler/309400",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5336,11 +5336,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jamal-musiala/profil/spieler/580195",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5348,11 +5348,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leroy-sane/profil/spieler/192565",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5360,11 +5360,11 @@ export const PLAYER_DATA = {
           "club": "Stuttgart",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/deniz-undav/profil/spieler/339314",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         },
         {
           "team": "Germany",
@@ -5372,11 +5372,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nick-woltemade/profil/spieler/455661",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:08.686Z"
         }
       ]
     },
@@ -5389,11 +5389,11 @@ export const PLAYER_DATA = {
           "club": "Miami FC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/eloy-room/profil/spieler/79294",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5401,11 +5401,11 @@ export const PLAYER_DATA = {
           "club": "Telstar",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tyrick-bodak/profil/spieler/663961",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5413,11 +5413,11 @@ export const PLAYER_DATA = {
           "club": "VVV Venlo",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/trevor-doornbusch/profil/spieler/390814",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5425,11 +5425,11 @@ export const PLAYER_DATA = {
           "club": "Konyaspor",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/riechedly-bazoer/profil/spieler/216443",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5437,11 +5437,11 @@ export const PLAYER_DATA = {
           "club": "Kayserispor",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joshua-brenet/profil/spieler/207006",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5449,11 +5449,11 @@ export const PLAYER_DATA = {
           "club": "RKC Waalwijk",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/roshon-van-eijma/profil/spieler/401029",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5461,11 +5461,11 @@ export const PLAYER_DATA = {
           "club": "PEC Zwolle",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sherel-floranus/profil/spieler/315211",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5473,11 +5473,11 @@ export const PLAYER_DATA = {
           "club": "NEC Nijmegen",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/deveron-fonville/profil/spieler/708989",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5485,11 +5485,11 @@ export const PLAYER_DATA = {
           "club": "Abha",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jurien-gaari/profil/spieler/328455",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5497,11 +5497,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/armando-obispo/profil/spieler/339337",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5509,11 +5509,11 @@ export const PLAYER_DATA = {
           "club": "Sparta Rotterdam",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/shurandy-sambo/profil/spieler/412937",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5521,11 +5521,11 @@ export const PLAYER_DATA = {
           "club": "Volendam",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/juninho-bacuna/profil/spieler/348863",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5533,11 +5533,11 @@ export const PLAYER_DATA = {
           "club": "Igdir",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leandro-bacuna/profil/spieler/126014",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5545,11 +5545,11 @@ export const PLAYER_DATA = {
           "club": "Zurich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/livano-comenencia/profil/spieler/626764",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5557,11 +5557,11 @@ export const PLAYER_DATA = {
           "club": "Den Bosch",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kevin-felida/profil/spieler/433933",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5569,11 +5569,11 @@ export const PLAYER_DATA = {
           "club": "Rotherham United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/arjany-martha/profil/spieler/572519",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5581,11 +5581,11 @@ export const PLAYER_DATA = {
           "club": "Telstar",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tyrese-noslin/profil/spieler/708005",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5593,11 +5593,11 @@ export const PLAYER_DATA = {
           "club": "RKC Waalwijk",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/godfried-roemeratoe/profil/spieler/393241",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5605,11 +5605,11 @@ export const PLAYER_DATA = {
           "club": "Kifisia",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jeremy-antonisse/profil/spieler/594273",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5617,11 +5617,11 @@ export const PLAYER_DATA = {
           "club": "Sheffield United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tahith-chong/profil/spieler/344830",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5629,11 +5629,11 @@ export const PLAYER_DATA = {
           "club": "Maccabi Haifa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kenji-gorre/profil/spieler/374889",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5641,11 +5641,11 @@ export const PLAYER_DATA = {
           "club": "Middlesbrough",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sontje-hansen/profil/spieler/485582",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5653,11 +5653,11 @@ export const PLAYER_DATA = {
           "club": "Terengganu",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gervane-kastaneer/profil/spieler/240752",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5665,11 +5665,11 @@ export const PLAYER_DATA = {
           "club": "Volendam",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brandley-kuwas/profil/spieler/232219",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5677,11 +5677,11 @@ export const PLAYER_DATA = {
           "club": "Miami FC",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jurgen-locadia/profil/spieler/166240",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         },
         {
           "team": "Curacao",
@@ -5689,11 +5689,11 @@ export const PLAYER_DATA = {
           "club": "Beveren",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jearl-margaritha/profil/spieler/538958",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:10.122Z"
         }
       ]
     },
@@ -5706,11 +5706,11 @@ export const PLAYER_DATA = {
           "club": "Rizespor",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yahia-fofana/profil/spieler/418651",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5718,11 +5718,11 @@ export const PLAYER_DATA = {
           "club": "Charleroi",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-kone/profil/spieler/911985",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5730,11 +5730,11 @@ export const PLAYER_DATA = {
           "club": "Panathinaikos",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alban-lafont/profil/spieler/357117",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5742,11 +5742,11 @@ export const PLAYER_DATA = {
           "club": "Beşiktaş",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/emmanuel-agbadou/profil/spieler/683895",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5766,11 +5766,11 @@ export const PLAYER_DATA = {
           "club": "Sporting CP",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ousmane-diomande/profil/spieler/974982",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5778,11 +5778,11 @@ export const PLAYER_DATA = {
           "club": "Strasbourg",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/guela-doue/profil/spieler/711980",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5790,11 +5790,11 @@ export const PLAYER_DATA = {
           "club": "Gil Vicente",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ghislain-konan/profil/spieler/422850",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5802,11 +5802,11 @@ export const PLAYER_DATA = {
           "club": "Atalanta",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/odilon-kossounou/profil/spieler/644771",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5814,11 +5814,11 @@ export const PLAYER_DATA = {
           "club": "AS Roma",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/evan-ndicka/profil/spieler/371149",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5826,11 +5826,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/wilfried-singo/profil/spieler/648779",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5838,11 +5838,11 @@ export const PLAYER_DATA = {
           "club": "Porto",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/seko-fofana/profil/spieler/182893",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5850,11 +5850,11 @@ export const PLAYER_DATA = {
           "club": "Charleroi",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/parfait-guiagon/profil/spieler/624913",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5862,11 +5862,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/franck-kessie/profil/spieler/294808",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5874,11 +5874,11 @@ export const PLAYER_DATA = {
           "club": "Trabzonspor",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/christ-inao-oulai/profil/spieler/1279526",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5886,11 +5886,11 @@ export const PLAYER_DATA = {
           "club": "Nottingham Forest",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ibrahim-sangare/profil/spieler/375885",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5898,11 +5898,11 @@ export const PLAYER_DATA = {
           "club": "NK Maribor",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jean-michael-seri/profil/spieler/178614",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5910,11 +5910,11 @@ export const PLAYER_DATA = {
           "club": "AS Monaco",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/simon-adingra/profil/spieler/658536",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5922,11 +5922,11 @@ export const PLAYER_DATA = {
           "club": "Internazionale",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ange-yoan-bonny/profil/spieler/827734",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5934,11 +5934,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amad-diallo/profil/spieler/536835",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5946,11 +5946,11 @@ export const PLAYER_DATA = {
           "club": "Cercle Brugge",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/oumar-diakite/profil/spieler/847279",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5958,11 +5958,11 @@ export const PLAYER_DATA = {
           "club": "RB Leipzig",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yan-diomande/profil/spieler/1390649",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5970,11 +5970,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/evann-guessand/profil/spieler/500689",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5982,11 +5982,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-pepe/profil/spieler/343052",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -5994,11 +5994,11 @@ export const PLAYER_DATA = {
           "club": "Hoffenheim",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bazoumana-toure/profil/spieler/1067904",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         },
         {
           "team": "Ivory Coast",
@@ -6006,11 +6006,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elye-wahi/profil/spieler/659542",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:12.257Z"
         }
       ]
     },
@@ -6023,11 +6023,11 @@ export const PLAYER_DATA = {
           "club": "Huracan",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hernan-galindez/profil/spieler/77127",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6035,11 +6035,11 @@ export const PLAYER_DATA = {
           "club": "AE Kifisias",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moises-ramirez/profil/spieler/450233",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6047,11 +6047,11 @@ export const PLAYER_DATA = {
           "club": "LDU Quito",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gonzalo-valle/profil/spieler/351941",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6059,11 +6059,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/willian-pacho/profil/spieler/661171",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6071,11 +6071,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/piero-hincapie/profil/spieler/659813",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6083,11 +6083,11 @@ export const PLAYER_DATA = {
           "club": "Club Brugge",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joel-ordonez/profil/spieler/893661",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6095,11 +6095,11 @@ export const PLAYER_DATA = {
           "club": "Internacional",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/felix-torres/profil/spieler/468174",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6107,11 +6107,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pervis-estupinan/profil/spieler/349599",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6119,11 +6119,11 @@ export const PLAYER_DATA = {
           "club": "Racing Genk",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yaimar-medina/profil/spieler/893659",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6131,11 +6131,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Mineiro",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/angelo-preciado/profil/spieler/450241",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6143,11 +6143,11 @@ export const PLAYER_DATA = {
           "club": "Club Tijuana",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jackson-porozo/profil/spieler/491616",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6155,11 +6155,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Mineiro",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alan-minda/profil/spieler/897051",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6167,11 +6167,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moises-caicedo/profil/spieler/687626",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6179,11 +6179,11 @@ export const PLAYER_DATA = {
           "club": "Independiente del Valle",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jordy-alcivar/profil/spieler/598145",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6191,11 +6191,11 @@ export const PLAYER_DATA = {
           "club": "FC Midtjylland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/denil-castillo/profil/spieler/941418",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6203,11 +6203,11 @@ export const PLAYER_DATA = {
           "club": "Venezia",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Second Striker",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/john-yeboah/profil/spieler/439914",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6215,11 +6215,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Mineiro",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alan-franco/profil/spieler/400960",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6227,11 +6227,11 @@ export const PLAYER_DATA = {
           "club": "Pumas UNAM",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pedro-vite/profil/spieler/659806",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6239,11 +6239,11 @@ export const PLAYER_DATA = {
           "club": "River Plate",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kendry-paez/profil/spieler/1052439",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6251,11 +6251,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nilson-angulo/profil/spieler/903611",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6263,11 +6263,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gonzalo-plata/profil/spieler/592735",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6275,11 +6275,11 @@ export const PLAYER_DATA = {
           "club": "Union St.-Gilloise",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kevin-rodriguez/profil/spieler/684159",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6287,11 +6287,11 @@ export const PLAYER_DATA = {
           "club": "Antwerp",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anthony-valencia/profil/spieler/974374",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6299,11 +6299,11 @@ export const PLAYER_DATA = {
           "club": "Pachuca",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/enner-valencia/profil/spieler/139503",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6311,11 +6311,11 @@ export const PLAYER_DATA = {
           "club": "Huracán",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jordy-caicedo/profil/spieler/360412",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         },
         {
           "team": "Ecuador",
@@ -6323,11 +6323,11 @@ export const PLAYER_DATA = {
           "club": "VfB Stuttgart",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jeremy-arevalo/profil/spieler/971663",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:13.804Z"
         }
       ]
     },
@@ -6340,11 +6340,11 @@ export const PLAYER_DATA = {
           "club": "Bayer Leverkusen",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mark-flekken/profil/spieler/125714",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6352,11 +6352,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/robin-roefs/profil/spieler/646991",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6364,11 +6364,11 @@ export const PLAYER_DATA = {
           "club": "Brighton",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bart-verbruggen/profil/spieler/565093",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6376,11 +6376,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nathan-ake/profil/spieler/177476",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6388,11 +6388,11 @@ export const PLAYER_DATA = {
           "club": "Inter Milan",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/denzel-dumfries/profil/spieler/321528",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6400,11 +6400,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jorrel-hato/profil/spieler/904802",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6424,11 +6424,11 @@ export const PLAYER_DATA = {
           "club": "Brighton",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jan-paul-van-hecke/profil/spieler/576314",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6436,11 +6436,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/micky-van-de-ven/profil/spieler/557459",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6448,11 +6448,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/virgil-van-dijk/profil/spieler/139208",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6460,11 +6460,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/frenkie-de-jong/profil/spieler/326330",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6472,11 +6472,11 @@ export const PLAYER_DATA = {
           "club": "Atalanta",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marten-de-roon/profil/spieler/133179",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6484,11 +6484,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ryan-gravenberch/profil/spieler/478573",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6496,11 +6496,11 @@ export const PLAYER_DATA = {
           "club": "Juventus",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/teun-koopmeiners/profil/spieler/360518",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6508,11 +6508,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tijjani-reijnders/profil/spieler/460939",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6520,11 +6520,11 @@ export const PLAYER_DATA = {
           "club": "PSV",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/guus-til/profil/spieler/372267",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6532,11 +6532,11 @@ export const PLAYER_DATA = {
           "club": "Marseille",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/quinten-timber/profil/spieler/420213",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6544,11 +6544,11 @@ export const PLAYER_DATA = {
           "club": "Brighton",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mats-wieffer/profil/spieler/415381",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6556,11 +6556,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brian-brobbey/profil/spieler/473169",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6568,11 +6568,11 @@ export const PLAYER_DATA = {
           "club": "Corinthians",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/memphis-depay/profil/spieler/167850",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6580,11 +6580,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cody-gakpo/profil/spieler/434675",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6592,11 +6592,11 @@ export const PLAYER_DATA = {
           "club": "Bournemouth",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/justin-kluivert/profil/spieler/330659",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6604,11 +6604,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/noa-lang/profil/spieler/339332",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6616,11 +6616,11 @@ export const PLAYER_DATA = {
           "club": "Roma",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/donyell-malen/profil/spieler/326029",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6628,11 +6628,11 @@ export const PLAYER_DATA = {
           "club": "West Ham",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/crysencio-summerville/profil/spieler/474701",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         },
         {
           "team": "Netherlands",
@@ -6640,11 +6640,11 @@ export const PLAYER_DATA = {
           "club": "Ajax",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/wout-weghorst/profil/spieler/228645",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:16.310Z"
         }
       ]
     },
@@ -6660,8 +6660,8 @@ export const PLAYER_DATA = {
           "mainPosition": "Goalkeeper",
           "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/zion-suzuki/profil/spieler/432298",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:00.116Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6672,8 +6672,8 @@ export const PLAYER_DATA = {
           "mainPosition": "Goalkeeper",
           "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/keisuke-osako/profil/spieler/415521",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:03.010Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6684,8 +6684,8 @@ export const PLAYER_DATA = {
           "mainPosition": "Goalkeeper",
           "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/tomoki-hayakawa/profil/spieler/683271",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:05.502Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6694,13 +6694,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Left-Back",
-          "otherPositions": [
-            "Left Midfield",
-            "Right-Back"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/yuto-nagatomo/profil/spieler/79522",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:08.087Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6709,12 +6706,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Centre-Back",
-          "otherPositions": [
-            "Defensive Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/shogo-taniguchi/profil/spieler/307870",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:10.843Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6723,12 +6718,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Centre-Back",
-          "otherPositions": [
-            "Defensive Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/ko-itakura/profil/spieler/355816",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:14.084Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6737,12 +6730,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Centre-Back",
-          "otherPositions": [
-            "Defensive Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/tsuyoshi-watanabe/profil/spieler/598791",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:16.989Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6751,13 +6742,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Right-Back",
-          "otherPositions": [
-            "Centre-Back",
-            "Left-Back"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/takehiro-tomiyasu/profil/spieler/331560",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:20.078Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6766,13 +6754,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Centre-Back",
-          "otherPositions": [
-            "Left-Back",
-            "Defensive Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/hiroki-ito/profil/spieler/353892",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:22.786Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6781,12 +6766,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Centre-Back",
-          "otherPositions": [
-            "Defensive Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/ayumu-seko/profil/spieler/405389",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:25.885Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6795,13 +6778,10 @@ export const PLAYER_DATA = {
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
           "mainPosition": "Right-Back",
-          "otherPositions": [
-            "Right Midfield",
-            "Centre-Back"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/yukinari-sugawara/profil/spieler/405385",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:28.477Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6810,12 +6790,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Centre-Back",
-          "otherPositions": [
-            "Right-Back"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/junnosuke-suzuki/profil/spieler/848856",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:31.472Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6824,13 +6802,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Defensive Midfield",
-          "otherPositions": [
-            "Centre-Back",
-            "Central Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/wataru-endo/profil/spieler/146310",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:34.337Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6839,13 +6814,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Right Winger",
-          "otherPositions": [
-            "Right Midfield",
-            "Centre-Forward"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/junya-ito/profil/spieler/348791",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:37.225Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6854,13 +6826,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Attacking Midfield",
-          "otherPositions": [
-            "Second Striker",
-            "Central Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/daichi-kamada/profil/spieler/356141",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:40.065Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6869,13 +6838,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Right Winger",
-          "otherPositions": [
-            "Right Midfield",
-            "Attacking Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/ritsu-doan/profil/spieler/358504",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:43.401Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6884,13 +6850,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Central Midfield",
-          "otherPositions": [
-            "Defensive Midfield",
-            "Attacking Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/ao-tanaka/profil/spieler/489359",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:46.007Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6899,13 +6862,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Left Winger",
-          "otherPositions": [
-            "Centre-Forward",
-            "Left Midfield"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/keito-nakamura/profil/spieler/405397",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:48.528Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6916,8 +6876,8 @@ export const PLAYER_DATA = {
           "mainPosition": "Defensive Midfield",
           "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/kaishu-sano/profil/spieler/643574",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:52.426Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6926,13 +6886,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Right Winger",
-          "otherPositions": [
-            "Attacking Midfield",
-            "Left Winger"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/takefusa-kubo/profil/spieler/405398",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:55.179Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6941,13 +6898,10 @@ export const PLAYER_DATA = {
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
           "mainPosition": "Second Striker",
-          "otherPositions": [
-            "Attacking Midfield",
-            "Right Winger"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/yuito-suzuki/profil/spieler/668606",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:53:58.548Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6958,8 +6912,8 @@ export const PLAYER_DATA = {
           "mainPosition": "Centre-Forward",
           "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/koki-ogawa/profil/spieler/351567",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:54:01.694Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6968,13 +6922,10 @@ export const PLAYER_DATA = {
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
           "mainPosition": "Left Winger",
-          "otherPositions": [
-            "Centre-Forward",
-            "Second Striker"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/daizen-maeda/profil/spieler/420931",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:54:04.404Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6983,12 +6934,10 @@ export const PLAYER_DATA = {
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
           "mainPosition": "Centre-Forward",
-          "otherPositions": [
-            "Second Striker"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/ayase-ueda/profil/spieler/589128",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:54:06.900Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -6999,8 +6948,8 @@ export const PLAYER_DATA = {
           "mainPosition": "Centre-Forward",
           "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/kento-shiogai/profil/spieler/1144627",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:54:09.471Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         },
         {
           "team": "Japan",
@@ -7009,12 +6958,10 @@ export const PLAYER_DATA = {
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
           "mainPosition": "Centre-Forward",
-          "otherPositions": [
-            "Left Winger"
-          ],
+          "otherPositions": [],
           "transfermarktUrl": "https://www.transfermarkt.com/keisuke-goto/profil/spieler/916623",
-          "positionSource": "transfermarkt",
-          "positionUpdatedAt": "2026-06-11T08:54:12.359Z"
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:17.757Z"
         }
       ]
     },
@@ -7027,11 +6974,11 @@ export const PLAYER_DATA = {
           "club": "Stoke City",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/viktor-johansson/profil/spieler/273742",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7039,11 +6986,11 @@ export const PLAYER_DATA = {
           "club": "AIK",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kristoffer-nordfeldt/profil/spieler/75890",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7051,11 +6998,11 @@ export const PLAYER_DATA = {
           "club": "Derby County",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jacob-widell-zetterstrom/profil/spieler/549440",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7063,11 +7010,11 @@ export const PLAYER_DATA = {
           "club": "Burnley",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hjalmar-ekdal/profil/spieler/392179",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7075,11 +7022,11 @@ export const PLAYER_DATA = {
           "club": "Leeds United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gabriel-gudmundsson/profil/spieler/362108",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7087,11 +7034,11 @@ export const PLAYER_DATA = {
           "club": "Atalanta",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/isak-hien/profil/spieler/503075",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7111,11 +7058,11 @@ export const PLAYER_DATA = {
           "club": "Braga",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gustaf-lagerbielke/profil/spieler/485395",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7123,11 +7070,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/victor-lindelof/profil/spieler/184573",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7147,11 +7094,11 @@ export const PLAYER_DATA = {
           "club": "Celta Vigo",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/carl-starfelt/profil/spieler/258987",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7159,11 +7106,11 @@ export const PLAYER_DATA = {
           "club": "Mjallby",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elliot-stroud/profil/spieler/687622",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7171,11 +7118,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/daniel-svensson/profil/spieler/579287",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7183,11 +7130,11 @@ export const PLAYER_DATA = {
           "club": "Malmo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/taha-ali/profil/spieler/731771",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7195,11 +7142,11 @@ export const PLAYER_DATA = {
           "club": "Brighton",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yasin-ayari/profil/spieler/667287",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7207,11 +7154,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lucas-bergvall/profil/spieler/866246",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7219,11 +7166,11 @@ export const PLAYER_DATA = {
           "club": "Udinese",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jesper-karlstrom/profil/spieler/222855",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7231,11 +7178,11 @@ export const PLAYER_DATA = {
           "club": "Pafos",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ken-sema/profil/spieler/252345",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7243,11 +7190,11 @@ export const PLAYER_DATA = {
           "club": "Wolfsburg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mattias-svanberg/profil/spieler/342405",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7255,11 +7202,11 @@ export const PLAYER_DATA = {
           "club": "Union St-Gilloise",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/besfort-zeneli/profil/spieler/715653",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7267,11 +7214,11 @@ export const PLAYER_DATA = {
           "club": "Holstein Kiel",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexander-bernhardsson/profil/spieler/633454",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7279,11 +7226,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anthony-elanga/profil/spieler/583189",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7291,11 +7238,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/viktor-gyokeres/profil/spieler/325443",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7303,11 +7250,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexander-isak/profil/spieler/349066",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7315,11 +7262,11 @@ export const PLAYER_DATA = {
           "club": "Club Brugge",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gustaf-nilsson/profil/spieler/320440",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         },
         {
           "team": "Sweden",
@@ -7327,11 +7274,11 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/benjamin-nygren/profil/spieler/475949",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:19.079Z"
         }
       ]
     },
@@ -7344,11 +7291,11 @@ export const PLAYER_DATA = {
           "club": "CS Sfaxien",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aymen-dahmen/profil/spieler/569433",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7356,11 +7303,11 @@ export const PLAYER_DATA = {
           "club": "Étoile du Sahel",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sabri-ben-hessen/profil/spieler/295381",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7368,11 +7315,11 @@ export const PLAYER_DATA = {
           "club": "Club Africain",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdelmouhib-chamakh/profil/spieler/584250",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7380,11 +7327,11 @@ export const PLAYER_DATA = {
           "club": "Lorient",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/montassar-talbi/profil/spieler/496706",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7392,11 +7339,11 @@ export const PLAYER_DATA = {
           "club": "Servette",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dylan-bronn/profil/spieler/450417",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7404,11 +7351,11 @@ export const PLAYER_DATA = {
           "club": "Maribor",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/omar-rekik/profil/spieler/578292",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7416,11 +7363,11 @@ export const PLAYER_DATA = {
           "club": "Young Boys",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yan-valery/profil/spieler/406008",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7428,11 +7375,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-abdi/profil/spieler/211474",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7440,11 +7387,11 @@ export const PLAYER_DATA = {
           "club": "IFK Norrköping",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moutaz-neffati/profil/spieler/1034598",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7452,11 +7399,11 @@ export const PLAYER_DATA = {
           "club": "US Monastir",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/raed-chikhaoui/profil/spieler/1075790",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7476,11 +7423,11 @@ export const PLAYER_DATA = {
           "club": "Espérance de Tunis",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-amine-ben-hamida/profil/spieler/454495",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7488,11 +7435,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Frankfurt",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ellyes-skhiri/profil/spieler/290587",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7512,11 +7459,11 @@ export const PLAYER_DATA = {
           "club": "Norwich City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anis-ben-slimane/profil/spieler/546712",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7536,11 +7483,11 @@ export const PLAYER_DATA = {
           "club": "Union Berlin",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rani-khedira/profil/spieler/124410",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7548,11 +7495,11 @@ export const PLAYER_DATA = {
           "club": "Kasımpaşa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mortadha-ben-ouanes/profil/spieler/230921",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7560,11 +7507,11 @@ export const PLAYER_DATA = {
           "club": "Copenhagen",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elias-achouri/profil/spieler/645589",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7572,11 +7519,11 @@ export const PLAYER_DATA = {
           "club": "Augsburg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismael-gharbi/profil/spieler/810096",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7584,11 +7531,11 @@ export const PLAYER_DATA = {
           "club": "Hannover 96",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elias-saad/profil/spieler/526466",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7596,11 +7543,11 @@ export const PLAYER_DATA = {
           "club": "Celtic",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sebastian-tounekti/profil/spieler/539677",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7608,11 +7555,11 @@ export const PLAYER_DATA = {
           "club": "Club Africain",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/firas-chaouat/profil/spieler/402087",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7620,11 +7567,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/khalil-ayari/profil/spieler/1198342",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7632,11 +7579,11 @@ export const PLAYER_DATA = {
           "club": "Dynamo Makhachkala",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hazem-mastouri/profil/spieler/953150",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7644,11 +7591,11 @@ export const PLAYER_DATA = {
           "club": "Vancouver Whitecaps",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rayan-elloumi/profil/spieler/1273985",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         },
         {
           "team": "Tunisia",
@@ -7656,11 +7603,11 @@ export const PLAYER_DATA = {
           "club": "Hannover 96",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elias-saad/profil/spieler/526466",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:20.796Z"
         }
       ]
     },
@@ -7673,11 +7620,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thibaut-courtois/profil/spieler/108390",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7685,11 +7632,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/senne-lammens/profil/spieler/503883",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7697,11 +7644,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mike-penders/profil/spieler/834397",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7709,11 +7656,11 @@ export const PLAYER_DATA = {
           "club": "Fulham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/timothy-castagne/profil/spieler/262226",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7721,11 +7668,11 @@ export const PLAYER_DATA = {
           "club": "Sporting CP",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zeno-debast/profil/spieler/548193",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7733,11 +7680,11 @@ export const PLAYER_DATA = {
           "club": "Brighton & Hove Albion",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/maxim-de-cuyper/profil/spieler/429915",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7745,11 +7692,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/koni-de-winter/profil/spieler/490384",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7757,11 +7704,11 @@ export const PLAYER_DATA = {
           "club": "Club Brugge",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brandon-mechele/profil/spieler/236168",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7769,11 +7716,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thomas-meunier/profil/spieler/100986",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7781,11 +7728,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nathan-ngoy/profil/spieler/548254",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7793,11 +7740,11 @@ export const PLAYER_DATA = {
           "club": "Club Brugge",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joaquin-seys/profil/spieler/981196",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7805,11 +7752,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Frankfurt",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/arthur-theate/profil/spieler/368891",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7817,11 +7764,11 @@ export const PLAYER_DATA = {
           "club": "Napoli",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kevin-de-bruyne/profil/spieler/88755",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7829,11 +7776,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amadou-onana/profil/spieler/485706",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7841,11 +7788,11 @@ export const PLAYER_DATA = {
           "club": "Rangers",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-raskin/profil/spieler/422763",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7853,11 +7800,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/youri-tielemans/profil/spieler/249565",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7865,11 +7812,11 @@ export const PLAYER_DATA = {
           "club": "Club Brugge",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hans-vanaken/profil/spieler/137576",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7877,11 +7824,11 @@ export const PLAYER_DATA = {
           "club": "Girona",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/axel-witsel/profil/spieler/35047",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7889,11 +7836,11 @@ export const PLAYER_DATA = {
           "club": "Atalanta",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/charles-de-ketelaere/profil/spieler/435772",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7901,11 +7848,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jeremy-doku/profil/spieler/486049",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7913,11 +7860,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matias-fernandez-pardo/profil/spieler/724129",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7925,11 +7872,11 @@ export const PLAYER_DATA = {
           "club": "Napoli",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/romelu-lukaku/profil/spieler/96341",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7937,11 +7884,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dodi-lukebakio/profil/spieler/303259",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7949,11 +7896,11 @@ export const PLAYER_DATA = {
           "club": "Strasbourg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/diego-moreira/profil/spieler/655006",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7961,11 +7908,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexis-saelemaekers/profil/spieler/381950",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         },
         {
           "team": "Belgium",
@@ -7973,11 +7920,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leandro-trossard/profil/spieler/144028",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:22.111Z"
         }
       ]
     },
@@ -7990,11 +7937,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahly",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-el-shenawy/profil/spieler/134573",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8026,11 +7973,11 @@ export const PLAYER_DATA = {
           "club": "El Gouna",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-alaa/profil/spieler/1307898",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8038,11 +7985,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahly",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-hany/profil/spieler/343974",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8050,11 +7997,11 @@ export const PLAYER_DATA = {
           "club": "Zamalek",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tarek-alaa/profil/spieler/1087789",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8062,11 +8009,11 @@ export const PLAYER_DATA = {
           "club": "Al Wakrah",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hamdy-fathy/profil/spieler/340303",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8074,11 +8021,11 @@ export const PLAYER_DATA = {
           "club": "Al Ain",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ramy-rabia/profil/spieler/172623",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8086,11 +8033,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahly",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yasser-ibrahim/profil/spieler/237425",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8098,11 +8045,11 @@ export const PLAYER_DATA = {
           "club": "Zamalek",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hossam-abdelmaguid/profil/spieler/737524",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8110,11 +8057,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-abdelmonem/profil/spieler/566025",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8122,11 +8069,11 @@ export const PLAYER_DATA = {
           "club": "Zamalek",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ahmed-fatouh/profil/spieler/465966",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8134,11 +8081,11 @@ export const PLAYER_DATA = {
           "club": "Pyramids",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/karim-hafez/profil/spieler/333004",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8158,11 +8105,11 @@ export const PLAYER_DATA = {
           "club": "Pyramids",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohanad-lasheen/profil/spieler/479682",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8182,11 +8129,11 @@ export const PLAYER_DATA = {
           "club": "Zed",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mahmoud-saber/profil/spieler/729390",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8206,11 +8153,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahly",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/emam-ashour/profil/spieler/604008",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8218,11 +8165,11 @@ export const PLAYER_DATA = {
           "club": "Pyramids",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mostafa-ziko/profil/spieler/896616",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8242,11 +8189,11 @@ export const PLAYER_DATA = {
           "club": "Nordsjaelland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ibrahim-adel/profil/spieler/677278",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8254,11 +8201,11 @@ export const PLAYER_DATA = {
           "club": "Real Oviedo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/haissem-hassan/profil/spieler/620164",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8266,11 +8213,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/omar-marmoush/profil/spieler/445939",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8278,11 +8225,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-salah/profil/spieler/148455",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         },
         {
           "team": "Egypt",
@@ -8290,11 +8237,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona B",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hamza-abdelkarim/profil/spieler/1259085",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:23.477Z"
         }
       ]
     },
@@ -8307,11 +8254,11 @@ export const PLAYER_DATA = {
           "club": "Tractor",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alireza-beiranvand/profil/spieler/229081",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8331,11 +8278,11 @@ export const PLAYER_DATA = {
           "club": "Persepolis",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/payam-niazmand/profil/spieler/343044",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8343,11 +8290,11 @@ export const PLAYER_DATA = {
           "club": "Malavan",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/danial-eiri/profil/spieler/1080301",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8355,11 +8302,11 @@ export const PLAYER_DATA = {
           "club": "Sepahan",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ehsan-hajsafi/profil/spieler/77547",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8367,11 +8314,11 @@ export const PLAYER_DATA = {
           "club": "Esteghlal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/saleh-hardani/profil/spieler/697155",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8379,11 +8326,11 @@ export const PLAYER_DATA = {
           "club": "Persepolis",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hossein-kanaani/profil/spieler/249400",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8403,11 +8350,11 @@ export const PLAYER_DATA = {
           "club": "Persepolis",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/milad-mohammadi/profil/spieler/333355",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8427,11 +8374,11 @@ export const PLAYER_DATA = {
           "club": "Foolad",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ramin-rezaeian/profil/spieler/188312",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8475,11 +8422,11 @@ export const PLAYER_DATA = {
           "club": "Kalba",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/saman-ghoddos/profil/spieler/204294",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8487,11 +8434,11 @@ export const PLAYER_DATA = {
           "club": "Al-Wahda",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohammad-ghorbani/profil/spieler/856087",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8499,11 +8446,11 @@ export const PLAYER_DATA = {
           "club": "Dender",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alireza-jahanbakhsh/profil/spieler/213268",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8511,11 +8458,11 @@ export const PLAYER_DATA = {
           "club": "Rostovv",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohammad-mohebi/profil/spieler/603149",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8535,11 +8482,11 @@ export const PLAYER_DATA = {
           "club": "Tractor",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mehdi-torabi/profil/spieler/283833",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8559,11 +8506,11 @@ export const PLAYER_DATA = {
           "club": "Persepolis",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-alipour/profil/spieler/249360",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8583,11 +8530,11 @@ export const PLAYER_DATA = {
           "club": "Tractor",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amirhossein-hosseinzadeh/profil/spieler/542380",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         },
         {
           "team": "Iran",
@@ -8607,11 +8554,11 @@ export const PLAYER_DATA = {
           "club": "Olympiacos",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mehdi-taremi/profil/spieler/307058",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:25.146Z"
         }
       ]
     },
@@ -8624,11 +8571,11 @@ export const PLAYER_DATA = {
           "club": "Millwall",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/max-crocombe/profil/spieler/207843",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8636,11 +8583,11 @@ export const PLAYER_DATA = {
           "club": "Lechia Gdańsk",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alex-paulsen/profil/spieler/617009",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8648,11 +8595,11 @@ export const PLAYER_DATA = {
           "club": "Auckland FC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michael-woud/profil/spieler/350347",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8660,11 +8607,11 @@ export const PLAYER_DATA = {
           "club": "Wellington Phoenix",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tim-payne/profil/spieler/149901",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8672,11 +8619,11 @@ export const PLAYER_DATA = {
           "club": "Auckland FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/francis-de-vries/profil/spieler/207061",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8684,11 +8631,11 @@ export const PLAYER_DATA = {
           "club": "Nottingham Forest",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tyler-bindon/profil/spieler/1007720",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8696,11 +8643,11 @@ export const PLAYER_DATA = {
           "club": "Minnesota United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michael-boxall/profil/spieler/81723",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8708,11 +8655,11 @@ export const PLAYER_DATA = {
           "club": "Wrexham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/liberato-cacace/profil/spieler/469211",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8720,11 +8667,11 @@ export const PLAYER_DATA = {
           "club": "Auckland FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nando-pijnaker/profil/spieler/455425",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8732,11 +8679,11 @@ export const PLAYER_DATA = {
           "club": "Portland Timbers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/finn-surman/profil/spieler/724809",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8744,11 +8691,11 @@ export const PLAYER_DATA = {
           "club": "Auckland FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/callan-elliot/profil/spieler/482204",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8756,11 +8703,11 @@ export const PLAYER_DATA = {
           "club": "Braintree Town",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tommy-smith/profil/spieler/54381",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8768,11 +8715,11 @@ export const PLAYER_DATA = {
           "club": "Viking FK",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joe-bell/profil/spieler/345700",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8792,11 +8739,11 @@ export const PLAYER_DATA = {
           "club": "Swansea City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marko-stamenic/profil/spieler/617018",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8804,11 +8751,11 @@ export const PLAYER_DATA = {
           "club": "Wellington Phoenix",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sarpreet-singh/profil/spieler/350357",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8816,11 +8763,11 @@ export const PLAYER_DATA = {
           "club": "Wellington Phoenix",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alex-rufer/profil/spieler/256019",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8828,11 +8775,11 @@ export const PLAYER_DATA = {
           "club": "PEC Zwolle",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ryan-thomas/profil/spieler/203357",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8840,11 +8787,11 @@ export const PLAYER_DATA = {
           "club": "Nottingham Forest",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/chris-wood/profil/spieler/108725",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8864,11 +8811,11 @@ export const PLAYER_DATA = {
           "club": "Western Sydney Wanderers",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kosta-barbarouses/profil/spieler/50200",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8876,11 +8823,11 @@ export const PLAYER_DATA = {
           "club": "Port Vale",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ben-waine/profil/spieler/539502",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8888,11 +8835,11 @@ export const PLAYER_DATA = {
           "club": "Saint-Étienne",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ben-old/profil/spieler/617021",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8900,11 +8847,11 @@ export const PLAYER_DATA = {
           "club": "Silkeborg IF",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/callum-mccowatt/profil/spieler/400797",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8912,11 +8859,11 @@ export const PLAYER_DATA = {
           "club": "Auckland FC",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jesse-randall/profil/spieler/677509",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         },
         {
           "team": "New Zealand",
@@ -8924,11 +8871,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle Jets",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lachlan-bayliss/profil/spieler/1109358",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:26.460Z"
         }
       ]
     },
@@ -8941,11 +8888,11 @@ export const PLAYER_DATA = {
           "club": "Athletic Club",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/unai-simon/profil/spieler/262396",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -8953,11 +8900,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-raya/profil/spieler/262749",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -8965,11 +8912,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joan-garcia/profil/spieler/561613",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -8977,11 +8924,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marc-cucurella/profil/spieler/284857",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -8989,11 +8936,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pau-cubarsi/profil/spieler/962110",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9001,11 +8948,11 @@ export const PLAYER_DATA = {
           "club": "Athletic Club",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aymeric-laporte/profil/spieler/176553",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9025,11 +8972,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham Hotspur",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pedro-porro/profil/spieler/553875",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9037,11 +8984,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/eric-garcia/profil/spieler/466794",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9049,11 +8996,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marcos-llorente/profil/spieler/282411",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9061,11 +9008,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marc-pubill/profil/spieler/844637",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9073,11 +9020,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gavi/profil/spieler/646740",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9085,11 +9032,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rodri/profil/spieler/357565",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9097,11 +9044,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pedri/profil/spieler/683840",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9109,11 +9056,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/martin-zubimendi/profil/spieler/423440",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9121,11 +9068,11 @@ export const PLAYER_DATA = {
           "club": "PSG",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fabian-ruiz/profil/spieler/350219",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9133,11 +9080,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alex-baena/profil/spieler/548111",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9145,11 +9092,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mikel-merino/profil/spieler/338424",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9157,11 +9104,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lamine-yamal/profil/spieler/937958",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9169,11 +9116,11 @@ export const PLAYER_DATA = {
           "club": "Athletic Club",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nico-williams/profil/spieler/709187",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9181,11 +9128,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dani-olmo/profil/spieler/293385",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9193,11 +9140,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ferran-torres/profil/spieler/398184",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9205,11 +9152,11 @@ export const PLAYER_DATA = {
           "club": "Real Sociedad",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mikel-oyarzabal/profil/spieler/351478",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9217,11 +9164,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yeremy-pino/profil/spieler/568157",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9229,11 +9176,11 @@ export const PLAYER_DATA = {
           "club": "Celta Vigo",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/borja-iglesias/profil/spieler/278359",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         },
         {
           "team": "Spain",
@@ -9241,11 +9188,11 @@ export const PLAYER_DATA = {
           "club": "Osasuna",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/victor-munoz/profil/spieler/935231",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:28.399Z"
         }
       ]
     },
@@ -9258,11 +9205,11 @@ export const PLAYER_DATA = {
           "club": "Chaves",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/vozinha/profil/spieler/242277",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9270,11 +9217,11 @@ export const PLAYER_DATA = {
           "club": "Montana",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marcio-rosa/profil/spieler/398048",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9282,11 +9229,11 @@ export const PLAYER_DATA = {
           "club": "San Diego FC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cj-dos-santos/profil/spieler/532096",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9294,11 +9241,11 @@ export const PLAYER_DATA = {
           "club": "Columbus Crew",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/steven-moreira/profil/spieler/203517",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9306,11 +9253,11 @@ export const PLAYER_DATA = {
           "club": "Trabzonspor",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/wagner-pina/profil/spieler/1072017",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9318,11 +9265,11 @@ export const PLAYER_DATA = {
           "club": "FCSB",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joao-paulo/profil/spieler/623965",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9330,11 +9277,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sidny-lopes-cabral/profil/spieler/611855",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9342,11 +9289,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/logan-costa/profil/spieler/484988",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9366,11 +9313,11 @@ export const PLAYER_DATA = {
           "club": "SJK",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kelvin-pires/profil/spieler/662119",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9378,11 +9325,11 @@ export const PLAYER_DATA = {
           "club": "Torreense",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/stopira/profil/spieler/80486",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9402,11 +9349,11 @@ export const PLAYER_DATA = {
           "club": "PEC Zwolle",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jamiro-monteiro/profil/spieler/272930",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9414,11 +9361,11 @@ export const PLAYER_DATA = {
           "club": "Vitoria Guimaraes",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/telmo-arcanjo/profil/spieler/791528",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9426,11 +9373,11 @@ export const PLAYER_DATA = {
           "club": "Farense",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yannick-semedo/profil/spieler/620307",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9438,11 +9385,11 @@ export const PLAYER_DATA = {
           "club": "Puskas Akademia",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/laros-duarte/profil/spieler/258513",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9450,11 +9397,11 @@ export const PLAYER_DATA = {
           "club": "Ludogorets Razgrad",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/deroy-duarte/profil/spieler/432852",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9474,11 +9421,11 @@ export const PLAYER_DATA = {
           "club": "Igdir",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ryan-mendes/profil/spieler/111627",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9486,11 +9433,11 @@ export const PLAYER_DATA = {
           "club": "Omonia",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/willy-semedo/profil/spieler/531450",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9498,11 +9445,11 @@ export const PLAYER_DATA = {
           "club": "Apollon Limassol",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/garry-rodrigues/profil/spieler/170895",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9510,11 +9457,11 @@ export const PLAYER_DATA = {
           "club": "Estrela Amadora",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jovane-cabral/profil/spieler/448466",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9522,11 +9469,11 @@ export const PLAYER_DATA = {
           "club": "Istanbul Basaksehir",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nuno-da-costa/profil/spieler/306166",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9534,11 +9481,11 @@ export const PLAYER_DATA = {
           "club": "Casa Pia",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dailon-livramento/profil/spieler/676411",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         },
         {
           "team": "Cape Verde",
@@ -9558,11 +9505,11 @@ export const PLAYER_DATA = {
           "club": "Maccabi Tel Aviv",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/helio-varela/profil/spieler/840836",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:29.711Z"
         }
       ]
     },
@@ -9575,11 +9522,11 @@ export const PLAYER_DATA = {
           "club": "Estudiantes de La Plata",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fernando-muslera/profil/spieler/58088",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9587,11 +9534,11 @@ export const PLAYER_DATA = {
           "club": "Internacional de Porto Alegre",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sergio-rochet/profil/spieler/264014",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9599,11 +9546,11 @@ export const PLAYER_DATA = {
           "club": "Monterrey",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/santiago-mele/profil/spieler/320739",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9611,11 +9558,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ronald-araujo/profil/spieler/480267",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9623,11 +9570,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-maria-gimenez/profil/spieler/250845",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9635,11 +9582,11 @@ export const PLAYER_DATA = {
           "club": "Wolverhampton Wanderers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/santiago-bueno/profil/spieler/438001",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9647,11 +9594,11 @@ export const PLAYER_DATA = {
           "club": "América",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sebastian-caceres/profil/spieler/532389",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9659,11 +9606,11 @@ export const PLAYER_DATA = {
           "club": "Napoli",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mathias-olivera/profil/spieler/376514",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9671,11 +9618,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/guillermo-varela/profil/spieler/188862",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9683,11 +9630,11 @@ export const PLAYER_DATA = {
           "club": "River Plate",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matias-vina/profil/spieler/439072",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9695,11 +9642,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joaquin-piquerez/profil/spieler/496268",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9707,11 +9654,11 @@ export const PLAYER_DATA = {
           "club": "Real Salt Lake",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/juan-manuel-sanabria/profil/spieler/446106",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9719,11 +9666,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/federico-valverde/profil/spieler/369081",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9731,11 +9678,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham Hotspur",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rodrigo-bentancur/profil/spieler/354362",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9743,11 +9690,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/manuel-ugarte/profil/spieler/476701",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9755,11 +9702,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/emiliano-martinez/profil/spieler/707447",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9767,11 +9714,11 @@ export const PLAYER_DATA = {
           "club": "Sporting CP",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rodrigo-zalazar/profil/spieler/606752",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9779,11 +9726,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/giorgian-de-arrascaeta/profil/spieler/248410",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9791,11 +9738,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-de-la-cruz/profil/spieler/397458",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9803,11 +9750,11 @@ export const PLAYER_DATA = {
           "club": "Fluminense",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/agustin-canobbio/profil/spieler/457533",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9827,11 +9774,11 @@ export const PLAYER_DATA = {
           "club": "América",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brian-rodriguez/profil/spieler/465818",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9839,11 +9786,11 @@ export const PLAYER_DATA = {
           "club": "Panathinaikos",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/facundo-pellistri/profil/spieler/676318",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9851,11 +9798,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/darwin-nunez/profil/spieler/546543",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9863,11 +9810,11 @@ export const PLAYER_DATA = {
           "club": "Real Oviedo",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/federico-vinas/profil/spieler/578419",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         },
         {
           "team": "Uruguay",
@@ -9875,11 +9822,11 @@ export const PLAYER_DATA = {
           "club": "Tigres",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rodrigo-aguirre/profil/spieler/189410",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:31.027Z"
         }
       ]
     },
@@ -9892,11 +9839,11 @@ export const PLAYER_DATA = {
           "club": "Al Ula",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohammed-al-owais/profil/spieler/262845",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9904,11 +9851,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nawaf-al-aqidi/profil/spieler/886183",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9916,11 +9863,11 @@ export const PLAYER_DATA = {
           "club": "Al Qadsiah",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ahmed-al-kassar/profil/spieler/177956",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9928,11 +9875,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdulelah-al-amri/profil/spieler/509894",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9940,11 +9887,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hassan-tambakti/profil/spieler/509897",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9964,11 +9911,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-lajami/profil/spieler/264909",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9976,11 +9923,11 @@ export const PLAYER_DATA = {
           "club": "Al Ittihad",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hassan-kadesh/profil/spieler/260859",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -9988,11 +9935,11 @@ export const PLAYER_DATA = {
           "club": "Lens",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/saud-abdulhamid/profil/spieler/631927",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10000,11 +9947,11 @@ export const PLAYER_DATA = {
           "club": "Al Qadsiah",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohammed-abu-al-shamat/profil/spieler/1181852",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10012,11 +9959,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-majrashi/profil/spieler/672391",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10024,11 +9971,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moteb-al-harbi/profil/spieler/869509",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10036,11 +9983,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nawaf-boushal/profil/spieler/821377",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10072,11 +10019,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdullah-al-khaibari/profil/spieler/437903",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10084,11 +10031,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ziyad-al-johani/profil/spieler/901079",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10096,11 +10043,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nasser-al-dawsari/profil/spieler/509911",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10108,11 +10055,11 @@ export const PLAYER_DATA = {
           "club": "Al Qadsiah",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/musab-al-juwayr/profil/spieler/901181",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10132,11 +10079,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/salem-al-dawsari/profil/spieler/195332",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10144,11 +10091,11 @@ export const PLAYER_DATA = {
           "club": "Al Ettifaq",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/khalid-al-ghannam/profil/spieler/631923",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10156,11 +10103,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ayman-yahya/profil/spieler/735815",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10168,11 +10115,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/firas-al-buraikan/profil/spieler/631922",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10180,11 +10127,11 @@ export const PLAYER_DATA = {
           "club": "Al Ittihad",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/saleh-al-shehri/profil/spieler/242267",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         },
         {
           "team": "Saudi Arabia",
@@ -10192,11 +10139,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdullah-al-hamdan/profil/spieler/68626",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:32.489Z"
         }
       ]
     },
@@ -10209,11 +10156,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mike-maignan/profil/spieler/182906",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10221,11 +10168,11 @@ export const PLAYER_DATA = {
           "club": "Lens",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/robin-risser/profil/spieler/743515",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10233,11 +10180,11 @@ export const PLAYER_DATA = {
           "club": "Rennes",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brice-samba/profil/spieler/191056",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10245,11 +10192,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lucas-digne/profil/spieler/126664",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10257,11 +10204,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/malo-gusto/profil/spieler/620322",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10269,11 +10216,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lucas-hernandez/profil/spieler/281963",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10281,11 +10228,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/theo-hernandez/profil/spieler/339808",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.440Z"
         },
         {
           "team": "France",
@@ -10293,11 +10240,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ibrahima-konate/profil/spieler/357119",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10305,11 +10252,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jules-kounde/profil/spieler/411975",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10317,11 +10264,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/maxence-lacroix/profil/spieler/434224",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10329,11 +10276,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/william-saliba/profil/spieler/495666",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10341,11 +10288,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dayot-upamecano/profil/spieler/344695",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10353,11 +10300,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahçe",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ngolo-kante/profil/spieler/225083",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10365,11 +10312,11 @@ export const PLAYER_DATA = {
           "club": "AS Roma",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/manu-kone/profil/spieler/624690",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10377,11 +10324,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/adrien-rabiot/profil/spieler/182913",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10389,11 +10336,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aurelien-tchouameni/profil/spieler/413112",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10401,11 +10348,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/warren-zaire-emery/profil/spieler/810092",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10413,11 +10360,11 @@ export const PLAYER_DATA = {
           "club": "AS Monaco",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/maghnes-akliouche/profil/spieler/745200",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10425,11 +10372,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bradley-barcola/profil/spieler/708265",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10437,11 +10384,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rayan-cherki/profil/spieler/607223",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10449,11 +10396,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ousmane-dembele/profil/spieler/288230",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10461,11 +10408,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/desire-doue/profil/spieler/914562",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10473,11 +10420,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jean-philippe-mateta/profil/spieler/420002",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10485,11 +10432,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kylian-mbappe/profil/spieler/342229",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10497,11 +10444,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michael-olise/profil/spieler/566723",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         },
         {
           "team": "France",
@@ -10509,11 +10456,11 @@ export const PLAYER_DATA = {
           "club": "Internazionale",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marcus-thuram/profil/spieler/318528",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:34.441Z"
         }
       ]
     },
@@ -10526,11 +10473,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/edouard-mendy/profil/spieler/442531",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10538,11 +10485,11 @@ export const PLAYER_DATA = {
           "club": "Le Havre AC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mory-diaw/profil/spieler/164904",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10550,11 +10497,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yehvann-diouf/profil/spieler/448632",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10562,11 +10509,11 @@ export const PLAYER_DATA = {
           "club": "AS Monaco",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/krepin-diatta/profil/spieler/490426",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10574,11 +10521,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/antoine-mendy/profil/spieler/891998",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10586,11 +10533,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kalidou-koulibaly/profil/spieler/93128",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10598,11 +10545,11 @@ export const PLAYER_DATA = {
           "club": "West Ham United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/el-hadji-malick-diouf/profil/spieler/1111589",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10610,11 +10557,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mamadou-sarr/profil/spieler/910905",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10622,11 +10569,11 @@ export const PLAYER_DATA = {
           "club": "Lyon",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/moussa-niakhate/profil/spieler/291200",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10634,11 +10581,11 @@ export const PLAYER_DATA = {
           "club": "Maccabi Haifa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdoulaye-seck/profil/spieler/265383",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10646,11 +10593,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismail-jakobs/profil/spieler/375137",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10670,11 +10617,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pape-gueye/profil/spieler/485963",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10682,11 +10629,11 @@ export const PLAYER_DATA = {
           "club": "AS Monaco",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lamine-camara/profil/spieler/918969",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10694,11 +10641,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/habib-diarra/profil/spieler/876631",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10706,11 +10653,11 @@ export const PLAYER_DATA = {
           "club": "Rayo Vallecano",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pathe-ciss/profil/spieler/525578",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10718,11 +10665,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham Hotspur",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pape-matar-sarr/profil/spieler/568693",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10730,11 +10677,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bara-sapoko-ndiaye/profil/spieler/1497653",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10742,11 +10689,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sadio-mane/profil/spieler/200512",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10754,11 +10701,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismaila-sarr/profil/spieler/410225",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10766,11 +10713,11 @@ export const PLAYER_DATA = {
           "club": "Everton",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/iliman-ndiaye/profil/spieler/623570",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10778,11 +10725,11 @@ export const PLAYER_DATA = {
           "club": "Como",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/assane-diao/profil/spieler/1061282",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10790,11 +10737,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germian",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ibrahim-mbaye/profil/spieler/1185888",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10802,11 +10749,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-jackson/profil/spieler/776890",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10814,11 +10761,11 @@ export const PLAYER_DATA = {
           "club": "Lorient",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bamba-dieng/profil/spieler/822458",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         },
         {
           "team": "Senegal",
@@ -10826,11 +10773,11 @@ export const PLAYER_DATA = {
           "club": "Samsunspor",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cherif-ndiaye/profil/spieler/480705",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:35.725Z"
         }
       ]
     },
@@ -10843,11 +10790,11 @@ export const PLAYER_DATA = {
           "club": "Al-Talaba",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fahad-talib/profil/spieler/377268",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10855,11 +10802,11 @@ export const PLAYER_DATA = {
           "club": "Al-Zawraa",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jalal-hassan/profil/spieler/206782",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10879,11 +10826,11 @@ export const PLAYER_DATA = {
           "club": "Pogoń Szczecin",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hussein-ali/profil/spieler/585325",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10891,11 +10838,11 @@ export const PLAYER_DATA = {
           "club": "Al-Shorta",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/manaf-younis/profil/spieler/945266",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10903,11 +10850,11 @@ export const PLAYER_DATA = {
           "club": "Pakhtakor",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zaid-tahseen/profil/spieler/931147",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10915,11 +10862,11 @@ export const PLAYER_DATA = {
           "club": "Port FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rebin-sulaka/profil/spieler/217073",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10927,11 +10874,11 @@ export const PLAYER_DATA = {
           "club": "Al-Zawraa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/akam-hashem/profil/spieler/933541",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10939,11 +10886,11 @@ export const PLAYER_DATA = {
           "club": "Viktoria Plzeň",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/merchas-doski/profil/spieler/530527",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10963,11 +10910,11 @@ export const PLAYER_DATA = {
           "club": "Al-Talaba",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zaid-ismail/profil/spieler/1132850",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10975,11 +10922,11 @@ export const PLAYER_DATA = {
           "club": "Port FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/frans-putros/profil/spieler/166460",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10987,11 +10934,11 @@ export const PLAYER_DATA = {
           "club": "Al-Shorta",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mustafa-saadoon/profil/spieler/952341",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -10999,11 +10946,11 @@ export const PLAYER_DATA = {
           "club": "Cracovia",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amir-al-ammari/profil/spieler/303766",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11011,11 +10958,11 @@ export const PLAYER_DATA = {
           "club": "AGF Aarhus",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kevin-yakob/profil/spieler/413268",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11023,11 +10970,11 @@ export const PLAYER_DATA = {
           "club": "FC Utrecht",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/zidane-iqbal/profil/spieler/686845",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11035,11 +10982,11 @@ export const PLAYER_DATA = {
           "club": "Sarpsborg 08",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aimar-sher/profil/spieler/579294",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11047,11 +10994,11 @@ export const PLAYER_DATA = {
           "club": "Al-Riyadh",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ibrahim-bayesh/profil/spieler/560957",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11071,11 +11018,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Braunschweig",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/youssef-amyn/profil/spieler/684307",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11083,11 +11030,11 @@ export const PLAYER_DATA = {
           "club": "Strømsgodset",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marko-farji/profil/spieler/663153",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11095,11 +11042,11 @@ export const PLAYER_DATA = {
           "club": "Como",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-jasim/profil/spieler/877672",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11107,11 +11054,11 @@ export const PLAYER_DATA = {
           "club": "Ipswich Town",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-al-hamadi/profil/spieler/610581",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11131,11 +11078,11 @@ export const PLAYER_DATA = {
           "club": "Al-Khor",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aymen-hussein/profil/spieler/401054",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         },
         {
           "team": "Iraq",
@@ -11143,11 +11090,11 @@ export const PLAYER_DATA = {
           "club": "Al-Shorta",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohanad-ali/profil/spieler/589646",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:37.504Z"
         }
       ]
     },
@@ -11160,11 +11107,11 @@ export const PLAYER_DATA = {
           "club": "Sevilla",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/orjan-nyland/profil/spieler/73517",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11172,11 +11119,11 @@ export const PLAYER_DATA = {
           "club": "Watford",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/egil-selvik/profil/spieler/380744",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11184,11 +11131,11 @@ export const PLAYER_DATA = {
           "club": "Hamburg SV",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sander-tangvik/profil/spieler/549378",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11196,11 +11143,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/julian-ryerson/profil/spieler/370789",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11208,11 +11155,11 @@ export const PLAYER_DATA = {
           "club": "Brentford",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kristoffer-ajer/profil/spieler/328658",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11220,11 +11167,11 @@ export const PLAYER_DATA = {
           "club": "Genoa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leo-ostigard/profil/spieler/367284",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11232,11 +11179,11 @@ export const PLAYER_DATA = {
           "club": "Wolverhampton Wanderers",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-moller-wolfe/profil/spieler/661427",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11244,11 +11191,11 @@ export const PLAYER_DATA = {
           "club": "Torino",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marcus-pedersen/profil/spieler/583404",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11256,11 +11203,11 @@ export const PLAYER_DATA = {
           "club": "Bologna",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/torbjorn-heggem/profil/spieler/464469",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11280,11 +11227,11 @@ export const PLAYER_DATA = {
           "club": "Viking",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/henrik-falchener/profil/spieler/743088",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11292,11 +11239,11 @@ export const PLAYER_DATA = {
           "club": "Derby County",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sondre-langas/profil/spieler/737837",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11304,11 +11251,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/martin-odegaard/profil/spieler/316264",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11316,11 +11263,11 @@ export const PLAYER_DATA = {
           "club": "Fulham",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sander-berge/profil/spieler/333014",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11328,11 +11275,11 @@ export const PLAYER_DATA = {
           "club": "Bodø/Glimt",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/patrick-berg/profil/spieler/308439",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11340,11 +11287,11 @@ export const PLAYER_DATA = {
           "club": "Sassuolo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kristian-thorstvedt/profil/spieler/564785",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11352,11 +11299,11 @@ export const PLAYER_DATA = {
           "club": "Cremonese",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/morten-thorsby/profil/spieler/226524",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11364,11 +11311,11 @@ export const PLAYER_DATA = {
           "club": "Rangers",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thelo-aasgaard/profil/spieler/647384",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11376,11 +11323,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/andreas-schjelderup/profil/spieler/670103",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11388,11 +11335,11 @@ export const PLAYER_DATA = {
           "club": "Bodø/Glimt",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jens-petter-hauge/profil/spieler/422355",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11400,11 +11347,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fredrik-aursnes/profil/spieler/223367",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11412,11 +11359,11 @@ export const PLAYER_DATA = {
           "club": "Fulham",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/oscar-bobb/profil/spieler/661207",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11424,11 +11371,11 @@ export const PLAYER_DATA = {
           "club": "RB Leipzig",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/antonio-nusa/profil/spieler/894914",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11436,11 +11383,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/erling-haaland/profil/spieler/418560",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11448,11 +11395,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexander-sorloth/profil/spieler/238407",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         },
         {
           "team": "Norway",
@@ -11460,11 +11407,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jorgen-strand-larsen/profil/spieler/429983",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:38.908Z"
         }
       ]
     },
@@ -11477,11 +11424,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/emiliano-martinez/profil/spieler/111873",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11489,11 +11436,11 @@ export const PLAYER_DATA = {
           "club": "Marseille",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/geronimo-rulli/profil/spieler/229604",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11501,11 +11448,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/juan-musso/profil/spieler/242359",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11513,11 +11460,11 @@ export const PLAYER_DATA = {
           "club": "River Plate",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gonzalo-montiel/profil/spieler/402733",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11525,11 +11472,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nahuel-molina/profil/spieler/424042",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11537,11 +11484,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lisandro-martinez/profil/spieler/480762",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11549,11 +11496,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-otamendi/profil/spieler/54781",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11573,11 +11520,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cristian-romero/profil/spieler/355915",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11585,11 +11532,11 @@ export const PLAYER_DATA = {
           "club": "Marseille",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/facundo-medina/profil/spieler/474800",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11597,11 +11544,11 @@ export const PLAYER_DATA = {
           "club": "Lyon",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-tagliafico/profil/spieler/131225",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11609,11 +11556,11 @@ export const PLAYER_DATA = {
           "club": "Boca Juniors",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/leandro-paredes/profil/spieler/166237",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11621,11 +11568,11 @@ export const PLAYER_DATA = {
           "club": "Inter Miami",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rodrigo-de-paul/profil/spieler/255901",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11633,11 +11580,11 @@ export const PLAYER_DATA = {
           "club": "Bayer Leverkusen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/exequiel-palacios/profil/spieler/401578",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11645,11 +11592,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/enzo-fernandez/profil/spieler/648195",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11657,11 +11604,11 @@ export const PLAYER_DATA = {
           "club": "Liverpool",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexis-mac-allister/profil/spieler/534033",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11669,11 +11616,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/giovani-lo-celso/profil/spieler/348795",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11681,11 +11628,11 @@ export const PLAYER_DATA = {
           "club": "Strasbourg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/valentin-barco/profil/spieler/849410",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11693,11 +11640,11 @@ export const PLAYER_DATA = {
           "club": "Inter Miami",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lionel-messi/profil/spieler/28003",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11705,11 +11652,11 @@ export const PLAYER_DATA = {
           "club": "Como",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nico-paz/profil/spieler/948294",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11717,11 +11664,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thiago-almada/profil/spieler/576028",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11741,11 +11688,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/giuliano-simeone/profil/spieler/742201",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11753,11 +11700,11 @@ export const PLAYER_DATA = {
           "club": "Internazionale",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lautaro-martinez/profil/spieler/406625",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11765,11 +11712,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-manuel-lopez/profil/spieler/844797",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         },
         {
           "team": "Argentina",
@@ -11777,11 +11724,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Madrid",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/julian-alvarez/profil/spieler/576024",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:40.202Z"
         }
       ]
     },
@@ -11818,11 +11765,11 @@ export const PLAYER_DATA = {
           "club": "Granada",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luca-zidane/profil/spieler/283489",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11842,11 +11789,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rayan-ait-nouri/profil/spieler/578391",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11866,11 +11813,11 @@ export const PLAYER_DATA = {
           "club": "Verona",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rafik-belghali/profil/spieler/864306",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11878,11 +11825,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ramy-bensebaini/profil/spieler/284732",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11890,11 +11837,11 @@ export const PLAYER_DATA = {
           "club": "Paris FC",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/samir-chergui/profil/spieler/668167",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11902,11 +11849,11 @@ export const PLAYER_DATA = {
           "club": "Young Boys",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jaouen-hadjam/profil/spieler/750903",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11914,11 +11861,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aissa-mandi/profil/spieler/80293",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11926,11 +11873,11 @@ export const PLAYER_DATA = {
           "club": "Esperance",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohamed-amine-tougai/profil/spieler/592396",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11938,11 +11885,11 @@ export const PLAYER_DATA = {
           "club": "Al Ittihad",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/houssem-aouar/profil/spieler/395693",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11950,11 +11897,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nabil-bentaleb/profil/spieler/245537",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11962,11 +11909,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/hicham-boudaoui/profil/spieler/560593",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11974,11 +11921,11 @@ export const PLAYER_DATA = {
           "club": "Eintracht Frankfurt",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fares-chaibi/profil/spieler/855015",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11986,11 +11933,11 @@ export const PLAYER_DATA = {
           "club": "Bayer Leverkusen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ibrahim-maza/profil/spieler/905011",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -11998,11 +11945,11 @@ export const PLAYER_DATA = {
           "club": "Charleroi",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yassine-titraoui/profil/spieler/748445",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -12010,11 +11957,11 @@ export const PLAYER_DATA = {
           "club": "FC Twente",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ramiz-zerrouki/profil/spieler/416660",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -12046,11 +11993,11 @@ export const PLAYER_DATA = {
           "club": "Al Duhail",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/adil-boulbina/profil/spieler/748443",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -12058,11 +12005,11 @@ export const PLAYER_DATA = {
           "club": "Frosinone",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fares-ghedjemis/profil/spieler/888738",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -12070,11 +12017,11 @@ export const PLAYER_DATA = {
           "club": "Marseille",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amine-gouiri/profil/spieler/418659",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -12082,11 +12029,11 @@ export const PLAYER_DATA = {
           "club": "Al Ahli",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/riyad-mahrez/profil/spieler/171424",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         },
         {
           "team": "Algeria",
@@ -12094,11 +12041,11 @@ export const PLAYER_DATA = {
           "club": "Feyenoord",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anis-hadj-moussa/profil/spieler/917911",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:41.484Z"
         }
       ]
     },
@@ -12111,11 +12058,11 @@ export const PLAYER_DATA = {
           "club": "RB Salzburg",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexander-schlager/profil/spieler/186374",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12123,11 +12070,11 @@ export const PLAYER_DATA = {
           "club": "Viktoria Plzen",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/florian-wiegele/profil/spieler/393999",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12135,11 +12082,11 @@ export const PLAYER_DATA = {
           "club": "Brondby",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/patrick-pentz/profil/spieler/223972",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12147,11 +12094,11 @@ export const PLAYER_DATA = {
           "club": "Elche",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-affengruber/profil/spieler/452483",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12159,11 +12106,11 @@ export const PLAYER_DATA = {
           "club": "Tottehham",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kevin-danso/profil/spieler/263236",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12171,11 +12118,11 @@ export const PLAYER_DATA = {
           "club": "Mainz 05",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/stefan-posch/profil/spieler/223974",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12183,11 +12130,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-alaba/profil/spieler/59016",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12195,11 +12142,11 @@ export const PLAYER_DATA = {
           "club": "SC Freiburg",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/philipp-lienhart/profil/spieler/225657",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12219,11 +12166,11 @@ export const PLAYER_DATA = {
           "club": "TSG Hoffenheim",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alexander-prass/profil/spieler/434116",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12231,11 +12178,11 @@ export const PLAYER_DATA = {
           "club": "Werder Bremen",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marco-friedl/profil/spieler/156990",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12243,11 +12190,11 @@ export const PLAYER_DATA = {
           "club": "Venezia",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michael-svoboda/profil/spieler/438961",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12255,11 +12202,11 @@ export const PLAYER_DATA = {
           "club": "RB Leipzig",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/xaver-schlager/profil/spieler/223979",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12267,11 +12214,11 @@ export const PLAYER_DATA = {
           "club": "RB Leipzig",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nicolas-seiwald/profil/spieler/404950",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12279,11 +12226,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marcel-sabitzer/profil/spieler/106987",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12291,11 +12238,11 @@ export const PLAYER_DATA = {
           "club": "Braga",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/florian-grillitsch/profil/spieler/195736",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12303,11 +12250,11 @@ export const PLAYER_DATA = {
           "club": "Borussia Dortmund",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/carney-chukwuemeka/profil/spieler/659459",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12315,11 +12262,11 @@ export const PLAYER_DATA = {
           "club": "Werder Bremen",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/romano-schmid/profil/spieler/346853",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12339,11 +12286,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/konrad-laimer/profil/spieler/223967",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12351,11 +12298,11 @@ export const PLAYER_DATA = {
           "club": "Wolfsburg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/patrick-wimmer/profil/spieler/533295",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12363,11 +12310,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/paul-wanner/profil/spieler/900909",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12375,11 +12322,11 @@ export const PLAYER_DATA = {
           "club": "Wolfsberger AC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alessandro-schopf/profil/spieler/118397",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12387,11 +12334,11 @@ export const PLAYER_DATA = {
           "club": "Red Star Belgrade",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marko-arnautovic/profil/spieler/41384",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12399,11 +12346,11 @@ export const PLAYER_DATA = {
           "club": "FC Augsburg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/michael-gregoritsch/profil/spieler/120205",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         },
         {
           "team": "Austria",
@@ -12411,11 +12358,11 @@ export const PLAYER_DATA = {
           "club": "LASK Linz",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sasa-kalajdzic/profil/spieler/369567",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:42.816Z"
         }
       ]
     },
@@ -12440,11 +12387,11 @@ export const PLAYER_DATA = {
           "club": "Al-Wehdat",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdallah-al-fakhouri/profil/spieler/658805",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12488,11 +12435,11 @@ export const PLAYER_DATA = {
           "club": "Selangor",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohammad-abualnadi/profil/spieler/658052",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12500,11 +12447,11 @@ export const PLAYER_DATA = {
           "club": "Al-Faisaly",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/husam-abu-dahab/profil/spieler/895291",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12524,11 +12471,11 @@ export const PLAYER_DATA = {
           "club": "FC Seoul",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yazan-al-arab/profil/spieler/539961",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12536,11 +12483,11 @@ export const PLAYER_DATA = {
           "club": "Al-Faisaly",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anas-badawi/profil/spieler/1378902",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12548,11 +12495,11 @@ export const PLAYER_DATA = {
           "club": "Al-Zawraa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdallah-nasib/profil/spieler/882197",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12560,11 +12507,11 @@ export const PLAYER_DATA = {
           "club": "Al-Hussein",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/saleem-obaid/profil/spieler/658807",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12584,11 +12531,11 @@ export const PLAYER_DATA = {
           "club": "Qatar SC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nizar-al-rashdan/profil/spieler/734751",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12596,11 +12543,11 @@ export const PLAYER_DATA = {
           "club": "Selangor",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/noor-al-rawabdeh/profil/spieler/561485",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12608,11 +12555,11 @@ export const PLAYER_DATA = {
           "club": "Al-Hussein",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rajaei-ayed/profil/spieler/261842",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12620,11 +12567,11 @@ export const PLAYER_DATA = {
           "club": "Al-Zawraa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amer-jamous/profil/spieler/744040",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12644,11 +12591,11 @@ export const PLAYER_DATA = {
           "club": "Al-Quwa Al-Jawiya",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mohannad-abu-taha/profil/spieler/883111",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12680,11 +12627,11 @@ export const PLAYER_DATA = {
           "club": "Al-Shabab",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-azaizeh/profil/spieler/1059056",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12704,11 +12651,11 @@ export const PLAYER_DATA = {
           "club": "Al-Sailiaya",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ali-olwan/profil/spieler/664057",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         },
         {
           "team": "Jordan",
@@ -12728,11 +12675,11 @@ export const PLAYER_DATA = {
           "club": "Al-Hussein",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mahmoud-al-mardi/profil/spieler/401086",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:44.540Z"
         }
       ]
     },
@@ -12745,11 +12692,11 @@ export const PLAYER_DATA = {
           "club": "Porto",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/diogo-costa/profil/spieler/357153",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12757,11 +12704,11 @@ export const PLAYER_DATA = {
           "club": "Wolverhampton Wanderers",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-sa/profil/spieler/249994",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12769,11 +12716,11 @@ export const PLAYER_DATA = {
           "club": "Sporting Lisbon",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rui-silva/profil/spieler/234811",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12793,11 +12740,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ruben-dias/profil/spieler/258004",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12805,11 +12752,11 @@ export const PLAYER_DATA = {
           "club": "Barcelona",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joao-cancelo/profil/spieler/182712",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12817,11 +12764,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/diogo-dalot/profil/spieler/357147",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12829,11 +12776,11 @@ export const PLAYER_DATA = {
           "club": "Paris Saint-Germain",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nuno-mendes/profil/spieler/616341",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12841,11 +12788,11 @@ export const PLAYER_DATA = {
           "club": "Fenerbahce",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nelson-semedo/profil/spieler/231572",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12853,11 +12800,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matheus-nunes/profil/spieler/601883",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12865,11 +12812,11 @@ export const PLAYER_DATA = {
           "club": "Sporting Lisbon",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/goncalo-inacio/profil/spieler/549006",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12877,11 +12824,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/renato-veiga/profil/spieler/805714",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12889,11 +12836,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tomas-araujo/profil/spieler/504087",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12901,11 +12848,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bruno-fernandes/profil/spieler/240306",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12913,11 +12860,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bernardo-silva/profil/spieler/241641",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12925,11 +12872,11 @@ export const PLAYER_DATA = {
           "club": "PSG",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/vitinha/profil/spieler/487469",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12937,11 +12884,11 @@ export const PLAYER_DATA = {
           "club": "PSG",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joao-neves/profil/spieler/670681",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12949,11 +12896,11 @@ export const PLAYER_DATA = {
           "club": "Al Hilal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ruben-neves/profil/spieler/225161",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12961,11 +12908,11 @@ export const PLAYER_DATA = {
           "club": "Mallorca",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/samu-costa/profil/spieler/657430",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12973,11 +12920,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cristiano-ronaldo/profil/spieler/8198",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12985,11 +12932,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/rafael-leao/profil/spieler/357164",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -12997,11 +12944,11 @@ export const PLAYER_DATA = {
           "club": "Al Nassr",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Second Striker",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joao-felix/profil/spieler/462250",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -13009,11 +12956,11 @@ export const PLAYER_DATA = {
           "club": "PSG",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -13021,11 +12968,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/pedro-neto/profil/spieler/487465",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -13033,11 +12980,11 @@ export const PLAYER_DATA = {
           "club": "Juventus",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/francisco-conceicao/profil/spieler/487474",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -13045,11 +12992,11 @@ export const PLAYER_DATA = {
           "club": "Real Sociedad",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/goncalo-guedes/profil/spieler/225122",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:45.966Z"
         },
         {
           "team": "Portugal",
@@ -13086,11 +13033,11 @@ export const PLAYER_DATA = {
           "club": "FC Noah",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/timothy-fayulu/profil/spieler/541420",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13098,11 +13045,11 @@ export const PLAYER_DATA = {
           "club": "Standard Liege",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/matthieu-epolo/profil/spieler/680218",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13110,11 +13057,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/chancel-mbemba/profil/spieler/203348",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13122,11 +13069,11 @@ export const PLAYER_DATA = {
           "club": "Burnley",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/axel-tuanzebe/profil/spieler/342046",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13134,11 +13081,11 @@ export const PLAYER_DATA = {
           "club": "Lens",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/arthur-masuaku/profil/spieler/181380",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13146,11 +13093,11 @@ export const PLAYER_DATA = {
           "club": "Aris Limassol",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gedeon-kalulu/profil/spieler/395685",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13158,11 +13105,11 @@ export const PLAYER_DATA = {
           "club": "Genk",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joris-kayembe/profil/spieler/129586",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13170,11 +13117,11 @@ export const PLAYER_DATA = {
           "club": "West Ham United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aaron-wan-bissaka/profil/spieler/477758",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13182,11 +13129,11 @@ export const PLAYER_DATA = {
           "club": "Kilmarnock",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/aaron-tshibola/profil/spieler/243633",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13194,11 +13141,11 @@ export const PLAYER_DATA = {
           "club": "Widzew Łódź",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/steve-kapuadi/profil/spieler/679709",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13206,11 +13153,11 @@ export const PLAYER_DATA = {
           "club": "AEL",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dylan-batubinsika/profil/spieler/289432",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13218,11 +13165,11 @@ export const PLAYER_DATA = {
           "club": "Sunderland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/noah-sadiki/profil/spieler/727089",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13230,11 +13177,11 @@ export const PLAYER_DATA = {
           "club": "Espanyol",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/charles-pickel/profil/spieler/243879",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13242,11 +13189,11 @@ export const PLAYER_DATA = {
           "club": "Watford",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/edo-kayembe/profil/spieler/486477",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13254,11 +13201,11 @@ export const PLAYER_DATA = {
           "club": "Atromitos",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/samuel-moutoussamy/profil/spieler/353403",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13266,11 +13213,11 @@ export const PLAYER_DATA = {
           "club": "Lille",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ngalayel-mukau/profil/spieler/1016015",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13278,11 +13225,11 @@ export const PLAYER_DATA = {
           "club": "Montpellier",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nathanael-mbuku/profil/spieler/557614",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13302,11 +13249,11 @@ export const PLAYER_DATA = {
           "club": "Castellón",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brian-cipenga/profil/spieler/700565",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13314,11 +13261,11 @@ export const PLAYER_DATA = {
           "club": "AEL",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gael-kakuta/profil/spieler/74297",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13326,11 +13273,11 @@ export const PLAYER_DATA = {
           "club": "Spartak Moscow",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/theo-bongonda/profil/spieler/280701",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13338,11 +13285,11 @@ export const PLAYER_DATA = {
           "club": "Al Jazira",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/simon-banza/profil/spieler/344869",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13350,11 +13297,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yoane-wissa/profil/spieler/388165",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13362,11 +13309,11 @@ export const PLAYER_DATA = {
           "club": "Pyramids FC",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fiston-mayele/profil/spieler/727157",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         },
         {
           "team": "Congo DR",
@@ -13374,11 +13321,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cedric-bakambu/profil/spieler/127048",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:47.604Z"
         }
       ]
     },
@@ -13391,11 +13338,11 @@ export const PLAYER_DATA = {
           "club": "Navbahor",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/utkir-yusupov/profil/spieler/311958",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13403,11 +13350,11 @@ export const PLAYER_DATA = {
           "club": "AGMK",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/botirali-ergashev/profil/spieler/312690",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13415,11 +13362,11 @@ export const PLAYER_DATA = {
           "club": "Nasaf",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abduvokhid-nematov/profil/spieler/527866",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13427,11 +13374,11 @@ export const PLAYER_DATA = {
           "club": "AGMK",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/avazbek-ulmasaliev/profil/spieler/538764",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13439,11 +13386,11 @@ export const PLAYER_DATA = {
           "club": "Dinamo Samarqand",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jakhongir-urozov/profil/spieler/989069",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13475,11 +13422,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdukodir-khusanov/profil/spieler/763079",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13487,11 +13434,11 @@ export const PLAYER_DATA = {
           "club": "Dibba Al Fujairah",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdulla-abdullaev/profil/spieler/570272",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13499,11 +13446,11 @@ export const PLAYER_DATA = {
           "club": "Neftchi",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/farrukh-sayfiev/profil/spieler/212499",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13523,11 +13470,11 @@ export const PLAYER_DATA = {
           "club": "Nasaf",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sherzod-nasrullaev/profil/spieler/608537",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13547,11 +13494,11 @@ export const PLAYER_DATA = {
           "club": "Buxoro",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/sherzod-esanov/profil/spieler/989068",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13571,11 +13518,11 @@ export const PLAYER_DATA = {
           "club": "Pakhtakor",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/akmal-mozgovoy/profil/spieler/562022",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13583,11 +13530,11 @@ export const PLAYER_DATA = {
           "club": "Baniyas",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/otabek-shukurov/profil/spieler/294525",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13595,11 +13542,11 @@ export const PLAYER_DATA = {
           "club": "Neftchi",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jamshid-iskanderov/profil/spieler/260857",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13631,11 +13578,11 @@ export const PLAYER_DATA = {
           "club": "Esteghlal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jaloliddin-masharipov/profil/spieler/274536",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13643,11 +13590,11 @@ export const PLAYER_DATA = {
           "club": "Pakhtakor",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dostonbek-khamdamov/profil/spieler/294502",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13655,11 +13602,11 @@ export const PLAYER_DATA = {
           "club": "Persepolis",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/oston-urunov/profil/spieler/492556",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13679,11 +13626,11 @@ export const PLAYER_DATA = {
           "club": "Persepolis",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/igor-sergeev/profil/spieler/185372",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         },
         {
           "team": "Uzbekistan",
@@ -13691,11 +13638,11 @@ export const PLAYER_DATA = {
           "club": "Istanbul Basaksehir",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/eldor-shomurodov/profil/spieler/358166",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:49.046Z"
         }
       ]
     },
@@ -13708,11 +13655,11 @@ export const PLAYER_DATA = {
           "club": "Atlético Nacional",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/david-ospina/profil/spieler/73396",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13720,11 +13667,11 @@ export const PLAYER_DATA = {
           "club": "Vélez Sarsfield",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alvaro-montero/profil/spieler/292985",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13732,11 +13679,11 @@ export const PLAYER_DATA = {
           "club": "Atlas",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/camilo-vargas/profil/spieler/74113",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13744,11 +13691,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/daniel-munoz/profil/spieler/493003",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13756,11 +13703,11 @@ export const PLAYER_DATA = {
           "club": "Bologna",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jhon-lucumi/profil/spieler/413565",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13768,11 +13715,11 @@ export const PLAYER_DATA = {
           "club": "Independiente",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/santiago-arias/profil/spieler/120443",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13780,11 +13727,11 @@ export const PLAYER_DATA = {
           "club": "Galatasaray",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/davinson-sanchez/profil/spieler/341429",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13792,11 +13739,11 @@ export const PLAYER_DATA = {
           "club": "Mallorca",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/johan-mojica/profil/spieler/262939",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13804,11 +13751,11 @@ export const PLAYER_DATA = {
           "club": "Cagliari",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yerry-mina/profil/spieler/289446",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13816,11 +13763,11 @@ export const PLAYER_DATA = {
           "club": "Cruz Azul",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/willer-ditta/profil/spieler/609255",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13828,11 +13775,11 @@ export const PLAYER_DATA = {
           "club": "Nantes",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/deiver-machado/profil/spieler/332560",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13840,11 +13787,11 @@ export const PLAYER_DATA = {
           "club": "Flamengo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jorge-carrascal/profil/spieler/354145",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13852,11 +13799,11 @@ export const PLAYER_DATA = {
           "club": "River Plate",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kevin-castano/profil/spieler/857948",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13864,11 +13811,11 @@ export const PLAYER_DATA = {
           "club": "Racing Santander",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gustavo-puerta/profil/spieler/936981",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13876,11 +13823,11 @@ export const PLAYER_DATA = {
           "club": "River Plate",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/juan-fernando-quintero/profil/spieler/122582",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13888,11 +13835,11 @@ export const PLAYER_DATA = {
           "club": "Athletico Paranaense",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/juan-portilla/profil/spieler/585747",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13900,11 +13847,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jefferson-lerma/profil/spieler/262980",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13912,11 +13859,11 @@ export const PLAYER_DATA = {
           "club": "Benfica",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/richard-rios/profil/spieler/735573",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13924,11 +13871,11 @@ export const PLAYER_DATA = {
           "club": "Palmeiras",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jhon-arias/profil/spieler/588989",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13936,11 +13883,11 @@ export const PLAYER_DATA = {
           "club": "Minnesota United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/james-rodriguez/profil/spieler/88103",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13948,11 +13895,11 @@ export const PLAYER_DATA = {
           "club": "Rosario Central",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jaminton-campaz/profil/spieler/491553",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13960,11 +13907,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luis-diaz/profil/spieler/480692",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13972,11 +13919,11 @@ export const PLAYER_DATA = {
           "club": "Krasnodar",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jhon-cordoba/profil/spieler/185245",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13984,11 +13931,11 @@ export const PLAYER_DATA = {
           "club": "Sporting CP",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luis-suarez/profil/spieler/424784",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -13996,11 +13943,11 @@ export const PLAYER_DATA = {
           "club": "Vasco da Gama",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/andres-gomez/profil/spieler/957461",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         },
         {
           "team": "Colombia",
@@ -14008,11 +13955,11 @@ export const PLAYER_DATA = {
           "club": "Real Betis",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cucho-hernandez/profil/spieler/459463",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:50.575Z"
         }
       ]
     },
@@ -14025,11 +13972,11 @@ export const PLAYER_DATA = {
           "club": "Everton",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jordan-pickford/profil/spieler/130164",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14037,11 +13984,11 @@ export const PLAYER_DATA = {
           "club": "Crystal Palace",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dean-henderson/profil/spieler/258919",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14049,11 +13996,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/james-trafford/profil/spieler/566799",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14061,11 +14008,11 @@ export const PLAYER_DATA = {
           "club": "Chelsea",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/reece-james/profil/spieler/472423",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14073,11 +14020,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ezri-konsa/profil/spieler/413403",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14085,11 +14032,11 @@ export const PLAYER_DATA = {
           "club": "Bayer Leverkusen",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jarell-quansah/profil/spieler/632349",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14097,11 +14044,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/john-stones/profil/spieler/186590",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14109,11 +14056,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marc-guehi/profil/spieler/392757",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14121,11 +14068,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dan-burn/profil/spieler/134270",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14133,11 +14080,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nico-oreilly/profil/spieler/743413",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14145,11 +14092,11 @@ export const PLAYER_DATA = {
           "club": "Tottenham Hotspur",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/djed-spence/profil/spieler/483348",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14157,11 +14104,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle United",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tino-livramento/profil/spieler/503981",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14169,11 +14116,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/declan-rice/profil/spieler/357662",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14181,11 +14128,11 @@ export const PLAYER_DATA = {
           "club": "Nottingham Forest",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elliot-anderson/profil/spieler/567576",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14193,11 +14140,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kobbie-mainoo/profil/spieler/820374",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14205,11 +14152,11 @@ export const PLAYER_DATA = {
           "club": "Brentford",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jordan-henderson/profil/spieler/61651",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14217,11 +14164,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/morgan-rogers/profil/spieler/503743",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14229,11 +14176,11 @@ export const PLAYER_DATA = {
           "club": "Real Madrid",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jude-bellingham/profil/spieler/581678",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14241,11 +14188,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/eberechi-eze/profil/spieler/479999",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14253,11 +14200,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/harry-kane/profil/spieler/132098",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14265,11 +14212,11 @@ export const PLAYER_DATA = {
           "club": "Al-Ahli",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ivan-toney/profil/spieler/251664",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14277,11 +14224,11 @@ export const PLAYER_DATA = {
           "club": "Aston Villa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ollie-watkins/profil/spieler/324358",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14289,11 +14236,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/bukayo-saka/profil/spieler/433177",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14301,11 +14248,11 @@ export const PLAYER_DATA = {
           "club": "Manchester United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marcus-rashford/profil/spieler/258923",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14313,11 +14260,11 @@ export const PLAYER_DATA = {
           "club": "Newcastle United",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anthony-gordon/profil/spieler/503733",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         },
         {
           "team": "England",
@@ -14325,11 +14272,11 @@ export const PLAYER_DATA = {
           "club": "Arsenal",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/noni-madueke/profil/spieler/503987",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:52.021Z"
         }
       ]
     },
@@ -14342,11 +14289,11 @@ export const PLAYER_DATA = {
           "club": "Dinamo Zagreb",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dominik-livakovic/profil/spieler/205927",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14354,11 +14301,11 @@ export const PLAYER_DATA = {
           "club": "Kobenhavn",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/dominik-kotarski/profil/spieler/370997",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14366,11 +14313,11 @@ export const PLAYER_DATA = {
           "club": "Hull City",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ivor-pandur/profil/spieler/371013",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14378,11 +14325,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/josko-gvardiol/profil/spieler/475959",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14390,11 +14337,11 @@ export const PLAYER_DATA = {
           "club": "Real Sociedad",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/duje-caleta-car/profil/spieler/238266",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14402,11 +14349,11 @@ export const PLAYER_DATA = {
           "club": "Ajax",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/josip-sutalo/profil/spieler/371001",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14414,11 +14361,11 @@ export const PLAYER_DATA = {
           "club": "Bayern Munich",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/josip-stanisic/profil/spieler/483046",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14426,11 +14373,11 @@ export const PLAYER_DATA = {
           "club": "Fiorentina",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marin-pongracic/profil/spieler/282144",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14438,11 +14385,11 @@ export const PLAYER_DATA = {
           "club": "Midtjylland",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/martin-erlic/profil/spieler/357003",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14450,11 +14397,11 @@ export const PLAYER_DATA = {
           "club": "Hamburg",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luka-vuskovic/profil/spieler/892160",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14462,11 +14409,11 @@ export const PLAYER_DATA = {
           "club": "AC Milan",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luka-modric/profil/spieler/27992",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14474,11 +14421,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mateo-kovacic/profil/spieler/51471",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14486,11 +14433,11 @@ export const PLAYER_DATA = {
           "club": "Atalanta",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/mario-pasalic/profil/spieler/205938",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14498,11 +14445,11 @@ export const PLAYER_DATA = {
           "club": "Torino",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nikola-vlasic/profil/spieler/293200",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14510,11 +14457,11 @@ export const PLAYER_DATA = {
           "club": "Real Sociedad",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luka-sucic/profil/spieler/502722",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14522,11 +14469,11 @@ export const PLAYER_DATA = {
           "club": "Como",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/martin-baturina/profil/spieler/580451",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14534,11 +14481,11 @@ export const PLAYER_DATA = {
           "club": "Augsburg",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kristijan-jakic/profil/spieler/374954",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14546,11 +14493,11 @@ export const PLAYER_DATA = {
           "club": "Inter Milan",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/petar-sucic/profil/spieler/668207",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14558,11 +14505,11 @@ export const PLAYER_DATA = {
           "club": "Bologna",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/nikola-moro/profil/spieler/316934",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14570,11 +14517,11 @@ export const PLAYER_DATA = {
           "club": "Rijeka",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/toni-fruk/profil/spieler/432758",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14582,11 +14529,11 @@ export const PLAYER_DATA = {
           "club": "PSV Eindhoven",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ivan-perisic/profil/spieler/42460",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14594,11 +14541,11 @@ export const PLAYER_DATA = {
           "club": "Hoffenheim",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/andrej-kramaric/profil/spieler/46580",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14606,11 +14553,11 @@ export const PLAYER_DATA = {
           "club": "Osasuna",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ante-budimir/profil/spieler/46413",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14618,11 +14565,11 @@ export const PLAYER_DATA = {
           "club": "Orlando City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marco-pasalic/profil/spieler/395928",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14630,11 +14577,11 @@ export const PLAYER_DATA = {
           "club": "FC Dallas",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/petar-musa/profil/spieler/387110",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         },
         {
           "team": "Croatia",
@@ -14642,11 +14589,11 @@ export const PLAYER_DATA = {
           "club": "Freiburg",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/igor-matanovic/profil/spieler/605268",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:53.840Z"
         }
       ]
     },
@@ -14659,11 +14606,11 @@ export const PLAYER_DATA = {
           "club": "Accra Hearts of Oak SC",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/benjamin-asare/profil/spieler/837368",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14671,11 +14618,11 @@ export const PLAYER_DATA = {
           "club": "St Gallen",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/lawrence-ati-zigi/profil/spieler/254285",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14683,11 +14630,11 @@ export const PLAYER_DATA = {
           "club": "St Patrick's Athletic",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/joseph-anang/profil/spieler/576099",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14695,11 +14642,11 @@ export const PLAYER_DATA = {
           "club": "PAOK Salonika",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdul-rahman-baba/profil/spieler/224884",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14707,11 +14654,11 @@ export const PLAYER_DATA = {
           "club": "AJ Auxerre",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/gideon-mensah/profil/spieler/397171",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14719,11 +14666,11 @@ export const PLAYER_DATA = {
           "club": "AJ Auxerre",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/marvin-senaya/profil/spieler/830890",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14731,11 +14678,11 @@ export const PLAYER_DATA = {
           "club": "Stade Rennais",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alidu-seidu/profil/spieler/798404",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14743,11 +14690,11 @@ export const PLAYER_DATA = {
           "club": "Rayo Vallecano",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/abdul-mumin/profil/spieler/451801",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14755,11 +14702,11 @@ export const PLAYER_DATA = {
           "club": "Istanbul Basaksehir",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jerome-opoku/profil/spieler/408563",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14767,11 +14714,11 @@ export const PLAYER_DATA = {
           "club": "VfL Wolfsburg",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jonas-adjetey/profil/spieler/734676",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14779,11 +14726,11 @@ export const PLAYER_DATA = {
           "club": "Nice",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kojo-peprah-oppong/profil/spieler/1113451",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14791,11 +14738,11 @@ export const PLAYER_DATA = {
           "club": "Pafos",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/derrick-luckassen/profil/spieler/241457",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.301Z"
         },
         {
           "team": "Ghana",
@@ -14803,11 +14750,11 @@ export const PLAYER_DATA = {
           "club": "AJ Auxerre",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/elisha-owusu/profil/spieler/395695",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14815,11 +14762,11 @@ export const PLAYER_DATA = {
           "club": "Villarreal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/thomas-partey/profil/spieler/230784",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14827,11 +14774,11 @@ export const PLAYER_DATA = {
           "club": "Real Oviedo",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/kwasi-sibo/profil/spieler/538006",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14839,11 +14786,11 @@ export const PLAYER_DATA = {
           "club": "Saint-Étienne",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Attacking Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/augustine-boakye/profil/spieler/579263",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14851,11 +14798,11 @@ export const PLAYER_DATA = {
           "club": "FC Nordsjælland",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/caleb-yirenkyi/profil/spieler/1240763",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14887,11 +14834,11 @@ export const PLAYER_DATA = {
           "club": "Al Qadsiah",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/christopher-bonsu-baah/profil/spieler/1119447",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14899,11 +14846,11 @@ export const PLAYER_DATA = {
           "club": "Lyon",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ernest-nuamah/profil/spieler/955070",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14911,11 +14858,11 @@ export const PLAYER_DATA = {
           "club": "Manchester City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/antoine-semenyo/profil/spieler/583255",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14923,11 +14870,11 @@ export const PLAYER_DATA = {
           "club": "Coventry City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/brandon-thomas-asante/profil/spieler/451747",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14947,11 +14894,11 @@ export const PLAYER_DATA = {
           "club": "Athletic Club",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/inaki-williams/profil/spieler/255508",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         },
         {
           "team": "Ghana",
@@ -14959,11 +14906,11 @@ export const PLAYER_DATA = {
           "club": "Leicester City",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jordan-ayew/profil/spieler/108354",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:55.302Z"
         }
       ]
     },
@@ -14976,11 +14923,11 @@ export const PLAYER_DATA = {
           "club": "Al Fayha",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/orlando-mosquera/profil/spieler/402979",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.617Z"
         },
         {
           "team": "Panama",
@@ -14988,11 +14935,11 @@ export const PLAYER_DATA = {
           "club": "Nacional",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/luis-mejia/profil/spieler/76715",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.617Z"
         },
         {
           "team": "Panama",
@@ -15000,11 +14947,11 @@ export const PLAYER_DATA = {
           "club": "Marathón",
           "broadPosition": "GK",
           "broadPositionLabel": "Goalkeepers",
-          "mainPosition": null,
+          "mainPosition": "Goalkeeper",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cesar-samudio/profil/spieler/865550",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15012,11 +14959,11 @@ export const PLAYER_DATA = {
           "club": "Slovan Bratislava",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cesar-blackman/profil/spieler/440383",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15024,11 +14971,11 @@ export const PLAYER_DATA = {
           "club": "Deportivo La Guaira",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jorge-gutierrez/profil/spieler/443379",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15036,11 +14983,11 @@ export const PLAYER_DATA = {
           "club": "Beşiktaş",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Right-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/amir-murillo/profil/spieler/354482",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15048,11 +14995,11 @@ export const PLAYER_DATA = {
           "club": "Saprissa",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/fidel-escobar/profil/spieler/345716",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15060,11 +15007,11 @@ export const PLAYER_DATA = {
           "club": "LASK",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/andres-andrade/profil/spieler/403808",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15072,11 +15019,11 @@ export const PLAYER_DATA = {
           "club": "Pari Nizhny Novgorod",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/edgardo-farina/profil/spieler/923177",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15084,11 +15031,11 @@ export const PLAYER_DATA = {
           "club": "Norwich City",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-cordoba/profil/spieler/698415",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15096,11 +15043,11 @@ export const PLAYER_DATA = {
           "club": "Plaza Amador",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Left-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/eric-davis/profil/spieler/121791",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15108,11 +15055,11 @@ export const PLAYER_DATA = {
           "club": "Puerto Cabello",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jiovany-ramos/profil/spieler/403809",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15120,11 +15067,11 @@ export const PLAYER_DATA = {
           "club": "Turan Tovuz",
           "broadPosition": "DF",
           "broadPositionLabel": "Defenders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Back",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/roderick-miller/profil/spieler/157154",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15132,11 +15079,11 @@ export const PLAYER_DATA = {
           "club": "San Diego FC",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/anibal-godoy/profil/spieler/161671",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15144,11 +15091,11 @@ export const PLAYER_DATA = {
           "club": "Pumas UNAM",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Central Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/adalberto-carrasquilla/profil/spieler/375300",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15156,11 +15103,11 @@ export const PLAYER_DATA = {
           "club": "Minnesota United",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/carlos-harvey/profil/spieler/628806",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15168,11 +15115,11 @@ export const PLAYER_DATA = {
           "club": "Ironi Kiryat Shmona",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Defensive Midfield",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cristian-martinez/profil/spieler/419247",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15180,11 +15127,11 @@ export const PLAYER_DATA = {
           "club": "Juárez",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-luis-rodriguez/profil/spieler/425028",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15192,11 +15139,11 @@ export const PLAYER_DATA = {
           "club": "Cobresal",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cesar-yanis/profil/spieler/741098",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15204,11 +15151,11 @@ export const PLAYER_DATA = {
           "club": "Mazatlán",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/yoel-barcenas/profil/spieler/283473",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15216,11 +15163,11 @@ export const PLAYER_DATA = {
           "club": "Plaza Amador",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Right Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/alberto-quintero/profil/spieler/126019",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15228,11 +15175,11 @@ export const PLAYER_DATA = {
           "club": "Universidad Católica",
           "broadPosition": "MF",
           "broadPositionLabel": "Midfielders",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/azarias-londono/profil/spieler/860998",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15240,11 +15187,11 @@ export const PLAYER_DATA = {
           "club": "León",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Left Winger",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/ismael-diaz/profil/spieler/243298",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15252,11 +15199,11 @@ export const PLAYER_DATA = {
           "club": "Universidad de Concepción",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/cecilio-waterman/profil/spieler/177064",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15264,11 +15211,11 @@ export const PLAYER_DATA = {
           "club": "Universidad Católica",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/jose-fajardo/profil/spieler/546803",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         },
         {
           "team": "Panama",
@@ -15276,11 +15223,11 @@ export const PLAYER_DATA = {
           "club": "Saprissa",
           "broadPosition": "FW",
           "broadPositionLabel": "Forwards",
-          "mainPosition": null,
+          "mainPosition": "Centre-Forward",
           "otherPositions": [],
-          "transfermarktUrl": null,
-          "positionSource": null,
-          "positionUpdatedAt": null
+          "transfermarktUrl": "https://www.transfermarkt.com/tomas-rodriguez/profil/spieler/569205",
+          "positionSource": "transfermarkt-team-squad",
+          "positionUpdatedAt": "2026-06-11T09:36:56.618Z"
         }
       ]
     }

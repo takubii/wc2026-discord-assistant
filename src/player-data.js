@@ -88,10 +88,11 @@ function playerPositionLabel(player) {
 
 function jaPosition(position) {
   const map = {
-    GK: "GK",
-    DF: "DF",
-    MF: "MF",
-    FW: "FW",
+    GK: "ゴールキーパー",
+    DF: "ディフェンダー",
+    MF: "ミッドフィールダー",
+    FW: "フォワード",
+    Defender: "ディフェンダー",
     Goalkeeper: "ゴールキーパー",
     "Centre-Back": "センターバック",
     "Left-Back": "左サイドバック",

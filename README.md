@@ -132,10 +132,10 @@ npm run register:commands
 代表メンバーはESPNのWorld Cup squad記事から取得し、`data/players.json` にキャッシュします。詳細ポジションはTransfermarktから低頻度で補完します。
 
 ```powershell
-npm run update:players -- --enrich-team Japan
+npm run update:players -- --enrich-all
 ```
 
-初期データでは全48チームの代表メンバーと大分類ポジションを保持し、JapanのみTransfermarktの詳細ポジションを補完しています。Transfermarktへのアクセスは低頻度に抑えるため、Discordコマンド実行時には外部サイトへアクセスせず、キャッシュ済みデータだけを使います。
+現在のキャッシュでは全48チームの代表メンバーを保持し、Transfermarktの国別スカッドページで一致した選手には詳細メインポジションを補完しています。現時点では1249人中1120人に詳細ポジションが入っています。Transfermarktへのアクセスは低頻度に抑えるため、Discordコマンド実行時には外部サイトへアクセスせず、キャッシュ済みデータだけを使います。
 
 ## 投稿イメージ
 
