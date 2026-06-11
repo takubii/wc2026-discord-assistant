@@ -34,7 +34,7 @@ function splitEmbedsForDiscord(payload) {
   return {
     initialPayload: { ...payload, embeds: [embeds[0]] },
     followupPayloads: embeds.slice(1).map((embed) => ({
-      content: "",
+      content: `**${embed.title ?? "Lineup"}**`,
       allowed_mentions: { parse: [] },
       embeds: [embed],
     })),

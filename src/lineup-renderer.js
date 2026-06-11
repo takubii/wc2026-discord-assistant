@@ -23,6 +23,37 @@ function card({ x, y, pos, name, width = 184 }) {
   </g>`;
 }
 
+function benchLines(substitutes) {
+  const names = substitutes.map((player) => shortName(player.name)).slice(0, 12);
+  if (!names.length) return ["Not available"];
+
+  const lines = [];
+  let current = "";
+  for (const name of names) {
+    const next = current ? `${current}, ${name}` : name;
+    if (next.length > 74 && current) {
+      lines.push(current);
+      current = name;
+    } else {
+      current = next;
+    }
+    if (lines.length === 2) break;
+  }
+  if (current && lines.length < 3) lines.push(current);
+
+  const remaining = substitutes.length - names.length;
+  if (remaining > 0) {
+    lines[lines.length - 1] = `${lines.at(-1)} +${remaining} more`;
+  }
+  return lines;
+}
+
+function benchText(substitutes) {
+  return benchLines(substitutes)
+    .map((line, index) => `<text x="112" y="${1058 + index * 22}" class="bench">${escapeXml(line)}</text>`)
+    .join("");
+}
+
 const POSITION_COORDS = {
   G: { x: 450, y: 900, pos: "GK", width: 208 },
   GK: { x: 450, y: 900, pos: "GK", width: 208 },
@@ -84,7 +115,6 @@ function resolveSlots(players) {
 
 export function buildLineupSvg({ teamName, opponentName, formation, kickoffLabel, starters, substitutes }) {
   const starterCards = resolveSlots(starters).map(card).join("");
-  const bench = substitutes.length ? `${substitutes.length} substitutes available` : "Not available";
   const subtitle = `${teamName} lineup / ${formation || "formation TBD"} / ${kickoffLabel}`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-label="${escapeXml(teamName)} lineup">
@@ -123,7 +153,7 @@ export function buildLineupSvg({ teamName, opponentName, formation, kickoffLabel
   ${starterCards}
   <rect x="84" y="1002" width="732" height="104" rx="18" fill="rgba(6,42,27,.74)" stroke="rgba(216,246,223,.3)"/>
   <text x="112" y="1040" class="bench-title">Bench</text>
-  <text x="112" y="1074" class="bench">${escapeXml(bench)}</text>
+  ${benchText(substitutes)}
   <text x="450" y="1140" text-anchor="middle" class="meta">Official lineup</text>
 </svg>`;
 }
