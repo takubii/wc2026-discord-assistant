@@ -58,7 +58,7 @@ async function editOriginalInteractionResponse(interaction, payload) {
   });
 
   if (!res.ok) {
-    throw new Error(`Discord follow-up error: ${res.status} ${await res.text()}`);
+    throw new Error(`Discord original response edit error: ${res.status} ${await res.text()}`);
   }
 }
 
@@ -116,6 +116,11 @@ function discordRequestBody(payload) {
 async function sendPayload(interaction, payload, isFirst) {
   const files = payload.files ?? [];
   let textPayload = textOnlyPayload(payload);
+  console.log("Sending Discord payload", {
+    isFirst,
+    hasText: hasVisiblePayloadBody(textPayload),
+    fileCount: files.length,
+  });
 
   if (isFirst) {
     if (!hasVisiblePayloadBody(textPayload)) {
@@ -133,6 +138,7 @@ async function sendPayload(interaction, payload, isFirst) {
 
 async function sendPayloads(interaction, payloads) {
   const normalizedPayloads = Array.isArray(payloads) ? payloads : [payloads];
+  console.log("Sending payload set", { count: normalizedPayloads.length });
   for (const [index, payload] of normalizedPayloads.entries()) {
     await sendPayload(interaction, payload, index === 0);
   }
@@ -141,6 +147,10 @@ async function sendPayloads(interaction, payloads) {
 async function respondToWorldCupCommand(interaction) {
   try {
     const subcommand = interaction.data?.options?.[0];
+    console.log("Handling /wc command", {
+      id: interaction.id,
+      subcommand: subcommand?.name ?? "today",
+    });
     let payloads;
 
     if (!subcommand || ["today", "tomorrow", "date"].includes(subcommand.name)) {
@@ -172,7 +182,16 @@ async function respondToWorldCupCommand(interaction) {
     }
 
     await sendPayloads(interaction, payloads);
+    console.log("Finished /wc command", {
+      id: interaction.id,
+      subcommand: subcommand?.name ?? "today",
+    });
   } catch (err) {
+    console.error("Failed /wc command", {
+      id: interaction.id,
+      message: err.message,
+      stack: err.stack,
+    });
     await editOriginalInteractionResponse(interaction, {
       content: `試合予定を取得できませんでした: ${err.message}`,
       allowed_mentions: { parse: [] },
@@ -212,6 +231,11 @@ async function handleInteraction(request, env, ctx) {
   }
 
   const interaction = JSON.parse(new TextDecoder().decode(body));
+  console.log("Received Discord interaction", {
+    id: interaction.id,
+    type: interaction.type,
+    name: interaction.data?.name,
+  });
   if (interaction.type === InteractionType.PING) {
     return jsonResponse({ type: InteractionResponseType.PONG });
   }
