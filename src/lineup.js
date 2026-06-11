@@ -114,7 +114,7 @@ async function lineupImageFile({ lineup, opponentName, event }) {
     substitutes: lineup.substitutes,
   });
   try {
-    const data = await renderLineupPng(svg);
+    const data = await withTimeout(renderLineupPng(svg), 3000, "PNG render timeout");
     return {
       name: `${slug(lineup.teamName)}-lineup.png`,
       type: "image/png",
@@ -128,6 +128,13 @@ async function lineupImageFile({ lineup, opponentName, event }) {
       data: new TextEncoder().encode(svg),
     };
   }
+}
+
+function withTimeout(promise, ms, message) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => setTimeout(() => reject(new Error(message)), ms)),
+  ]);
 }
 
 export async function buildLineupPayload(teamQuery = "") {
