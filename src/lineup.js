@@ -330,7 +330,13 @@ export async function buildLineupImagePayload(teamQuery = "") {
 
   const image = await buildLineupImage(event.id);
   return {
-    content: `${eventTitle(event)} のスタメン画像です。`,
+    content: [
+      `# ${eventTitle(event)}`,
+      `${eventMeta(event)} / 公式スタメン`,
+      eventRankLine(event),
+      "",
+      ...lineups.slice(0, 2).map(lineupSummary),
+    ].join("\n"),
     allowed_mentions: { parse: [] },
     embeds: [attachmentImageEmbed(event, image.filename)],
     files: [{
