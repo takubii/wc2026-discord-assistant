@@ -197,6 +197,23 @@ async function respondToWorldCupCommand(interaction) {
   }
 }
 
+async function sendLineupFollowup(interaction, teamQuery) {
+  try {
+    const payload = await buildLineupPayload(teamQuery, { attachImage: true });
+    await createFollowupMessage(interaction, payload);
+  } catch (err) {
+    console.error("Failed /wc lineup follow-up", {
+      id: interaction.id,
+      message: err.message,
+      stack: err.stack,
+    });
+    await createFollowupMessage(interaction, {
+      content: `スタメンを取得できませんでした: ${err.message}`,
+      allowed_mentions: { parse: [] },
+    });
+  }
+}
+
 function focusedOption(options = []) {
   for (const option of options) {
     if (option.focused) return option;
@@ -253,6 +270,14 @@ async function handleInteraction(request, env, ctx) {
   }
 
   const subcommand = interaction.data?.options?.[0];
+  if (subcommand?.name === "lineup") {
+    ctx.waitUntil(sendLineupFollowup(interaction, optionValue(subcommand.options, "team")));
+    return interactionMessageResponse({
+      content: "スタメン画像を生成しています。公式スタメンが未発表の場合は、その旨を返します。",
+      allowed_mentions: { parse: [] },
+    });
+  }
+
   ctx.waitUntil(respondToWorldCupCommand(interaction));
   return jsonResponse({
     type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE,
