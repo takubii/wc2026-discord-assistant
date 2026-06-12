@@ -63,10 +63,14 @@ Slash Commandの受け口です。
 3. `npx wrangler login` を実行する
 4. `npm run deploy` でWorkerをデプロイする
 5. `DISCORD_PUBLIC_KEY` をWorker Secretに入れる
+6. 任意で `GEMINI_API_KEY` をWorker Secretに入れる
 
 ```powershell
 npx wrangler secret put DISCORD_PUBLIC_KEY
+npx wrangler secret put GEMINI_API_KEY
 ```
+
+`GEMINI_API_KEY` はラインナップ画像の配置が崩れそうな場合だけ使います。未設定でも通常のルールベース配置で動きます。
 
 デプロイ後に表示されるWorker URLをDiscord Applicationの `Interactions Endpoint URL` に設定します。
 

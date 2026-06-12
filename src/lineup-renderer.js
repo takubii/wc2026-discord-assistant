@@ -160,7 +160,7 @@ function spreadRow(players, y) {
   }));
 }
 
-function resolveSlots(players, formation) {
+export function resolveLineupSlots(players, formation) {
   const sorted = sortPlayersForLayout(players);
   const goalkeeper = sorted.find((player) => ["G", "GK"].includes(player.positionAbbreviation)) ?? sorted[0];
   const outfield = sorted.filter((player) => player !== goalkeeper);
@@ -229,8 +229,8 @@ function flag({ x, y, url, code }) {
   </g>`;
 }
 
-function lineupPanel({ teamName, opponentName, formation, kickoffLabel, starters, substitutes, flagUrl, flagCode }) {
-  const starterCards = resolveSlots(starters, formation).map(card).join("");
+function lineupPanel({ teamName, opponentName, formation, kickoffLabel, starters, substitutes, flagUrl, flagCode, layout }) {
+  const starterCards = (layout ?? resolveLineupSlots(starters, formation)).map(card).join("");
   const subtitle = `${teamName} lineup / ${formation || "formation TBD"} / ${kickoffLabel}`;
 
   return `

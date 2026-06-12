@@ -1,4 +1,5 @@
 import { buildLineupSvg, buildMatchLineupSvg, renderLineupPng } from "./lineup-renderer.js";
+import { buildLineupLayout } from "./lineup-ai-layout.js";
 import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, teamLabel } from "./team-data.js";
 import { formatFifaRankLine } from "./fifa-rankings.js";
@@ -335,7 +336,7 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
   }
 
   if (options.attachImage) {
-    const image = await buildLineupImage(event.id);
+    const image = await buildLineupImage(event.id, undefined, options);
     return {
       content: [
         ...contentHeader,
@@ -376,11 +377,11 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
   };
 }
 
-export async function buildLineupImagePayload(teamQuery = "") {
+export async function buildLineupImagePayload(teamQuery = "", options = {}) {
   const { event, lineups } = await eventWithLineups("", teamQuery);
   if (!event || lineups.length < 2) return null;
 
-  const image = await buildLineupImage(event.id);
+  const image = await buildLineupImage(event.id, undefined, options);
   return {
     content: [
       `# ${eventTitle(event)}`,
@@ -399,7 +400,39 @@ export async function buildLineupImagePayload(teamQuery = "") {
   };
 }
 
-export async function buildLineupImage(eventId, teamName) {
+async function renderLineupData(event, lineups, options = {}) {
+  const layouts = await Promise.all(lineups.slice(0, 2).map((lineup) => (
+    buildLineupLayout({
+      apiKey: options.geminiApiKey,
+      teamName: lineup.teamName,
+      formation: lineup.formation,
+      starters: lineup.starters,
+    })
+  )));
+
+  return lineups.slice(0, 2).map((lineup, index) => {
+    const opponentName = lineups.find((candidate) => candidate.teamName !== lineup.teamName)?.teamName ?? "";
+    const layoutResult = layouts[index];
+    console.log("Lineup layout selected", {
+      teamName: lineup.teamName,
+      source: layoutResult.source,
+      issue: layoutResult.issue,
+    });
+    return {
+      teamName: lineup.teamName,
+      opponentName,
+      formation: lineup.formation,
+      kickoffLabel: `${hmInTokyo(event.date)} JST`,
+      starters: lineup.starters,
+      substitutes: lineup.substitutes,
+      flagUrl: teamFlagUrl(lineup.teamName),
+      flagCode: flagCode(lineup.teamName),
+      layout: layoutResult.layout,
+    };
+  });
+}
+
+export async function buildLineupImage(eventId, teamName, options = {}) {
   if (!eventId) {
     throw new Error("event query parameter is required");
   }
@@ -410,22 +443,11 @@ export async function buildLineupImage(eventId, teamName) {
   }
 
   if (!teamName) {
+    const renderLineups = await renderLineupData(event, lineups, options);
     const data = await withTimeout(renderLineupPng(buildMatchLineupSvg({
       title: eventTitleEn(event),
       kickoffLabel: imageEventMeta(event),
-      lineups: lineups.slice(0, 2).map((lineup) => {
-        const opponentName = lineups.find((candidate) => candidate.teamName !== lineup.teamName)?.teamName ?? "";
-        return {
-          teamName: lineup.teamName,
-          opponentName,
-          formation: lineup.formation,
-          kickoffLabel: `${hmInTokyo(event.date)} JST`,
-          starters: lineup.starters,
-          substitutes: lineup.substitutes,
-          flagUrl: teamFlagUrl(lineup.teamName),
-          flagCode: flagCode(lineup.teamName),
-        };
-      }),
+      lineups: renderLineups,
     }), 1200), 8000, "PNG render timeout");
     return {
       filename: `${event.id}-lineups.png`,
@@ -439,6 +461,17 @@ export async function buildLineupImage(eventId, teamName) {
   }
 
   const opponentName = lineups.find((candidate) => candidate.teamName !== lineup.teamName)?.teamName ?? "";
+  const layoutResult = await buildLineupLayout({
+    apiKey: options.geminiApiKey,
+    teamName: lineup.teamName,
+    formation: lineup.formation,
+    starters: lineup.starters,
+  });
+  console.log("Lineup layout selected", {
+    teamName: lineup.teamName,
+    source: layoutResult.source,
+    issue: layoutResult.issue,
+  });
   const svg = buildLineupSvg({
     teamName: lineup.teamName,
     opponentName,
@@ -448,6 +481,7 @@ export async function buildLineupImage(eventId, teamName) {
     substitutes: lineup.substitutes,
     flagUrl: teamFlagUrl(lineup.teamName),
     flagCode: flagCode(lineup.teamName),
+    layout: layoutResult.layout,
   });
   const data = await withTimeout(renderLineupPng(svg), 8000, "PNG render timeout");
   return {

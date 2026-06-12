@@ -197,10 +197,10 @@ async function respondToWorldCupCommand(interaction) {
   }
 }
 
-async function updateLineupImageMessage(interaction, teamQuery) {
+async function updateLineupImageMessage(interaction, teamQuery, env) {
   try {
     console.log("Building /wc lineup image update", { id: interaction.id });
-    const payload = await buildLineupImagePayload(teamQuery);
+    const payload = await buildLineupImagePayload(teamQuery, { geminiApiKey: env.GEMINI_API_KEY });
     if (!payload) {
       console.log("Skipping /wc lineup image follow-up; no official lineups", { id: interaction.id });
       return;
@@ -290,7 +290,7 @@ async function handleInteraction(request, env, ctx) {
       }
       const payload = await buildLineupPayload(teamQuery, { summaryOnly: true });
       if (payload.content?.includes("公式スタメン")) {
-        ctx.waitUntil(updateLineupImageMessage(interaction, teamQuery));
+        ctx.waitUntil(updateLineupImageMessage(interaction, teamQuery, env));
       }
       return interactionMessageResponse(payload);
     } catch (err) {
@@ -318,7 +318,9 @@ export default {
       const url = new URL(request.url);
       if (url.pathname === "/lineup-image") {
         try {
-          const image = await buildLineupImage(url.searchParams.get("event"), url.searchParams.get("team"));
+          const image = await buildLineupImage(url.searchParams.get("event"), url.searchParams.get("team"), {
+            geminiApiKey: env.GEMINI_API_KEY,
+          });
           return new Response(image.data, {
             headers: {
               "Content-Type": "image/png",
