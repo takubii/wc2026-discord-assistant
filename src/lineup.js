@@ -374,7 +374,7 @@ export async function buildLineupImage(eventId, teamName) {
           flagCode: flagCode(lineup.teamName),
         };
       }),
-    }), 1800), 8000, "PNG render timeout");
+    }), 1200), 8000, "PNG render timeout");
     return {
       filename: `${event.id}-lineups.png`,
       data,
