@@ -1,5 +1,5 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
-import { buildLineupImage, buildLineupPayload } from "./lineup.js";
+import { buildLineupImage, buildLineupImagePayload, buildLineupPayload } from "./lineup.js";
 import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildSquadPayloads } from "./player-data.js";
 import { buildDailySummaryPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
@@ -197,9 +197,13 @@ async function respondToWorldCupCommand(interaction) {
   }
 }
 
-async function sendLineupFollowup(interaction, teamQuery) {
+async function sendLineupImageFollowup(interaction, teamQuery) {
   try {
-    const payload = await buildLineupPayload(teamQuery, { attachImage: true });
+    const payload = await buildLineupImagePayload(teamQuery);
+    if (!payload) {
+      console.log("Skipping /wc lineup image follow-up; no official lineups", { id: interaction.id });
+      return;
+    }
     await createFollowupMessage(interaction, payload);
   } catch (err) {
     console.error("Failed /wc lineup follow-up", {
@@ -207,10 +211,20 @@ async function sendLineupFollowup(interaction, teamQuery) {
       message: err.message,
       stack: err.stack,
     });
-    await createFollowupMessage(interaction, {
-      content: `スタメンを取得できませんでした: ${err.message}`,
+    const errorPayload = {
+      content: `スタメン画像を送信できませんでした: ${err.message}`,
       allowed_mentions: { parse: [] },
-    });
+    };
+    try {
+      await createFollowupMessage(interaction, errorPayload);
+    } catch (followupErr) {
+      console.error("Failed /wc lineup error follow-up", {
+        id: interaction.id,
+        message: followupErr.message,
+        stack: followupErr.stack,
+      });
+      await editOriginalInteractionResponse(interaction, errorPayload);
+    }
   }
 }
 
@@ -271,11 +285,24 @@ async function handleInteraction(request, env, ctx) {
 
   const subcommand = interaction.data?.options?.[0];
   if (subcommand?.name === "lineup") {
-    ctx.waitUntil(sendLineupFollowup(interaction, optionValue(subcommand.options, "team")));
-    return interactionMessageResponse({
-      content: "スタメン画像を生成しています。公式スタメンが未発表の場合は、その旨を返します。",
-      allowed_mentions: { parse: [] },
-    });
+    const teamQuery = optionValue(subcommand.options, "team");
+    try {
+      const payload = await buildLineupPayload(teamQuery, { summaryOnly: true });
+      if (payload.content?.includes("公式スタメン")) {
+        ctx.waitUntil(sendLineupImageFollowup(interaction, teamQuery));
+      }
+      return interactionMessageResponse(payload);
+    } catch (err) {
+      console.error("Failed immediate /wc lineup response", {
+        id: interaction.id,
+        message: err.message,
+        stack: err.stack,
+      });
+      return interactionMessageResponse({
+        content: `スタメンを取得できませんでした: ${err.message}`,
+        allowed_mentions: { parse: [] },
+      });
+    }
   }
 
   ctx.waitUntil(respondToWorldCupCommand(interaction));

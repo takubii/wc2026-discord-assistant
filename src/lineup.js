@@ -269,6 +269,19 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
     };
   }
 
+  if (options.summaryOnly) {
+    return {
+      content: [
+        ...contentHeader,
+        "",
+        ...lineups.slice(0, 2).map(lineupSummary),
+        "",
+        "スタメン画像を生成しています。",
+      ].join("\n"),
+      allowed_mentions: { parse: [] },
+    };
+  }
+
   if (options.attachImage) {
     const image = await buildLineupImage(event.id);
     return {
@@ -308,6 +321,23 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
       ...lineups.slice(0, 2).map(formatLineup),
     ].join("\n\n"),
     allowed_mentions: { parse: [] },
+  };
+}
+
+export async function buildLineupImagePayload(teamQuery = "") {
+  const { event, lineups } = await eventWithLineups("", teamQuery);
+  if (!event || lineups.length < 2) return null;
+
+  const image = await buildLineupImage(event.id);
+  return {
+    content: `${eventTitle(event)} のスタメン画像です。`,
+    allowed_mentions: { parse: [] },
+    embeds: [attachmentImageEmbed(event, image.filename)],
+    files: [{
+      name: image.filename,
+      type: "image/png",
+      data: image.data,
+    }],
   };
 }
 
