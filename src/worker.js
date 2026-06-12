@@ -283,7 +283,11 @@ async function handleInteraction(request, env, ctx) {
   const subcommand = interaction.data?.options?.[0];
   if (subcommand?.name === "lineup") {
     const teamQuery = optionValue(subcommand.options, "team");
+    const textOnly = optionValue(subcommand.options, "text") === true;
     try {
+      if (textOnly) {
+        return interactionMessageResponse(await buildLineupPayload(teamQuery, { textOnly: true }));
+      }
       const payload = await buildLineupPayload(teamQuery, { summaryOnly: true });
       if (payload.content?.includes("公式スタメン")) {
         ctx.waitUntil(updateLineupImageMessage(interaction, teamQuery));

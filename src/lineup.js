@@ -1,4 +1,5 @@
 import { buildLineupSvg, buildMatchLineupSvg, renderLineupPng } from "./lineup-renderer.js";
+import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, teamLabel } from "./team-data.js";
 import { formatFifaRankLine } from "./fifa-rankings.js";
 
@@ -177,8 +178,49 @@ function positionLabel(player) {
   return player.positionAbbreviation ? `[${player.positionAbbreviation}] ` : "";
 }
 
+function detailedPositionLabel(position) {
+  const labels = {
+    G: "GK",
+    CD: "CB",
+    "CD-L": "CB-L",
+    "CD-R": "CB-R",
+    F: "CF",
+  };
+  return labels[position] ?? position ?? "";
+}
+
+function positionGroup(position) {
+  if (["G", "GK"].includes(position)) return "GK";
+  if (["LB", "LWB", "RB", "RWB", "CD", "CB", "CD-L", "CB-L", "CD-R", "CB-R"].includes(position)) return "DF";
+  if (["DM", "CDM", "CM", "CM-L", "CM-R", "LM", "RM", "AM", "CAM"].includes(position)) return "MF";
+  return "FW";
+}
+
 function formatPlayerList(players) {
   return players.map((player) => `• ${positionLabel(player)}${player.name}`).join("\n");
+}
+
+function formatStarterGroup(players, group) {
+  const grouped = players.filter((player) => positionGroup(player.positionAbbreviation) === group);
+  if (!grouped.length) return "";
+  return [
+    `**${group}**`,
+    ...grouped.map((player) => {
+      const position = detailedPositionLabel(player.positionAbbreviation);
+      const prefix = position ? `${position} ` : "";
+      return `・${prefix}${playerNameLabel(player.name)}`;
+    }),
+  ].join("\n");
+}
+
+function formatTextLineup(lineup) {
+  const groups = ["GK", "DF", "MF", "FW"]
+    .map((group) => formatStarterGroup(lineup.starters, group))
+    .filter(Boolean);
+  return [
+    `## ${teamLabel(lineup.teamName)} ${lineup.formation ? `(${lineup.formation})` : ""}`.trim(),
+    ...groups,
+  ].join("\n\n");
 }
 
 function formatLineup(lineup) {
@@ -278,6 +320,16 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
         "",
         "スタメン画像を生成しています。",
       ].join("\n"),
+      allowed_mentions: { parse: [] },
+    };
+  }
+
+  if (options.textOnly) {
+    return {
+      content: [
+        contentHeader.join("\n"),
+        lineups.slice(0, 2).map(formatTextLineup).join("\n\n"),
+      ].join("\n\n"),
       allowed_mentions: { parse: [] },
     };
   }

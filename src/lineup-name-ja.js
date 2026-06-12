@@ -1,0 +1,111 @@
+function normalizeName(value) {
+  return String(value ?? "")
+    .normalize("NFKD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+const PLAYER_NAME_JA = {
+  "Zion Suzuki": "鈴木彩艶",
+  "Keisuke Osako": "大迫敬介",
+  "Tomoki Hayakawa": "早川友基",
+  "Yuto Nagatomo": "長友佑都",
+  "Yūto Nagatomo": "長友佑都",
+  "Shogo Taniguchi": "谷口彰悟",
+  "Ko Itakura": "板倉滉",
+  "Tsuyoshi Watanabe": "渡辺剛",
+  "Takehiro Tomiyasu": "冨安健洋",
+  "Hiroki Ito": "伊藤洋輝",
+  "Ayumu Seko": "瀬古歩夢",
+  "Yukinari Sugawara": "菅原由勢",
+  "Junnosuke Suzuki": "鈴木準弥",
+  "Wataru Endo": "遠藤航",
+  "Junya Ito": "伊東純也",
+  "Daichi Kamada": "鎌田大地",
+  "Ritsu Doan": "堂安律",
+  "Ao Tanaka": "田中碧",
+  "Keito Nakamura": "中村敬斗",
+  "Kaishu Sano": "佐野海舟",
+  "Takefusa Kubo": "久保建英",
+  "Yuito Suzuki": "鈴木唯人",
+  "Koki Ogawa": "小川航基",
+  "Daizen Maeda": "前田大然",
+  "Ayase Ueda": "上田綺世",
+  "Kento Shiogai": "塩貝健人",
+  "Keisuke Goto": "後藤啓介",
+
+  "Kim Seung-Gyu": "キム・スンギュ",
+  "Kim Min-Jae": "キム・ミンジェ",
+  "Lee Gi-Hyuk": "イ・ギヒョク",
+  "Lee Han-Beom": "イ・ハンボム",
+  "Paik Seung-Ho": "ペク・スンホ",
+  "Hwang In-Beom": "ファン・インボム",
+  "Lee Tae-Seok": "イ・テソク",
+  "Seol Young-Woo": "ソル・ヨンウ",
+  "Son Heung-Min": "ソン・フンミン",
+  "Lee Jae-Sung": "イ・ジェソン",
+  "Lee Kang-In": "イ・ガンイン",
+
+  "Matej Kovar": "マテイ・コバージュ",
+  "Matej Kovár": "マテイ・コバージュ",
+  "Robin Hranac": "ロビン・フラナーチ",
+  "Robin Hranác": "ロビン・フラナーチ",
+  "Ladislav Krejci": "ラディスラフ・クレイチー",
+  "Ladislav Krejcí": "ラディスラフ・クレイチー",
+  "Stepan Chaloupek": "ステパン・ハロウペク",
+  "Stepán Chaloupek": "ステパン・ハロウペク",
+  "Alexandr Sojka": "アレクサンドル・ソイカ",
+  "Tomas Soucek": "トマーシュ・ソウチェク",
+  "Tomás Soucek": "トマーシュ・ソウチェク",
+  "Jaroslav Zeleny": "ヤロスラフ・ゼレニー",
+  "Jaroslav Zelený": "ヤロスラフ・ゼレニー",
+  "Vladimir Coufal": "ウラジミール・ツォウファル",
+  "Vladimír Coufal": "ウラジミール・ツォウファル",
+  "Patrik Schick": "パトリック・シック",
+  "Pavel Sulc": "パベル・シュルツ",
+  "Lukas Provod": "ルカーシュ・プロボド",
+  "Lukás Provod": "ルカーシュ・プロボド",
+
+  "Raul Rangel": "ラウル・ランヘル",
+  "Raúl Rangel": "ラウル・ランヘル",
+  "Johan Vasquez": "ヨハン・バスケス",
+  "Johan Vásquez": "ヨハン・バスケス",
+  "Cesar Montes": "セサル・モンテス",
+  "César Montes": "セサル・モンテス",
+  "Erik Lira": "エリック・リラ",
+  "Érik Lira": "エリック・リラ",
+  "Jesus Gallardo": "ヘスス・ガジャルド",
+  "Jesús Gallardo": "ヘスス・ガジャルド",
+  "Israel Reyes": "イスラエル・レジェス",
+  "Alvaro Fidalgo": "アルバロ・フィダルゴ",
+  "Álvaro Fidalgo": "アルバロ・フィダルゴ",
+  "Brian Gutierrez": "ブライアン・グティエレス",
+  "Brian Gutiérrez": "ブライアン・グティエレス",
+  "Julian Quinones": "フリアン・キニョネス",
+  "Julián Quiñones": "フリアン・キニョネス",
+  "Roberto Alvarado": "ロベルト・アルバラード",
+  "Raul Jimenez": "ラウル・ヒメネス",
+  "Raúl Jiménez": "ラウル・ヒメネス",
+
+  "Ronwen Williams": "ロンウェン・ウィリアムズ",
+  "Ime Okon": "イメ・オコン",
+  "Mbekezeli Mbokazi": "ムベケゼリ・ンボカジ",
+  "Nkosinathi Sibisi": "ンコシナティ・シビシ",
+  "Aubrey Modiba": "オーブリー・モディバ",
+  "Khuliso Mudau": "クリソ・ムダウ",
+  "Sphephelo Sithole": "スペフェロ・シトレ",
+  "Jayden Adams": "ジェイデン・アダムス",
+  "Teboho Mokoena": "テボホ・モコエナ",
+  "Lyle Foster": "ライル・フォスター",
+  "Iqraam Rayners": "イクラーム・レイナーズ",
+};
+
+const NORMALIZED_PLAYER_NAME_JA = new Map(
+  Object.entries(PLAYER_NAME_JA).map(([name, label]) => [normalizeName(name), label]),
+);
+
+export function playerNameLabel(name) {
+  return NORMALIZED_PLAYER_NAME_JA.get(normalizeName(name)) ?? name;
+}
