@@ -197,16 +197,22 @@ async function respondToWorldCupCommand(interaction) {
   }
 }
 
-async function sendLineupImageFollowup(interaction, teamQuery) {
+async function updateLineupImageMessage(interaction, teamQuery) {
   try {
+    console.log("Building /wc lineup image update", { id: interaction.id });
     const payload = await buildLineupImagePayload(teamQuery);
     if (!payload) {
       console.log("Skipping /wc lineup image follow-up; no official lineups", { id: interaction.id });
       return;
     }
-    await createFollowupMessage(interaction, payload);
+    console.log("Updating /wc lineup original message with image", {
+      id: interaction.id,
+      fileCount: payload.files?.length ?? 0,
+      bytes: payload.files?.[0]?.data?.byteLength ?? payload.files?.[0]?.data?.length ?? 0,
+    });
+    await editOriginalInteractionResponse(interaction, payload);
   } catch (err) {
-    console.error("Failed /wc lineup follow-up", {
+    console.error("Failed /wc lineup image update", {
       id: interaction.id,
       message: err.message,
       stack: err.stack,
@@ -215,16 +221,7 @@ async function sendLineupImageFollowup(interaction, teamQuery) {
       content: `スタメン画像を送信できませんでした: ${err.message}`,
       allowed_mentions: { parse: [] },
     };
-    try {
-      await createFollowupMessage(interaction, errorPayload);
-    } catch (followupErr) {
-      console.error("Failed /wc lineup error follow-up", {
-        id: interaction.id,
-        message: followupErr.message,
-        stack: followupErr.stack,
-      });
-      await editOriginalInteractionResponse(interaction, errorPayload);
-    }
+    await editOriginalInteractionResponse(interaction, errorPayload);
   }
 }
 
@@ -289,7 +286,7 @@ async function handleInteraction(request, env, ctx) {
     try {
       const payload = await buildLineupPayload(teamQuery, { summaryOnly: true });
       if (payload.content?.includes("公式スタメン")) {
-        ctx.waitUntil(sendLineupImageFollowup(interaction, teamQuery));
+        ctx.waitUntil(updateLineupImageMessage(interaction, teamQuery));
       }
       return interactionMessageResponse(payload);
     } catch (err) {
