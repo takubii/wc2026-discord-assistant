@@ -32,11 +32,14 @@ GitHub Actionsの自動投稿に使います。
 2. このコードをpushする
 3. `Settings` -> `Secrets and variables` -> `Actions` を開く
 4. `DISCORD_WEBHOOK_URL` を追加する
+5. `DISCORD_RESULTS_WEBHOOK_URL` を追加する
 
 GitHub Actionsは以下を実行します。
 
 - `Post World Cup Matches`: 毎日22:00 JSTに翌日の試合予定を投稿
 - `Post World Cup Results Summary`: 毎日16:00 JSTに今日の結果と順位を投稿
+
+`DISCORD_WEBHOOK_URL` は試合日程チャンネル、`DISCORD_RESULTS_WEBHOOK_URL` は結果と順位チャンネルのWebhook URLを設定します。`DISCORD_RESULTS_WEBHOOK_URL` が未設定の場合、結果と順位も `DISCORD_WEBHOOK_URL` に投稿されます。
 
 手動テストはActions画面の `Run workflow` から実行できます。`dry_run` を `true` にするとDiscordへ投稿せず、Actionsログに本文だけ出します。
 

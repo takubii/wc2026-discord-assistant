@@ -11,7 +11,10 @@ GitHub Actionsで以下を自動投稿します。
 - 毎日22:00 JST: 翌日の試合予定
 - 毎日16:00 JST: 今日の結果とグループ順位
 
-投稿先はGitHub ActionsのSecret `DISCORD_WEBHOOK_URL` で指定します。
+投稿先はGitHub ActionsのSecretで指定します。
+
+- `DISCORD_WEBHOOK_URL`: 試合日程
+- `DISCORD_RESULTS_WEBHOOK_URL`: 結果と順位
 
 ## Slash Command
 
