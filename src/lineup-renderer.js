@@ -108,9 +108,20 @@ function resolveSlots(players) {
     (abbreviations.has("CD-L") || abbreviations.has("CB-L")) &&
     (abbreviations.has("CD-R") || abbreviations.has("CB-R"));
   const hasMidThree = abbreviations.has("CM") && abbreviations.has("CM-L") && abbreviations.has("CM-R");
+  const hasCentralForward = abbreviations.has("F") || abbreviations.has("CF") || abbreviations.has("ST");
+  const hasShadowForwards = hasCentralForward && abbreviations.has("CF-L") && abbreviations.has("CF-R");
   return players.map((player, index) => {
     const abbreviation = player.positionAbbreviation;
     let base = POSITION_COORDS[abbreviation] ?? FALLBACK_SLOTS[index] ?? FALLBACK_SLOTS.at(-1);
+    if (hasShadowForwards && ["F", "CF", "ST"].includes(abbreviation)) {
+      base = { ...base, x: 450, y: 270, width: 176 };
+    }
+    if (hasShadowForwards && abbreviation === "CF-L") {
+      base = { ...base, x: 360, y: 388, width: 176 };
+    }
+    if (hasShadowForwards && abbreviation === "CF-R") {
+      base = { ...base, x: 540, y: 388, width: 176 };
+    }
     if (hasBackThree && abbreviation === "LB") {
       base = { ...base, x: 124, width: 150 };
     }
