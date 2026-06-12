@@ -213,6 +213,14 @@ function imageUrl(baseUrl, event, lineup) {
   return url.toString();
 }
 
+function attachmentImageEmbed(event, filename) {
+  return {
+    title: eventTitle(event),
+    color: 0x0b7a43,
+    image: { url: `attachment://${filename}` },
+  };
+}
+
 function lineupImageEmbed(baseUrl, event) {
   return {
     title: eventTitle(event),
@@ -258,6 +266,24 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
         "通常は試合開始の約1時間前に公開されます。",
       ].join("\n"),
       allowed_mentions: { parse: [] },
+    };
+  }
+
+  if (options.attachImage) {
+    const image = await buildLineupImage(event.id);
+    return {
+      content: [
+        ...contentHeader,
+        "",
+        ...lineups.slice(0, 2).map(lineupSummary),
+      ].join("\n"),
+      allowed_mentions: { parse: [] },
+      embeds: [attachmentImageEmbed(event, image.filename)],
+      files: [{
+        name: image.filename,
+        type: "image/png",
+        data: image.data,
+      }],
     };
   }
 
