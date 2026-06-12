@@ -54,105 +54,123 @@ function benchText(substitutes, x = 112, y = 1058) {
     .join("");
 }
 
-const POSITION_COORDS = {
-  G: { x: 450, y: 900, pos: "GK", width: 208 },
-  GK: { x: 450, y: 900, pos: "GK", width: 208 },
-  LB: { x: 146, y: 750, pos: "LB", width: 168 },
-  LWB: { x: 146, y: 706, pos: "LWB", width: 168 },
-  RB: { x: 754, y: 750, pos: "RB", width: 176 },
-  RWB: { x: 754, y: 706, pos: "RWB", width: 176 },
-  CD: { x: 450, y: 762, pos: "CB", width: 176 },
-  CB: { x: 450, y: 762, pos: "CB", width: 176 },
-  "CD-L": { x: 350, y: 762, pos: "CB", width: 176 },
-  "CB-L": { x: 350, y: 762, pos: "CB", width: 176 },
-  "CD-R": { x: 550, y: 762, pos: "CB", width: 184 },
-  "CB-R": { x: 550, y: 762, pos: "CB", width: 184 },
-  LM: { x: 176, y: 414, pos: "LW", width: 164 },
-  LW: { x: 176, y: 414, pos: "LW", width: 164 },
-  RM: { x: 724, y: 414, pos: "RW", width: 164 },
-  RW: { x: 724, y: 414, pos: "RW", width: 164 },
-  CM: { x: 450, y: 560, pos: "CM", width: 184 },
-  "CM-L": { x: 330, y: 560, pos: "CM", width: 184 },
-  "CM-R": { x: 570, y: 560, pos: "CM", width: 184 },
-  DM: { x: 450, y: 650, pos: "DM", width: 184 },
-  CDM: { x: 450, y: 650, pos: "DM", width: 184 },
-  AM: { x: 450, y: 420, pos: "AM", width: 184 },
-  CAM: { x: 450, y: 420, pos: "AM", width: 184 },
-  LF: { x: 176, y: 414, pos: "LW", width: 164 },
-  RF: { x: 724, y: 414, pos: "RW", width: 164 },
-  F: { x: 450, y: 270, pos: "CF", width: 188 },
-  CF: { x: 450, y: 270, pos: "CF", width: 188 },
-  "CF-L": { x: 350, y: 270, pos: "CF", width: 176 },
-  "CF-R": { x: 550, y: 270, pos: "CF", width: 176 },
-  ST: { x: 450, y: 270, pos: "CF", width: 188 },
+const XS_BY_COUNT = {
+  1: [450],
+  2: [330, 570],
+  3: [240, 450, 660],
+  4: [146, 350, 550, 754],
+  5: [124, 300, 450, 600, 776],
 };
 
-const FALLBACK_SLOTS = [
-  { x: 450, y: 900, pos: "GK", width: 208 },
-  { x: 146, y: 750, pos: "LB", width: 168 },
-  { x: 350, y: 762, pos: "CB", width: 176 },
-  { x: 550, y: 762, pos: "CB", width: 184 },
-  { x: 754, y: 750, pos: "RB", width: 176 },
-  { x: 350, y: 585, pos: "CM", width: 184 },
-  { x: 550, y: 585, pos: "CM", width: 184 },
-  { x: 176, y: 414, pos: "LW", width: 164 },
-  { x: 450, y: 420, pos: "AM", width: 184 },
-  { x: 724, y: 414, pos: "RW", width: 164 },
-  { x: 450, y: 270, pos: "CF", width: 188 },
-];
+const ROW_YS_BY_COUNT = {
+  1: [520],
+  2: [720, 330],
+  3: [750, 560, 300],
+  4: [750, 620, 430, 270],
+  5: [780, 660, 540, 405, 270],
+};
 
-function resolveSlots(players) {
-  const used = new Map();
-  const abbreviations = new Set(players.map((player) => player.positionAbbreviation));
-  const hasBackThree = (abbreviations.has("CD") || abbreviations.has("CB")) &&
-    (abbreviations.has("CD-L") || abbreviations.has("CB-L")) &&
-    (abbreviations.has("CD-R") || abbreviations.has("CB-R"));
-  const hasMidThree = abbreviations.has("CM") && abbreviations.has("CM-L") && abbreviations.has("CM-R");
-  const hasCentralForward = abbreviations.has("F") || abbreviations.has("CF") || abbreviations.has("ST");
-  const hasShadowForwards = hasCentralForward && abbreviations.has("CF-L") && abbreviations.has("CF-R");
-  return players.map((player, index) => {
-    const abbreviation = player.positionAbbreviation;
-    let base = POSITION_COORDS[abbreviation] ?? FALLBACK_SLOTS[index] ?? FALLBACK_SLOTS.at(-1);
-    if (hasShadowForwards && ["F", "CF", "ST"].includes(abbreviation)) {
-      base = { ...base, x: 450, y: 270, width: 176 };
-    }
-    if (hasShadowForwards && abbreviation === "CF-L") {
-      base = { ...base, x: 360, y: 388, width: 176 };
-    }
-    if (hasShadowForwards && abbreviation === "CF-R") {
-      base = { ...base, x: 540, y: 388, width: 176 };
-    }
-    if (hasBackThree && abbreviation === "LB") {
-      base = { ...base, x: 124, width: 150 };
-    }
-    if (hasBackThree && abbreviation === "RB") {
-      base = { ...base, x: 776, width: 150 };
-    }
-    if (hasBackThree && (abbreviation === "CD-L" || abbreviation === "CB-L")) {
-      base = { ...base, x: 300, width: 150 };
-    }
-    if (hasBackThree && (abbreviation === "CD" || abbreviation === "CB")) {
-      base = { ...base, x: 450, width: 150 };
-    }
-    if (hasBackThree && (abbreviation === "CD-R" || abbreviation === "CB-R")) {
-      base = { ...base, x: 600, width: 150 };
-    }
-    if (hasMidThree && abbreviation === "CM-L") {
-      base = { ...base, x: 240, width: 168 };
-    }
-    if (hasMidThree && abbreviation === "CM") {
-      base = { ...base, x: 450, width: 168 };
-    }
-    if (hasMidThree && abbreviation === "CM-R") {
-      base = { ...base, x: 660, width: 168 };
-    }
-    const key = `${base.x}:${base.y}`;
-    const count = used.get(key) ?? 0;
-    used.set(key, count + 1);
-    const xOffset = count === 0 ? 0 : count % 2 === 1 ? -230 : 230;
-    const yOffset = count === 0 ? 0 : Math.ceil(count / 2) * 20;
-    return { ...base, x: base.x + xOffset, y: base.y + yOffset, name: player.name };
-  });
+function displayPosition(position) {
+  const labels = {
+    G: "GK",
+    CD: "CB",
+    "CD-L": "CB",
+    "CD-R": "CB",
+    "CB-L": "CB",
+    "CB-R": "CB",
+    F: "CF",
+    LF: "LW",
+    RF: "RW",
+  };
+  return labels[position] ?? position ?? "";
+}
+
+function parseFormation(formation, outfieldCount) {
+  const rows = String(formation ?? "")
+    .match(/\d+/g)
+    ?.map((value) => Number(value))
+    .filter((value) => Number.isInteger(value) && value > 0 && value <= 5);
+  return rows?.reduce((sum, value) => sum + value, 0) === outfieldCount ? rows : null;
+}
+
+function verticalRank(position) {
+  if (["G", "GK"].includes(position)) return -1;
+  if (["LB", "LWB", "RB", "RWB", "CD", "CB", "CD-L", "CB-L", "CD-R", "CB-R"].includes(position)) return 0;
+  if (["DM", "CDM"].includes(position)) return 1;
+  if (["LM", "RM", "CM", "CM-L", "CM-R"].includes(position)) return 2;
+  if (["AM", "CAM", "CF-L", "CF-R"].includes(position)) return 3;
+  return 4;
+}
+
+function sideRank(position) {
+  if (["LB", "LWB", "LM", "LW", "LF"].includes(position)) return 10;
+  if (/-(L)$/.test(position)) return 30;
+  if (/-(R)$/.test(position)) return 70;
+  if (["RB", "RWB", "RM", "RW", "RF"].includes(position)) return 90;
+  return 50;
+}
+
+function sortPlayersForLayout(players) {
+  return players
+    .map((player, index) => ({ ...player, index }))
+    .sort((a, b) => (
+      verticalRank(a.positionAbbreviation) - verticalRank(b.positionAbbreviation) ||
+      sideRank(a.positionAbbreviation) - sideRank(b.positionAbbreviation) ||
+      a.index - b.index
+    ));
+}
+
+function fallbackRows(players) {
+  const rows = [];
+  for (const rank of [0, 1, 2, 3, 4]) {
+    const row = players.filter((player) => verticalRank(player.positionAbbreviation) === rank);
+    if (row.length) rows.push(row);
+  }
+  return rows;
+}
+
+function formationRows(players, formation) {
+  const counts = parseFormation(formation, players.length);
+  if (!counts) return fallbackRows(players);
+
+  const rows = [];
+  let offset = 0;
+  for (const count of counts) {
+    rows.push(players.slice(offset, offset + count));
+    offset += count;
+  }
+  return rows;
+}
+
+function rowWidth(count) {
+  if (count >= 5) return 150;
+  if (count === 4) return 164;
+  if (count === 3) return 176;
+  return 188;
+}
+
+function spreadRow(players, y) {
+  const xs = XS_BY_COUNT[Math.min(players.length, 5)] ?? XS_BY_COUNT[5];
+  return players.map((player, index) => ({
+    x: xs[index] ?? (110 + index * 140),
+    y,
+    pos: displayPosition(player.positionAbbreviation),
+    width: rowWidth(players.length),
+    name: player.name,
+  }));
+}
+
+function resolveSlots(players, formation) {
+  const sorted = sortPlayersForLayout(players);
+  const goalkeeper = sorted.find((player) => ["G", "GK"].includes(player.positionAbbreviation)) ?? sorted[0];
+  const outfield = sorted.filter((player) => player !== goalkeeper);
+  const rows = formationRows(outfield, formation);
+  const rowYs = ROW_YS_BY_COUNT[rows.length] ?? ROW_YS_BY_COUNT[4];
+
+  return [
+    { x: 450, y: 900, pos: "GK", width: 208, name: goalkeeper.name },
+    ...rows.flatMap((row, index) => spreadRow(row, rowYs[index] ?? 500)),
+  ];
 }
 
 function commonDefs() {
@@ -212,7 +230,7 @@ function flag({ x, y, url, code }) {
 }
 
 function lineupPanel({ teamName, opponentName, formation, kickoffLabel, starters, substitutes, flagUrl, flagCode }) {
-  const starterCards = resolveSlots(starters).map(card).join("");
+  const starterCards = resolveSlots(starters, formation).map(card).join("");
   const subtitle = `${teamName} lineup / ${formation || "formation TBD"} / ${kickoffLabel}`;
 
   return `
