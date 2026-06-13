@@ -3,7 +3,7 @@ import { buildLineupLayout } from "./lineup-ai-layout.js";
 import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, normalizeText, teamLabel } from "./team-data.js";
 import { formatFifaRankLine } from "./fifa-rankings.js";
-import { findPlayerMetadata, formatAge, formatShirtNumber } from "./player-data.js";
+import { findPlayerMetadata, formatAge, formatClub, formatShirtNumber } from "./player-data.js";
 
 const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -291,6 +291,7 @@ function enrichRosterPlayer(player, teamName) {
     ...player,
     shirtNumber: player.shirtNumber ?? metadata?.shirtNumber ?? null,
     age: metadata?.age ?? null,
+    club: metadata?.club ?? null,
   };
 }
 
@@ -381,9 +382,13 @@ function lineupPlayerAge(player) {
   return age ? ` / ${age}` : "";
 }
 
-function lineupPlayerName(player, { japanese = false, includeAge = false } = {}) {
+function lineupPlayerClub(player) {
+  return player.club ? ` / ${formatClub(player)}` : "";
+}
+
+function lineupPlayerName(player, { japanese = false, includeAge = false, includeClub = false } = {}) {
   const name = japanese ? playerNameLabel(player.name) : player.name;
-  return `${lineupPlayerNumber(player)}${name}${includeAge ? lineupPlayerAge(player) : ""}`;
+  return `${lineupPlayerNumber(player)}${name}${includeAge ? lineupPlayerAge(player) : ""}${includeClub ? lineupPlayerClub(player) : ""}`;
 }
 
 function detailedPositionLabel(position) {
@@ -464,7 +469,7 @@ function formatStarterGroup(players, group) {
     ...grouped.map((player) => {
       const position = detailedPositionLabel(player.positionAbbreviation);
       const prefix = position ? `${position} ` : "";
-      return `・${prefix}${lineupPlayerName(player, { japanese: true, includeAge: true })}`;
+      return `・${prefix}${lineupPlayerName(player, { japanese: true, includeAge: true, includeClub: true })}`;
     }),
   ].join("\n");
 }

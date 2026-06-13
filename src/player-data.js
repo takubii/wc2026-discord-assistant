@@ -234,7 +234,7 @@ function jaPosition(position) {
   return map[position] ?? position;
 }
 
-function formatClub(player) {
+export function formatClub(player) {
   if (!player.club) return "";
   const country = CLUB_COUNTRY_BY_CLUB[player.club];
   return country ? `${player.club} / ${country}` : player.club;
