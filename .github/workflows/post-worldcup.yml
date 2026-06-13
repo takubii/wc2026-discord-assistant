@@ -2,8 +2,8 @@ name: Post World Cup Matches
 
 on:
   schedule:
-    # 13:00 UTC = 22:00 JST
-    - cron: "0 13 * * *"
+    # 11:00 UTC = 20:00 JST
+    - cron: "0 11 * * *"
   workflow_dispatch:
     inputs:
       target_date:
