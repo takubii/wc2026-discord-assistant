@@ -35,7 +35,7 @@ const commands = [
         ],
       },
       {
-        name: "squad",
+        name: "team",
         description: "代表メンバーを表示します",
         type: 1,
         options: [

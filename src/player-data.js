@@ -240,15 +240,20 @@ function formatMarketValue(player) {
   return player.marketValue ?? "不明";
 }
 
+function formatAge(player) {
+  return Number.isFinite(player.age) ? `${player.age}歳` : "";
+}
+
 function formatPlayerLine(player) {
   const main = jaPosition(player.mainPosition ?? player.broadPosition);
   const positions = [
     main,
     ...((player.otherPositions ?? []).length ? [`サブ: ${player.otherPositions.map(jaPosition).join(", ")}`] : []),
   ].join(" / ");
+  const age = formatAge(player) ? `\n> 年齢: ${formatAge(player)}` : "";
   const club = player.club ? `\n> 所属: ${formatClub(player)}` : "";
   const marketValue = `\n> 市場価値: ${formatMarketValue(player)}`;
-  return `### ${player.name}\n> 得意位置: ${positions}${club}${marketValue}`;
+  return `### ${player.name}\n> 得意位置: ${positions}${age}${club}${marketValue}`;
 }
 
 function formatCompactPlayerLine(player) {
@@ -256,9 +261,10 @@ function formatCompactPlayerLine(player) {
   const other = (player.otherPositions ?? []).length
     ? ` / サブ: ${player.otherPositions.map(jaPosition).join(", ")}`
     : "";
+  const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
   const club = player.club ? `（${formatClub(player)}）` : "";
   const marketValue = player.marketValue ? ` / ${player.marketValue}` : "";
-  return `• **${player.name}** - ${main}${other}${club}${marketValue}`;
+  return `• **${player.name}** - ${main}${other}${age}${club}${marketValue}`;
 }
 
 function splitIntoMessages(header, lines, maxLength = 1850) {
@@ -279,7 +285,7 @@ function splitIntoMessages(header, lines, maxLength = 1850) {
   return messages.map((content) => ({ content, allowed_mentions: { parse: [] } }));
 }
 
-export function buildSquadPayloads(teamQuery, positionQuery = "") {
+export function buildTeamPayloads(teamQuery, positionQuery = "") {
   const team = findTeam(teamQuery);
   if (!team) {
     return [{
@@ -351,12 +357,18 @@ export function buildPositionsPayloads(teamQuery) {
   for (const player of team.players) {
     const position = playerPositionLabel(player);
     if (!grouped.has(position)) grouped.set(position, []);
-    grouped.get(position).push(player.name);
+    grouped.get(position).push(player);
   }
 
   const lines = [...grouped.entries()]
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([position, names]) => `## ${jaPosition(position)}\n${names.map((name) => `• ${name}`).join("\n")}`);
+    .map(([position, players]) => {
+      const names = players.map((player) => {
+        const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
+        return `• ${player.name}${age}`;
+      });
+      return `## ${jaPosition(position)}\n${names.join("\n")}`;
+    });
 
   return splitIntoMessages(`# ${teamLabel(team.team)} ポジション別`, lines);
 }
@@ -392,7 +404,8 @@ export function buildNotablePayloads({ teamQuery = "", positionQuery = "", limit
         const rank = index + 1;
         const position = jaPosition(player.mainPosition ?? player.broadPosition);
         const club = player.club ? ` / ${formatClub(player)}` : "";
-        return `**${rank}. ${player.name}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)} / ${position}${club}`;
+        const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
+        return `**${rank}. ${player.name}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)}${age} / ${position}${club}`;
       })
     : ["市場価値が入っている選手が見つかりませんでした。"];
 
@@ -403,5 +416,6 @@ export function playersMetadata() {
   const playerCount = allPlayers().length;
   const enrichedCount = allPlayers().filter((player) => player.mainPosition).length;
   const valuedCount = allPlayers().filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0).length;
-  return { generatedAt: PLAYER_DATA.generatedAt, teamCount: PLAYER_DATA.teams.length, playerCount, enrichedCount, valuedCount };
+  const agedCount = allPlayers().filter((player) => Number.isFinite(player.age)).length;
+  return { generatedAt: PLAYER_DATA.generatedAt, teamCount: PLAYER_DATA.teams.length, playerCount, enrichedCount, valuedCount, agedCount };
 }

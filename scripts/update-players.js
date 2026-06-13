@@ -51,6 +51,11 @@ function parseMarketValueEur(value) {
   return Math.round(amount);
 }
 
+function parseAge(value) {
+  const age = Number(value.replace(/[^\d]/g, ""));
+  return Number.isFinite(age) && age > 0 ? age : null;
+}
+
 function nameTokenKey(name) {
   return normalize(name).split(" ").filter(Boolean).sort().join(" ");
 }
@@ -143,6 +148,8 @@ async function fetchEspnSquads() {
       otherPositions: [],
       marketValue: null,
       marketValueEur: null,
+      age: null,
+      ageUpdatedAt: null,
       transfermarktUrl: null,
       positionSource: null,
       positionUpdatedAt: null,
@@ -199,10 +206,19 @@ async function fetchTransfermarktPositions(url) {
     .toArray()
     .map((node) => $(node).text().replace(/\s+/g, " ").trim())
     .filter(Boolean);
+  const infoLabels = $(".info-table__content--regular").toArray();
+  let age = null;
+  for (const label of infoLabels) {
+    const text = $(label).text().replace(/\s+/g, " ").trim();
+    if (!/^Date of birth\/Age:/i.test(text)) continue;
+    age = parseAge($(label).next(".info-table__content--bold").text().replace(/\s+/g, " ").trim());
+    break;
+  }
 
   return {
     mainPosition: mainPosition ? cleanDetailedPosition(mainPosition) : null,
     otherPositions: otherPositions.map(cleanDetailedPosition),
+    age,
   };
 }
 
@@ -239,6 +255,7 @@ async function fetchTransfermarktSquad(teamId) {
     const href = link.attr("href");
     const cells = $(row).find("table.inline-table td").toArray();
     const position = $(cells[2]).text().replace(/\s+/g, " ").trim();
+    const age = parseAge($(row).children("td").eq(2).text().replace(/\s+/g, " ").trim());
     const clubLink = $(row).find('td.zentriert a[title][href*="/startseite/verein/"]').first();
     const club = clubLink.find("img[title]").first().attr("title") ?? clubLink.attr("title") ?? "";
     const clubHref = clubLink.attr("href") ?? "";
@@ -252,6 +269,7 @@ async function fetchTransfermarktSquad(teamId) {
         clubUrl: clubHref ? new URL(clubHref, TRANSFERMARKT_BASE).toString() : null,
         marketValue: marketValue || null,
         marketValueEur: marketValue ? parseMarketValueEur(marketValue) : null,
+        age,
         transfermarktUrl: new URL(href, TRANSFERMARKT_BASE).toString(),
       });
     }
@@ -281,6 +299,8 @@ async function enrichTeamFromTransfermarktSquad(team, teamIds) {
       clubUrl: tmPlayer.clubUrl ?? player.clubUrl ?? null,
       marketValue: tmPlayer.marketValue ?? player.marketValue ?? null,
       marketValueEur: tmPlayer.marketValueEur ?? player.marketValueEur ?? null,
+      age: tmPlayer.age ?? player.age ?? null,
+      ageUpdatedAt: tmPlayer.age ? new Date().toISOString() : player.ageUpdatedAt ?? null,
       transfermarktUrl: tmPlayer.transfermarktUrl,
       positionSource: "transfermarkt-team-squad",
       positionUpdatedAt: new Date().toISOString(),
@@ -305,6 +325,7 @@ async function enrichUnmatchedPlayersWithSearch(teams) {
           transfermarktUrl: url,
           positionSource: "transfermarkt-player-search",
           positionUpdatedAt: new Date().toISOString(),
+          ageUpdatedAt: positions.age ? new Date().toISOString() : player.ageUpdatedAt ?? null,
         });
         console.log(`${player.team}: ${player.name} -> ${player.mainPosition ?? "unknown"} (fallback)`);
         await sleep(700);
@@ -330,6 +351,7 @@ async function enrichTeam(teams, teamName) {
         transfermarktUrl: url,
         positionSource: "transfermarkt",
         positionUpdatedAt: new Date().toISOString(),
+        ageUpdatedAt: positions.age ? new Date().toISOString() : player.ageUpdatedAt ?? null,
       });
       console.log(`${player.team}: ${player.name} -> ${player.mainPosition ?? "unknown"}`);
       await sleep(700);

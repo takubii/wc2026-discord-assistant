@@ -1,6 +1,6 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 import { buildLineupImage, buildLineupImagePayload, buildLineupPayload } from "./lineup.js";
-import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildSquadPayloads } from "./player-data.js";
+import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildTeamPayloads } from "./player-data.js";
 import { buildDailySummaryPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
 import { teamChoices } from "./team-data.js";
@@ -153,8 +153,8 @@ async function respondToWorldCupCommand(interaction) {
 
     if (!subcommand || ["today", "tomorrow", "date"].includes(subcommand.name)) {
       payloads = await buildDiscordPayloadForDate(targetDateFromCommand(interaction));
-    } else if (subcommand.name === "squad") {
-      payloads = buildSquadPayloads(optionValue(subcommand.options, "team"), optionValue(subcommand.options, "position"));
+    } else if (subcommand.name === "team") {
+      payloads = buildTeamPayloads(optionValue(subcommand.options, "team"), optionValue(subcommand.options, "position"));
     } else if (subcommand.name === "player") {
       payloads = buildPlayerPayloads(optionValue(subcommand.options, "name"));
     } else if (subcommand.name === "positions") {

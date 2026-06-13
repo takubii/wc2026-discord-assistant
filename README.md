@@ -31,8 +31,8 @@ Discordで `/wc` を使います。
 /wc lineup
 /wc lineup team:日本
 /wc lineup text:true
-/wc squad team:日本
-/wc squad team:イングランド position:左ウイング
+/wc team team:日本
+/wc team team:イングランド position:左ウイング
 /wc player name:Kubo
 /wc notable
 /wc notable team:日本
@@ -40,7 +40,7 @@ Discordで `/wc` を使います。
 /wc positions team:キュラソー島
 ```
 
-`squad`、`positions`、`notable` の `team` は日本語入力と候補表示に対応しています。
+`team`、`positions`、`notable` の `team` は日本語入力と候補表示に対応しています。
 
 ## ローカル確認
 
