@@ -244,6 +244,10 @@ function formatAge(player) {
   return Number.isFinite(player.age) ? `${player.age}歳` : "";
 }
 
+function formatShirtNumber(player) {
+  return Number.isFinite(player.shirtNumber) ? `#${player.shirtNumber} ` : "";
+}
+
 function formatPlayerLine(player) {
   const main = jaPosition(player.mainPosition ?? player.broadPosition);
   const positions = [
@@ -264,7 +268,7 @@ function formatCompactPlayerLine(player) {
   const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
   const club = player.club ? `（${formatClub(player)}）` : "";
   const marketValue = player.marketValue ? ` / ${player.marketValue}` : "";
-  return `• **${player.name}** - ${main}${other}${age}${club}${marketValue}`;
+  return `• ${formatShirtNumber(player)}**${player.name}** - ${main}${other}${age}${club}${marketValue}`;
 }
 
 function splitIntoMessages(header, lines, maxLength = 1850) {
@@ -417,5 +421,6 @@ export function playersMetadata() {
   const enrichedCount = allPlayers().filter((player) => player.mainPosition).length;
   const valuedCount = allPlayers().filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0).length;
   const agedCount = allPlayers().filter((player) => Number.isFinite(player.age)).length;
-  return { generatedAt: PLAYER_DATA.generatedAt, teamCount: PLAYER_DATA.teams.length, playerCount, enrichedCount, valuedCount, agedCount };
+  const numberedCount = allPlayers().filter((player) => Number.isFinite(player.shirtNumber)).length;
+  return { generatedAt: PLAYER_DATA.generatedAt, teamCount: PLAYER_DATA.teams.length, playerCount, enrichedCount, valuedCount, agedCount, numberedCount };
 }

@@ -56,6 +56,11 @@ function parseAge(value) {
   return Number.isFinite(age) && age > 0 ? age : null;
 }
 
+function parseShirtNumber(value) {
+  const shirtNumber = Number(value.replace(/[^\d]/g, ""));
+  return Number.isFinite(shirtNumber) && shirtNumber > 0 ? shirtNumber : null;
+}
+
 function nameTokenKey(name) {
   return normalize(name).split(" ").filter(Boolean).sort().join(" ");
 }
@@ -150,6 +155,7 @@ async function fetchEspnSquads() {
       marketValueEur: null,
       age: null,
       ageUpdatedAt: null,
+      shirtNumber: null,
       transfermarktUrl: null,
       positionSource: null,
       positionUpdatedAt: null,
@@ -254,6 +260,7 @@ async function fetchTransfermarktSquad(teamId) {
     const name = link.text().replace(/\s+/g, " ").trim();
     const href = link.attr("href");
     const cells = $(row).find("table.inline-table td").toArray();
+    const shirtNumber = parseShirtNumber($(row).children("td").eq(0).text().replace(/\s+/g, " ").trim());
     const position = $(cells[2]).text().replace(/\s+/g, " ").trim();
     const age = parseAge($(row).children("td").eq(2).text().replace(/\s+/g, " ").trim());
     const clubLink = $(row).find('td.zentriert a[title][href*="/startseite/verein/"]').first();
@@ -270,6 +277,7 @@ async function fetchTransfermarktSquad(teamId) {
         marketValue: marketValue || null,
         marketValueEur: marketValue ? parseMarketValueEur(marketValue) : null,
         age,
+        shirtNumber,
         transfermarktUrl: new URL(href, TRANSFERMARKT_BASE).toString(),
       });
     }
@@ -301,6 +309,7 @@ async function enrichTeamFromTransfermarktSquad(team, teamIds) {
       marketValueEur: tmPlayer.marketValueEur ?? player.marketValueEur ?? null,
       age: tmPlayer.age ?? player.age ?? null,
       ageUpdatedAt: tmPlayer.age ? new Date().toISOString() : player.ageUpdatedAt ?? null,
+      shirtNumber: tmPlayer.shirtNumber ?? player.shirtNumber ?? null,
       transfermarktUrl: tmPlayer.transfermarktUrl,
       positionSource: "transfermarkt-team-squad",
       positionUpdatedAt: new Date().toISOString(),
