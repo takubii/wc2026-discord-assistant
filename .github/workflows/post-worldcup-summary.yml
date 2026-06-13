@@ -28,6 +28,6 @@ jobs:
           node-version: 20
       - run: node post-worldcup-summary.js
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_RESULTS_WEBHOOK_URL || secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_RESULTS_WEBHOOK_URL: ${{ secrets.DISCORD_RESULTS_WEBHOOK_URL }}
           TARGET_DATE: ${{ github.event.inputs.target_date }}
           DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}

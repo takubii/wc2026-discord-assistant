@@ -37,7 +37,7 @@ async function postPayload(discordWebhookUrl, payload) {
 
 async function main() {
   const dryRun = process.env.DRY_RUN === "1";
-  const discordWebhookUrl = dryRun ? null : getRequiredEnv("DISCORD_WEBHOOK_URL");
+  const discordWebhookUrl = dryRun ? null : getRequiredEnv("DISCORD_RESULTS_WEBHOOK_URL");
   const payloads = await buildResultsPayloads(targetDateInTokyo());
 
   if (dryRun) {
@@ -49,7 +49,10 @@ async function main() {
   }
 
   for (const payload of payloads) {
-    await postPayload(discordWebhookUrl, payload);
+    await postPayload(discordWebhookUrl, {
+      username: "WC2026 結果",
+      ...payload,
+    });
   }
 }
 
