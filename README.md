@@ -8,7 +8,7 @@ World Cup 2026の試合予定、結果、順位、代表メンバー、注目選
 
 GitHub Actionsで以下を自動投稿します。
 
-- 毎日20:00 JST: 翌日の試合予定
+- 毎日16:00 JST: 翌日の試合予定
 - 毎日16:00 JST: 今日の結果
 
 投稿先はGitHub ActionsのSecretで指定します。

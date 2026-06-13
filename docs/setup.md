@@ -36,7 +36,7 @@ GitHub Actionsの自動投稿に使います。
 
 GitHub Actionsは以下を実行します。
 
-- `Post World Cup Matches`: 毎日20:00 JSTに翌日の試合予定を投稿
+- `Post World Cup Matches`: 毎日16:00 JSTに翌日の試合予定を投稿
 - `Post World Cup Results Summary`: 毎日16:00 JSTに今日の結果を投稿
 
 `DISCORD_WEBHOOK_URL` は試合日程チャンネル、`DISCORD_RESULTS_WEBHOOK_URL` は結果チャンネルのWebhook URLを設定します。`DISCORD_RESULTS_WEBHOOK_URL` が未設定の場合、結果投稿のActionは失敗します。日程チャンネルへの誤投稿を防ぐため、フォールバックはしません。
