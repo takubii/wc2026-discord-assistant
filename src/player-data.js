@@ -252,6 +252,10 @@ export function formatShirtNumber(player) {
   return Number.isFinite(player.shirtNumber) ? `#${player.shirtNumber} ` : "";
 }
 
+function formatShirtNumberTag(player) {
+  return Number.isFinite(player.shirtNumber) ? `\`#${player.shirtNumber}\` ` : "";
+}
+
 export function playerDisplayName(player) {
   return `${formatShirtNumber(player)}${player.name}`;
 }
@@ -291,10 +295,13 @@ function formatCompactPlayerLine(player) {
   const other = (player.otherPositions ?? []).length
     ? ` / サブ: ${player.otherPositions.map(jaPosition).join(", ")}`
     : "";
-  const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
-  const club = player.club ? `（${formatClub(player)}）` : "";
-  const marketValue = player.marketValue ? ` / ${player.marketValue}` : "";
-  return `• **${playerDisplayName(player)}** - ${main}${other}${age}${club}${marketValue}`;
+  const age = formatAge(player) ? `  ${formatAge(player)}` : "";
+  const details = [
+    `${main}${other}`,
+    player.club ? formatClub(player) : "",
+    player.marketValue ?? "",
+  ].filter(Boolean);
+  return `${formatShirtNumberTag(player)}**${player.name}**${age}\n> ${details.join(" | ")}`;
 }
 
 function splitIntoMessages(header, lines, maxLength = 1850) {
