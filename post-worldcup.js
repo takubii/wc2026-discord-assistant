@@ -23,13 +23,9 @@ async function main() {
   const dryRun = process.env.DRY_RUN === "1";
   const discordWebhookUrl = dryRun ? null : getRequiredEnv("DISCORD_WEBHOOK_URL");
   const payload = await buildDiscordPayloadForDate(targetDateInTokyo());
-  const postPayload = {
-    username: "WC2026 試合日程",
-    ...payload,
-  };
 
   if (dryRun) {
-    console.log(postPayload.content);
+    console.log(payload.content);
     return;
   }
 
@@ -38,7 +34,7 @@ async function main() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(postPayload),
+    body: JSON.stringify(payload),
   });
 
   if (!discordRes.ok) {

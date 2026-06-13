@@ -49,10 +49,7 @@ async function main() {
   }
 
   for (const payload of payloads) {
-    await postPayload(discordWebhookUrl, {
-      username: "WC2026 結果",
-      ...payload,
-    });
+    await postPayload(discordWebhookUrl, payload);
   }
 }
 
