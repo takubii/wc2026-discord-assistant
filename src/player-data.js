@@ -202,6 +202,10 @@ function allPlayers() {
   return PLAYER_DATA.teams.flatMap((team) => team.players);
 }
 
+function nameTokenKey(name) {
+  return normalize(name).split(" ").filter(Boolean).sort().join(" ");
+}
+
 function playerPositionLabel(player) {
   return player.mainPosition ?? player.broadPosition;
 }
@@ -240,12 +244,34 @@ function formatMarketValue(player) {
   return player.marketValue ?? "不明";
 }
 
-function formatAge(player) {
+export function formatAge(player) {
   return Number.isFinite(player.age) ? `${player.age}歳` : "";
 }
 
-function formatShirtNumber(player) {
+export function formatShirtNumber(player) {
   return Number.isFinite(player.shirtNumber) ? `#${player.shirtNumber} ` : "";
+}
+
+export function playerDisplayName(player) {
+  return `${formatShirtNumber(player)}${player.name}`;
+}
+
+export function playerDisplayMeta(player) {
+  return [formatAge(player)].filter(Boolean).join(" / ");
+}
+
+export function findPlayerMetadata(teamQuery, playerName) {
+  const team = findTeam(teamQuery);
+  if (!team) return null;
+
+  const normalizedName = normalize(playerName);
+  const tokenKey = nameTokenKey(playerName);
+  return (
+    team.players.find((player) => normalize(player.name) === normalizedName) ??
+    team.players.find((player) => nameTokenKey(player.name) === tokenKey) ??
+    team.players.find((player) => normalize(player.name).includes(normalizedName) || normalizedName.includes(normalize(player.name))) ??
+    null
+  );
 }
 
 function formatPlayerLine(player) {
@@ -257,7 +283,7 @@ function formatPlayerLine(player) {
   const age = formatAge(player) ? `\n> 年齢: ${formatAge(player)}` : "";
   const club = player.club ? `\n> 所属: ${formatClub(player)}` : "";
   const marketValue = `\n> 市場価値: ${formatMarketValue(player)}`;
-  return `### ${player.name}\n> 得意位置: ${positions}${age}${club}${marketValue}`;
+  return `### ${playerDisplayName(player)}\n> 得意位置: ${positions}${age}${club}${marketValue}`;
 }
 
 function formatCompactPlayerLine(player) {
@@ -268,7 +294,7 @@ function formatCompactPlayerLine(player) {
   const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
   const club = player.club ? `（${formatClub(player)}）` : "";
   const marketValue = player.marketValue ? ` / ${player.marketValue}` : "";
-  return `• ${formatShirtNumber(player)}**${player.name}** - ${main}${other}${age}${club}${marketValue}`;
+  return `• **${playerDisplayName(player)}** - ${main}${other}${age}${club}${marketValue}`;
 }
 
 function splitIntoMessages(header, lines, maxLength = 1850) {
@@ -342,7 +368,7 @@ export function buildPlayerPayloads(nameQuery) {
 
   const lines = players.map((player) => {
     const transfermarkt = player.transfermarktUrl ? `\n> ${player.transfermarktUrl}` : "";
-    return `## ${player.name}（${teamLabel(player.team)}）\n${formatPlayerLine(player)}${transfermarkt}`;
+    return `## ${playerDisplayName(player)}（${teamLabel(player.team)}）\n${formatPlayerLine(player)}${transfermarkt}`;
   });
 
   return splitIntoMessages("# 選手検索", lines);
@@ -369,7 +395,7 @@ export function buildPositionsPayloads(teamQuery) {
     .map(([position, players]) => {
       const names = players.map((player) => {
         const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
-        return `• ${player.name}${age}`;
+        return `• ${playerDisplayName(player)}${age}`;
       });
       return `## ${jaPosition(position)}\n${names.join("\n")}`;
     });
@@ -409,7 +435,7 @@ export function buildNotablePayloads({ teamQuery = "", positionQuery = "", limit
         const position = jaPosition(player.mainPosition ?? player.broadPosition);
         const club = player.club ? ` / ${formatClub(player)}` : "";
         const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
-        return `**${rank}. ${player.name}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)}${age} / ${position}${club}`;
+        return `**${rank}. ${playerDisplayName(player)}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)}${age} / ${position}${club}`;
       })
     : ["市場価値が入っている選手が見つかりませんでした。"];
 

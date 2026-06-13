@@ -8,12 +8,19 @@ function escapeXml(value) {
 
 function shortName(name) {
   const parts = String(name ?? "").trim().split(/\s+/).filter(Boolean);
-  if (parts.length <= 2) return parts.join(" ");
-  return `${parts[0][0]}. ${parts.at(-1)}`;
+  const number = /^#\d+$/.test(parts[0] ?? "") ? parts.shift() : "";
+  const prefix = number ? `${number} ` : "";
+  if (parts.length <= 2) return `${prefix}${parts.join(" ")}`.trim();
+  return `${prefix}${parts[0][0]}. ${parts.at(-1)}`;
 }
 
-function card({ x, y, pos, name, width = 184 }) {
-  const safeName = shortName(name);
+function displayPlayerName(player) {
+  const number = Number.isFinite(player.shirtNumber) ? `#${player.shirtNumber} ` : "";
+  return `${number}${player.name ?? ""}`;
+}
+
+function card({ x, y, pos, name, shirtNumber, width = 184 }) {
+  const safeName = shortName(displayPlayerName({ name, shirtNumber }));
   const fontSize = safeName.length > 16 ? 16 : safeName.length > 13 ? 18 : 20;
   return `
   <g transform="translate(${x} ${y})">
@@ -24,7 +31,7 @@ function card({ x, y, pos, name, width = 184 }) {
 }
 
 function benchLines(substitutes) {
-  const names = substitutes.map((player) => shortName(player.name)).slice(0, 12);
+  const names = substitutes.map((player) => shortName(displayPlayerName(player))).slice(0, 12);
   if (!names.length) return ["Not available"];
 
   const lines = [];
@@ -157,6 +164,7 @@ function spreadRow(players, y) {
     pos: displayPosition(player.positionAbbreviation),
     width: rowWidth(players.length),
     name: player.name,
+    shirtNumber: player.shirtNumber,
   }));
 }
 
@@ -168,7 +176,7 @@ export function resolveLineupSlots(players, formation) {
   const rowYs = ROW_YS_BY_COUNT[rows.length] ?? ROW_YS_BY_COUNT[4];
 
   return [
-    { x: 450, y: 900, pos: "GK", width: 208, name: goalkeeper.name },
+    { x: 450, y: 900, pos: "GK", width: 208, name: goalkeeper.name, shirtNumber: goalkeeper.shirtNumber },
     ...rows.flatMap((row, index) => spreadRow(row, rowYs[index] ?? 500)),
   ];
 }

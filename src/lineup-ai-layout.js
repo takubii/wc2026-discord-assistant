@@ -122,6 +122,7 @@ function normalizeAiLayout(parsed, starters) {
       pos: String(item.label || player.positionAbbreviation || "").slice(0, 6),
       width: 176,
       name: player.name,
+      shirtNumber: player.shirtNumber,
     };
   });
 

@@ -3,6 +3,7 @@ import { buildLineupLayout } from "./lineup-ai-layout.js";
 import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, teamLabel } from "./team-data.js";
 import { formatFifaRankLine } from "./fifa-rankings.js";
+import { findPlayerMetadata, formatAge, formatShirtNumber } from "./player-data.js";
 
 const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -129,10 +130,25 @@ function findTargetEvent(events, teamQuery = "") {
   return matches[0] ?? null;
 }
 
+function parseRosterNumber(value) {
+  const number = Number(String(value ?? "").replace(/[^\d]/g, ""));
+  return Number.isFinite(number) && number > 0 ? number : null;
+}
+
 function normalizeRosterPlayer(player) {
   return {
     name: player.athlete?.displayName ?? player.athlete?.shortName ?? "TBD",
     positionAbbreviation: player.position?.abbreviation ?? player.position?.name ?? "",
+    shirtNumber: parseRosterNumber(player.jersey ?? player.athlete?.jersey),
+  };
+}
+
+function enrichRosterPlayer(player, teamName) {
+  const metadata = findPlayerMetadata(teamName, player.name);
+  return {
+    ...player,
+    shirtNumber: player.shirtNumber ?? metadata?.shirtNumber ?? null,
+    age: metadata?.age ?? null,
   };
 }
 
@@ -140,13 +156,14 @@ function parseOfficialLineups(summary) {
   return (summary.rosters ?? [])
     .filter((teamRoster) => Array.isArray(teamRoster.roster))
     .map((teamRoster) => {
+      const teamName = teamRoster.team?.displayName ?? teamRoster.team?.name ?? "TBD";
       const players = teamRoster.roster.map(normalizeRosterPlayer);
       return {
-        teamName: teamRoster.team?.displayName ?? teamRoster.team?.name ?? "TBD",
+        teamName,
         formation: teamRoster.formation ?? "",
-        starters: teamRoster.roster.filter((player) => player.starter).map(normalizeRosterPlayer),
-        substitutes: teamRoster.roster.filter((player) => !player.starter).map(normalizeRosterPlayer),
-        players,
+        starters: teamRoster.roster.filter((player) => player.starter).map(normalizeRosterPlayer).map((player) => enrichRosterPlayer(player, teamName)),
+        substitutes: teamRoster.roster.filter((player) => !player.starter).map(normalizeRosterPlayer).map((player) => enrichRosterPlayer(player, teamName)),
+        players: players.map((player) => enrichRosterPlayer(player, teamName)),
       };
     })
     .filter((teamRoster) => teamRoster.starters.length >= 11);
@@ -179,6 +196,20 @@ function positionLabel(player) {
   return player.positionAbbreviation ? `[${player.positionAbbreviation}] ` : "";
 }
 
+function lineupPlayerNumber(player) {
+  return formatShirtNumber(player);
+}
+
+function lineupPlayerAge(player) {
+  const age = formatAge(player);
+  return age ? ` / ${age}` : "";
+}
+
+function lineupPlayerName(player, { japanese = false, includeAge = false } = {}) {
+  const name = japanese ? playerNameLabel(player.name) : player.name;
+  return `${lineupPlayerNumber(player)}${name}${includeAge ? lineupPlayerAge(player) : ""}`;
+}
+
 function detailedPositionLabel(position) {
   const labels = {
     G: "GK",
@@ -198,7 +229,7 @@ function positionGroup(position) {
 }
 
 function formatPlayerList(players) {
-  return players.map((player) => `• ${positionLabel(player)}${player.name}`).join("\n");
+  return players.map((player) => `• ${positionLabel(player)}${lineupPlayerName(player)}`).join("\n");
 }
 
 function formatStarterGroup(players, group) {
@@ -209,7 +240,7 @@ function formatStarterGroup(players, group) {
     ...grouped.map((player) => {
       const position = detailedPositionLabel(player.positionAbbreviation);
       const prefix = position ? `${position} ` : "";
-      return `・${prefix}${playerNameLabel(player.name)}`;
+      return `・${prefix}${lineupPlayerName(player, { japanese: true, includeAge: true })}`;
     }),
   ].join("\n");
 }
