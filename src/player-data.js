@@ -299,11 +299,11 @@ function formatCompactPlayerLine(player) {
 
 function splitIntoMessages(header, lines, maxLength = 1850) {
   const messages = [];
-  let current = [header, ""];
+  let current = header ? [header] : [];
 
   for (const line of lines) {
     const next = [...current, line].join("\n\n");
-    if (next.length > maxLength && current.length > 2) {
+    if (next.length > maxLength && current.length > 1) {
       messages.push(current.join("\n\n"));
       current = [line];
     } else {
