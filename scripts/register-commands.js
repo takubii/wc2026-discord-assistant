@@ -124,8 +124,30 @@ const commands = [
       },
       {
         name: "standings",
-        description: "全グループの順位を表示します",
+        description: "グループ順位を表示します",
         type: 1,
+        options: [
+          {
+            name: "group",
+            description: "任意のグループ。省略すると全グループ",
+            type: 3,
+            required: false,
+            choices: [
+              { name: "Group A", value: "A" },
+              { name: "Group B", value: "B" },
+              { name: "Group C", value: "C" },
+              { name: "Group D", value: "D" },
+              { name: "Group E", value: "E" },
+              { name: "Group F", value: "F" },
+              { name: "Group G", value: "G" },
+              { name: "Group H", value: "H" },
+              { name: "Group I", value: "I" },
+              { name: "Group J", value: "J" },
+              { name: "Group K", value: "K" },
+              { name: "Group L", value: "L" },
+            ],
+          },
+        ],
       },
       {
         name: "summary",

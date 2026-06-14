@@ -212,6 +212,27 @@ export async function buildStandingsPayloads() {
   ];
 }
 
+export async function buildGroupStandingsPayloads(group) {
+  const normalizedGroup = String(group ?? "").trim().toUpperCase();
+  if (!GROUPS[normalizedGroup]) {
+    throw new Error("グループは A〜L のいずれかで指定してください。");
+  }
+  const standings = calculateStandings(await allMatches());
+  return [{
+    content: [
+      `# 📊 Group ${normalizedGroup}`,
+      "🟢 1〜2位: 自動突破圏　🟡 3位: 通過争い　⚫ 4位: 厳しい",
+      "",
+      ...standings[normalizedGroup].map((row, index) => {
+        const rank = index + 1;
+        const gd = row.gd > 0 ? `+${row.gd}` : String(row.gd);
+        return `${rankMark(rank)} **${rank}. ${teamLabel(row.team)}**  ${row.pts}pt  ${row.played}試合  ${row.won}勝${row.drawn}分${row.lost}敗  得失${gd}`;
+      }),
+    ].join("\n"),
+    allowed_mentions: { parse: [] },
+  }];
+}
+
 export async function buildDailySummaryPayloads(targetDate = todayInTokyo()) {
   return [...(await buildResultsPayloads(targetDate)), ...(await buildStandingsPayloads())];
 }
