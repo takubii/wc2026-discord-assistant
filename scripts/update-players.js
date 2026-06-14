@@ -1,14 +1,30 @@
 import * as cheerio from "cheerio";
 import { mkdir, writeFile } from "node:fs/promises";
+import { PDFParse } from "pdf-parse";
 
 const ESPN_SQUADS_URL =
   "https://www.espn.com/soccer/story/_/id/48757621/2026-world-cup-squad-lists-players-announced-all-48-teams";
+const FIFA_SQUAD_LISTS_URL = "https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf";
 const TRANSFERMARKT_BASE = "https://www.transfermarkt.com";
 const BROAD_POSITIONS = {
   Goalkeepers: "GK",
   Defenders: "DF",
   Midfielders: "MF",
   Forwards: "FW",
+};
+const FIFA_POSITION_LABELS = {
+  GK: "Goalkeepers",
+  DF: "Defenders",
+  MF: "Midfielders",
+  FW: "Forwards",
+};
+const FIFA_TEAM_ALIASES = {
+  "Bosnia And Herzegovina": "Bosnia-Herzegovina",
+  "Cabo Verde": "Cape Verde",
+  "Côte D'Ivoire": "Ivory Coast",
+  "IR Iran": "Iran",
+  "Korea Republic": "South Korea",
+  USA: "United States",
 };
 const ESPN_USER_AGENT = "Mozilla/5.0";
 const TRANSFERMARKT_USER_AGENT =
@@ -22,7 +38,16 @@ const TRANSFERMARKT_TEAM_ALIASES = {
 };
 
 function normalize(value) {
-  return value
+  const transliterated = value
+    .replace(/[ıİ]/g, (char) => (char === "ı" ? "i" : "I"))
+    .replace(/[øØ]/g, (char) => (char === "ø" ? "o" : "O"))
+    .replace(/[đĐ]/g, (char) => (char === "đ" ? "d" : "D"))
+    .replace(/[łŁ]/g, (char) => (char === "ł" ? "l" : "L"))
+    .replace(/[ß]/g, "ss")
+    .replace(/[æÆ]/g, (char) => (char === "æ" ? "ae" : "AE"))
+    .replace(/[œŒ]/g, (char) => (char === "œ" ? "oe" : "OE"));
+
+  return transliterated
     .normalize("NFKD")
     .replace(/\p{Diacritic}/gu, "")
     .toLowerCase()
@@ -61,8 +86,147 @@ function parseShirtNumber(value) {
   return Number.isFinite(shirtNumber) && shirtNumber > 0 ? shirtNumber : null;
 }
 
+function parseDateOfBirth(value) {
+  const match = value.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (!match) return null;
+  const [, day, month, year] = match;
+  return `${year}-${month}-${day}`;
+}
+
+function ageFromDateOfBirth(dateOfBirth, at = new Date()) {
+  if (!dateOfBirth) return null;
+  const [year, month, day] = dateOfBirth.split("-").map(Number);
+  if (!year || !month || !day) return null;
+  let age = at.getUTCFullYear() - year;
+  const monthDiff = at.getUTCMonth() + 1 - month;
+  if (monthDiff < 0 || (monthDiff === 0 && at.getUTCDate() < day)) age -= 1;
+  return age > 0 ? age : null;
+}
+
+function titleCaseWord(word) {
+  return word
+    .split("-")
+    .map((part) => {
+      if (!part) return part;
+      const lower = part.toLocaleLowerCase("en-US");
+      return `${lower[0].toLocaleUpperCase("en-US")}${lower.slice(1)}`;
+    })
+    .join("-");
+}
+
+function displayNameFromFifaName(playerName) {
+  const tokens = playerName.split(/\s+/).filter(Boolean);
+  const firstGivenNameIndex = tokens.findIndex((token) => /[a-z]/.test(token));
+  const orderedTokens = firstGivenNameIndex > 0
+    ? [...tokens.slice(firstGivenNameIndex), ...tokens.slice(0, firstGivenNameIndex)]
+    : tokens;
+  return orderedTokens.map(titleCaseWord).join(" ");
+}
+
+function parseFifaClub(value) {
+  const match = value.match(/^(.*?)\s*\(([A-Z]{3})\)$/);
+  return {
+    club: (match?.[1] ?? value).trim(),
+    clubCountryCode: match?.[2] ?? null,
+  };
+}
+
 function nameTokenKey(name) {
   return normalize(name).split(" ").filter(Boolean).sort().join(" ");
+}
+
+function nameTokens(name) {
+  return normalize(name).split(" ").filter(Boolean);
+}
+
+function editDistance(a, b) {
+  if (a === b) return 0;
+  if (!a) return b.length;
+  if (!b) return a.length;
+
+  const previous = Array.from({ length: b.length + 1 }, (_, index) => index);
+  const current = Array.from({ length: b.length + 1 }, () => 0);
+
+  for (let i = 1; i <= a.length; i += 1) {
+    current[0] = i;
+    for (let j = 1; j <= b.length; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      current[j] = Math.min(
+        previous[j] + 1,
+        current[j - 1] + 1,
+        previous[j - 1] + cost
+      );
+    }
+    previous.splice(0, previous.length, ...current);
+  }
+
+  return previous[b.length];
+}
+
+function tokenSimilarity(a, b) {
+  if (a === b) return 1;
+  const tokenAliases = {
+    andy: "andrew",
+    dom: "dominic",
+  };
+  if (tokenAliases[a] === b || tokenAliases[b] === a) return 0.94;
+  if (a.length >= 4 && b.length >= 4 && (a.includes(b) || b.includes(a))) return 0.9;
+
+  const distance = editDistance(a, b);
+  const longest = Math.max(a.length, b.length);
+  if (longest >= 5 && distance <= 1) return 0.86;
+  if (longest >= 6 && distance <= 2) return 0.78;
+  if (longest >= 3 && distance <= 1) return 0.72;
+  return 0;
+}
+
+function tokenCoverage(sourceTokens, targetTokens) {
+  if (sourceTokens.length === 0 || targetTokens.length === 0) return 0;
+  const total = sourceTokens.reduce((sum, token) => {
+    const best = Math.max(...targetTokens.map((candidate) => tokenSimilarity(token, candidate)));
+    return sum + best;
+  }, 0);
+  return total / sourceTokens.length;
+}
+
+function clubSimilarity(a, b) {
+  const normalizedA = normalize(a ?? "");
+  const normalizedB = normalize(b ?? "");
+  if (!normalizedA || !normalizedB) return 0;
+  if (normalizedA === normalizedB) return 1;
+  if (normalizedA.includes(normalizedB) || normalizedB.includes(normalizedA)) return 0.75;
+  return tokenCoverage(normalizedA.split(" "), normalizedB.split(" "));
+}
+
+function fuzzyNameScore(espnPlayer, transfermarktPlayer) {
+  const sourceTokens = nameTokens(espnPlayer.name);
+  const targetTokens = nameTokens(transfermarktPlayer.name);
+  const sourceCoverage = tokenCoverage(sourceTokens, targetTokens);
+  const targetCoverage = tokenCoverage(targetTokens, sourceTokens);
+  const clubScore = clubSimilarity(espnPlayer.club, transfermarktPlayer.club);
+
+  if (sourceCoverage >= 0.98 && targetCoverage >= 0.65) return 100 + clubScore;
+  if (sourceCoverage >= 0.82 && targetCoverage >= 0.72) return 90 + clubScore;
+  if (sourceCoverage >= 0.45 && targetCoverage >= 0.95 && clubScore >= 0.72) return 84 + clubScore;
+  if (sourceCoverage >= 0.72 && clubScore >= 0.72) return 82 + clubScore;
+  if (sourceCoverage >= 0.58 && targetCoverage >= 0.58 && clubScore >= 0.72) return 76 + clubScore;
+  return 0;
+}
+
+function findTransfermarktPlayer(tmPlayers, player) {
+  const exact = tmPlayers.get(normalize(player.name));
+  if (exact) return exact;
+
+  const tmPlayersByTokens = new Map([...tmPlayers.values()].map((tmPlayer) => [nameTokenKey(tmPlayer.name), tmPlayer]));
+  const tokenMatch = tmPlayersByTokens.get(nameTokenKey(player.name));
+  if (tokenMatch) return tokenMatch;
+
+  const candidates = [...tmPlayers.values()]
+    .map((tmPlayer) => ({ tmPlayer, score: fuzzyNameScore(player, tmPlayer) }))
+    .filter((candidate) => candidate.score >= 76)
+    .sort((a, b) => b.score - a.score);
+
+  return candidates[0]?.tmPlayer ?? null;
 }
 
 async function fetchHtml(url, userAgent = ESPN_USER_AGENT) {
@@ -165,6 +329,68 @@ async function fetchEspnSquads() {
   }
 
   return teams.filter((team) => team.players.length > 0);
+}
+
+async function fetchFifaSquads() {
+  const parser = new PDFParse({ url: FIFA_SQUAD_LISTS_URL });
+  const result = await parser.getText();
+  await parser.destroy();
+
+  const pageChunks = result.text.split(/-- \d+ of 48 --/g);
+  const teams = [];
+
+  for (const chunk of pageChunks) {
+    const header = chunk.match(/(?:^|\n)([^\n]+) \(([A-Z]{3})\)\n# POS\s+\tPLAYER NAME/);
+    if (!header) continue;
+
+    const officialTeam = header[1].trim();
+    const teamName = FIFA_TEAM_ALIASES[officialTeam] ?? officialTeam;
+    const body = chunk.slice(header.index + header[0].length);
+    const players = [];
+
+    for (const line of body.split("\n")) {
+      const cells = line.split(/\t+/).map((cell) => cell.replace(/\s+/g, " ").trim());
+      const firstCell = cells[0] ?? "";
+      const playerMatch = firstCell.match(/^(GK|DF|MF|FW)\s+(.+)$/);
+      if (!playerMatch || cells.length < 6) continue;
+
+      const broadPosition = playerMatch[1];
+      const fifaPlayerName = playerMatch[2].trim();
+      const dateOfBirth = parseDateOfBirth(cells[4] ?? "");
+      const { club, clubCountryCode } = parseFifaClub(cells[5] ?? "");
+
+      players.push({
+        team: teamName,
+        name: displayNameFromFifaName(fifaPlayerName),
+        club,
+        clubCountryCode,
+        clubUrl: null,
+        broadPosition,
+        broadPositionLabel: FIFA_POSITION_LABELS[broadPosition],
+        mainPosition: null,
+        otherPositions: [],
+        marketValue: null,
+        marketValueEur: null,
+        age: ageFromDateOfBirth(dateOfBirth),
+        dateOfBirth,
+        ageUpdatedAt: new Date().toISOString(),
+        shirtNumber: players.length + 1,
+        transfermarktUrl: null,
+        positionSource: null,
+        positionUpdatedAt: null,
+        fifaName: fifaPlayerName,
+        nameOnShirt: cells[3] || null,
+        caps: Number(cells[7]) || null,
+        goals: Number(cells[8]) || null,
+      });
+    }
+
+    if (players.length > 0) {
+      teams.push({ team: teamName, players });
+    }
+  }
+
+  return teams;
 }
 
 async function searchTransfermarktPlayer(player) {
@@ -294,11 +520,10 @@ async function enrichTeamFromTransfermarktSquad(team, teamIds) {
   }
 
   const tmPlayers = await fetchTransfermarktSquad(tmTeam.id);
-  const tmPlayersByTokens = new Map([...tmPlayers.values()].map((player) => [nameTokenKey(player.name), player]));
   let matched = 0;
 
   for (const player of team.players) {
-    const tmPlayer = tmPlayers.get(normalize(player.name)) ?? tmPlayersByTokens.get(nameTokenKey(player.name));
+    const tmPlayer = findTransfermarktPlayer(tmPlayers, player);
     if (!tmPlayer) continue;
     Object.assign(player, {
       mainPosition: tmPlayer.mainPosition,
@@ -390,7 +615,13 @@ function parseArgs() {
 
 async function main() {
   const { enrichAll, fallbackSearch, enrichTeams } = parseArgs();
-  const teams = await fetchEspnSquads();
+  let squadSource = FIFA_SQUAD_LISTS_URL;
+  let teams = await fetchFifaSquads();
+  if (teams.length === 0) {
+    console.warn("FIFA squad PDF returned no teams, falling back to ESPN squad article");
+    squadSource = ESPN_SQUADS_URL;
+    teams = await fetchEspnSquads();
+  }
 
   if (enrichAll) {
     const tmTeamIds = await fetchTransfermarktTeamIds();
@@ -410,7 +641,7 @@ async function main() {
 
   const data = {
     generatedAt: new Date().toISOString(),
-    squadSource: ESPN_SQUADS_URL,
+    squadSource,
     positionSource: "transfermarkt",
     teams,
   };

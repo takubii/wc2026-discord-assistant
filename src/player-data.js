@@ -177,6 +177,50 @@ const CLUB_COUNTRY_BY_CLUB = {
   "Young Boys": "スイス",
   Zamalek: "エジプト",
 };
+const CLUB_COUNTRY_BY_CODE = {
+  ARG: "アルゼンチン",
+  AUS: "オーストラリア",
+  AUT: "オーストリア",
+  BEL: "ベルギー",
+  BIH: "ボスニア・ヘルツェゴビナ",
+  BRA: "ブラジル",
+  CAN: "カナダ",
+  CIV: "コートジボワール",
+  COL: "コロンビア",
+  CRO: "クロアチア",
+  CUW: "キュラソー",
+  CZE: "チェコ",
+  DEN: "デンマーク",
+  ECU: "エクアドル",
+  EGY: "エジプト",
+  ENG: "イングランド",
+  ESP: "スペイン",
+  FRA: "フランス",
+  GER: "ドイツ",
+  GRE: "ギリシャ",
+  HUN: "ハンガリー",
+  IRN: "イラン",
+  IRQ: "イラク",
+  ISR: "イスラエル",
+  ITA: "イタリア",
+  JPN: "日本",
+  KOR: "韓国",
+  KSA: "サウジアラビア",
+  MAR: "モロッコ",
+  MEX: "メキシコ",
+  NED: "オランダ",
+  NOR: "ノルウェー",
+  NZL: "ニュージーランド",
+  POR: "ポルトガル",
+  QAT: "カタール",
+  SCO: "スコットランド",
+  SRB: "セルビア",
+  SUI: "スイス",
+  TUR: "トルコ",
+  UAE: "UAE",
+  URU: "ウルグアイ",
+  USA: "アメリカ",
+};
 
 function normalize(value) {
   return normalizeText(value);
@@ -236,7 +280,7 @@ function jaPosition(position) {
 
 export function formatClub(player) {
   if (!player.club) return "";
-  const country = CLUB_COUNTRY_BY_CLUB[player.club];
+  const country = CLUB_COUNTRY_BY_CLUB[player.club] ?? CLUB_COUNTRY_BY_CODE[player.clubCountryCode];
   return country ? `${player.club} / ${country}` : player.club;
 }
 
