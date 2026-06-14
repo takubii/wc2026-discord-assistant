@@ -6,15 +6,17 @@ World Cup 2026の試合予定、結果、順位、代表メンバー、注目選
 
 ## 自動投稿
 
-GitHub Actionsで以下を自動投稿します。
+Cloudflare Worker Cron Triggerで以下を自動投稿します。
 
 - 毎日16:00 JST: 翌日の試合予定
 - 毎日16:00 JST: 今日の結果
 
-投稿先はGitHub ActionsのSecretで指定します。
+投稿先はCloudflare Worker Secretで指定します。
 
 - `DISCORD_WEBHOOK_URL`: 試合日程
 - `DISCORD_RESULTS_WEBHOOK_URL`: 結果と順位
+
+GitHub Actionsにも手動実行用workflowを残していますが、定期投稿はCloudflare Worker側で動きます。
 
 ## Slash Command
 
@@ -26,6 +28,7 @@ Discordで `/wc` を使います。
 /wc date value:2026-06-14
 /wc results date:2026-06-14
 /wc standings
+/wc standings group:Group C
 /wc summary date:2026-06-14
 /wc japan scope:今後の試合
 /wc lineup
@@ -64,10 +67,11 @@ npm run post:summary
 
 - 試合予定・結果: ESPNの公開JSON
 - 予備の試合予定: TheSportsDB
-- 代表メンバー、詳細ポジション、市場価値: キャッシュ済みデータ
+- 代表メンバー、背番号、年齢: FIFA公式Squad List PDF由来のキャッシュ済みデータ
+- 詳細ポジション、市場価値: Transfermarkt由来のキャッシュ済みデータ
 
 Discordコマンド実行時は、代表メンバーや市場価値の外部サイトへアクセスせず、リポジトリ内のキャッシュ済みデータを使います。
 
 ## Security
 
-実際のWebhook URL、Bot Token、API keyはリポジトリに入れないでください。GitHub ActionsのSecret、Cloudflare WorkerのSecret、ローカル環境変数で管理します。
+実際のWebhook URL、Bot Token、API keyはリポジトリに入れないでください。Cloudflare WorkerのSecret、GitHub ActionsのSecret、ローカル環境変数で管理します。
