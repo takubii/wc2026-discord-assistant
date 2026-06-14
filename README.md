@@ -29,6 +29,8 @@ Discordで `/wc` を使います。
 /wc results date:2026-06-14
 /wc standings
 /wc standings group:Group C
+/wc rankings
+/wc rankings group:Group C
 /wc summary date:2026-06-14
 /wc japan scope:今後の試合
 /wc lineup

@@ -1,4 +1,4 @@
-import { canonicalTeamName, teamLabel } from "./team-data.js";
+import { GROUPS, canonicalTeamName, teamLabel } from "./team-data.js";
 
 export const FIFA_RANKING_UPDATED_AT = "2026-06-11";
 
@@ -69,4 +69,50 @@ export function fifaRankText(teamName) {
 
 export function formatFifaRankLine(homeName, awayName) {
   return `FIFAランク: ${fifaRankText(homeName)} / ${fifaRankText(awayName)}`;
+}
+
+function splitIntoMessages(header, lines, maxLength = 1990) {
+  const messages = [];
+  let current = header ? [header] : [];
+
+  for (const line of lines) {
+    const next = [...current, line].join("\n");
+    if (next.length > maxLength && current.length > 1) {
+      messages.push(current.join("\n"));
+      current = [line];
+    } else {
+      current.push(line);
+    }
+  }
+
+  if (current.length > 0) messages.push(current.join("\n"));
+  return messages.map((content) => ({ content, allowed_mentions: { parse: [] } }));
+}
+
+function rankingLine(team) {
+  const ranking = fifaRanking(team);
+  if (!ranking) return `- **${teamLabel(team)}** / ${team}: 不明`;
+  return `\`${ranking.rank}\` **${teamLabel(team)}** / ${team}  ${ranking.points.toFixed(2)}pt`;
+}
+
+export function buildFifaRankingsPayloads(group = "") {
+  const normalizedGroup = String(group ?? "").trim().toUpperCase();
+  if (normalizedGroup && !GROUPS[normalizedGroup]) {
+    throw new Error("グループは A〜L のいずれかで指定してください。");
+  }
+
+  const teams = normalizedGroup ? GROUPS[normalizedGroup] : Object.values(GROUPS).flat();
+  const sortedTeams = [...teams].sort((a, b) => {
+    const rankA = fifaRanking(a)?.rank ?? Number.POSITIVE_INFINITY;
+    const rankB = fifaRanking(b)?.rank ?? Number.POSITIVE_INFINITY;
+    return rankA - rankB || teamLabel(a).localeCompare(teamLabel(b), "ja");
+  });
+  const title = normalizedGroup ? `# 🌐 FIFAランキング / Group ${normalizedGroup}` : "# 🌐 FIFAランキング";
+  const header = [
+    title,
+    `${normalizedGroup ? `Group ${normalizedGroup}` : "出場48チーム"} / ${FIFA_RANKING_UPDATED_AT}時点`,
+    "",
+  ].join("\n");
+
+  return splitIntoMessages(header, sortedTeams.map(rankingLine));
 }
