@@ -348,7 +348,7 @@ function formatCompactPlayerLine(player) {
   return `${formatShirtNumberTag(player)}**${player.name}**${age}\n> ${details.join(" | ")}`;
 }
 
-function splitIntoMessages(header, lines, maxLength = 1850) {
+function splitIntoMessages(header, lines, maxLength = 1990) {
   const messages = [];
   let current = header ? [header] : [];
 
