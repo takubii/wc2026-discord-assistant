@@ -58,11 +58,18 @@ async function allMatches() {
 }
 
 function groupForTeam(teamName) {
-  return Object.entries(GROUPS).find(([, teams]) => teams.includes(teamName))?.[0] ?? "";
+  const canonical = canonicalTeamName(teamName);
+  return Object.entries(GROUPS).find(([, teams]) => teams.includes(canonical))?.[0] ?? "";
+}
+
+function groupForMatch(match) {
+  const homeGroup = groupForTeam(match.home.name);
+  const awayGroup = groupForTeam(match.away.name);
+  return homeGroup && homeGroup === awayGroup ? homeGroup : "";
 }
 
 function groupMatches(matches) {
-  return matches.filter((match) => match.phase === "group-stage" && groupForTeam(match.home.name) && groupForTeam(match.away.name));
+  return matches.filter((match) => match.phase === "group-stage" && groupForMatch(match));
 }
 
 function initialRow(team, order) {
@@ -137,13 +144,40 @@ function formatTeamMatchLine(match) {
   return `• **${date} ${hmInTokyo(match.date)}** ${teamWithRank(match.home.name)} ${match.completed ? `${match.home.score}-${match.away.score}` : "vs"} ${teamWithRank(match.away.name)}${match.completed ? "" : `（${statusLabel(match.status) || "未開催"}）`}`;
 }
 
+function formatResultsByGroup(matches) {
+  if (matches.length === 0) return ["この日の試合はありません。"];
+
+  const grouped = new Map(Object.keys(GROUPS).map((group) => [group, []]));
+  const otherMatches = [];
+
+  for (const match of matches) {
+    const group = match.phase === "group-stage" ? groupForMatch(match) : "";
+    if (group && grouped.has(group)) {
+      grouped.get(group).push(match);
+    } else {
+      otherMatches.push(match);
+    }
+  }
+
+  const sections = [];
+  for (const [group, groupMatches] of grouped.entries()) {
+    if (groupMatches.length === 0) continue;
+    sections.push([`## Group ${group}`, ...groupMatches.map(formatResultLine)].join("\n"));
+  }
+
+  if (otherMatches.length > 0) {
+    sections.push(["## ノックアウトステージ", ...otherMatches.map(formatResultLine)].join("\n"));
+  }
+
+  return sections.length ? sections : matches.map(formatResultLine);
+}
+
 export async function buildResultsPayloads(targetDate = todayInTokyo()) {
   const matches = (await allMatches())
     .filter((match) => ymdInTokyo(new Date(match.date)) === targetDate)
     .sort((a, b) => new Date(a.date) - new Date(b.date));
   const header = `# 🧾 ${displayDateInTokyo(targetDate)} の結果`;
-  const lines = matches.length ? matches.map(formatResultLine) : ["この日の試合はありません。"];
-  return [{ content: [header, "", ...lines].join("\n"), allowed_mentions: { parse: [] } }];
+  return [{ content: [header, ...formatResultsByGroup(matches)].join("\n\n"), allowed_mentions: { parse: [] } }];
 }
 
 function formatGroup(group, rows) {
