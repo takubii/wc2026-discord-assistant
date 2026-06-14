@@ -358,21 +358,21 @@ function formatCompactPlayerLine(player) {
   return `${formatShirtNumberTag(player)}**${player.name}**${age}\n> ${details.join(" | ")}`;
 }
 
-function splitIntoMessages(header, lines, maxLength = 1990) {
+function splitIntoMessages(header, lines, maxLength = 1990, separator = "\n\n") {
   const messages = [];
   let current = header ? [header] : [];
 
   for (const line of lines) {
-    const next = [...current, line].join("\n\n");
+    const next = [...current, line].join(separator);
     if (next.length > maxLength && current.length > 1) {
-      messages.push(current.join("\n\n"));
+      messages.push(current.join(separator));
       current = [line];
     } else {
       current.push(line);
     }
   }
 
-  if (current.length > 0) messages.push(current.join("\n\n"));
+  if (current.length > 0) messages.push(current.join(separator));
   return messages.map((content) => ({ content, allowed_mentions: { parse: [] } }));
 }
 
@@ -494,13 +494,17 @@ export function buildNotablePayloads({ teamQuery = "", positionQuery = "", limit
     ? players.map((player, index) => {
         const rank = index + 1;
         const position = positionLabel(player.mainPosition ?? player.broadPosition);
-        const club = player.club ? ` / ${formatClub(player)}` : "";
-        const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
-        return `**${rank}. ${playerDisplayName(player)}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)}${age} / ${position}${club}`;
+        const details = [
+          formatMarketValue(player),
+          formatAge(player),
+          position,
+          player.club ? formatClub(player) : "",
+        ].filter(Boolean);
+        return `\`${rank}\` ${formatShirtNumberTag(player)}**${player.name}**（${teamLabel(player.team)}）\n> ${details.join(" | ")}`;
       })
     : ["市場価値が入っている選手が見つかりませんでした。"];
 
-  return splitIntoMessages(header, lines);
+  return splitIntoMessages(`${header}\n`, lines, 1990, "\n");
 }
 
 export function playersMetadata() {
