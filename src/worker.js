@@ -112,6 +112,34 @@ function discordRequestBody(payload) {
   return { headers: {}, body: form };
 }
 
+async function postWebhookPayload(webhookUrl, payload) {
+  if (!webhookUrl) {
+    throw new Error("Discord webhook URL is not configured");
+  }
+
+  const res = await fetch(webhookUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(textOnlyPayload(payload)),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Discord webhook error: ${res.status} ${await res.text()}`);
+  }
+}
+
+async function postScheduledWorldCupUpdates(env) {
+  const resultsPayloads = await buildResultsPayloads(todayInTokyo());
+  for (const payload of resultsPayloads) {
+    await postWebhookPayload(env.DISCORD_RESULTS_WEBHOOK_URL, payload);
+  }
+
+  const matchPayload = await buildDiscordPayloadForDate(tomorrowInTokyo());
+  await postWebhookPayload(env.DISCORD_WEBHOOK_URL, matchPayload);
+}
+
 async function sendPayload(interaction, payload, isFirst) {
   const files = payload.files ?? [];
   let messagePayload = payload;
@@ -314,6 +342,13 @@ async function handleInteraction(request, env, ctx) {
 }
 
 export default {
+  async scheduled(controller, env, ctx) {
+    console.log("Received scheduled event", { cron: controller.cron });
+    if (controller.cron === "0 7 * * *") {
+      ctx.waitUntil(postScheduledWorldCupUpdates(env));
+    }
+  },
+
   async fetch(request, env, ctx) {
     if (request.method === "GET") {
       const url = new URL(request.url);

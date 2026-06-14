@@ -2,6 +2,9 @@ name = "world-cup-2026-scheduler"
 main = "src/worker.js"
 compatibility_date = "2026-06-11"
 
+[triggers]
+crons = ["0 7 * * *"]
+
 [[rules]]
 type = "Data"
 globs = ["**/*.ttf"]
