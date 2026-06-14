@@ -254,38 +254,48 @@ function playerPositionLabel(player) {
   return player.mainPosition ?? player.broadPosition;
 }
 
-function jaPosition(position) {
+function positionLabel(position) {
   const map = {
-    GK: "ゴールキーパー",
-    DF: "ディフェンダー",
-    MF: "ミッドフィールダー",
-    FW: "フォワード",
-    Defender: "ディフェンダー",
-    Goalkeeper: "ゴールキーパー",
-    "Centre-Back": "センターバック",
-    "Left-Back": "左サイドバック",
-    "Right-Back": "右サイドバック",
-    "Defensive Midfield": "守備的MF",
-    "Central Midfield": "セントラルMF",
-    "Attacking Midfield": "攻撃的MF",
-    "Left Midfield": "左MF",
-    "Right Midfield": "右MF",
-    "Left Winger": "左ウイング",
-    "Right Winger": "右ウイング",
-    "Second Striker": "セカンドトップ",
-    "Centre-Forward": "センターフォワード",
+    GK: "GK",
+    DF: "DF",
+    MF: "MF",
+    FW: "FW",
+    Defender: "DF",
+    Goalkeeper: "GK",
+    "Centre-Back": "CB",
+    "Left-Back": "LB",
+    "Right-Back": "RB",
+    "Defensive Midfield": "DM",
+    "Central Midfield": "CM",
+    "Attacking Midfield": "AM",
+    "Left Midfield": "LM",
+    "Right Midfield": "RM",
+    "Left Winger": "LW",
+    "Right Winger": "RW",
+    "Second Striker": "SS",
+    "Centre-Forward": "CF",
   };
   return map[position] ?? position;
 }
 
 export function formatClub(player) {
   if (!player.club) return "";
+  if (player.clubCountryCode) return `${player.club} (${player.clubCountryCode})`;
   const country = CLUB_COUNTRY_BY_CLUB[player.club] ?? CLUB_COUNTRY_BY_CODE[player.clubCountryCode];
   return country ? `${player.club} / ${country}` : player.club;
 }
 
 function formatMarketValue(player) {
-  return player.marketValue ?? "不明";
+  const value = player.marketValueEur;
+  if (!Number.isFinite(value) || value <= 0) return player.marketValue ?? "不明";
+  const compact = (amount) => {
+    const rounded = Math.round(amount * 10) / 10;
+    return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+  };
+  if (value >= 1_000_000_000) return `€${compact(value / 1_000_000_000)}bn`;
+  if (value >= 1_000_000) return `€${compact(value / 1_000_000)}m`;
+  if (value >= 1_000) return `€${Math.round(value / 1_000)}k`;
+  return `€${value}`;
 }
 
 export function formatAge(player) {
@@ -323,10 +333,10 @@ export function findPlayerMetadata(teamQuery, playerName) {
 }
 
 function formatPlayerLine(player) {
-  const main = jaPosition(player.mainPosition ?? player.broadPosition);
+  const main = positionLabel(player.mainPosition ?? player.broadPosition);
   const positions = [
     main,
-    ...((player.otherPositions ?? []).length ? [`サブ: ${player.otherPositions.map(jaPosition).join(", ")}`] : []),
+    ...((player.otherPositions ?? []).length ? [`Sub: ${player.otherPositions.map(positionLabel).join(", ")}`] : []),
   ].join(" / ");
   const age = formatAge(player) ? `\n> 年齢: ${formatAge(player)}` : "";
   const club = player.club ? `\n> 所属: ${formatClub(player)}` : "";
@@ -335,15 +345,15 @@ function formatPlayerLine(player) {
 }
 
 function formatCompactPlayerLine(player) {
-  const main = jaPosition(player.mainPosition ?? player.broadPosition);
+  const main = positionLabel(player.mainPosition ?? player.broadPosition);
   const other = (player.otherPositions ?? []).length
-    ? ` / サブ: ${player.otherPositions.map(jaPosition).join(", ")}`
+    ? ` / Sub: ${player.otherPositions.map(positionLabel).join(", ")}`
     : "";
   const age = formatAge(player) ? `  ${formatAge(player)}` : "";
   const details = [
     `${main}${other}`,
     player.club ? formatClub(player) : "",
-    player.marketValue ?? "",
+    formatMarketValue(player),
   ].filter(Boolean);
   return `${formatShirtNumberTag(player)}**${player.name}**${age}\n> ${details.join(" | ")}`;
 }
@@ -385,7 +395,7 @@ export function buildTeamPayloads(teamQuery, positionQuery = "") {
       )
     : team.players;
 
-  const suffix = normalizedPosition ? ` / ${jaPosition(position)}` : "";
+  const suffix = normalizedPosition ? ` / ${positionLabel(position)}` : "";
   const header = `# ${teamLabel(team.team)} 代表メンバー${suffix}\n全${players.length}名`;
   const grouped = new Map();
   for (const player of players) {
@@ -448,7 +458,7 @@ export function buildPositionsPayloads(teamQuery) {
         const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
         return `• ${playerDisplayName(player)}${age}`;
       });
-      return `## ${jaPosition(position)}\n${names.join("\n")}`;
+      return `## ${positionLabel(position)}\n${names.join("\n")}`;
     });
 
   return splitIntoMessages(`# ${teamLabel(team.team)} ポジション別`, lines);
@@ -478,12 +488,12 @@ export function buildNotablePayloads({ teamQuery = "", positionQuery = "", limit
     .slice(0, parsedLimit);
 
   const scope = team ? teamLabel(team.team) : "全出場国";
-  const suffix = normalizedPosition ? ` / ${jaPosition(position)}` : "";
+  const suffix = normalizedPosition ? ` / ${positionLabel(position)}` : "";
   const header = `# 注目選手ランキング\n市場価値ベース / ${scope}${suffix}\n上位${players.length}名`;
   const lines = players.length
     ? players.map((player, index) => {
         const rank = index + 1;
-        const position = jaPosition(player.mainPosition ?? player.broadPosition);
+        const position = positionLabel(player.mainPosition ?? player.broadPosition);
         const club = player.club ? ` / ${formatClub(player)}` : "";
         const age = formatAge(player) ? ` / ${formatAge(player)}` : "";
         return `**${rank}. ${playerDisplayName(player)}（${teamLabel(player.team)}）**\n> ${formatMarketValue(player)}${age} / ${position}${club}`;
