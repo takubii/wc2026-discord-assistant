@@ -128,6 +128,10 @@ function nameTokenKey(name) {
   return normalizeName(name).split(" ").sort().join(" ");
 }
 
+function compactNameKey(name) {
+  return normalizeName(name).replace(/\s+/g, "");
+}
+
 function nameTokens(name) {
   return normalizeName(name).split(" ").filter(Boolean);
 }
@@ -145,9 +149,11 @@ function hasNameTokenCoverage(candidateName, queryName) {
 function matchPlayerByName(players, name) {
   const normalized = normalizeName(name);
   const tokenKey = nameTokenKey(name);
+  const compactKey = compactNameKey(name);
   return (
     players.find((player) => normalizeName(player.name) === normalized) ??
     players.find((player) => nameTokenKey(player.name) === tokenKey) ??
+    players.find((player) => compactNameKey(player.name) === compactKey) ??
     players.find((player) => hasNameTokenCoverage(player.name, name)) ??
     players.find((player) => normalizeName(player.name).includes(normalized) || normalized.includes(normalizeName(player.name))) ??
     null

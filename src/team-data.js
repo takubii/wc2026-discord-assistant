@@ -133,7 +133,8 @@ export function normalizeText(value) {
     .replace(/[þÞ]/g, (char) => (char === "þ" ? "th" : "Th"))
     .replace(/[ß]/g, "ss")
     .replace(/[æÆ]/g, (char) => (char === "æ" ? "ae" : "AE"))
-    .replace(/[œŒ]/g, (char) => (char === "œ" ? "oe" : "OE"));
+    .replace(/[œŒ]/g, (char) => (char === "œ" ? "oe" : "OE"))
+    .replace(/([A-Za-z])['’`´ʼ]([A-Za-z])/g, "$1$2");
 
   return transliterated
     .normalize("NFKD")

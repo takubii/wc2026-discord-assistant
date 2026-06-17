@@ -250,6 +250,10 @@ function nameTokenKey(name) {
   return normalize(name).split(" ").filter(Boolean).sort().join(" ");
 }
 
+function compactNameKey(name) {
+  return normalize(name).replace(/\s+/g, "");
+}
+
 function nameTokens(name) {
   return normalize(name).split(" ").filter(Boolean);
 }
@@ -338,9 +342,11 @@ export function findPlayerMetadata(teamQuery, playerName) {
 
   const normalizedName = normalize(playerName);
   const tokenKey = nameTokenKey(playerName);
+  const compactKey = compactNameKey(playerName);
   return (
     team.players.find((player) => normalize(player.name) === normalizedName) ??
     team.players.find((player) => nameTokenKey(player.name) === tokenKey) ??
+    team.players.find((player) => compactNameKey(player.name) === compactKey) ??
     team.players.find((player) => hasNameTokenCoverage(player.name, playerName)) ??
     team.players.find((player) => normalize(player.name).includes(normalizedName) || normalizedName.includes(normalize(player.name))) ??
     null
