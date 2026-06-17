@@ -1,6 +1,6 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 import { buildFifaRankingsPayloads } from "./fifa-rankings.js";
-import { buildLineupImage, buildLineupImagePayload, buildLineupPayload } from "./lineup.js";
+import { buildLineupImage, buildLineupImagePayload, buildLineupPayload, buildLineupPayloadForEvent, upcomingLineupReminderEvents } from "./lineup.js";
 import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildTeamPayloads } from "./player-data.js";
 import { buildDailySummaryPayloads, buildGroupStandingsPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
@@ -118,17 +118,47 @@ async function postWebhookPayload(webhookUrl, payload) {
     throw new Error("Discord webhook URL is not configured");
   }
 
+  const payloads = splitWebhookPayload(textOnlyPayload(payload));
+  for (const webhookPayload of payloads) {
+    await postSingleWebhookPayload(webhookUrl, webhookPayload);
+  }
+}
+
+async function postSingleWebhookPayload(webhookUrl, payload) {
   const res = await fetch(webhookUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(textOnlyPayload(payload)),
+    body: JSON.stringify(payload),
   });
 
   if (!res.ok) {
     throw new Error(`Discord webhook error: ${res.status} ${await res.text()}`);
   }
+}
+
+function splitWebhookPayload(payload) {
+  const content = payload.content ?? "";
+  if (content.length <= 1900) return [payload];
+
+  const chunks = [];
+  let current = "";
+  for (const line of content.split("\n")) {
+    const next = current ? `${current}\n${line}` : line;
+    if (next.length > 1900 && current) {
+      chunks.push(current);
+      current = line;
+    } else {
+      current = next;
+    }
+  }
+  if (current) chunks.push(current);
+
+  return chunks.map((chunk, index) => ({
+    ...payload,
+    content: index === 0 ? chunk : `（続き）\n${chunk}`,
+  }));
 }
 
 async function postScheduledWorldCupUpdates(env) {
@@ -139,6 +169,39 @@ async function postScheduledWorldCupUpdates(env) {
 
   const matchPayload = await buildDiscordPayloadForDate(tomorrowInTokyo());
   await postWebhookPayload(env.DISCORD_WEBHOOK_URL, matchPayload);
+}
+
+async function postLineupReminders(env) {
+  const webhookUrl = env.DISCORD_LINEUP_WEBHOOK_URL || env.DISCORD_WEBHOOK_URL;
+  if (!webhookUrl) {
+    throw new Error("Lineup webhook URL is not configured");
+  }
+
+  const events = await upcomingLineupReminderEvents();
+  console.log("Checking lineup reminders", { count: events.length });
+
+  for (const event of events) {
+    const key = `lineup-posted:${event.id}`;
+    if (env.LINEUP_POSTS && await env.LINEUP_POSTS.get(key)) {
+      console.log("Skipping posted lineup reminder", { eventId: event.id, title: event.title });
+      continue;
+    }
+
+    const payload = await buildLineupPayloadForEvent(event.id, { textOnly: true });
+    if (payload.content?.includes("公式スタメンはまだ発表されていません")) {
+      console.log("Skipping lineup reminder without official lineups", { eventId: event.id, title: event.title });
+      continue;
+    }
+
+    await postWebhookPayload(webhookUrl, {
+      ...payload,
+      content: ["## ⏰  まもなくキックオフ", payload.content].join("\n\n"),
+    });
+
+    if (env.LINEUP_POSTS) {
+      await env.LINEUP_POSTS.put(key, new Date().toISOString(), { expirationTtl: 60 * 60 * 24 * 14 });
+    }
+  }
 }
 
 async function sendPayload(interaction, payload, isFirst) {
@@ -350,6 +413,8 @@ export default {
     console.log("Received scheduled event", { cron: controller.cron });
     if (controller.cron === "0 7 * * *") {
       ctx.waitUntil(postScheduledWorldCupUpdates(env));
+    } else if (controller.cron === "*/5 * * * *") {
+      ctx.waitUntil(postLineupReminders(env));
     }
   },
 

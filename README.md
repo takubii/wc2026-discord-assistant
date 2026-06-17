@@ -10,11 +10,13 @@ Cloudflare Worker Cron Triggerで以下を自動投稿します。
 
 - 毎日16:00 JST: 翌日の試合予定
 - 毎日16:00 JST: 今日の結果
+- 5分おき: 開始15分前前後の公式スタメン
 
 投稿先はCloudflare Worker Secretで指定します。
 
 - `DISCORD_WEBHOOK_URL`: 試合日程
 - `DISCORD_RESULTS_WEBHOOK_URL`: 結果と順位
+- `DISCORD_LINEUP_WEBHOOK_URL`: スタメン通知。未設定なら試合日程チャンネルへ投稿
 
 GitHub Actionsにも手動実行用workflowを残していますが、定期投稿はCloudflare Worker側で動きます。
 

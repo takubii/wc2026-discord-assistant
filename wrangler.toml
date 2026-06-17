@@ -3,7 +3,11 @@ main = "src/worker.js"
 compatibility_date = "2026-06-11"
 
 [triggers]
-crons = ["0 7 * * *"]
+crons = ["*/5 * * * *", "0 7 * * *"]
+
+[[kv_namespaces]]
+binding = "LINEUP_POSTS"
+id = "85ad3e1fe29b465ab0ad0a75f01a8e80"
 
 [[rules]]
 type = "Data"

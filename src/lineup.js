@@ -552,6 +552,23 @@ async function eventWithLineups(eventId, teamQuery = "") {
   return { event, lineups: parseOfficialLineups(summary, matchPage ? parseMatchPageFormations(matchPage) : []) };
 }
 
+export async function upcomingLineupReminderEvents(now = new Date(), windowMinutes = 16) {
+  const minTime = now.getTime();
+  const maxTime = minTime + windowMinutes * 60 * 1000;
+  return (await fetchScoreboardEvents())
+    .filter(isConcreteMatch)
+    .filter((event) => {
+      const kickoff = new Date(event.date).getTime();
+      return kickoff >= minTime && kickoff <= maxTime;
+    })
+    .sort((a, b) => new Date(a.date) - new Date(b.date))
+    .map((event) => ({
+      id: event.id,
+      date: event.date,
+      title: eventTitle(event),
+    }));
+}
+
 export async function buildLineupPayload(teamQuery = "", options = {}) {
   const { event, lineups } = await eventWithLineups("", teamQuery);
   if (!event) {
@@ -630,6 +647,51 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
       ].join("\n"),
       allowed_mentions: { parse: [] },
       embeds: [lineupImageEmbed(options.imageBaseUrl, event)],
+    };
+  }
+
+  return {
+    content: [
+      ...contentHeader,
+      "",
+      ...lineups.slice(0, 2).map(formatLineup),
+    ].join("\n\n"),
+    allowed_mentions: { parse: [] },
+  };
+}
+
+export async function buildLineupPayloadForEvent(eventId, options = {}) {
+  const { event, lineups } = await eventWithLineups(eventId);
+  if (!event) {
+    return {
+      content: `対象の試合が見つかりませんでした（event: ${eventId}）。`,
+      allowed_mentions: { parse: [] },
+    };
+  }
+
+  const contentHeader = [`# ${eventTitle(event)}`, `${eventMeta(event)} / 公式スタメン`, eventRankLine(event)];
+
+  if (lineups.length < 2) {
+    return {
+      content: [
+        `# ${eventTitle(event)}`,
+        `${eventMeta(event)}`,
+        eventRankLine(event),
+        "",
+        "公式スタメンはまだ発表されていません。",
+        "通常は試合開始の約1時間前に公開されます。",
+      ].join("\n"),
+      allowed_mentions: { parse: [] },
+    };
+  }
+
+  if (options.textOnly) {
+    return {
+      content: [
+        contentHeader.join("\n"),
+        lineups.slice(0, 2).map(formatTextLineup).join("\n\n"),
+      ].join("\n\n"),
+      allowed_mentions: { parse: [] },
     };
   }
 
