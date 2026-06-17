@@ -277,9 +277,8 @@ function rankingLine(team) {
   const ranking = fifaRanking(team);
   if (!ranking) return `- **${teamLabel(team)}** / ${team}: 不明`;
   const movement = movementText(ranking);
-  const previous = Number.isFinite(ranking.previousRank) && ranking.previousRank !== ranking.rank ? `前回${ranking.previousRank}位` : "";
   const pointsDelta = pointsDeltaText(ranking);
-  const movementPart = [movement, previous, pointsDelta].filter(Boolean).join(" / ");
+  const movementPart = [movement, pointsDelta].filter(Boolean).join(" / ");
   return `\`${ranking.rank}\` **${teamLabel(team)}** / ${team}  ${ranking.points.toFixed(2)}pt${movementPart ? `  ${movementPart}` : ""}`;
 }
 
