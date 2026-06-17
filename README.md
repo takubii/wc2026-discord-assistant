@@ -35,7 +35,7 @@ Discordで `/wc` を使います。
 /wc japan scope:今後の試合
 /wc lineup
 /wc lineup team:日本
-/wc lineup text:true
+/wc lineup image:true
 /wc team team:日本
 /wc team team:イングランド position:左ウイング
 /wc player name:Kubo

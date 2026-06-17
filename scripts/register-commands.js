@@ -220,8 +220,8 @@ const commands = [
             autocomplete: true,
           },
           {
-            name: "text",
-            description: "画像ではなく文字でスタメンを表示します",
+            name: "image",
+            description: "画像でスタメンを表示します",
             type: 5,
             required: false,
           },

@@ -50,7 +50,7 @@ Slash Command用です。
 
 Bot Tokenはコマンド登録にだけ使います。Botを常駐させる必要はありません。
 
-`/wc lineup` は公式スタメンが取得できた場合だけ画像付きで表示します。文字だけで確認したい場合は `/wc lineup text:true` を使います。
+`/wc lineup` は文字で公式スタメンを表示します。画像付きで確認したい場合は `/wc lineup image:true` を使います。
 
 ## Cloudflare Worker
 

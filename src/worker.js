@@ -315,9 +315,10 @@ async function handleInteraction(request, env, ctx) {
   const subcommand = interaction.data?.options?.[0];
   if (subcommand?.name === "lineup") {
     const teamQuery = optionValue(subcommand.options, "team");
-    const textOnly = optionValue(subcommand.options, "text") === true;
+    const image = optionValue(subcommand.options, "image") === true;
+    const legacyTextOnly = optionValue(subcommand.options, "text") === true;
     try {
-      if (textOnly) {
+      if (!image || legacyTextOnly) {
         return interactionMessageResponse(await buildLineupPayload(teamQuery, { textOnly: true }));
       }
       const payload = await buildLineupPayload(teamQuery, { summaryOnly: true });
