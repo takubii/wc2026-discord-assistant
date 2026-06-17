@@ -4,6 +4,56 @@ import { todayInTokyo, ymdInTokyo } from "./schedule.js";
 
 const ESPN_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
+const TEAM_FLAGS = {
+  ALG: "🇩🇿",
+  ARG: "🇦🇷",
+  AUS: "🇦🇺",
+  AUT: "🇦🇹",
+  BEL: "🇧🇪",
+  BIH: "🇧🇦",
+  BRA: "🇧🇷",
+  CAN: "🇨🇦",
+  CIV: "🇨🇮",
+  COL: "🇨🇴",
+  COD: "🇨🇩",
+  CPV: "🇨🇻",
+  CRO: "🇭🇷",
+  CUW: "🇨🇼",
+  CZE: "🇨🇿",
+  ECU: "🇪🇨",
+  EGY: "🇪🇬",
+  ENG: "🏴",
+  ESP: "🇪🇸",
+  FRA: "🇫🇷",
+  GER: "🇩🇪",
+  GHA: "🇬🇭",
+  HAI: "🇭🇹",
+  IRN: "🇮🇷",
+  IRQ: "🇮🇶",
+  JPN: "🇯🇵",
+  JOR: "🇯🇴",
+  KOR: "🇰🇷",
+  KSA: "🇸🇦",
+  MAR: "🇲🇦",
+  MEX: "🇲🇽",
+  NED: "🇳🇱",
+  NOR: "🇳🇴",
+  NZL: "🇳🇿",
+  PAN: "🇵🇦",
+  PAR: "🇵🇾",
+  POR: "🇵🇹",
+  QAT: "🇶🇦",
+  RSA: "🇿🇦",
+  SCO: "🏴",
+  SEN: "🇸🇳",
+  SUI: "🇨🇭",
+  SWE: "🇸🇪",
+  TUN: "🇹🇳",
+  TUR: "🇹🇷",
+  URU: "🇺🇾",
+  USA: "🇺🇸",
+  UZB: "🇺🇿",
+};
 
 function displayDateInTokyo(ymd) {
   const date = new Date(`${ymd}T00:00:00+09:00`);
@@ -43,13 +93,18 @@ function normalizeEvent(event) {
     completed: event.status?.type?.completed === true,
     status: event.status?.type?.shortDetail ?? event.status?.type?.description ?? "",
     home: {
+      id: home?.team?.id ?? "",
       name: home?.team?.displayName ?? home?.team?.name ?? "TBD",
+      code: home?.team?.abbreviation ?? "",
       score: Number(home?.score ?? 0),
     },
     away: {
+      id: away?.team?.id ?? "",
       name: away?.team?.displayName ?? away?.team?.name ?? "TBD",
+      code: away?.team?.abbreviation ?? "",
       score: Number(away?.score ?? 0),
     },
+    scorers: scoringEvents(competition?.details ?? []),
   };
 }
 
@@ -131,10 +186,51 @@ function teamWithRank(teamName) {
   return `${teamLabel(teamName)}${fifaRankSuffix(teamName)}`;
 }
 
+function scoringEvents(details) {
+  return details
+    .filter((detail) => detail.scoringPlay)
+    .map((detail) => {
+      const scorer = detail.athletesInvolved?.[0] ?? detail.participants?.[0]?.athlete ?? detail.participants?.[0] ?? {};
+      return {
+        minute: detail.clock?.displayValue ?? "",
+        teamId: detail.team?.id ?? "",
+        scorer: scorer.displayName ?? scorer.fullName ?? scorer.shortName ?? "Unknown",
+        ownGoal: detail.ownGoal === true,
+        penaltyKick: detail.penaltyKick === true,
+        type: detail.type?.text ?? "",
+      };
+    });
+}
+
+function scoringTeam(match, scorer) {
+  if (scorer.teamId && scorer.teamId === match.home.id) return match.home;
+  if (scorer.teamId && scorer.teamId === match.away.id) return match.away;
+  return null;
+}
+
+function scorerSuffix(scorer) {
+  const labels = [];
+  if (scorer.ownGoal) labels.push("OG");
+  if (scorer.penaltyKick) labels.push("PK");
+  return labels.length ? ` (${labels.join(", ")})` : "";
+}
+
+function scorerLine(match, scorer) {
+  const team = scoringTeam(match, scorer);
+  const flag = TEAM_FLAGS[team?.code] ?? "⚽";
+  const minute = scorer.minute ? `${scorer.minute} ` : "";
+  return `${flag} ${minute}${scorer.scorer}${scorerSuffix(scorer)}`;
+}
+
+function formatScorers(match) {
+  if (!match.completed || match.scorers.length === 0) return "";
+  return `\n> ${match.scorers.map((scorer) => scorerLine(match, scorer)).join(" / ")}`;
+}
+
 function formatResultLine(match) {
   const time = hmInTokyo(match.date);
   if (match.completed) {
-    return `• **${time}** ${teamWithRank(match.home.name)} ${match.home.score}-${match.away.score} ${teamWithRank(match.away.name)}`;
+    return `• **${time}** ${teamWithRank(match.home.name)} ${match.home.score}-${match.away.score} ${teamWithRank(match.away.name)}${formatScorers(match)}`;
   }
   return `• **${time}** ${teamWithRank(match.home.name)} vs ${teamWithRank(match.away.name)}（${statusLabel(match.status) || "未開催"}）`;
 }
