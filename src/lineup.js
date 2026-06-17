@@ -128,12 +128,27 @@ function nameTokenKey(name) {
   return normalizeName(name).split(" ").sort().join(" ");
 }
 
+function nameTokens(name) {
+  return normalizeName(name).split(" ").filter(Boolean);
+}
+
+function hasNameTokenCoverage(candidateName, queryName) {
+  const candidateTokens = new Set(nameTokens(candidateName));
+  const queryTokens = nameTokens(queryName);
+  const shorter = queryTokens.length <= candidateTokens.size ? queryTokens : [...candidateTokens];
+  const longer = queryTokens.length <= candidateTokens.size ? candidateTokens : new Set(queryTokens);
+
+  if (shorter.length < 2) return false;
+  return shorter.every((token) => longer.has(token));
+}
+
 function matchPlayerByName(players, name) {
   const normalized = normalizeName(name);
   const tokenKey = nameTokenKey(name);
   return (
     players.find((player) => normalizeName(player.name) === normalized) ??
     players.find((player) => nameTokenKey(player.name) === tokenKey) ??
+    players.find((player) => hasNameTokenCoverage(player.name, name)) ??
     players.find((player) => normalizeName(player.name).includes(normalized) || normalized.includes(normalizeName(player.name))) ??
     null
   );

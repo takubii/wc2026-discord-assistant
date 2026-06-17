@@ -42,7 +42,9 @@ function normalize(value) {
     .replace(/[ıİ]/g, (char) => (char === "ı" ? "i" : "I"))
     .replace(/[øØ]/g, (char) => (char === "ø" ? "o" : "O"))
     .replace(/[đĐ]/g, (char) => (char === "đ" ? "d" : "D"))
+    .replace(/[ðÐ]/g, (char) => (char === "ð" ? "d" : "D"))
     .replace(/[łŁ]/g, (char) => (char === "ł" ? "l" : "L"))
+    .replace(/[þÞ]/g, (char) => (char === "þ" ? "th" : "Th"))
     .replace(/[ß]/g, "ss")
     .replace(/[æÆ]/g, (char) => (char === "æ" ? "ae" : "AE"))
     .replace(/[œŒ]/g, (char) => (char === "œ" ? "oe" : "OE"));

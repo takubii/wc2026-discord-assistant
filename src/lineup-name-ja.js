@@ -1,10 +1,7 @@
+import { normalizeText } from "./team-data.js";
+
 function normalizeName(value) {
-  return String(value ?? "")
-    .normalize("NFKD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+  return normalizeText(value);
 }
 
 const PLAYER_NAME_JA = {

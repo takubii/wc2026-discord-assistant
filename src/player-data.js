@@ -250,6 +250,20 @@ function nameTokenKey(name) {
   return normalize(name).split(" ").filter(Boolean).sort().join(" ");
 }
 
+function nameTokens(name) {
+  return normalize(name).split(" ").filter(Boolean);
+}
+
+function hasNameTokenCoverage(candidateName, queryName) {
+  const candidateTokens = new Set(nameTokens(candidateName));
+  const queryTokens = nameTokens(queryName);
+  const shorter = queryTokens.length <= candidateTokens.size ? queryTokens : [...candidateTokens];
+  const longer = queryTokens.length <= candidateTokens.size ? candidateTokens : new Set(queryTokens);
+
+  if (shorter.length < 2) return false;
+  return shorter.every((token) => longer.has(token));
+}
+
 function playerPositionLabel(player) {
   return player.mainPosition ?? player.broadPosition;
 }
@@ -327,6 +341,7 @@ export function findPlayerMetadata(teamQuery, playerName) {
   return (
     team.players.find((player) => normalize(player.name) === normalizedName) ??
     team.players.find((player) => nameTokenKey(player.name) === tokenKey) ??
+    team.players.find((player) => hasNameTokenCoverage(player.name, playerName)) ??
     team.players.find((player) => normalize(player.name).includes(normalizedName) || normalizedName.includes(normalize(player.name))) ??
     null
   );
