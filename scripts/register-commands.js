@@ -174,6 +174,12 @@ const commands = [
               { name: "Group L", value: "L" },
             ],
           },
+          {
+            name: "english",
+            description: "国名の英語表記も表示します",
+            type: 5,
+            required: false,
+          },
         ],
       },
       {

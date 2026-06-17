@@ -234,7 +234,7 @@ function rankingSourceLine(group = "") {
         }).format(new Date(rankingCache.fetchedAt))
       : "";
     const stale = rankingCache.source === "live-stale" ? " / 一時的に最新取得失敗、直近取得分を使用" : "";
-    return `${group || "出場48チーム"} / FIFA公式ライブランキング${fetched ? ` / 取得 ${fetched} JST` : ""}${stale}`;
+    return `${group || "出場48チーム"}${fetched ? ` / 取得 ${fetched} JST` : ""}${stale}`;
   }
   return `${group || "出場48チーム"} / ${FIFA_RANKING_UPDATED_AT}時点の固定キャッシュ${rankingCache.error ? " / 最新取得失敗" : ""}`;
 }
@@ -273,16 +273,17 @@ function splitIntoMessages(header, lines, maxLength = 1990) {
   return messages.map((content) => ({ content, allowed_mentions: { parse: [] } }));
 }
 
-function rankingLine(team) {
+function rankingLine(team, { english = false } = {}) {
   const ranking = fifaRanking(team);
-  if (!ranking) return `- **${teamLabel(team)}** / ${team}: 不明`;
+  const name = english ? `**${teamLabel(team)}** / ${team}` : `**${teamLabel(team)}**`;
+  if (!ranking) return `- ${name}: 不明`;
   const movement = movementText(ranking);
   const pointsDelta = pointsDeltaText(ranking);
   const movementPart = [movement, pointsDelta].filter(Boolean).join(" / ");
-  return `\`${ranking.rank}\` **${teamLabel(team)}** / ${team}  ${ranking.points.toFixed(2)}pt${movementPart ? `  ${movementPart}` : ""}`;
+  return `\`${ranking.rank}\` ${name}  ${ranking.points.toFixed(2)}pt${movementPart ? `  ${movementPart}` : ""}`;
 }
 
-export async function buildFifaRankingsPayloads(group = "") {
+export async function buildFifaRankingsPayloads(group = "", options = {}) {
   await refreshFifaRankings();
   const normalizedGroup = String(group ?? "").trim().toUpperCase();
   if (normalizedGroup && !GROUPS[normalizedGroup]) {
@@ -302,5 +303,5 @@ export async function buildFifaRankingsPayloads(group = "") {
     "",
   ].join("\n");
 
-  return splitIntoMessages(header, sortedTeams.map(rankingLine));
+  return splitIntoMessages(header, sortedTeams.map((team) => rankingLine(team, options)));
 }

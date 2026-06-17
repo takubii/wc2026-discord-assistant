@@ -263,7 +263,9 @@ async function respondToWorldCupCommand(interaction) {
       const group = optionValue(subcommand.options, "group");
       payloads = group ? await buildGroupStandingsPayloads(group) : await buildStandingsPayloads();
     } else if (subcommand.name === "rankings") {
-      payloads = await buildFifaRankingsPayloads(optionValue(subcommand.options, "group"));
+      payloads = await buildFifaRankingsPayloads(optionValue(subcommand.options, "group"), {
+        english: optionValue(subcommand.options, "english") === true,
+      });
     } else if (subcommand.name === "summary") {
       payloads = await buildDailySummaryPayloads(dateOptionOrToday(subcommand.options));
     } else if (subcommand.name === "japan") {
