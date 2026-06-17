@@ -195,6 +195,7 @@ function scoringEvents(details) {
         minute: detail.clock?.displayValue ?? "",
         teamId: detail.team?.id ?? "",
         scorer: scorer.displayName ?? scorer.fullName ?? scorer.shortName ?? "Unknown",
+        jersey: scorer.jersey ?? "",
         ownGoal: detail.ownGoal === true,
         penaltyKick: detail.penaltyKick === true,
         type: detail.type?.text ?? "",
@@ -219,7 +220,8 @@ function scorerLine(match, scorer) {
   const team = scoringTeam(match, scorer);
   const flag = TEAM_FLAGS[team?.code] ?? "⚽";
   const minute = scorer.minute ? `${scorer.minute} ` : "";
-  return `${flag} ${minute}${scorer.scorer}${scorerSuffix(scorer)}`;
+  const jersey = scorer.jersey ? `#${scorer.jersey} ` : "";
+  return `${flag} ${minute}${jersey}${scorer.scorer}${scorerSuffix(scorer)}`;
 }
 
 function formatScorers(match) {
