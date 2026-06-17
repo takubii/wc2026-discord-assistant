@@ -313,6 +313,7 @@ function enrichRosterPlayer(player, teamName) {
     shirtNumber: player.shirtNumber ?? metadata?.shirtNumber ?? null,
     age: metadata?.age ?? null,
     club: metadata?.club ?? null,
+    clubCountryCode: metadata?.clubCountryCode ?? null,
   };
 }
 
