@@ -2,7 +2,7 @@ import { buildLineupSvg, buildMatchLineupSvg, renderLineupPng } from "./lineup-r
 import { buildLineupLayout } from "./lineup-ai-layout.js";
 import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, normalizeText, teamLabel } from "./team-data.js";
-import { formatFifaRankLine } from "./fifa-rankings.js";
+import { formatFifaRankLine, refreshFifaRankings } from "./fifa-rankings.js";
 import { findPlayerMetadata, formatAge, formatClub, formatShirtNumber } from "./player-data.js";
 
 const ESPN_SCOREBOARD_URL =
@@ -592,6 +592,7 @@ export async function upcomingLineupReminderEvents(now = new Date(), windowMinut
 }
 
 export async function buildLineupPayload(teamQuery = "", options = {}) {
+  await refreshFifaRankings();
   const { event, lineups } = await eventWithLineups("", teamQuery);
   if (!event) {
     const suffix = teamQuery ? `（${teamQuery}）` : "";
@@ -683,6 +684,7 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
 }
 
 export async function buildLineupPayloadForEvent(eventId, options = {}) {
+  await refreshFifaRankings();
   const { event, lineups } = await eventWithLineups(eventId);
   if (!event) {
     return {
@@ -728,6 +730,7 @@ export async function buildLineupPayloadForEvent(eventId, options = {}) {
 }
 
 export async function buildLineupImagePayload(teamQuery = "", options = {}) {
+  await refreshFifaRankings();
   const { event, lineups } = await eventWithLineups("", teamQuery);
   if (!event || lineups.length < 2) return null;
 

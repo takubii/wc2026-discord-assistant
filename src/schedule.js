@@ -1,4 +1,4 @@
-import { fifaRankSuffix } from "./fifa-rankings.js";
+import { fifaRankSuffix, refreshFifaRankings } from "./fifa-rankings.js";
 
 const TZ = "Asia/Tokyo";
 const ESPN_URL =
@@ -287,5 +287,6 @@ export function buildDiscordPayload(matches, targetDate) {
 }
 
 export async function buildDiscordPayloadForDate(targetDate) {
+  await refreshFifaRankings();
   return buildDiscordPayload(await matchesForTokyoDate(targetDate), targetDate);
 }

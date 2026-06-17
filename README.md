@@ -71,6 +71,7 @@ npm run post:summary
 
 - 試合予定・結果: ESPNの公開JSON
 - 予備の試合予定: TheSportsDB
+- FIFAランキング: FIFA公式ライブランキングAPI。取得失敗時はリポジトリ内の固定キャッシュへフォールバック
 - 代表メンバー、背番号、年齢: FIFA公式Squad List PDF由来のキャッシュ済みデータ
 - 詳細ポジション、市場価値: Transfermarkt由来のキャッシュ済みデータ
 

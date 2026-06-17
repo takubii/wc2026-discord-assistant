@@ -1,5 +1,5 @@
 import { GROUPS, canonicalTeamName, teamLabel } from "./team-data.js";
-import { fifaRankSuffix } from "./fifa-rankings.js";
+import { fifaRankSuffix, refreshFifaRankings } from "./fifa-rankings.js";
 import { todayInTokyo, ymdInTokyo } from "./schedule.js";
 
 const ESPN_URL =
@@ -271,6 +271,7 @@ function formatResultsByGroup(matches) {
 }
 
 export async function buildResultsPayloads(targetDate = todayInTokyo()) {
+  await refreshFifaRankings();
   const matches = (await allMatches())
     .filter((match) => ymdInTokyo(new Date(match.date)) === targetDate)
     .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -302,6 +303,7 @@ function standingsPayload(title, standings, groups) {
 }
 
 export async function buildStandingsPayloads() {
+  await refreshFifaRankings();
   const standings = calculateStandings(await allMatches());
   return [
     standingsPayload("# 📊 Groups A-D", standings, ["A", "B", "C", "D"]),
@@ -311,6 +313,7 @@ export async function buildStandingsPayloads() {
 }
 
 export async function buildGroupStandingsPayloads(group) {
+  await refreshFifaRankings();
   const normalizedGroup = String(group ?? "").trim().toUpperCase();
   if (!GROUPS[normalizedGroup]) {
     throw new Error("グループは A〜L のいずれかで指定してください。");
@@ -336,6 +339,7 @@ export async function buildDailySummaryPayloads(targetDate = todayInTokyo()) {
 }
 
 export async function buildTeamSchedulePayloads(teamQuery, scope = "all") {
+  await refreshFifaRankings();
   const team = canonicalTeamName(teamQuery || "Japan");
   let matches = (await allMatches())
     .filter((match) => match.home.name === team || match.away.name === team)

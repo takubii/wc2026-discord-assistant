@@ -1,6 +1,60 @@
 import { GROUPS, canonicalTeamName, teamLabel } from "./team-data.js";
 
 export const FIFA_RANKING_UPDATED_AT = "2026-06-11";
+const FIFA_LIVE_RANKING_URL =
+  "https://api.fifa.com/api/v3/fifarankings/rankings/live?gender=1&sportType=0&language=en";
+const RANKING_CACHE_MS = 5 * 60 * 1000;
+
+const FIFA_COUNTRY_CODE_TO_TEAM = {
+  ALG: "Algeria",
+  ARG: "Argentina",
+  AUS: "Australia",
+  AUT: "Austria",
+  BEL: "Belgium",
+  BIH: "Bosnia-Herzegovina",
+  BRA: "Brazil",
+  CAN: "Canada",
+  CIV: "Ivory Coast",
+  COL: "Colombia",
+  COD: "Congo DR",
+  CPV: "Cape Verde",
+  CRO: "Croatia",
+  CUW: "Curaçao",
+  CZE: "Czechia",
+  ECU: "Ecuador",
+  EGY: "Egypt",
+  ENG: "England",
+  ESP: "Spain",
+  FRA: "France",
+  GER: "Germany",
+  GHA: "Ghana",
+  HAI: "Haiti",
+  IRN: "Iran",
+  IRQ: "Iraq",
+  JPN: "Japan",
+  JOR: "Jordan",
+  KOR: "South Korea",
+  KSA: "Saudi Arabia",
+  MAR: "Morocco",
+  MEX: "Mexico",
+  NED: "Netherlands",
+  NOR: "Norway",
+  NZL: "New Zealand",
+  PAN: "Panama",
+  PAR: "Paraguay",
+  POR: "Portugal",
+  QAT: "Qatar",
+  RSA: "South Africa",
+  SCO: "Scotland",
+  SEN: "Senegal",
+  SUI: "Switzerland",
+  SWE: "Sweden",
+  TUN: "Tunisia",
+  TUR: "Türkiye",
+  URU: "Uruguay",
+  USA: "United States",
+  UZB: "Uzbekistan",
+};
 
 export const FIFA_RANKINGS = {
   Algeria: { rank: 28, points: 1571.03 },
@@ -53,18 +107,148 @@ export const FIFA_RANKINGS = {
   Uzbekistan: { rank: 50, points: 1458.73 },
 };
 
+let rankingCache = {
+  rankings: FIFA_RANKINGS,
+  source: "cache",
+  fetchedAt: null,
+  error: null,
+};
+let rankingFetchPromise = null;
+
+function localizedTeamName(entry) {
+  return entry.TeamName?.find((name) => name.Locale === "en-GB")?.Description ?? entry.TeamName?.[0]?.Description ?? "";
+}
+
+function canonicalTeamFromRanking(entry) {
+  return FIFA_COUNTRY_CODE_TO_TEAM[entry.IdCountry] ?? "";
+}
+
+function normalizeLiveRankings(data) {
+  const rankings = {};
+  for (const entry of data.Results ?? []) {
+    const team = canonicalTeamFromRanking(entry);
+    if (!team || !Object.values(GROUPS).flat().includes(team)) continue;
+
+    const rank = Number(entry.Rank);
+    const points = Number(entry.TotalPoints);
+    if (!Number.isFinite(rank) || !Number.isFinite(points)) continue;
+
+    const previousRank = Number(entry.PrevRank);
+    const previousPoints = Number(entry.PrevPoints);
+    rankings[team] = {
+      rank,
+      points,
+      previousRank: Number.isFinite(previousRank) ? previousRank : null,
+      previousPoints: Number.isFinite(previousPoints) ? previousPoints : null,
+      movement: Number(entry.RankingMovement ?? 0),
+      countryCode: entry.IdCountry ?? "",
+      sourceName: localizedTeamName(entry),
+    };
+  }
+  return rankings;
+}
+
+async function fetchLiveFifaRankings() {
+  const res = await fetch(FIFA_LIVE_RANKING_URL, {
+    headers: {
+      "User-Agent": "wc2026-discord-assistant",
+      Referer: "https://inside.fifa.com/fifa-world-ranking/men",
+    },
+  });
+  if (!res.ok) throw new Error(`FIFA live ranking error: ${res.status} ${res.statusText}`);
+
+  const data = await res.json();
+  const rankings = normalizeLiveRankings(data);
+  const expectedTeams = Object.values(GROUPS).flat().length;
+  if (Object.keys(rankings).length < expectedTeams) {
+    throw new Error(`FIFA live ranking returned ${Object.keys(rankings).length}/${expectedTeams} World Cup teams`);
+  }
+
+  return rankings;
+}
+
+export async function refreshFifaRankings({ force = false } = {}) {
+  const now = Date.now();
+  if (!force && rankingCache.source === "live" && rankingCache.fetchedAt && now - rankingCache.fetchedAt < RANKING_CACHE_MS) {
+    return rankingCache;
+  }
+  if (rankingFetchPromise) return rankingFetchPromise;
+
+  rankingFetchPromise = fetchLiveFifaRankings()
+    .then((rankings) => {
+      rankingCache = {
+        rankings,
+        source: "live",
+        fetchedAt: Date.now(),
+        error: null,
+      };
+      return rankingCache;
+    })
+    .catch((err) => {
+      rankingCache = {
+        rankings: rankingCache.rankings ?? FIFA_RANKINGS,
+        source: rankingCache.source === "live" ? "live-stale" : "cache",
+        fetchedAt: rankingCache.fetchedAt,
+        error: err.message,
+      };
+      console.warn(`FIFA live ranking refresh failed: ${err.message}`);
+      return rankingCache;
+    })
+    .finally(() => {
+      rankingFetchPromise = null;
+    });
+
+  return rankingFetchPromise;
+}
+
 export function fifaRanking(teamName) {
-  return FIFA_RANKINGS[canonicalTeamName(teamName)] ?? null;
+  return rankingCache.rankings[canonicalTeamName(teamName)] ?? FIFA_RANKINGS[canonicalTeamName(teamName)] ?? null;
+}
+
+function movementText(ranking) {
+  const movement = Number(ranking?.movement ?? 0);
+  if (movement > 0) return `↑${movement}`;
+  if (movement < 0) return `↓${Math.abs(movement)}`;
+  return "";
+}
+
+function pointsDeltaText(ranking) {
+  const current = Number(ranking?.points);
+  const previous = Number(ranking?.previousPoints);
+  if (!Number.isFinite(current) || !Number.isFinite(previous)) return "";
+  const delta = current - previous;
+  if (Math.abs(delta) < 0.005) return "";
+  return `${delta > 0 ? "+" : ""}${delta.toFixed(2)}pt`;
+}
+
+function rankingSourceLine(group = "") {
+  if (rankingCache.source === "live" || rankingCache.source === "live-stale") {
+    const fetched = rankingCache.fetchedAt
+      ? new Intl.DateTimeFormat("ja-JP", {
+          timeZone: "Asia/Tokyo",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        }).format(new Date(rankingCache.fetchedAt))
+      : "";
+    const stale = rankingCache.source === "live-stale" ? " / 一時的に最新取得失敗、直近取得分を使用" : "";
+    return `${group || "出場48チーム"} / FIFA公式ライブランキング${fetched ? ` / 取得 ${fetched} JST` : ""}${stale}`;
+  }
+  return `${group || "出場48チーム"} / ${FIFA_RANKING_UPDATED_AT}時点の固定キャッシュ${rankingCache.error ? " / 最新取得失敗" : ""}`;
 }
 
 export function fifaRankSuffix(teamName) {
   const ranking = fifaRanking(teamName);
-  return ranking ? `（FIFA ${ranking.rank}位）` : "";
+  const movement = movementText(ranking);
+  return ranking ? `（FIFA ${ranking.rank}位${movement ? ` ${movement}` : ""}）` : "";
 }
 
 export function fifaRankText(teamName) {
   const ranking = fifaRanking(teamName);
-  return ranking ? `${teamLabel(canonicalTeamName(teamName))} ${ranking.rank}位` : `${teamLabel(teamName)} 不明`;
+  const movement = movementText(ranking);
+  return ranking ? `${teamLabel(canonicalTeamName(teamName))} ${ranking.rank}位${movement ? ` ${movement}` : ""}` : `${teamLabel(teamName)} 不明`;
 }
 
 export function formatFifaRankLine(homeName, awayName) {
@@ -92,10 +276,15 @@ function splitIntoMessages(header, lines, maxLength = 1990) {
 function rankingLine(team) {
   const ranking = fifaRanking(team);
   if (!ranking) return `- **${teamLabel(team)}** / ${team}: 不明`;
-  return `\`${ranking.rank}\` **${teamLabel(team)}** / ${team}  ${ranking.points.toFixed(2)}pt`;
+  const movement = movementText(ranking);
+  const previous = Number.isFinite(ranking.previousRank) && ranking.previousRank !== ranking.rank ? `前回${ranking.previousRank}位` : "";
+  const pointsDelta = pointsDeltaText(ranking);
+  const movementPart = [movement, previous, pointsDelta].filter(Boolean).join(" / ");
+  return `\`${ranking.rank}\` **${teamLabel(team)}** / ${team}  ${ranking.points.toFixed(2)}pt${movementPart ? `  ${movementPart}` : ""}`;
 }
 
-export function buildFifaRankingsPayloads(group = "") {
+export async function buildFifaRankingsPayloads(group = "") {
+  await refreshFifaRankings();
   const normalizedGroup = String(group ?? "").trim().toUpperCase();
   if (normalizedGroup && !GROUPS[normalizedGroup]) {
     throw new Error("グループは A〜L のいずれかで指定してください。");
@@ -110,7 +299,7 @@ export function buildFifaRankingsPayloads(group = "") {
   const title = normalizedGroup ? `# 🌐 FIFAランキング / Group ${normalizedGroup}` : "# 🌐 FIFAランキング";
   const header = [
     title,
-    `${normalizedGroup ? `Group ${normalizedGroup}` : "出場48チーム"} / ${FIFA_RANKING_UPDATED_AT}時点`,
+    rankingSourceLine(normalizedGroup ? `Group ${normalizedGroup}` : ""),
     "",
   ].join("\n");
 
