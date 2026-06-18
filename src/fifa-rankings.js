@@ -280,6 +280,9 @@ function rankingLine(team, { english = false, detailed = true } = {}) {
   const movement = movementText(ranking);
   const pointsDelta = pointsDeltaText(ranking);
   const movementPart = [movement, detailed ? pointsDelta : ""].filter(Boolean).join(" / ");
+  if (!detailed) {
+    return `\`${String(ranking.rank).padStart(2, " ")}\` ${name}　${ranking.points.toFixed(2)}pt　${movement || "-"}`;
+  }
   return `\`${ranking.rank}\` ${name} ${ranking.points.toFixed(2)}pt${movementPart ? ` ${movementPart}` : ""}`;
 }
 
