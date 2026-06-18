@@ -221,20 +221,6 @@ function pointsDeltaText(ranking) {
   return `${delta > 0 ? "+" : ""}${delta.toFixed(2)}pt`;
 }
 
-function movementIcon(ranking) {
-  const movement = Number(ranking?.movement ?? 0);
-  if (movement > 0) return "🟢";
-  if (movement < 0) return "🔴";
-
-  const current = Number(ranking?.points);
-  const previous = Number(ranking?.previousPoints);
-  if (!Number.isFinite(current) || !Number.isFinite(previous)) return "";
-  const delta = current - previous;
-  if (delta > 0.005) return "🟢";
-  if (delta < -0.005) return "🔴";
-  return "";
-}
-
 function rankingSourceLine(group = "") {
   if (rankingCache.source === "live" || rankingCache.source === "live-stale") {
     const fetched = rankingCache.fetchedAt
@@ -294,8 +280,7 @@ function rankingLine(team, { english = false } = {}) {
   const movement = movementText(ranking);
   const pointsDelta = pointsDeltaText(ranking);
   const movementPart = [movement, pointsDelta].filter(Boolean).join(" / ");
-  const icon = movementIcon(ranking);
-  return `\`${ranking.rank}\` ${name} ${ranking.points.toFixed(2)}pt${movementPart ? ` ${icon ? `${icon} ` : ""}${movementPart}` : ""}`;
+  return `\`${ranking.rank}\` ${name} ${ranking.points.toFixed(2)}pt${movementPart ? ` ${movementPart}` : ""}`;
 }
 
 export async function buildFifaRankingsPayloads(group = "", options = {}) {
