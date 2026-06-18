@@ -273,13 +273,13 @@ function splitIntoMessages(header, lines, maxLength = 1990) {
   return messages.map((content) => ({ content, allowed_mentions: { parse: [] } }));
 }
 
-function rankingLine(team, { english = false } = {}) {
+function rankingLine(team, { english = false, detailed = true } = {}) {
   const ranking = fifaRanking(team);
   const name = english ? `**${teamLabel(team)}** / ${team}` : `**${teamLabel(team)}**`;
   if (!ranking) return `- ${name}: 不明`;
   const movement = movementText(ranking);
   const pointsDelta = pointsDeltaText(ranking);
-  const movementPart = [movement, pointsDelta].filter(Boolean).join(" / ");
+  const movementPart = [movement, detailed ? pointsDelta : ""].filter(Boolean).join(" / ");
   return `\`${ranking.rank}\` ${name} ${ranking.points.toFixed(2)}pt${movementPart ? ` ${movementPart}` : ""}`;
 }
 
@@ -303,5 +303,8 @@ export async function buildFifaRankingsPayloads(group = "", options = {}) {
     "",
   ].join("\n");
 
-  return splitIntoMessages(header, sortedTeams.map((team) => rankingLine(team, options)));
+  return splitIntoMessages(header, sortedTeams.map((team) => rankingLine(team, {
+    ...options,
+    detailed: Boolean(normalizedGroup),
+  })));
 }
