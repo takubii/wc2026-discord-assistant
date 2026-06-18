@@ -3,6 +3,7 @@ import { GROUPS, canonicalTeamName, teamLabel } from "./team-data.js";
 export const FIFA_RANKING_UPDATED_AT = "2026-06-11";
 const FIFA_LIVE_RANKING_URL =
   "https://api.fifa.com/api/v3/fifarankings/rankings/live?gender=1&sportType=0&language=en";
+const FIFA_RANKING_PAGE_URL = "https://inside.fifa.com/fifa-world-ranking/men";
 const RANKING_CACHE_MS = 5 * 60 * 1000;
 
 const FIFA_COUNTRY_CODE_TO_TEAM = {
@@ -303,6 +304,7 @@ export async function buildFifaRankingsPayloads(group = "", options = {}) {
   const header = [
     title,
     rankingSourceLine(normalizedGroup ? `Group ${normalizedGroup}` : ""),
+    FIFA_RANKING_PAGE_URL,
     "",
   ].join("\n");
 
