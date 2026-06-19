@@ -37,6 +37,7 @@ const PLAYER_NAME_JA = {
   "Kim Min-Jae": "キム・ミンジェ",
   "Lee Gi-Hyuk": "イ・ギヒョク",
   "Lee Han-Beom": "イ・ハンボム",
+  "Kim Moon-Hwan": "キム・ムンファン",
   "Paik Seung-Ho": "ペク・スンホ",
   "Hwang In-Beom": "ファン・インボム",
   "Lee Tae-Seok": "イ・テソク",

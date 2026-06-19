@@ -268,6 +268,19 @@ function hasNameTokenCoverage(candidateName, queryName) {
   return shorter.every((token) => longer.has(token));
 }
 
+function hasCompactTokenCoverage(candidateName, queryName) {
+  const candidateTokens = nameTokens(candidateName);
+  const queryTokens = nameTokens(queryName);
+  const candidateCompact = compactNameKey(candidateName);
+  const queryCompact = compactNameKey(queryName);
+
+  if (candidateTokens.length < 2 || queryTokens.length < 2) return false;
+  return (
+    candidateTokens.every((token) => queryCompact.includes(token)) &&
+    queryTokens.every((token) => candidateCompact.includes(token))
+  );
+}
+
 function playerPositionLabel(player) {
   return player.mainPosition ?? player.broadPosition;
 }
@@ -345,10 +358,17 @@ export function findPlayerMetadata(teamQuery, playerName) {
   const compactKey = compactNameKey(playerName);
   return (
     team.players.find((player) => normalize(player.name) === normalizedName) ??
+    team.players.find((player) => normalize(player.fifaName) === normalizedName) ??
     team.players.find((player) => nameTokenKey(player.name) === tokenKey) ??
+    team.players.find((player) => nameTokenKey(player.fifaName) === tokenKey) ??
     team.players.find((player) => compactNameKey(player.name) === compactKey) ??
+    team.players.find((player) => compactNameKey(player.fifaName) === compactKey) ??
     team.players.find((player) => hasNameTokenCoverage(player.name, playerName)) ??
+    team.players.find((player) => hasNameTokenCoverage(player.fifaName, playerName)) ??
+    team.players.find((player) => hasCompactTokenCoverage(player.name, playerName)) ??
+    team.players.find((player) => hasCompactTokenCoverage(player.fifaName, playerName)) ??
     team.players.find((player) => normalize(player.name).includes(normalizedName) || normalizedName.includes(normalize(player.name))) ??
+    team.players.find((player) => normalize(player.fifaName).includes(normalizedName) || normalizedName.includes(normalize(player.fifaName))) ??
     null
   );
 }
