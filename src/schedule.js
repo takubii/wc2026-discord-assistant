@@ -1,6 +1,8 @@
 import { fifaRankSuffix, refreshFifaRankings } from "./fifa-rankings.js";
 
 const TZ = "Asia/Tokyo";
+const FIFA_URL =
+  "https://api.fifa.com/api/v3/calendar/matches?from=2026-06-11T00:00:00Z&to=2026-07-20T00:00:00Z&language=en&count=500&idCompetition=17";
 const ESPN_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
 const THESPORTSDB_URL =
@@ -9,21 +11,46 @@ const ENGLAND_FLAG = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E
 const SCOTLAND_FLAG = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}";
 const VENUE_LOCATIONS = {
   "AT&T Stadium": "Arlington, Texas, USA",
+  "Atlanta Stadium": "Atlanta, Georgia, USA",
   "BC Place": "Vancouver, British Columbia, Canada",
+  "BC Place Vancouver": "Vancouver, British Columbia, Canada",
   "BMO Field": "Toronto, Ontario, Canada",
+  "Boston Stadium": "Foxborough, Massachusetts, USA",
+  "Dallas Stadium": "Arlington, Texas, USA",
   "Estadio Akron": "Guadalajara, Jalisco, Mexico",
   "Estadio Banorte": "Mexico City, Mexico",
   "Estadio BBVA": "Guadalupe, Nuevo Leon, Mexico",
   "GEHA Field at Arrowhead Stadium": "Kansas City, Missouri, USA",
+  "Guadalajara Stadium": "Guadalajara, Jalisco, Mexico",
   "Gillette Stadium": "Foxborough, Massachusetts, USA",
   "Hard Rock Stadium": "Miami Gardens, Florida, USA",
+  "Houston Stadium": "Houston, Texas, USA",
+  "Kansas City Stadium": "Kansas City, Missouri, USA",
   "Levi's Stadium": "Santa Clara, California, USA",
   "Lincoln Financial Field": "Philadelphia, Pennsylvania, USA",
+  "Los Angeles Stadium": "Inglewood, California, USA",
   "Lumen Field": "Seattle, Washington, USA",
   "Mercedes-Benz Stadium": "Atlanta, Georgia, USA",
   "MetLife Stadium": "East Rutherford, New Jersey, USA",
+  "Mexico City Stadium": "Mexico City, Mexico",
+  "Miami Stadium": "Miami Gardens, Florida, USA",
+  "Monterrey Stadium": "Guadalupe, Nuevo Leon, Mexico",
+  "New York/New Jersey Stadium": "East Rutherford, New Jersey, USA",
   "NRG Stadium": "Houston, Texas, USA",
+  "Philadelphia Stadium": "Philadelphia, Pennsylvania, USA",
+  "San Francisco Bay Area Stadium": "Santa Clara, California, USA",
+  "Seattle Stadium": "Seattle, Washington, USA",
   "SoFi Stadium": "Inglewood, California, USA",
+  "Toronto Stadium": "Toronto, Ontario, Canada",
+};
+const FIFA_TEAM_NAMES = {
+  "Bosnia and Herzegovina": "Bosnia-Herzegovina",
+  "Cabo Verde": "Cape Verde",
+  "Côte d'Ivoire": "Ivory Coast",
+  "IR Iran": "Iran",
+  "Korea Republic": "South Korea",
+  USA: "United States",
+  Türkiye: "Türkiye",
 };
 const TEAM_FLAGS = {
   ALG: "🇩🇿",
@@ -190,6 +217,50 @@ function venueLocation(venue) {
   return city ?? country ?? "";
 }
 
+function localizedValue(values) {
+  if (!Array.isArray(values)) return "";
+  return values.find((item) => item.Locale === "en-GB")?.Description ?? values[0]?.Description ?? "";
+}
+
+function teamFromFifaMatch(match, side) {
+  const team = match?.[side] ?? {};
+  const fifaName = localizedValue(team.TeamName) || team.ShortClubName || "TBD";
+  return {
+    name: FIFA_TEAM_NAMES[fifaName] ?? fifaName,
+    code: team.Abbreviation ?? team.IdCountry ?? "",
+  };
+}
+
+async function fetchFifaMatches() {
+  const res = await fetch(FIFA_URL, {
+    headers: {
+      Accept: "application/json",
+      "User-Agent": "wc2026-discord-assistant",
+    },
+  });
+  if (!res.ok) {
+    throw new Error(`FIFA error: ${res.status} ${res.statusText}`);
+  }
+
+  const data = await res.json();
+  if (!Array.isArray(data.Results) || data.Results.length === 0) {
+    throw new Error("FIFA returned no matches");
+  }
+
+  return data.Results.map((match) => {
+    const venue = localizedValue(match.Stadium?.Name);
+    const city = localizedValue(match.Stadium?.CityName);
+    return {
+      date: match.Date,
+      home: teamFromFifaMatch(match, "Home"),
+      away: teamFromFifaMatch(match, "Away"),
+      venue,
+      location: VENUE_LOCATIONS[venue] ?? city,
+      source: "FIFA",
+    };
+  });
+}
+
 async function fetchEspnMatches() {
   const res = await fetch(ESPN_URL);
   if (!res.ok) {
@@ -238,10 +309,15 @@ async function fetchTheSportsDbMatches() {
 
 export async function fetchMatches() {
   try {
-    return await fetchEspnMatches();
-  } catch (espnError) {
-    console.warn(`ESPN fetch failed, falling back to TheSportsDB: ${espnError.message}`);
-    return fetchTheSportsDbMatches();
+    return await fetchFifaMatches();
+  } catch (fifaError) {
+    console.warn(`FIFA fetch failed, falling back to ESPN: ${fifaError.message}`);
+    try {
+      return await fetchEspnMatches();
+    } catch (espnError) {
+      console.warn(`ESPN fetch failed, falling back to TheSportsDB: ${espnError.message}`);
+      return fetchTheSportsDbMatches();
+    }
   }
 }
 
