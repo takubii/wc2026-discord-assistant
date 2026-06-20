@@ -234,6 +234,72 @@ const commands = [
           },
         ],
       },
+      {
+        name: "setup",
+        description: "自動投稿チャンネルを設定します",
+        type: 2,
+        options: [
+          {
+            name: "channels",
+            description: "投稿先チャンネルをまとめて設定します",
+            type: 1,
+            options: [
+              {
+                name: "schedule",
+                description: "試合日程の投稿先チャンネル",
+                type: 7,
+                required: true,
+                channel_types: [0, 5],
+              },
+              {
+                name: "results",
+                description: "結果通知の投稿先チャンネル",
+                type: 7,
+                required: true,
+                channel_types: [0, 5],
+              },
+              {
+                name: "lineup",
+                description: "スタメン通知の投稿先チャンネル。省略時は試合日程チャンネル",
+                type: 7,
+                required: false,
+                channel_types: [0, 5],
+              },
+            ],
+          },
+          {
+            name: "status",
+            description: "現在の自動投稿設定を表示します",
+            type: 1,
+          },
+          {
+            name: "daily",
+            description: "毎日の試合日程・結果通知を有効/無効にします",
+            type: 1,
+            options: [
+              {
+                name: "enabled",
+                description: "有効にする場合はtrue",
+                type: 5,
+                required: true,
+              },
+            ],
+          },
+          {
+            name: "lineup",
+            description: "開始前スタメン通知を有効/無効にします",
+            type: 1,
+            options: [
+              {
+                name: "enabled",
+                description: "有効にする場合はtrue",
+                type: 5,
+                required: true,
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 ];

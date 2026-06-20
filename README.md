@@ -1,22 +1,27 @@
 # WC2026 Discord Assistant
 
-World Cup 2026の試合予定、結果、順位、代表メンバー、注目選手をDiscordへ投稿するための小さな通知ツールです。
+World Cup 2026の試合予定、結果、順位、代表メンバー、注目選手をDiscordへ投稿するためのDiscord Botです。
 
 導入方法は [docs/setup.md](docs/setup.md) に分けています。
 
 ## 自動投稿
 
-Cloudflare Worker Cron Triggerで以下を自動投稿します。
+Cloudflare Worker Cron Triggerで、`/wc setup channels` 済みのDiscordサーバーへ以下を自動投稿します。
 
 - 毎日16:00 JST: 翌日の試合予定
 - 毎日16:00 JST: 今日の結果
 - 5分おき: 開始15分前前後の公式スタメン
 
-投稿先はCloudflare Worker Secretで指定します。
+投稿先はDiscord上で設定します。
 
-- `DISCORD_WEBHOOK_URL`: 試合日程
-- `DISCORD_RESULTS_WEBHOOK_URL`: 結果と順位
-- `DISCORD_LINEUP_WEBHOOK_URL`: スタメン通知。未設定なら試合日程チャンネルへ投稿
+```text
+/wc setup channels schedule:#試合日程 results:#結果 lineup:#スタメン
+/wc setup status
+/wc setup daily enabled:true
+/wc setup lineup enabled:true
+```
+
+Webhook Secretも互換用に残しています。D1にサーバー設定がない場合だけ、従来のWebhook投稿へフォールバックします。
 
 GitHub Actionsにも手動実行用workflowを残していますが、定期投稿はCloudflare Worker側で動きます。
 
@@ -46,9 +51,12 @@ Discordで `/wc` を使います。
 /wc notable team:日本
 /wc notable position:攻撃的MF limit:10
 /wc positions team:キュラソー島
+/wc setup channels schedule:#試合日程 results:#結果 lineup:#スタメン
+/wc setup status
 ```
 
 `team`、`positions`、`notable` の `team` は日本語入力と候補表示に対応しています。
+`notable` の `position` も候補表示に対応しています。
 
 ## ローカル確認
 
@@ -70,7 +78,8 @@ npm run post:summary
 
 ## データ
 
-- 試合予定・結果: ESPNの公開JSON
+- 試合予定: FIFA公式API。取得失敗時はESPN/TheSportsDBへフォールバック
+- 結果: ESPNの公開JSON
 - 予備の試合予定: TheSportsDB
 - FIFAランキング: FIFA公式ライブランキングAPI。取得失敗時はリポジトリ内の固定キャッシュへフォールバック
 - 代表メンバー、背番号、年齢: FIFA公式Squad List PDF由来のキャッシュ済みデータ

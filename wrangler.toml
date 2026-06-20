@@ -9,6 +9,11 @@ crons = ["*/5 * * * *", "0 7 * * *"]
 binding = "LINEUP_POSTS"
 id = "85ad3e1fe29b465ab0ad0a75f01a8e80"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "wc2026-discord-assistant"
+database_id = "24006d37-1211-4e1f-bc74-8c272ef16155"
+
 [[rules]]
 type = "Data"
 globs = ["**/*.ttf"]
