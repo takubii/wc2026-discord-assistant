@@ -1,7 +1,7 @@
 import { InteractionResponseType, InteractionType, verifyKey } from "discord-interactions";
 import { buildFifaRankingsPayloads } from "./fifa-rankings.js";
 import { buildLineupImage, buildLineupImagePayload, buildLineupPayload, buildLineupPayloadForEvent, upcomingLineupReminderEvents } from "./lineup.js";
-import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildTeamPayloads } from "./player-data.js";
+import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildTeamPayloads, positionChoices } from "./player-data.js";
 import { buildDailySummaryPayloads, buildGroupStandingsPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
 import { teamChoices } from "./team-data.js";
@@ -337,6 +337,12 @@ function autocompleteResponse(interaction) {
     return jsonResponse({
       type: InteractionResponseType.APPLICATION_COMMAND_AUTOCOMPLETE_RESULT,
       data: { choices: teamChoices(focused.value) },
+    });
+  }
+  if (focused?.name === "position") {
+    return jsonResponse({
+      type: InteractionResponseType.APPLICATION_COMMAND_AUTOCOMPLETE_RESULT,
+      data: { choices: positionChoices(focused.value) },
     });
   }
 

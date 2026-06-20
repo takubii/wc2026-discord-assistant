@@ -26,6 +26,24 @@ const POSITION_ALIASES = {
   センターフォワード: "Centre-Forward",
   CF: "Centre-Forward",
 };
+const POSITION_CHOICES = [
+  { name: "GK / ゴールキーパー", value: "Goalkeeper" },
+  { name: "DF / ディフェンダー全体", value: "DF" },
+  { name: "CB / センターバック", value: "Centre-Back" },
+  { name: "LB / 左サイドバック", value: "Left-Back" },
+  { name: "RB / 右サイドバック", value: "Right-Back" },
+  { name: "MF / ミッドフィルダー全体", value: "MF" },
+  { name: "DM / 守備的MF", value: "Defensive Midfield" },
+  { name: "CM / セントラルMF", value: "Central Midfield" },
+  { name: "AM / 攻撃的MF", value: "Attacking Midfield" },
+  { name: "LM / 左MF", value: "Left Midfield" },
+  { name: "RM / 右MF", value: "Right Midfield" },
+  { name: "FW / フォワード全体", value: "FW" },
+  { name: "LW / 左ウイング", value: "Left Winger" },
+  { name: "RW / 右ウイング", value: "Right Winger" },
+  { name: "SS / セカンドトップ", value: "Second Striker" },
+  { name: "CF / センターフォワード", value: "Centre-Forward" },
+];
 const BROAD_ORDER = ["GK", "DF", "MF", "FW"];
 const CLUB_COUNTRY_BY_CLUB = {
   "AC Milan": "イタリア",
@@ -229,6 +247,16 @@ function normalize(value) {
 function normalizePositionQuery(value) {
   const trimmed = (value ?? "").trim();
   return POSITION_ALIASES[trimmed] ?? trimmed;
+}
+
+export function positionChoices(query = "") {
+  const normalized = normalize(query);
+  return POSITION_CHOICES
+    .filter((choice) => {
+      if (!normalized) return true;
+      return normalize(choice.name).includes(normalized) || normalize(choice.value).includes(normalized);
+    })
+    .slice(0, 25);
 }
 
 function findTeam(teamQuery) {

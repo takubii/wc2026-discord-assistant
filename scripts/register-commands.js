@@ -95,9 +95,10 @@ const commands = [
           },
           {
             name: "position",
-            description: "任意のポジション絞り込み。例: 左ウイング, CF, 攻撃的MF",
+            description: "任意のポジション絞り込み。候補から選択できます",
             type: 3,
             required: false,
+            autocomplete: true,
           },
           {
             name: "limit",
