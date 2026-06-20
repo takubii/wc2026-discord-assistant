@@ -4,6 +4,21 @@ World Cup 2026の試合予定、結果、順位、代表メンバー、注目選
 
 導入方法は [docs/setup.md](docs/setup.md) に分けています。
 
+## 使い始める
+
+1. [BotをDiscordサーバーに追加](https://discord.com/oauth2/authorize?client_id=1514544116623605830&scope=bot%20applications.commands&permissions=3072)
+2. サーバー内で投稿先を設定
+
+```text
+/wc setup channels schedule:#試合日程 results:#結果 lineup:#スタメン
+```
+
+設定確認:
+
+```text
+/wc setup status
+```
+
 ## 自動投稿
 
 Cloudflare Worker Cron Triggerで、`/wc setup channels` 済みのDiscordサーバーへ以下を自動投稿します。
