@@ -9,7 +9,8 @@
     "update:players": "node scripts/update-players.js",
     "register:commands": "node scripts/register-commands.js",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "release": "npm run deploy && npm run register:commands"
   },
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.4.3",

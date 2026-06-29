@@ -151,6 +151,37 @@ const commands = [
         ],
       },
       {
+        name: "qualified",
+        description: "決勝トーナメント進出チームを表示します",
+        type: 1,
+      },
+      {
+        name: "third-place",
+        description: "3位チームランキングを表示します",
+        type: 1,
+      },
+      {
+        name: "bracket",
+        description: "決勝トーナメント表を表示します",
+        type: 1,
+        options: [
+          {
+            name: "stage",
+            description: "任意のステージ。省略すると全体を表示します",
+            type: 3,
+            required: false,
+            choices: [
+              { name: "Round of 32", value: "round-of-32" },
+              { name: "Round of 16", value: "round-of-16" },
+              { name: "準々決勝", value: "quarterfinals" },
+              { name: "準決勝", value: "semifinals" },
+              { name: "3位決定戦", value: "3rd-place-match" },
+              { name: "決勝", value: "final" },
+            ],
+          },
+        ],
+      },
+      {
         name: "rankings",
         description: "出場国のFIFAランキングを表示します",
         type: 1,

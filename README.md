@@ -51,6 +51,10 @@ Discordで `/wc` を使います。
 /wc results date:2026-06-14
 /wc standings
 /wc standings group:Group C
+/wc qualified
+/wc third-place
+/wc bracket
+/wc bracket stage:Round of 32
 /wc rankings
 /wc rankings group:Group C
 /wc rankings english:true
@@ -83,7 +87,7 @@ $env:TARGET_DATE="2026-06-12"
 npm run post
 ```
 
-今日の結果:
+今日の結果・大会進行:
 
 ```powershell
 $env:DRY_RUN="1"

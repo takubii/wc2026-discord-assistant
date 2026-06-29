@@ -115,6 +115,26 @@ npm run register:commands
 
 共有Botとして配布する場合は、動作確認後に `DISCORD_GUILD_ID` を外してグローバル登録します。
 
+## デプロイ自動化
+
+ローカルでは、WorkerデプロイとSlash Command登録をまとめて実行できます。
+
+```powershell
+$env:DISCORD_APPLICATION_ID="Discord Application ID"
+$env:DISCORD_BOT_TOKEN="Discord Bot Token"
+npm run release
+```
+
+GitHub Actionsの `Deploy Worker and Commands` workflowでも同じ処理を実行できます。`main` へのpush時、または手動実行時に、WorkerをデプロイしてからSlash Commandを登録します。
+
+必要なGitHub Secrets:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+- `DISCORD_APPLICATION_ID`
+- `DISCORD_BOT_TOKEN`
+- `DISCORD_GUILD_ID`（任意。指定するとそのサーバーだけに即時反映）
+
 ## 旧Webhook構成
 
 Webhookは互換用です。D1にサーバー設定が1件もない場合だけ、Cloudflare Worker SecretのWebhook URLへフォールバック投稿します。

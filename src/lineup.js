@@ -595,9 +595,18 @@ export async function buildLineupPayload(teamQuery = "", options = {}) {
   await refreshFifaRankings();
   const { event, lineups } = await eventWithLineups("", teamQuery);
   if (!event) {
-    const suffix = teamQuery ? `（${teamQuery}）` : "";
+    if (teamQuery) {
+      const team = canonicalTeamName(teamQuery);
+      return {
+        content: [
+          `${teamLabel(team)}の今後のスタメン対象試合は見つかりませんでした。`,
+          "敗退済み、または次戦のカードがまだ確定していない可能性があります。",
+        ].join("\n"),
+        allowed_mentions: { parse: [] },
+      };
+    }
     return {
-      content: `対象の試合が見つかりませんでした${suffix}。`,
+      content: "対象の試合が見つかりませんでした。",
       allowed_mentions: { parse: [] },
     };
   }

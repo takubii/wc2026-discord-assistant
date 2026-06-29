@@ -1,4 +1,4 @@
-import { buildResultsPayloads } from "./src/results.js";
+import { buildDailySummaryPayloads } from "./src/results.js";
 import { todayInTokyo } from "./src/schedule.js";
 
 function getRequiredEnv(name) {
@@ -38,7 +38,7 @@ async function postPayload(discordWebhookUrl, payload) {
 async function main() {
   const dryRun = process.env.DRY_RUN === "1";
   const discordWebhookUrl = dryRun ? null : getRequiredEnv("DISCORD_RESULTS_WEBHOOK_URL");
-  const payloads = await buildResultsPayloads(targetDateInTokyo());
+  const payloads = await buildDailySummaryPayloads(targetDateInTokyo());
 
   if (dryRun) {
     for (const payload of payloads) {

@@ -2,7 +2,7 @@ import { InteractionResponseType, InteractionType, verifyKey } from "discord-int
 import { buildFifaRankingsPayloads } from "./fifa-rankings.js";
 import { buildLineupImage, buildLineupImagePayload, buildLineupPayload, buildLineupPayloadForEvent, upcomingLineupReminderEvents } from "./lineup.js";
 import { buildNotablePayloads, buildPlayerPayloads, buildPositionsPayloads, buildTeamPayloads, positionChoices } from "./player-data.js";
-import { buildDailySummaryPayloads, buildGroupStandingsPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads } from "./results.js";
+import { buildBracketPayloads, buildDailySummaryPayloads, buildGroupStandingsPayloads, buildQualifiedPayloads, buildResultsPayloads, buildStandingsPayloads, buildTeamSchedulePayloads, buildThirdPlacePayloads } from "./results.js";
 import { buildDiscordPayloadForDate, todayInTokyo, tomorrowInTokyo } from "./schedule.js";
 import { teamChoices } from "./team-data.js";
 
@@ -350,7 +350,7 @@ async function buildSetupPayload(interaction, env) {
 async function postScheduledWorldCupUpdates(env) {
   const settings = await allGuildSettings(env, { dailyEnabled: true });
   if (settings.length > 0) {
-    const resultsPayloads = await buildResultsPayloads(todayInTokyo());
+    const resultsPayloads = await buildDailySummaryPayloads(todayInTokyo());
     const matchPayload = await buildDiscordPayloadForDate(tomorrowInTokyo());
 
     for (const setting of settings) {
@@ -366,7 +366,7 @@ async function postScheduledWorldCupUpdates(env) {
     return;
   }
 
-  const resultsPayloads = await buildResultsPayloads(todayInTokyo());
+  const resultsPayloads = await buildDailySummaryPayloads(todayInTokyo());
   for (const payload of resultsPayloads) {
     await postWebhookPayload(env.DISCORD_RESULTS_WEBHOOK_URL, payload);
   }
@@ -486,6 +486,12 @@ async function respondToWorldCupCommand(interaction, env) {
     } else if (subcommand.name === "standings") {
       const group = optionValue(subcommand.options, "group");
       payloads = group ? await buildGroupStandingsPayloads(group) : await buildStandingsPayloads();
+    } else if (subcommand.name === "qualified") {
+      payloads = await buildQualifiedPayloads();
+    } else if (subcommand.name === "third-place") {
+      payloads = await buildThirdPlacePayloads();
+    } else if (subcommand.name === "bracket") {
+      payloads = await buildBracketPayloads(optionValue(subcommand.options, "stage"));
     } else if (subcommand.name === "rankings") {
       payloads = await buildFifaRankingsPayloads(optionValue(subcommand.options, "group"), {
         english: optionValue(subcommand.options, "english") === true,
