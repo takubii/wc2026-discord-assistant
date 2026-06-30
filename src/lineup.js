@@ -3,7 +3,7 @@ import { buildLineupLayout } from "./lineup-ai-layout.js";
 import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, normalizeText, teamLabel } from "./team-data.js";
 import { formatFifaRankLine, refreshFifaRankings } from "./fifa-rankings.js";
-import { findPlayerMetadata, formatAge, formatClub, formatMarketValueAmount, formatShirtNumber } from "./player-data.js";
+import { findPlayerMetadata, formatAge, formatClub, formatMarketValueAmount, formatShirtNumber, teamMarketValueLabel } from "./player-data.js";
 
 const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -486,7 +486,14 @@ function starterMarketValue(lineup) {
   if (!total) return "";
 
   const suffix = valuedStarters.length < lineup.starters.length ? "+" : "";
-  return `スタメンの市場価値（${formatMarketValueAmount(total)}${suffix}）`;
+  return `${formatMarketValueAmount(total)}${suffix}`;
+}
+
+function lineupMarketValue(lineup) {
+  const starterValue = starterMarketValue(lineup);
+  const teamValue = teamMarketValueLabel(lineup.teamName);
+  if (!starterValue) return teamValue ? `（${teamValue}）` : "";
+  return teamValue ? `${starterValue}（${teamValue}）` : starterValue;
 }
 
 function regionalIndicatorFlag(code) {
@@ -508,7 +515,7 @@ function lineupHeading(lineup) {
     flag ? `## ${flag}` : "##",
     teamLabel(lineup.teamName),
     lineup.formation || "",
-    starterMarketValue(lineup),
+    lineupMarketValue(lineup),
   ].filter(Boolean).join(" ");
 }
 
@@ -589,7 +596,7 @@ function lineupImageEmbed(baseUrl, event) {
 }
 
 function lineupSummary(lineup) {
-  const marketValue = starterMarketValue(lineup);
+  const marketValue = lineupMarketValue(lineup);
   return [
     "•",
     textFlag(lineup.teamName),

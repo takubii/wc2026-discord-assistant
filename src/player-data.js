@@ -440,6 +440,18 @@ function totalMarketValueLine(players) {
   return `合計市場価値: ${formatMarketValueAmount(total)}${suffix}`;
 }
 
+export function teamMarketValueLabel(teamQuery) {
+  const team = findTeam(teamQuery);
+  if (!team) return "";
+
+  const valuedPlayers = team.players.filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0);
+  const total = valuedPlayers.reduce((sum, player) => sum + player.marketValueEur, 0);
+  if (!total) return "";
+
+  const suffix = valuedPlayers.length < team.players.length ? "+" : "";
+  return `${formatMarketValueAmount(total)}${suffix}`;
+}
+
 function splitIntoMessages(header, lines, maxLength = 1990, separator = "\n\n") {
   const messages = [];
   let current = header ? [header] : [];
