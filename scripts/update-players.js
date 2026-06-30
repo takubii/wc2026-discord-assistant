@@ -36,9 +36,49 @@ const TRANSFERMARKT_TEAM_ALIASES = {
   Curacao: "Curaçao",
   Türkiye: "Turkiye",
 };
+const TRANSFERMARKT_PLAYER_ALIASES = {
+  "Algeria|rafik belghali": ["Rafik Belghali"],
+  "Argentina|jose manuel lopez": ["Flaco López"],
+  "Australia|cameron devlin": ["Cammy Devlin"],
+  "Brazil|ederson silva": ["Éderson"],
+  "Brazil|danilo santos": ["Danilo"],
+  "Cape Verde|pico lopes": ["Roberto Lopes"],
+  "Canada|alfie jones": ["Alfie Jones"],
+  "Egypt|marawan attia": ["Marwan Ateya"],
+  "Egypt|mostafa shoubir": ["Oufa Shobeir"],
+  "Haiti|markhus lacroix": ["Duke Lacroix"],
+  "Iran|dennis dargahi": ["Dennis Eckert Ayensa"],
+  "Jordan|mohammad abuzraiq": ["Mohammad Abu Zrayq"],
+  "Jordan|nour baniateyah": ["Noor Bane Ataya"],
+  "Jordan|saed alrosan": ["Saed Al-Rousan"],
+  "Jordan|abdallah alfakhori": ["Abdallah Al-Fakhouri"],
+  "Jordan|mohammad aldaoud": ["Mohammad Al-Dawoud"],
+  "South Korea|minjae kim": ["Min-jae Kim"],
+  "South Korea|heungmin son": ["Heung-min Son"],
+  "South Korea|taeseok lee": ["Tae-seok Lee"],
+  "South Korea|wije cho": ["Wi-je Cho"],
+  "South Korea|junho bae": ["Jun-ho Bae"],
+  "South Korea|youngwoo seol": ["Young-woo Seol"],
+  "South Korea|jingyu kim": ["Jin-gyu Kim"],
+  "Morocco|soufiane rahimi": ["Soufiane Rahimi"],
+  "Paraguay|gatito fernandez": ["Roberto Fernández"],
+  "Paraguay|alejandro romero gamarra": ["Kaku"],
+  "Qatar|ayoub aloui": ["Ayoub Al-Oui"],
+  "Qatar|homam ahmed": ["Homam Al-Amin"],
+  "Qatar|alhashmi alhussein": ["Al-Hashmi Al-Hussain"],
+  "Saudi Arabia|feras albrikan": ["Firas Al-Buraikan"],
+  "Saudi Arabia|nawaf bu washl": ["Nawaf Boushal"],
+  "Saudi Arabia|ala alhajji": ["Alaa Hejji"],
+  "Saudi Arabia|abdullah alhamddan": ["Abdullah Al-Hamdan"],
+  "South Africa|sphephelo sithole": ["Yaya Sithole"],
+  "Spain|alex grimaldo": ["Alejandro Grimaldo"],
+  "Uzbekistan|odiljon xamrobekov": ["Odildzhon Khamrobekov"],
+  "Uzbekistan|behruzjon karimov": ["Bekhruz Karimov"],
+};
 
 function normalize(value) {
   const transliterated = value
+    .replace(/\u0000/g, "fi")
     .replace(/[ıİ]/g, (char) => (char === "ı" ? "i" : "I"))
     .replace(/[øØ]/g, (char) => (char === "ø" ? "o" : "O"))
     .replace(/[đĐ]/g, (char) => (char === "đ" ? "d" : "D"))
@@ -215,16 +255,31 @@ function fuzzyNameScore(espnPlayer, transfermarktPlayer) {
   return 0;
 }
 
+function playerLookupNames(player) {
+  const aliases = TRANSFERMARKT_PLAYER_ALIASES[`${player.team}|${normalize(player.name)}`] ?? [];
+  return [...aliases, player.name, player.fifaName, player.nameOnShirt]
+    .filter(Boolean)
+    .filter((name, index, names) => names.findIndex((candidate) => normalize(candidate) === normalize(name)) === index);
+}
+
 function findTransfermarktPlayer(tmPlayers, player) {
-  const exact = tmPlayers.get(normalize(player.name));
-  if (exact) return exact;
+  const lookupNames = playerLookupNames(player);
+  for (const name of lookupNames) {
+    const exact = tmPlayers.get(normalize(name));
+    if (exact) return exact;
+  }
 
   const tmPlayersByTokens = new Map([...tmPlayers.values()].map((tmPlayer) => [nameTokenKey(tmPlayer.name), tmPlayer]));
-  const tokenMatch = tmPlayersByTokens.get(nameTokenKey(player.name));
-  if (tokenMatch) return tokenMatch;
+  for (const name of lookupNames) {
+    const tokenMatch = tmPlayersByTokens.get(nameTokenKey(name));
+    if (tokenMatch) return tokenMatch;
+  }
 
   const candidates = [...tmPlayers.values()]
-    .map((tmPlayer) => ({ tmPlayer, score: fuzzyNameScore(player, tmPlayer) }))
+    .map((tmPlayer) => ({
+      tmPlayer,
+      score: Math.max(...lookupNames.map((name) => fuzzyNameScore({ ...player, name }, tmPlayer))),
+    }))
     .filter((candidate) => candidate.score >= 76)
     .sort((a, b) => b.score - a.score);
 
@@ -396,7 +451,9 @@ async function fetchFifaSquads() {
 }
 
 async function searchTransfermarktPlayer(player) {
-  for (const rawQuery of [`${player.name} ${player.club}`.trim(), player.name]) {
+  const lookupNames = playerLookupNames(player);
+  const queries = lookupNames.flatMap((name) => [`${name} ${player.club}`.trim(), name]);
+  for (const rawQuery of queries.filter((query, index) => queries.indexOf(query) === index)) {
     const query = encodeURIComponent(rawQuery);
     const html = await fetchHtml(
       `${TRANSFERMARKT_BASE}/schnellsuche/ergebnis/schnellsuche?query=${query}`,
@@ -409,10 +466,15 @@ async function searchTransfermarktPlayer(player) {
       const name = $(anchor).text().replace(/\s+/g, " ").trim();
       const href = $(anchor).attr("href");
       if (!name || !href) return;
+      const normalizedCandidate = normalize(name);
       candidates.push({
         name,
         href,
-        score: normalize(name) === normalize(player.name) ? 2 : normalize(name).includes(normalize(player.name)) ? 1 : 0,
+        score: lookupNames.some((lookupName) => normalizedCandidate === normalize(lookupName))
+          ? 2
+          : lookupNames.some((lookupName) => normalizedCandidate.includes(normalize(lookupName)))
+            ? 1
+            : 0,
       });
     });
 

@@ -3,7 +3,7 @@ import { buildLineupLayout } from "./lineup-ai-layout.js";
 import { playerNameLabel } from "./lineup-name-ja.js";
 import { canonicalTeamName, normalizeText, teamLabel } from "./team-data.js";
 import { formatFifaRankLine, refreshFifaRankings } from "./fifa-rankings.js";
-import { findPlayerMetadata, formatAge, formatClub, formatShirtNumber } from "./player-data.js";
+import { findPlayerMetadata, formatAge, formatClub, formatMarketValueAmount, formatShirtNumber } from "./player-data.js";
 
 const ESPN_SCOREBOARD_URL =
   "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200";
@@ -314,6 +314,8 @@ function enrichRosterPlayer(player, teamName) {
     age: metadata?.age ?? null,
     club: metadata?.club ?? null,
     clubCountryCode: metadata?.clubCountryCode ?? null,
+    marketValue: metadata?.marketValue ?? null,
+    marketValueEur: metadata?.marketValueEur ?? null,
   };
 }
 
@@ -478,6 +480,38 @@ function formatPlayerList(players) {
   return players.map((player) => `• ${positionLabel(player)}${lineupPlayerName(player)}`).join("\n");
 }
 
+function starterMarketValue(lineup) {
+  const valuedStarters = lineup.starters.filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0);
+  const total = valuedStarters.reduce((sum, player) => sum + player.marketValueEur, 0);
+  if (!total) return "";
+
+  const suffix = valuedStarters.length < lineup.starters.length ? "+" : "";
+  return `スタメンの市場価値（${formatMarketValueAmount(total)}${suffix}）`;
+}
+
+function regionalIndicatorFlag(code) {
+  const normalized = String(code ?? "").toUpperCase();
+  if (!/^[A-Z]{2}$/.test(normalized)) return "";
+  return [...normalized].map((letter) => String.fromCodePoint(0x1f1e6 + letter.charCodeAt(0) - 65)).join("");
+}
+
+function textFlag(teamName) {
+  const code = flagCode(teamName);
+  if (code === "gb-eng") return "🏴󠁧󠁢󠁥󠁮󠁧󠁿";
+  if (code === "gb-sct") return "🏴󠁧󠁢󠁳󠁣󠁴󠁿";
+  return regionalIndicatorFlag(code);
+}
+
+function lineupHeading(lineup) {
+  const flag = textFlag(lineup.teamName);
+  return [
+    flag ? `## ${flag}` : "##",
+    teamLabel(lineup.teamName),
+    lineup.formation || "",
+    starterMarketValue(lineup),
+  ].filter(Boolean).join(" ");
+}
+
 function formatStarterGroup(players, group) {
   const grouped = players
     .filter((player) => positionGroup(player.positionAbbreviation) === group)
@@ -501,7 +535,7 @@ function formatTextLineup(lineup) {
     .map((group) => formatStarterGroup(lineup.starters, group))
     .filter(Boolean);
   return [
-    `## ${teamLabel(lineup.teamName)} ${lineup.formation ? `(${lineup.formation})` : ""}`.trim(),
+    lineupHeading(lineup),
     ...groups,
   ].join("\n\n");
 }
@@ -509,7 +543,7 @@ function formatTextLineup(lineup) {
 function formatLineup(lineup) {
   const substitutes = lineup.substitutes.slice(0, 15);
   return [
-    `## ${teamLabel(lineup.teamName)} ${lineup.formation ? `(${lineup.formation})` : ""}`.trim(),
+    lineupHeading(lineup),
     "",
     "**先発**",
     formatPlayerList(lineup.starters),
@@ -555,7 +589,14 @@ function lineupImageEmbed(baseUrl, event) {
 }
 
 function lineupSummary(lineup) {
-  return `• **${teamLabel(lineup.teamName)}** ${lineup.formation || "formation TBD"}`;
+  const marketValue = starterMarketValue(lineup);
+  return [
+    "•",
+    textFlag(lineup.teamName),
+    `**${teamLabel(lineup.teamName)}**`,
+    lineup.formation || "formation TBD",
+    marketValue,
+  ].filter(Boolean).join(" ");
 }
 
 async function eventWithLineups(eventId, teamQuery = "") {

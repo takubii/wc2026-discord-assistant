@@ -344,9 +344,8 @@ export function formatClub(player) {
   return country ? `${player.club} / ${country}` : player.club;
 }
 
-function formatMarketValue(player) {
-  const value = player.marketValueEur;
-  if (!Number.isFinite(value) || value <= 0) return player.marketValue ?? "不明";
+export function formatMarketValueAmount(value) {
+  if (!Number.isFinite(value) || value <= 0) return "不明";
   const compact = (amount) => {
     const rounded = Math.round(amount * 10) / 10;
     return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
@@ -355,6 +354,12 @@ function formatMarketValue(player) {
   if (value >= 1_000_000) return `€${compact(value / 1_000_000)}m`;
   if (value >= 1_000) return `€${Math.round(value / 1_000)}k`;
   return `€${value}`;
+}
+
+function formatMarketValue(player) {
+  const value = player.marketValueEur;
+  if (!Number.isFinite(value) || value <= 0) return player.marketValue ?? "不明";
+  return formatMarketValueAmount(value);
 }
 
 export function formatAge(player) {
