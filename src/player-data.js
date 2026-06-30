@@ -339,7 +339,6 @@ function positionLabel(position) {
 
 export function formatClub(player) {
   if (!player.club) return "";
-  if (player.clubCountryCode) return `${player.club} (${player.clubCountryCode})`;
   const country = CLUB_COUNTRY_BY_CLUB[player.club] ?? CLUB_COUNTRY_BY_CODE[player.clubCountryCode];
   return country ? `${player.club} / ${country}` : player.club;
 }
@@ -432,6 +431,15 @@ function formatCompactPlayerLine(player) {
   return `${formatShirtNumberTag(player)}**${player.name}**${age}\n> ${details.join(" | ")}`;
 }
 
+function totalMarketValueLine(players) {
+  const valuedPlayers = players.filter((player) => Number.isFinite(player.marketValueEur) && player.marketValueEur > 0);
+  const total = valuedPlayers.reduce((sum, player) => sum + player.marketValueEur, 0);
+  if (!total) return "";
+
+  const suffix = valuedPlayers.length < players.length ? "+" : "";
+  return `合計市場価値: ${formatMarketValueAmount(total)}${suffix}`;
+}
+
 function splitIntoMessages(header, lines, maxLength = 1990, separator = "\n\n") {
   const messages = [];
   let current = header ? [header] : [];
@@ -470,7 +478,8 @@ export function buildTeamPayloads(teamQuery, positionQuery = "") {
     : team.players;
 
   const suffix = normalizedPosition ? ` / ${positionLabel(position)}` : "";
-  const header = `# ${teamLabel(team.team)} 代表メンバー${suffix}\n全${players.length}名`;
+  const marketValue = totalMarketValueLine(players);
+  const header = `# ${teamLabel(team.team)} 代表メンバー${suffix}\n全${players.length}名${marketValue ? ` / ${marketValue}` : ""}`;
   const grouped = new Map();
   for (const player of players) {
     const group = player.broadPosition ?? "その他";

@@ -36,6 +36,71 @@ const TRANSFERMARKT_TEAM_ALIASES = {
   Curacao: "Curaçao",
   Türkiye: "Turkiye",
 };
+const TRANSFERMARKT_COUNTRY_CODES = {
+  Albania: "ALB",
+  Algeria: "ALG",
+  Argentina: "ARG",
+  Armenia: "ARM",
+  Australia: "AUS",
+  Austria: "AUT",
+  Azerbaijan: "AZE",
+  Belgium: "BEL",
+  Brazil: "BRA",
+  Bulgaria: "BUL",
+  Canada: "CAN",
+  Chile: "CHI",
+  China: "CHN",
+  Colombia: "COL",
+  Croatia: "CRO",
+  Cyprus: "CYP",
+  Czechia: "CZE",
+  Denmark: "DEN",
+  Ecuador: "ECU",
+  Egypt: "EGY",
+  England: "ENG",
+  France: "FRA",
+  Georgia: "GEO",
+  Germany: "GER",
+  Greece: "GRE",
+  Hungary: "HUN",
+  Iran: "IRN",
+  Iraq: "IRQ",
+  Israel: "ISR",
+  Italy: "ITA",
+  Japan: "JPN",
+  Jordan: "JOR",
+  Kazakhstan: "KAZ",
+  "Korea, South": "KOR",
+  Kuwait: "KUW",
+  Mexico: "MEX",
+  Morocco: "MAR",
+  Netherlands: "NED",
+  "New Zealand": "NZL",
+  Norway: "NOR",
+  Paraguay: "PAR",
+  Poland: "POL",
+  Portugal: "POR",
+  Qatar: "QAT",
+  Romania: "ROU",
+  Russia: "RUS",
+  "Saudi Arabia": "KSA",
+  Scotland: "SCO",
+  Serbia: "SRB",
+  Slovakia: "SVK",
+  Slovenia: "SVN",
+  "South Africa": "RSA",
+  Spain: "ESP",
+  Sweden: "SWE",
+  Switzerland: "SUI",
+  Tunisia: "TUN",
+  Türkiye: "TUR",
+  Ukraine: "UKR",
+  "United Arab Emirates": "UAE",
+  "United States": "USA",
+  Uruguay: "URU",
+  Uzbekistan: "UZB",
+  Wales: "WAL",
+};
 const TRANSFERMARKT_PLAYER_ALIASES = {
   "Algeria|rafik belghali": ["Rafik Belghali"],
   "Argentina|jose manuel lopez": ["Flaco López"],
@@ -576,6 +641,39 @@ async function fetchTransfermarktSquad(teamId) {
   return players;
 }
 
+const clubCountryCodeCache = new Map();
+
+async function fetchTransfermarktClubCountryCode(clubUrl) {
+  if (!clubUrl) return null;
+  if (clubCountryCodeCache.has(clubUrl)) return clubCountryCodeCache.get(clubUrl);
+
+  const html = await fetchHtml(clubUrl, TRANSFERMARKT_USER_AGENT);
+  const $ = cheerio.load(html);
+  const country =
+    $(".data-header__club-info img.flaggenrahmen").first().attr("title") ??
+    $('meta[name="keywords"]').attr("content")?.split(",").at(1)?.trim() ??
+    "";
+  const code = TRANSFERMARKT_COUNTRY_CODES[country] ?? null;
+  clubCountryCodeCache.set(clubUrl, code);
+  return code;
+}
+
+async function prefetchTransfermarktClubCountryCodes(clubUrls, concurrency = 12) {
+  const pending = [...new Set(clubUrls.filter(Boolean))]
+    .filter((clubUrl) => !clubCountryCodeCache.has(clubUrl));
+
+  for (let index = 0; index < pending.length; index += concurrency) {
+    const batch = pending.slice(index, index + concurrency);
+    await Promise.all(batch.map((clubUrl) =>
+      fetchTransfermarktClubCountryCode(clubUrl).catch((err) => {
+        console.warn(`${clubUrl}: club country fetch failed: ${err.message}`);
+        clubCountryCodeCache.set(clubUrl, null);
+        return null;
+      })
+    ));
+  }
+}
+
 async function enrichTeamFromTransfermarktSquad(team, teamIds) {
   const tmTeam = findTransfermarktTeam(teamIds, team.team);
   if (!tmTeam) {
@@ -584,15 +682,18 @@ async function enrichTeamFromTransfermarktSquad(team, teamIds) {
   }
 
   const tmPlayers = await fetchTransfermarktSquad(tmTeam.id);
+  await prefetchTransfermarktClubCountryCodes([...tmPlayers.values()].map((player) => player.clubUrl));
   let matched = 0;
 
   for (const player of team.players) {
     const tmPlayer = findTransfermarktPlayer(tmPlayers, player);
     if (!tmPlayer) continue;
+    const clubCountryCode = tmPlayer.clubUrl ? clubCountryCodeCache.get(tmPlayer.clubUrl) : null;
     Object.assign(player, {
       mainPosition: tmPlayer.mainPosition,
       otherPositions: player.otherPositions ?? [],
       club: tmPlayer.club || player.club,
+      clubCountryCode: clubCountryCode ?? player.clubCountryCode ?? null,
       clubUrl: tmPlayer.clubUrl ?? player.clubUrl ?? null,
       marketValue: tmPlayer.marketValue ?? player.marketValue ?? null,
       marketValueEur: tmPlayer.marketValueEur ?? player.marketValueEur ?? null,
